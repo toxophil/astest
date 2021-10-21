@@ -1,7 +1,10 @@
 
 /* Generated from GenMyModel */
 
-#include "Camera.hpp"
+#include "..\Header\Camera.hpp"
+#include "..\Header\MoveableObject.hpp"
+#include "..\Header\Map.hpp"
+
 void Camera::drawMap(Map m) {
 
 }

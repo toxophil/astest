@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "Knight.hpp"
+#include "..\Header\Knight.hpp"

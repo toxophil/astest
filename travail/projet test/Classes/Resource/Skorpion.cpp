@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "Skorpion.hpp"
+#include "..\Header\Skorpion.hpp"

@@ -17,6 +17,7 @@ class GameMaster
 		Camera Camera;
 		static GameMaster Instance;
 		
+public:
 	
 };
 

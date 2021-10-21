@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "FriendlyCharacter.hpp"
+#include "..\Header\FriendlyCharacter.hpp"

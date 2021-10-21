@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "GameMaster.hpp"
+#include "..\Header\GameMaster.hpp"
