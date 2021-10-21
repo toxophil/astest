@@ -16,6 +16,7 @@ class GameMaster
 		Camera Camera;
 		static GameMaster GameMasterInstance;
 		int test;
+		int test2;
 		
 	
 };
