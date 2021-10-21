@@ -1,3 +1,5 @@
+#include <MoveableObject.hpp>
+#include <GameMaster.cpp>
 
 /* Generated from GenMyModel */
 
@@ -5,9 +7,9 @@
 #define DEF_CAMERA
 
 
-class Camera
-{
-	
+class Camera{
+	void drawMap(Map);
+	void drawObject(vector<MoveableObject>);
 };
 
 
