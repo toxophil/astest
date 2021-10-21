@@ -4,6 +4,9 @@
 #ifndef DEF_GAMEMASTER
 #define DEF_GAMEMASTER
 
+#include "Map.hpp"
+#include "MoveableObject.hpp"
+#include "Camera.hpp"
 
 class GameMaster
 {
@@ -11,8 +14,8 @@ class GameMaster
 		Map Map;
 		MoveableObject MoveableObjectList;
 		Camera Camera;
-		GameMaster GameMasterInstance;
-		invalid attribute;
+		static GameMaster GameMasterInstance;
+		int test;
 		
 	
 };

@@ -4,6 +4,7 @@
 #ifndef DEF_DRAWABLEOBJECT
 #define DEF_DRAWABLEOBJECT
 
+#include "Angle.hpp"
 
 class DrawableObject
 {
