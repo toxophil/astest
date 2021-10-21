@@ -7,16 +7,15 @@
 #include "Map.hpp"
 #include "MoveableObject.hpp"
 #include "Camera.hpp"
+#include <vector>
 
 class GameMaster
 {
 	private :
 		Map Map;
-		MoveableObject MoveableObjectList;
+		std::vector<MoveableObject> MoveableObjectList;
 		Camera Camera;
-		static GameMaster GameMasterInstance;
-		int test;
-		int test2;
+		static GameMaster Instance;
 		
 	
 };

@@ -4,11 +4,13 @@
 #ifndef DEF_ROOM
 #define DEF_ROOM
 
+#include "RoomObject.hpp"
+#include <vector>
 
 class Room
 {
 	private :
-		RoomObject RoomObjects;
+		std::vector<RoomObject> RoomObjects;
 		int type;
 		
 	

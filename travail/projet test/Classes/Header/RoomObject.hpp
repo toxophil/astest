@@ -9,11 +9,6 @@
 class RoomObject : public DrawableObject
 {
 	private :
-		double x;
-		double y;
-		Angle Angle;
-		double width;
-		double height;
 		
 	
 };
