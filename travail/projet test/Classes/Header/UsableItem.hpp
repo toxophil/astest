@@ -8,7 +8,7 @@
 
 class UsableItem : public Item
 {
-	
+	bool use(Player);
 };
 
 
