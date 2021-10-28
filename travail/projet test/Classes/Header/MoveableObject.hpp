@@ -8,14 +8,11 @@
 
 class MoveableObject : public DrawableObject
 {
-	private :
-		double x;
-		double y;
-		double width;
-		Angle angle;
-		double height;
-		
-	
+private:
+
+public:
+
+	virtual void update();
 };
 
 

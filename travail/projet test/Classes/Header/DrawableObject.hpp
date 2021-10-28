@@ -9,12 +9,23 @@
 
 class DrawableObject
 {
+	//utilisé pour savoir quel id donner au prochain objet
+	static uint32_t _nextId;
+
 	private :
-		double width;
-		double height;
-		Angle angle;
-		sf::Sprite sprite;
+		uint32_t _id;
+		double _width;
+		double _height;
+		Angle _angle;
+		sf::Sprite _sprite;
+
+
+
+public:
+
+	DrawableObject();
 	
+	uint32_t getId() const;
 };
 
 
