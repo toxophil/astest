@@ -35,14 +35,15 @@ public:
 
 	const vector<MoveableObject>& getMoveableObjectList();
 
-	const vector<Player>& getPlayerList() const;
-
-	const vector<Ennemy>& getEnnemyList() const;
 	//---------------------------------
 
+	//fonction principale du jeu
+	void runGame();
 
+	//ajoute un élément déplacable à la liste des éléments déplacables
 	bool addMoveableObject(MoveableObject& moveableObject);
 
+	//supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
 	bool destroyMoveableObject(uint32_t id);
 
 };

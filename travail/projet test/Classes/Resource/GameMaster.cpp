@@ -29,6 +29,7 @@ const vector<MoveableObject>& GameMaster::getMoveableObjectList()
 	return _moveableObjectList;
 }
 
+
 //ajoute un élément déplacable à la liste des éléments déplacables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 {
@@ -50,4 +51,44 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 	}
 
 	return destroyed;
+}
+
+
+void GameMaster::runGame()
+{
+	//caméra
+	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+
+	//start of game
+	sf::CircleShape shape(100.f);
+	shape.setFillColor(sf::Color::Green);
+
+	//boucle principale
+	while (window.isOpen())
+	{
+		//gestionnaire d'évènements
+		sf::Event event;
+
+		//evènement 
+		while (window.pollEvent(event))
+		{
+			//boucle de physique
+			for (auto& object : _moveableObjectList) {
+				object.updatePhysics(event);
+			}
+
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+		//logique du jeu
+		for (auto &object : _moveableObjectList) {
+			object.update();
+		}
+
+		//Affichage de la frame
+		window.clear();
+		window.draw(shape);
+		window.display();
+	}
 }

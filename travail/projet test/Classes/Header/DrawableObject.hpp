@@ -14,12 +14,12 @@ class DrawableObject
 
 	private :
 		uint32_t _id;
-		double _width;
-		double _height;
-		Angle _angle;
-		sf::Sprite _sprite;
 
-
+protected:
+	double _width;
+	double _height;
+	Angle _angle;
+	sf::Sprite _sprite;
 
 public:
 
