@@ -13,6 +13,7 @@ class Room
 		std::vector<RoomObject> RoomObjects;
 		int type;
 		
+		
 	
 };
 
