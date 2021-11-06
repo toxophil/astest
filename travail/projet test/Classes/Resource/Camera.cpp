@@ -11,10 +11,12 @@
 
 
 
-void Camera::drawMap(Map m) {
+void Camera::drawMap(Map m, sf::RenderWindow window)
+{
 
 }
-void Camera::drawObject(vector<MoveableObject>, sf::RenderWindow window) {
+
+void Camera::drawObject(vector<MoveableObject> objectList, sf::RenderWindow window) {
     while (window.isOpen()) {
         sf::CircleShape shape(100.f);
         shape.setFillColor(sf::Color::Green);

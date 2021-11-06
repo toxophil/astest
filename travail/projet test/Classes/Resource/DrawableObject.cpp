@@ -37,3 +37,8 @@ uint32_t DrawableObject::getHeight() const {
 Angle& DrawableObject::getAngle() {
 	return _angle;
 }
+
+const sf::Sprite& DrawableObject::getSprite() const
+{
+	return _sprite;
+}

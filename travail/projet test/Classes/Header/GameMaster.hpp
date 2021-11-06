@@ -9,6 +9,8 @@
 #include "Camera.hpp"
 #include "Player.hpp"
 #include "Ennemy.hpp"
+#include "TextureLoader.h"
+#include "Thief.hpp"
 #include <vector>
 
 using namespace std;
@@ -18,6 +20,7 @@ class GameMaster
 private :
 	Map _map;
 	vector<MoveableObject> _moveableObjectList;
+	TextureLoader _textures;
 	Camera _camera;
 
 	//private pour design pattern singleton
@@ -35,6 +38,7 @@ public:
 
 	const vector<MoveableObject>& getMoveableObjectList();
 
+	TextureLoader& getTextureLoader();
 	//---------------------------------
 
 	//fonction principale du jeu

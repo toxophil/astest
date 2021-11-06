@@ -29,6 +29,11 @@ const vector<MoveableObject>& GameMaster::getMoveableObjectList()
 	return _moveableObjectList;
 }
 
+TextureLoader& GameMaster::getTextureLoader()
+{
+	return _textures;
+}
+
 
 //ajoute un élément déplacable à la liste des éléments déplacables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
@@ -59,6 +64,10 @@ void GameMaster::runGame()
 	//caméra
 	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
 
+	//create a player
+	Thief player;
+	addMoveableObject(player);
+
 	//start of game
 	sf::CircleShape shape(100.f);
 	shape.setFillColor(sf::Color::Green);
@@ -88,7 +97,11 @@ void GameMaster::runGame()
 
 		//Affichage de la frame
 		window.clear();
-		window.draw(shape);
+	
+		for (auto &object : _moveableObjectList) {
+			window.draw(object.getSprite());
+		}
+
 		window.display();
 	}
 }
