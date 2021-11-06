@@ -10,12 +10,17 @@ class MoveableObject : public DrawableObject
 {
 private:
 
+protected:
+	sf::Vector2f nextDirection;
+	//vitesse de l'objet
+	float speed;
+
 public:
 	//fonction de misa a jour de la logique de l'objet
-	virtual void update();
+	virtual void update() = 0;
 
 	//fonction de mise à jour de la physique de l'objet (déplacerment, tir, etc...)
-	virtual void updatePhysics(const sf::Event &event);
+	virtual void updatePhysics(const sf::Event &event) = 0;
 
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);

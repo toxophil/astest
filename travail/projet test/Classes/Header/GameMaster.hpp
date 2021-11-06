@@ -7,7 +7,6 @@
 #include "Map.hpp"
 #include "MoveableObject.hpp"
 #include "Camera.hpp"
-#include "Player.hpp"
 #include "Ennemy.hpp"
 #include "TextureLoader.h"
 #include "Thief.hpp"
@@ -19,9 +18,10 @@ class GameMaster
 {
 private :
 	Map _map;
-	vector<MoveableObject> _moveableObjectList;
+	vector<MoveableObject*> _moveableObjectList;
 	TextureLoader _textures;
 	Camera _camera;
+	Time _deltaTime;
 
 	//private pour design pattern singleton
 	GameMaster();
@@ -36,9 +36,11 @@ public:
 	//--------------GETTERS------------
 	const Map& getMap() const;
 
-	const vector<MoveableObject>& getMoveableObjectList();
+	const vector<MoveableObject*>& getMoveableObjectList();
 
 	TextureLoader& getTextureLoader();
+
+	const Time& getTimeSinceLastUpdate() const;
 	//---------------------------------
 
 	//fonction principale du jeu

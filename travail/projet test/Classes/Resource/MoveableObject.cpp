@@ -3,9 +3,6 @@
 
 #include "..\Header\MoveableObject.hpp"
 
-void MoveableObject::update(){}
-
-void MoveableObject::updatePhysics(const sf::Event& event){}
 
 bool MoveableObject::moveObject(const sf::Vector2f& direction)
 {
