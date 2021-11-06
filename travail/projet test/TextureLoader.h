@@ -2,6 +2,5 @@
 class TextureLoader
 {
 
-	TEST.JPEG
 };
 
