@@ -9,11 +9,11 @@
 
 using namespace std;
 
-class Camera{
+class Camera {
 
 public:
-	void drawMap(Map);
-	void drawObject(vector<MoveableObject>);
+	void drawMap(Map m, sf::RenderWindow window);
+	void drawObject(vector<MoveableObject>, sf::RenderWindow window);
 };
 
 
