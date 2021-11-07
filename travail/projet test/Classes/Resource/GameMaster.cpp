@@ -4,6 +4,7 @@
 #include "..\Header\GameMaster.hpp"
 #include <type_traits>
 
+
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
 {
@@ -47,6 +48,12 @@ bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 	return true;
 }
 
+bool GameMaster::addMoveableObject(MoveableObject* moveableObject)
+{
+	_moveableObjectList.push_back(moveableObject);
+	return true;
+}
+
 //supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
 bool GameMaster::destroyMoveableObject(uint32_t id)
 {
@@ -70,7 +77,7 @@ void GameMaster::runGame()
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
 
 	//create a player
-	Thief player;
+	Thief *player;
 	addMoveableObject(player);
 
 	//start of game

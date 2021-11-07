@@ -5,13 +5,14 @@
 #define DEF_USABLEITEM
 
 #include "Item.hpp"
-#include "Player.hpp"
+
+class Player;
 
 class UsableItem : public Item
 {
 
 public:
-	bool use(Player);
+	bool use(Player &);
 };
 
 

@@ -3,7 +3,7 @@
 
 #include "..\Header\UsableItem.hpp"
 
-bool UsableItem::use(Player p){
+bool UsableItem::use(Player &p){
     //TODO
     return true;
 }

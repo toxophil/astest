@@ -5,5 +5,5 @@
 
 Thief::Thief()
 {
-	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::PlayerThief));
+	//_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::PlayerThief));
 }

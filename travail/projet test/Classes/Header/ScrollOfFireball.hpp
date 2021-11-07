@@ -6,6 +6,8 @@
 
 #include "UsableItem.hpp"
 
+class Player;
+
 class ScrollOfFireball : public UsableItem
 {
 	

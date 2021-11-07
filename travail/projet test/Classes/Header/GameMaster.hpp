@@ -9,8 +9,10 @@
 #include "Camera.hpp"
 #include "Ennemy.hpp"
 #include "TextureLoader.h"
-#include "Thief.hpp"
 #include <vector>
+#include "Thief.hpp"
+
+class Player;
 
 using namespace std;
 
@@ -48,6 +50,8 @@ public:
 
 	//ajoute un élément déplacable à la liste des éléments déplacables
 	bool addMoveableObject(MoveableObject& moveableObject);
+
+	bool addMoveableObject(MoveableObject* moveableObject);
 
 	//supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
 	bool destroyMoveableObject(uint32_t id);

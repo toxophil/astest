@@ -4,9 +4,9 @@
 #ifndef DEF_THIEF
 #define DEF_THIEF
 
+//#include "GameMaster.hpp"
+//#include "TextureLoader.h"
 #include "Player.hpp"
-#include "GameMaster.hpp"
-#include "TextureLoader.h"
 
 class Thief : public Player
 {

@@ -8,6 +8,8 @@
 #include <algorithm>
 #include "GameMaster.hpp"
 
+class GameMaster;
+
 class Player : public FriendlyCharacter
 {
 
