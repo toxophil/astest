@@ -1,17 +1,14 @@
-
-/* Generated from GenMyModel */
-
-#ifndef DEF_PLAYER
-#define DEF_PLAYER
+#pragma once
 
 #include "FriendlyCharacter.hpp"
 #include <algorithm>
-#include "GameMaster.hpp"
 
-class GameMaster;
 
 class Player : public FriendlyCharacter
 {
+private:
+	float _attackSpeed;
+	sf::Clock _timeSinceLastAttack;
 
 public:
 	Player();
@@ -21,5 +18,3 @@ public:
 
 };
 
-
-#endif

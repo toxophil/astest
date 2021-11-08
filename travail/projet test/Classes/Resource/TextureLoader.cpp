@@ -14,7 +14,6 @@ TextureLoader::TextureLoader()
 
 
 
-
 	for(auto& it: loadLocation){
 		if (!tempText.loadFromFile(it.second)) {
 			//error dans le chargment...

@@ -3,7 +3,7 @@
 
 #include "..\Header\GameMaster.hpp"
 #include <type_traits>
-
+#include "..\Header\Skorpion.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -11,6 +11,18 @@ GameMaster& GameMaster::getInstance()
 	static GameMaster instance;
 
 	return instance;
+}
+
+void GameMaster::destroy()
+{
+	//destruction des objets non nécessaires
+	std::list<std::list<MoveableObject*>::iterator>::iterator i = _toDestroy.begin();
+	while (i != _toDestroy.end())
+	{
+		_moveableObjectList.erase((*i));
+		_toDestroy.erase(i++);
+
+	}
 }
 
 GameMaster::GameMaster()
@@ -25,7 +37,7 @@ const Map& GameMaster::getMap() const
 }
 
 //retourne la liste des éléments déplaçables
-const vector<MoveableObject*>& GameMaster::getMoveableObjectList()
+const std::list<MoveableObject*>& GameMaster::getMoveableObjectList()
 {
 	return _moveableObjectList;
 }
@@ -57,16 +69,19 @@ bool GameMaster::addMoveableObject(MoveableObject* moveableObject)
 //supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
 bool GameMaster::destroyMoveableObject(uint32_t id)
 {
+
 	bool destroyed = false;
 
-	auto i = 0;
-	while(!destroyed && i < _moveableObjectList.size()){
-		if (_moveableObjectList[i]->getId() == id) {
-			_moveableObjectList.erase(_moveableObjectList.begin() + i);
+	std::list<MoveableObject*>::iterator i = _moveableObjectList.begin();
+	while (i != _moveableObjectList.end() && !destroyed)
+	{
+		if ((*i)->getId() == id)
+		{
+			_toDestroy.push_back(i);
 			destroyed = true;
 		}
+		++i;
 	}
-
 	return destroyed;
 }
 
@@ -77,8 +92,14 @@ void GameMaster::runGame()
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
 
 	//create a player
-	Thief *player;
+	Thief player;
 	addMoveableObject(player);
+
+	//create his bow
+	Skorpion thiefBow;
+	
+	//equip his bow
+	player.setEquippedWeapon(&thiefBow);
 
 	//start of game
 	sf::CircleShape shape(100.f);
@@ -109,10 +130,16 @@ void GameMaster::runGame()
 			object->updatePhysics(event);
 		}
 
+		//destruction des objets non nécessaires
+		destroy();
+
 		//logique du jeu
 		for (auto &object : _moveableObjectList) {
 			object->update();
 		}
+
+		//destruction des objets non nécessaires
+		destroy();
 
 		//Affichage de la frame
 		window.clear();

@@ -20,10 +20,14 @@ class GameMaster
 {
 private :
 	Map _map;
-	vector<MoveableObject*> _moveableObjectList;
+	std::list<MoveableObject*> _moveableObjectList;
+	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
 	TextureLoader _textures;
 	Camera _camera;
 	Time _deltaTime;
+
+	//fonction de destruction des objets de moveable object list a partir de la liste to destroy
+	void destroy();
 
 	//private pour design pattern singleton
 	GameMaster();
@@ -38,7 +42,7 @@ public:
 	//--------------GETTERS------------
 	const Map& getMap() const;
 
-	const vector<MoveableObject*>& getMoveableObjectList();
+	const std::list<MoveableObject*>& getMoveableObjectList();
 
 	TextureLoader& getTextureLoader();
 

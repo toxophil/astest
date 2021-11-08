@@ -12,6 +12,7 @@ public:
 	enum class TextureNames {
 		PlayerKnight,
 		PlayerThief,
+		Arrow,
 		defaultTexture
 	};
 

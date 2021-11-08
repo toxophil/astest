@@ -1,8 +1,4 @@
-
-/* Generated from GenMyModel */
-
-#ifndef DEF_THIEF
-#define DEF_THIEF
+#pragma once
 
 //#include "GameMaster.hpp"
 //#include "TextureLoader.h"
@@ -14,5 +10,3 @@ public:
 	Thief();
 };
 
-
-#endif
