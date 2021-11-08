@@ -22,11 +22,8 @@ protected:
 	sf::Sprite _sprite;
 
 public:
-
 	DrawableObject();
-
 	DrawableObject(Angle& a, uint32_t h, uint32_t w);
-
 	
 	uint32_t getId() const;
 	uint32_t getWidth() const;

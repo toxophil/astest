@@ -117,7 +117,8 @@ void GameMaster::runGame()
 		//Affichage de la frame
 		window.clear();
 	
-		for (auto &object : _moveableObjectList) {
+		//Camera.drawAll();
+		for (auto& object : _moveableObjectList) {
 			window.draw(object->getSprite());
 		}
 

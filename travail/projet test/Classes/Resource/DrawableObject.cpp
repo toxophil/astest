@@ -25,6 +25,7 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_width = w;
 }
 
+
 uint32_t DrawableObject::getId() const {
 	return _id;
 }
@@ -38,7 +39,6 @@ Angle& DrawableObject::getAngle() {
 	return _angle;
 }
 
-const sf::Sprite& DrawableObject::getSprite() const
-{
+const sf::Sprite& DrawableObject::getSprite() const {
 	return _sprite;
 }
