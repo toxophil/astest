@@ -158,6 +158,7 @@
     <ClCompile Include="Classes\Resource\Slime.cpp" />
     <ClCompile Include="Classes\Resource\SolidObject.cpp" />
     <ClCompile Include="Classes\Resource\Sword.cpp" />
+    <ClCompile Include="Classes\Resource\TextureLoader.cpp" />
     <ClCompile Include="Classes\Resource\Thief.cpp" />
     <ClCompile Include="Classes\Resource\UnusableItem.cpp" />
     <ClCompile Include="Classes\Resource\UsableItem.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="Classes\Header\Slime.hpp" />
     <ClInclude Include="Classes\Header\SolidObject.hpp" />
     <ClInclude Include="Classes\Header\Sword.hpp" />
+    <ClInclude Include="Classes\Header\TextureLoader.h" />
     <ClInclude Include="Classes\Header\Thief.hpp" />
     <ClInclude Include="Classes\Header\UnusableItem.hpp" />
     <ClInclude Include="Classes\Header\UsableItem.hpp" />
