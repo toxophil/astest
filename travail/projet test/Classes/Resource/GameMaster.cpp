@@ -89,7 +89,7 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 void GameMaster::runGame()
 {
 	//caméra
-	sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
+	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
 
 	//create a player
 	Thief player;
@@ -100,10 +100,6 @@ void GameMaster::runGame()
 	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
-
-	//start of game
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
 
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;

@@ -7,7 +7,7 @@
 class Player : public FriendlyCharacter
 {
 private:
-	float _attackSpeed;
+	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
 
 public:
