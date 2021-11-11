@@ -88,9 +88,10 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 
 void GameMaster::runGame()
 {
+	
 	//caméra
-	sf::RenderWindow window(sf::VideoMode(1000, 1000), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
-
+	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
+	window.setFramerateLimit(60);
 	//create a player
 	Thief player;
 	addMoveableObject(player);

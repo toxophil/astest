@@ -14,6 +14,7 @@ public:
 		PlayerThief,
 		Arrow,
 		defaultTexture
+		/* mur*/
 	};
 
 	TextureLoader();
