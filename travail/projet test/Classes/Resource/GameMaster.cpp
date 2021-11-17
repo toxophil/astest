@@ -15,7 +15,7 @@ GameMaster& GameMaster::getInstance()
 
 void GameMaster::destroy()
 {
-	//destruction des objets non nécessaires
+	//destruction des objets non nï¿½cessaires
 	std::list<std::list<MoveableObject*>::iterator>::iterator i = _toDestroy.begin();
 	while (i != _toDestroy.end())
 	{
@@ -36,7 +36,7 @@ const Map& GameMaster::getMap() const
 	return _map;
 }
 
-//retourne la liste des éléments déplaçables
+//retourne la liste des ï¿½lï¿½ments dï¿½plaï¿½ables
 const std::list<MoveableObject*>& GameMaster::getMoveableObjectList()
 {
 	return _moveableObjectList;
@@ -53,7 +53,7 @@ const Time& GameMaster::getTimeSinceLastUpdate() const
 }
 
 
-//ajoute un élément déplacable à la liste des éléments déplacables
+//ajoute un ï¿½lï¿½ment dï¿½placable ï¿½ la liste des ï¿½lï¿½ments dï¿½placables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 {
 	_moveableObjectList.push_back(&moveableObject);
@@ -66,7 +66,7 @@ bool GameMaster::addMoveableObject(MoveableObject* moveableObject)
 	return true;
 }
 
-//supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
+//supprime la rï¿½fï¿½rence ï¿½ l'ï¿½lï¿½ment d'identifier (id) dans la liste des ï¿½lï¿½ments dï¿½placables
 bool GameMaster::destroyMoveableObject(uint32_t id)
 {
 
@@ -89,9 +89,10 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 void GameMaster::runGame()
 {
 	
-	//caméra
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
-	window.setFramerateLimit(60);
+	//camï¿½ra + option fullscreen
+	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dï¿½dale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553"/*,sf::Style::Fullscreen*/);
+	//fps max
+	window.setFramerateLimit(30);
 	//create a player
 	Thief player;
 	addMoveableObject(player);
@@ -111,10 +112,10 @@ void GameMaster::runGame()
 		//mise a jour du delta
 		_deltaTime = clk.restart();
 
-		//gestionnaire d'évènements
+		//gestionnaire d'ï¿½vï¿½nements
 		sf::Event event;
 
-		//evènement 
+		//evï¿½nement 
 		while (window.pollEvent(event))
 		{
 
@@ -127,7 +128,7 @@ void GameMaster::runGame()
 			object->updatePhysics(event);
 		}
 
-		//destruction des objets non nécessaires
+		//destruction des objets non nï¿½cessaires
 		destroy();
 
 		//logique du jeu
@@ -135,7 +136,7 @@ void GameMaster::runGame()
 			object->update();
 		}
 
-		//destruction des objets non nécessaires
+		//destruction des objets non nï¿½cessaires
 		destroy();
 
 		//Affichage de la frame
