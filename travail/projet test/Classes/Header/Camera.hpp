@@ -6,19 +6,23 @@
 #include "Map.hpp"
 #include "MoveableObject.hpp"
 #include <vector>
+#include <type_traits>
+#include <list>
 
 using namespace std;
 
 class Camera {
 private:
 	int _x, _y;
+	sf::RenderWindow _window;
 
 public:
 	Camera();
 	Camera(int x, int y);
-	void drawMap(const Map m, sf::RenderWindow& window) const;
-	void drawAll(const vector<DrawableObject>& objectList, sf::RenderWindow& window, const Map m) const;
-	void drawObject(const DrawableObject& object, sf::RenderWindow& window) const;
+	void drawMap(const Map m);
+	void drawAll(const std::list<MoveableObject*> objectList, const Map m);
+	void drawObject(const MoveableObject* object) const;
+	sf::RenderWindow& getWindow();
 };
 
 

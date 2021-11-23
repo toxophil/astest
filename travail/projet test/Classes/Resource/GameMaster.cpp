@@ -89,10 +89,8 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 void GameMaster::runGame()
 {
 	
-	//cam�ra + option fullscreen
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super D�dale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553"/*,sf::Style::Fullscreen*/);
-	//fps max
-	window.setFramerateLimit(30);
+	//camera
+	Camera cam(1920, 1080);
 	//create a player
 	Thief player;
 	addMoveableObject(player);
@@ -107,7 +105,7 @@ void GameMaster::runGame()
 	Clock clk;
 
 	//boucle principale
-	while (window.isOpen())
+	while (cam.getWindow().isOpen())
 	{
 		//mise a jour du delta
 		_deltaTime = clk.restart();
@@ -116,11 +114,11 @@ void GameMaster::runGame()
 		sf::Event event;
 
 		//ev�nement 
-		while (window.pollEvent(event))
+		while (cam.getWindow().pollEvent(event))
 		{
 
 			if (event.type == sf::Event::Closed)
-				window.close();
+				cam.getWindow().close();
 		}
 
 		//boucle de physique
@@ -140,13 +138,12 @@ void GameMaster::runGame()
 		destroy();
 
 		//Affichage de la frame
-		window.clear();
+		cam.getWindow().clear();
 	
 		//Camera.drawAll();
 		for (auto& object : _moveableObjectList) {
-			window.draw(object->getSprite());
+			cam.getWindow().draw(object->getSprite());
 		}
-
-		window.display();
+		cam.getWindow().display();
 	}
 }

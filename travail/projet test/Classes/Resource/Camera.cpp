@@ -39,7 +39,7 @@ void Camera::drawMap(Map m) {
     }
 }
 
-void Camera::drawAll(const list<MoveableObject*> objectList, const Map m) {
+void Camera::drawAll(const std::list<MoveableObject*> objectList, const Map m) {
     while (_window.isOpen()) {
         sf::Event event;
         while (_window.pollEvent(event)) {
