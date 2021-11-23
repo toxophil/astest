@@ -1,4 +1,3 @@
-
 /* Generated from GenMyModel */
 
 #ifndef DEF_GAMEMASTER
@@ -18,7 +17,7 @@ using namespace std;
 
 class GameMaster
 {
-private :
+private:
 	Map _map;
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
@@ -31,7 +30,7 @@ private :
 
 	//private pour design pattern singleton
 	GameMaster();
-		
+
 public:
 	//-------Singleton
 	static GameMaster& getInstance();
@@ -59,8 +58,6 @@ public:
 
 	//supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
 	bool destroyMoveableObject(uint32_t id);
-
 };
-
 
 #endif
