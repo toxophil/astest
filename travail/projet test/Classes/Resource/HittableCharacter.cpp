@@ -18,8 +18,3 @@ Weapon* HittableCharacter::getEquippedWeapon()
 {
     return _equippedWeapon;
 }
-
-bool HittableCharacter::attack() const
-{
-    return false;
-}

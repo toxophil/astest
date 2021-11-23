@@ -6,8 +6,7 @@
 
 Arrow::Arrow()
 {
-	sf::Vector2i direction(200, 0);
-	sf::Vector2f directionF(direction);
+	sf::Vector2f directionF(200, 0);
 
 	nextDirection = directionF;
 	_damage = 1;

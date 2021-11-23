@@ -10,8 +10,8 @@ Player::Player()
 	nextDirection = sf::Vector2f(0, 0);
 	speed = 100;
 
-	//attack speed en secondes
-	_attackSpeed = 1.5f;
+	//modifier de l'attack speed en pourcentage
+	_attackSpeedModifier = 1.0f;
 	_timeSinceLastAttack.restart();
 }
 
@@ -39,7 +39,7 @@ void Player::updatePhysics(const sf::Event& event)
 	nextDirection.y = std::min(nextDirection.y, speed);
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= _attackSpeed) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getAttackSpeed() * _attackSpeedModifier) {
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
 			//attack
 			getEquippedWeapon()->attack(this, sf::Mouse::getPosition());

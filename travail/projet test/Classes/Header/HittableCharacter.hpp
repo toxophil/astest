@@ -21,9 +21,6 @@ public:
 
 	//getter
 	Weapon* getEquippedWeapon();
-	
-	//fonction qui attaque en utilisant l'arme équipée (retourne vrai si l'attaque est réussie)
-	bool attack() const;
 };
 
 

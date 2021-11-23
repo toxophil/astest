@@ -6,8 +6,7 @@
 
 Projectile::Projectile()
 {
-	sf::Vector2i direction(200, 0);
-	sf::Vector2f directionF(direction);
+	sf::Vector2f directionF(200, 0);
 
 	nextDirection = directionF;
 	_damage = 1;
@@ -39,7 +38,7 @@ void Projectile::update()
 
 void Projectile::updatePhysics(const sf::Event& event)
 {
-	//check de collision avec un autre hittable character
+	//check de collision avec un autre hittable character ou un mur
 }
 
 
