@@ -1,24 +1,48 @@
-
-
 #include "..\Header\Wall.hpp"
 
-Wall::Wall() {
-	point1.x = 0;
-	point1.y = 0;
-	point2.x = 0;
-	point2.y = 200;
-}
-Wall::Wall(sf::Vector2f p1, sf::Vector2f p2) {
-	point1.x = p1.x;
-	point1.y = p1.y;
-	point2.x = p2.x;
-	point2.y = p2.y;
+
+Wall::Wall(int64_t x, int64_t y, int64_t w, int64_t h) {
+    _x = x;
+    _y = y;
+    _w = w;
+    _h = h;
 }
 
-sf::Vector2f Wall::getPoint1() {
-	return point1;
+int64_t Wall::getY() const {
+    return _y;
+}
+int64_t Wall::getX() const {
+    return _x;
 }
 
-sf::Vector2f Wall::getPoint2() {
-	return point2;
+int64_t Wall::getW() const {
+    return _w;
 }
+int64_t Wall::getH() const {
+    return _h;
+}
+sf::Vector2i Wall::getHG() const {
+    sf::Vector2i pt;
+    pt.x = _x + _h / 2;
+    pt.y = _y - _w / 2;
+    return pt;
+}
+sf::Vector2i Wall::getHD() const {
+    sf::Vector2i pt;
+    pt.x = _x + _h / 2;
+    pt.y = _y + _w / 2;
+    return pt;
+}
+sf::Vector2i Wall::getBG() const {
+    sf::Vector2i pt;
+    pt.x = _x - _h / 2;
+    pt.y = _y - _w / 2;
+    return pt;
+}
+sf::Vector2i Wall::getBD() const {
+    sf::Vector2i pt;
+    pt.x = _x - _h / 2;
+    pt.y = _y + _w / 2;
+    return pt;
+}
+

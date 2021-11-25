@@ -90,7 +90,9 @@ void GameMaster::runGame()
 {
 	
 	//camera
-	Camera cam(1920, 1080);
+	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
+	window.setFramerateLimit(60);
+	Map map;
 	//create a player
 	Thief player;
 	addMoveableObject(player);
@@ -105,7 +107,7 @@ void GameMaster::runGame()
 	Clock clk;
 
 	//boucle principale
-	while (cam.getWindow().isOpen())
+	while (window.isOpen())
 	{
 		//mise a jour du delta
 		_deltaTime = clk.restart();
@@ -114,11 +116,11 @@ void GameMaster::runGame()
 		sf::Event event;
 
 		//ev�nement 
-		while (cam.getWindow().pollEvent(event))
+		while (window.pollEvent(event))
 		{
 
 			if (event.type == sf::Event::Closed)
-				cam.getWindow().close();
+				window.close();
 		}
 
 		//boucle de physique
@@ -138,12 +140,12 @@ void GameMaster::runGame()
 		destroy();
 
 		//Affichage de la frame
-		cam.getWindow().clear();
+		window.clear();
 	
-		//Camera.drawAll();
+		//cam.drawAll(_moveableObjectList, map);
 		for (auto& object : _moveableObjectList) {
-			cam.getWindow().draw(object->getSprite());
+			window.draw(object->getSprite());
 		}
-		cam.getWindow().display();
+		window.display();
 	}
 }
