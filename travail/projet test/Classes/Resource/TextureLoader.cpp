@@ -10,7 +10,8 @@ TextureLoader::TextureLoader()
 
 	//listes des textures à charger et leurs locations
 	loadLocation[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
-	loadLocation[TextureNames::PlayerThief] = "Ressources/playerTempo.png";
+	loadLocation[TextureNames::PlayerThief] = "Ressources/player.jpg";
+	loadLocation[TextureNames::Arrow	] = "Ressources/Arrow.jpg";
 
 
 

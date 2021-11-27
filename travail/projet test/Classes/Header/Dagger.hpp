@@ -8,7 +8,7 @@
 
 class Dagger : public Weapon
 {
-	
+
 };
 
 

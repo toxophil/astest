@@ -4,6 +4,7 @@
 #include "..\Header\GameMaster.hpp"
 #include <type_traits>
 #include "..\Header\Skorpion.hpp"
+#include "../Header/Dagger.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -99,6 +100,7 @@ void GameMaster::runGame()
 
 	//create his bow
 	Skorpion thiefBow;
+	Dagger thiefDagger;
 	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
