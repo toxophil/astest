@@ -8,7 +8,8 @@
 
 class DaggerOfSpeed : public Dagger
 {
-	
+public :
+	DaggerOfSpeed();
 };
 
 

@@ -4,7 +4,7 @@
 #include "..\Header\GameMaster.hpp"
 #include <type_traits>
 #include "..\Header\Skorpion.hpp"
-#include "../Header/Dagger.hpp"
+#include "..\Header\DaggerOfSpeed.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -100,10 +100,10 @@ void GameMaster::runGame()
 
 	//create his bow
 	Skorpion thiefBow;
-	Dagger thiefDagger;
+	DaggerOfSpeed thiefDagger;
 	
 	//equip his bow
-	player.setEquippedWeapon(&thiefBow);
+	player.setEquippedWeapon(&thiefDagger);
 
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
