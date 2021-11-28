@@ -14,9 +14,9 @@ Arrow::Arrow()
 
 }
 
-Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition) {
+Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition,float vitesse) {
 	_damage = damage;
-	speed = 200;
+	speed = vitesse;
 	nextDirection = sf::Vector2f(launchDirection);
 	_sprite.setPosition(startPosition);
 
