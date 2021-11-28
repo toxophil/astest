@@ -103,7 +103,7 @@ void GameMaster::runGame()
 	DaggerOfSpeed thiefDagger;
 	
 	//equip his bow
-	player.setEquippedWeapon(&thiefDagger);
+	player.setEquippedWeapon(&thiefBow);
 
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
