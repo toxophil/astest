@@ -1,7 +1,0 @@
-*.o
-*.vs
-*\x64\*
-*.log
-*.ilk
-*.recipe
-travail/projet test/x64*
