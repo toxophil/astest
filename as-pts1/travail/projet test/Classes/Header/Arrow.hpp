@@ -12,7 +12,7 @@ class Arrow : public Projectile
 public:
 	Arrow();
 
-	Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition, float vitesse,float DureeVie);
+	Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition, float vitesse);
 };
 
 
