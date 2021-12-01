@@ -8,10 +8,10 @@ Player::Player()
 {
 	_sprite.setPosition(100, 100);
 	nextDirection = sf::Vector2f(0, 0);
-	speed = 100;
+	speed = 300;
 
 	//modifier de l'attack speed en pourcentage
-	_attackSpeedModifier = 1.0f;
+	_attackSpeedModifier = 0.0f;
 	_timeSinceLastAttack.restart();
 }
 

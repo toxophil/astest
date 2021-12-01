@@ -14,11 +14,13 @@ Arrow::Arrow()
 
 }
 
-Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition) {
+Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition,float vitesse,float DureeVie) {
 	_damage = damage;
-	speed = 200;
+	speed = vitesse;
+	maxLifetime = DureeVie;
 	nextDirection = sf::Vector2f(launchDirection);
 	_sprite.setPosition(startPosition);
+	
 
 	//calcul de la longeur du vecteur
 	float vectorLength = std::sqrtf(std::powf((nextDirection.x), 2) + std::powf((nextDirection.y), 2));

@@ -6,6 +6,8 @@
 Weapon::Weapon()
 {
     _attackSpeed = 1.0f;
+    _attackDuration = 1.0f;
+    _projectileVelocity = 1.0f;
 }
 
 float Weapon::getAttackSpeed() const
