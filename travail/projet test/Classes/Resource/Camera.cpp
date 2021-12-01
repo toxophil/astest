@@ -9,19 +9,23 @@
 Camera::Camera(){
     _x = 0;
     _y = 0;
-    sf::RenderWindow _window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
-    _window.setFramerateLimit(60);
+    view.setSize(1920.f, 1080.f);
 }
 
 Camera::Camera(int x, int y) {
     _x = x;
     _y = y;
-    sf::RenderWindow _window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
-    _window.setFramerateLimit(60);
+    view.setSize(1920.f, 1080.f);
 }
 
-sf::RenderWindow& Camera::getWindow() {
-    return _window;
+sf::View Camera::getView() {
+    return view;
+}
+
+void Camera::move(Player p) {
+    //Bouge le centre de la caméra pour qu'il soit au centre du personnage.    + p.getSprite().getScale().x   + p.getSprite().getScale().y
+    //Pour le calcul, on récupère la position du sprite du joueur, et on ajoute le décalage du au fait que la coordonnée du sprite est son point en haut à gauche
+    view.setCenter(p.getSprite().getPosition().x + p.getSprite().getLocalBounds().width/2, p.getSprite().getPosition().y + p.getSprite().getLocalBounds().height / 2);
 }
 
 

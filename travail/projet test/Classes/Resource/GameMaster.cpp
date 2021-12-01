@@ -93,6 +93,7 @@ void GameMaster::runGame()
 	//camera
 	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
 	window.setFramerateLimit(60);
+	Camera cam;
 	Map map;
 	//create a player
 	Thief player;
@@ -148,6 +149,8 @@ void GameMaster::runGame()
 		for (auto& object : _moveableObjectList) {
 			window.draw(object->getSprite());
 		}
+		cam.move(player);
+		window.setView(cam.getView());
 		window.display();
 	}
 }
