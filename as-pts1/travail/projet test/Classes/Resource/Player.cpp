@@ -33,10 +33,11 @@ void Player::updatePhysics(const sf::Event& event)
 		//déplacement vers le bas
 		nextDirection += sf::Vector2f(0, speed);
 	}
-	/*if (event.type == sf::Event::MouseWheelMoved)
+	if (event.type == sf::Event::MouseWheelMoved)
 	{
-	si scroll ... a finir
-	}*/
+	if()
+		player.setEquippedWeapon(&thiefDagger);
+	}
 
 	//normalisation du vecteur de longeur speed
 	nextDirection.x = std::min(nextDirection.x, speed);
