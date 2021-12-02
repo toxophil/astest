@@ -13,8 +13,6 @@ class Weapon : public Item
 {
 protected:
 	float _attackSpeed;
-	float _attackDuration;
-	float _projectileVelocity;
 public:
 	Weapon();
 
