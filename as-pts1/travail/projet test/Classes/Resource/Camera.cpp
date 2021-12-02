@@ -5,6 +5,9 @@
 #include "..\Header\Map.hpp"
 #include <SFML/Graphics.hpp>
 
+#include "..\Header\Room.hpp"
+#include "..\Header\Connection.hpp"
+#include <vector>
 
 Camera::Camera(){
     _x = 0;
@@ -26,17 +29,21 @@ sf::RenderWindow& Camera::getWindow() {
 
 
 void Camera::drawMap(Map m) {
-    //dessin des murs :
-    for (int i = 0; i < m.getWallList().size(); i++) {
-        sf::Vertex line[] = {
-            //créé un rectangle avec les coordonnées stockées dans WallList
-            sf::Vertex(sf::Vector2f(m.getWallList().at(i).getHG().x, m.getWallList().at(i).getHG().y)),
-            sf::Vertex(sf::Vector2f(m.getWallList().at(i).getHD().x, m.getWallList().at(i).getHD().y)),
-            sf::Vertex(sf::Vector2f(m.getWallList().at(i).getBD().x, m.getWallList().at(i).getBD().y)),
-            sf::Vertex(sf::Vector2f(m.getWallList().at(i).getBG().x, m.getWallList().at(i).getBG().y))
-        };
-        _window.draw(line, 2, sf::Lines);
+    vector<Connection> lesConnections = m.getConnections();
+    vector<Room> lesRooms = m.getRoomList();
+
+   /* for (uint32_t i = 0; i < lesConnections.size(); i++) {
+        vector<sf::Sprite> lesTiles = lesConnections[i].getTiles();
+        for (uint32_t r = 0; r < lesTiles.size(); r++) {
+            _window.draw(lesTiles[r]);
+        }
     }
+    for (uint32_t i = 0; i < lesRooms.size(); i++) {
+        vector<sf::Sprite> lesTiles = lesRooms[i].getTiles();
+        for (uint32_t r = 0; r < lesTiles.size(); r++) {
+            _window.draw(lesTiles[r]);
+        }
+    }*/
 }
 
 void Camera::drawAll(const std::list<MoveableObject*> objectList, const Map m) {

@@ -13,8 +13,22 @@ public:
 		PlayerKnight,
 		PlayerThief,
 		Arrow,
-		defaultTexture
+		defaultTexture,
 		/* mur*/
+
+		WallRL,
+		RightTop,
+		LeftTop,
+		WallLeft,
+		WallRight,
+
+		Floor1,
+		Floor2,
+		Floor3,
+		Floor4,
+		Floor5,
+		Floor6,
+		Floor7
 	};
 
 	TextureLoader();

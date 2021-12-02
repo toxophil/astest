@@ -5,6 +5,7 @@
 #include <type_traits>
 #include "..\Header\Skorpion.hpp"
 #include "..\Header\DaggerOfSpeed.hpp"
+#include "..\Header\Generator.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -89,11 +90,15 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 
 void GameMaster::runGame()
 {
-	
+	// Le générateur
+	//Generator leGen = Generator();
+	//Map laMap = leGen.makeMap(5);
+
 	//camera
 	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
 	window.setFramerateLimit(60);
-	Map map;
+
+	Camera laCam;
 	//create a player
 	Thief player;
 	addMoveableObject(player);
@@ -143,7 +148,8 @@ void GameMaster::runGame()
 
 		//Affichage de la frame
 		window.clear();
-	
+		
+
 		//cam.drawAll(_moveableObjectList, map);
 		for (auto& object : _moveableObjectList) {
 			window.draw(object->getSprite());

@@ -3,10 +3,13 @@
 #include "Classes/Header/Player.hpp"
 #include <SFML/Audio.hpp>
 
+using namespace sf;
+
 int main()
 {
+    srand(time(NULL));
     /* start music)*/
-    sf::Music music;
+    Music music;
     if (!music.openFromFile("Ressources/ana.ogg"))
         return -1; // error
      

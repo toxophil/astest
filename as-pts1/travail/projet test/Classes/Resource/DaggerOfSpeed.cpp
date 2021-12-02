@@ -6,6 +6,7 @@
 
 DaggerOfSpeed::DaggerOfSpeed()
 {
-	_attackSpeed = 1;
+	/* speed of object 100 is slow- 300 is fast*/
+	_attackSpeed = 10000.0f;
 
 }
