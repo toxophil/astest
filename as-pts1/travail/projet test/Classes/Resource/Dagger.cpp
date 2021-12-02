@@ -7,6 +7,7 @@
 
 bool Dagger::attack(HittableCharacter* lanceur, const sf::Vector2i& attackPoint)
 {
+
     //création du projectile et ajout de ce projectile dans la liste des objets du GameMaster
     sf::Vector2i lanceurPos = sf::Vector2i(lanceur->getSprite().getPosition());
 
