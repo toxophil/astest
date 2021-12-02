@@ -14,7 +14,7 @@ Arrow::Arrow()
 
 }
 
-Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition,float vitesse) {
+Arrow::Arrow(const sf::Vector2i& launchDirection, double damage, const sf::Vector2f& startPosition,float vitesse,float DureeVie) {
 	_damage = damage;
 	speed = vitesse;
 	nextDirection = sf::Vector2f(launchDirection);

@@ -214,6 +214,33 @@
     <ClInclude Include="Classes\Header\WandOfDestruction.hpp" />
     <ClInclude Include="Classes\Header\Weapon.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="openal32.dll" />
+    <None Include="projet test.cbp" />
+    <None Include="Ressources\ana.ogg" />
+    <None Include="Ressources\orchestral.ogg" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Arrow.jpg" />
+    <Image Include="Ressources\defaultTexture.png" />
+    <Image Include="Ressources\FireSword.jpg" />
+    <Image Include="Ressources\player.jpg" />
+    <Image Include="Ressources\playerTempo.png" />
+    <Image Include="Ressources\sword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\ana.mp3" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

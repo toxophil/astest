@@ -285,4 +285,43 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="projet test.cbp" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
+    <None Include="openal32.dll" />
+    <None Include="Ressources\ana.ogg" />
+    <None Include="Ressources\orchestral.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\sword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\Arrow.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\defaultTexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\FireSword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\player.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\playerTempo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\ana.mp3" />
+  </ItemGroup>
 </Project>

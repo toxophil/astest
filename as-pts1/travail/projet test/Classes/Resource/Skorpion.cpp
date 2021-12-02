@@ -5,5 +5,7 @@
 
 Skorpion::Skorpion()
 {
-	_attackSpeed = 0.01f;
+	_attackSpeed = 10.0f;
+	_attackDuration = 50.0f;
+
 }
