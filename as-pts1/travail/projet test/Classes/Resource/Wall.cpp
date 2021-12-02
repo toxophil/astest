@@ -1,7 +1,7 @@
 #include "..\Header\Wall.hpp"
 
 
-Wall::Wall(int64_t x, int64_t y, int64_t w, int64_t h) {
+Wall::Wall(int64_t x, int64_t y, uint32_t w, uint32_t h) {
     _x = x;
     _y = y;
     _w = w;
@@ -15,10 +15,10 @@ int64_t Wall::getX() const {
     return _x;
 }
 
-int64_t Wall::getW() const {
+uint32_t Wall::getW() const {
     return _w;
 }
-int64_t Wall::getH() const {
+uint32_t Wall::getH() const {
     return _h;
 }
 sf::Vector2i Wall::getHG() const {

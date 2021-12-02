@@ -68,6 +68,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <AllProjectBMIsArePublic>false</AllProjectBMIsArePublic>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -128,6 +131,7 @@
     <ClCompile Include="Classes\Resource\AttributeBar.cpp" />
     <ClCompile Include="Classes\Resource\Bow.cpp" />
     <ClCompile Include="Classes\Resource\Camera.cpp" />
+    <ClCompile Include="Classes\Resource\Connection.cpp" />
     <ClCompile Include="Classes\Resource\Dagger.cpp" />
     <ClCompile Include="Classes\Resource\DaggerOfSpeed.cpp" />
     <ClCompile Include="Classes\Resource\DrawableObject.cpp" />
@@ -137,6 +141,7 @@
     <ClCompile Include="Classes\Resource\Flooring.cpp" />
     <ClCompile Include="Classes\Resource\FriendlyCharacter.cpp" />
     <ClCompile Include="Classes\Resource\GameMaster.cpp" />
+    <ClCompile Include="Classes\Resource\Generator.cpp" />
     <ClCompile Include="Classes\Resource\Gold.cpp" />
     <ClCompile Include="Classes\Resource\GUIElement.cpp" />
     <ClCompile Include="Classes\Resource\HittableCharacter.cpp" />
@@ -166,6 +171,7 @@
     <ClCompile Include="Classes\Resource\Wand.cpp" />
     <ClCompile Include="Classes\Resource\WandOfDestruction.cpp" />
     <ClCompile Include="Classes\Resource\Weapon.cpp" />
+    <ClCompile Include="Classes\Resource\ZoneRoom.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +181,7 @@
     <ClInclude Include="Classes\Header\AttributeBar.hpp" />
     <ClInclude Include="Classes\Header\Bow.hpp" />
     <ClInclude Include="Classes\Header\Camera.hpp" />
+    <ClInclude Include="Classes\Header\Connection.hpp" />
     <ClInclude Include="Classes\Header\Dagger.hpp" />
     <ClInclude Include="Classes\Header\DaggerOfSpeed.hpp" />
     <ClInclude Include="Classes\Header\DrawableObject.hpp" />
@@ -184,6 +191,7 @@
     <ClInclude Include="Classes\Header\Flooring.hpp" />
     <ClInclude Include="Classes\Header\FriendlyCharacter.hpp" />
     <ClInclude Include="Classes\Header\GameMaster.hpp" />
+    <ClInclude Include="Classes\Header\Generator.hpp" />
     <ClInclude Include="Classes\Header\Gold.hpp" />
     <ClInclude Include="Classes\Header\GUIElement.hpp" />
     <ClInclude Include="Classes\Header\HittableCharacter.hpp" />
@@ -213,8 +221,20 @@
     <ClInclude Include="Classes\Header\Wand.hpp" />
     <ClInclude Include="Classes\Header\WandOfDestruction.hpp" />
     <ClInclude Include="Classes\Header\Weapon.hpp" />
+    <ClInclude Include="Classes\Header\ZoneRoom.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\openal32.dll" />
+    <None Include="bin\Debug\sfml-audio-2.dll" />
+    <None Include="bin\Debug\sfml-audio-d-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-d-2.dll" />
+    <None Include="bin\Debug\sfml-network-2.dll" />
+    <None Include="bin\Debug\sfml-network-d-2.dll" />
+    <None Include="bin\Debug\sfml-system-2.dll" />
+    <None Include="bin\Debug\sfml-system-d-2.dll" />
+    <None Include="bin\Debug\sfml-window-2.dll" />
+    <None Include="bin\Debug\sfml-window-d-2.dll" />
     <None Include="openal32.dll" />
     <None Include="projet test.cbp" />
     <None Include="Ressources\ana.ogg" />
@@ -231,15 +251,15 @@
     <None Include="sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Media Include="Ressources\ana.mp3" />
+  </ItemGroup>
+  <ItemGroup>
     <Image Include="Ressources\Arrow.jpg" />
     <Image Include="Ressources\defaultTexture.png" />
     <Image Include="Ressources\FireSword.jpg" />
     <Image Include="Ressources\player.jpg" />
     <Image Include="Ressources\playerTempo.png" />
     <Image Include="Ressources\sword.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="Ressources\ana.mp3" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
