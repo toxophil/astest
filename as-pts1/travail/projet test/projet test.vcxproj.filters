@@ -315,195 +315,41 @@
     <None Include="bin\Debug\sfml-audio-d-2.dll" />
     <None Include="bin\Debug\sfml-graphics-2.dll" />
     <None Include="bin\Debug\sfml-graphics-d-2.dll" />
+    <None Include="Ressources\ana.ogg" />
+    <None Include="Ressources\orchestral.ogg" />
+    <None Include="openal32.dll" />
+    <None Include="projet test.cbp" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Ressources\img\map\hd\floor4.png">
+    <Media Include="Ressources\ana.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Arrow.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Ressources\img\map\hd\floor5.png">
+    <Image Include="Ressources\defaultTexture.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Ressources\img\map\hd\floor6.png">
+    <Image Include="Ressources\FireSword.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Ressources\img\map\hd\floor7.png">
+    <Image Include="Ressources\player.jpg">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Ressources\img\map\hd\mur1.png">
+    <Image Include="Ressources\playerTempo.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Ressources\img\map\hd\mur2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur4.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur5.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur6.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur7.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur8.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur9.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\mur10.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\pillier.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\porte1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\porte2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\porte3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\porte4.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\porte5.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile000.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile004.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile005.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile006.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile007.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile008.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile013.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile014.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile015.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile016.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile017.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile022.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile023.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile024.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile025.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile026.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile028.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile031.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile032.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile033.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile034.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile035.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile036.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile037.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile038.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile046.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile048.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile049.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile050.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile051.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile052.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile053.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile054.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile056.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile057.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile058.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile059.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile060.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile061.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\tile062.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\floor1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\floor2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\map\hd\floor3.png">
+    <Image Include="Ressources\sword.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -62,7 +62,7 @@ void Room::modifyMatrice(int32_t l, int32_t c, uint32_t val) {
     _matrice[l][c] = val;
 }
 
-void Connection::applyTiles() {
+void Room::applyTiles() {
     sf::Sprite sprite;
 
     _tiles = vector<sf::Sprite>();
@@ -124,24 +124,39 @@ void Connection::applyTiles() {
                         }
                     }
                 }
-                else if (_matrice[i][r] != 0) { // Millieu
+                else if (_matrice[i][r] != 0) { // Millieu et pas le sol
 
                     _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
                     _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                     _tiles.push_back(sprite);
                     indice++;
 
-                    if (r == 0) { // Gauche
-                        _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallLeft));
-                        _tiles[indice].setPosition(_x * 32, _y * 32 + (int64_t)i * 32);
-                        _tiles.push_back(sprite);
-                        indice++;
 
+                    if (r == 0) { // Gauche
+                        if (i < getH() - 1 && _matrice[i + 1][r] == 0) { // Pas le dernier et l'autre sol
+                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::PillarLeft));
+                            _tiles[indice].setPosition(_x * 32, _y * 32 + (int64_t)i * 32);
+                            _tiles.push_back(sprite);
+                            indice++;
+                        } else {
+                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallLeft));
+                            _tiles[indice].setPosition(_x * 32, _y * 32 + (int64_t)i * 32);
+                            _tiles.push_back(sprite);
+                            indice++;
+                        }
                     }
                     else if (r == getW() - 1) {
-                        _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
-                        _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
-                        _tiles.push_back(sprite);
+                        if (i < getH() - 1 && _matrice[i + 1][r] == 0) { // Pas le dernier et l'autre sol
+                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::PillarRight));
+                            _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
+                            _tiles.push_back(sprite);
+                            indice++;
+                        } else {
+                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
+                            _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
+                            _tiles.push_back(sprite);
+                            indice++;
+                        }
                     }
                 }
             }
@@ -149,6 +164,82 @@ void Connection::applyTiles() {
     }
 }
 
-vector<sf::Sprite> Connection::getTiles() const {
+vector<sf::Sprite> Room::getTiles() const {
     return _tiles;
+}
+
+void Room::applyWalls() {
+    _walls = vector<Wall>();
+    // Haut
+    uint32_t wallSize = 0;
+    uint32_t lastMade = 0;
+    for (uint32_t i=0;i<getW();i++) {
+        uint32_t matVal = _matrice[0][i];
+        if (matVal == 1) {
+            wallSize++;
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32, wallSize * 32, 32));
+            lastMade = wallSize;
+            wallSize=0;
+        }
+    }
+    if (wallSize != 0) {
+        _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32, wallSize * 32, 32));
+    }
+    // Bas
+    wallSize = 0;
+    lastMade = 0;
+    for (uint32_t i = 0; i < getW(); i++) {
+        uint32_t matVal = _matrice[getH()-1][i];
+        if (matVal == 1) {
+            wallSize++;
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32 + getH() * 32, wallSize * 32, 32));
+            lastMade = wallSize;
+            wallSize = 0;
+        }
+    }
+    if (wallSize != 0) {
+        _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32 + getH() * 32, wallSize * 32, 32));
+    }
+    // Gauche
+    wallSize = 0;
+    lastMade = 0;
+    for (uint32_t i = 0; i < getH(); i++) {
+        uint32_t matVal = _matrice[i][0];
+        if (matVal == 1) {
+            wallSize++;
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 , _y * 32 + lastMade * 32,  32, wallSize * 32));
+            lastMade = wallSize;
+            wallSize = 0;
+        }
+    }
+    if (wallSize != 0) {
+        _walls.push_back(Wall(_x * 32, _y * 32 + lastMade * 32, 32, wallSize * 32));
+    }
+
+    // Droite
+    wallSize = 0;
+    lastMade = 0;
+    for (uint32_t i = 0; i < getH(); i++) {
+        uint32_t matVal = _matrice[i][getW()-1];
+        if (matVal == 1) {
+            wallSize++;
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 + getW() * 32, _y * 32 + lastMade * 32,  32, wallSize * 32));
+            lastMade = wallSize;
+            wallSize = 0;
+        }
+    }
+    if (wallSize != 0) {
+        _walls.push_back(Wall(_x * 32 + getW() * 32, _y * 32 + lastMade * 32, 32, wallSize * 32));
+    }
+}
+vector<Wall> Room::getWalls() const {
+    return _walls;
 }

@@ -22,6 +22,9 @@ public:
 		WallLeft,
 		WallRight,
 
+		PillarLeft,
+		PillarRight,
+
 		Floor1,
 		Floor2,
 		Floor3,

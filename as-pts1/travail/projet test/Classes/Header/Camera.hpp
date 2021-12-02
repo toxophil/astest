@@ -19,10 +19,9 @@ private:
 public:
 	Camera();
 	Camera(int x, int y);
-	void drawMap(const Map m);
-	void drawAll(const std::list<MoveableObject*> objectList, const Map m);
-	void drawObject(const MoveableObject* object) const;
-	sf::RenderWindow& getWindow();
+	void drawMap(sf::RenderWindow&, const Map m);
+	void drawAll(sf::RenderWindow&, const std::list<MoveableObject*> objectList, const Map m);
+	void drawObject(sf::RenderWindow&, const MoveableObject* object) const;
 };
 
 

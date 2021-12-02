@@ -535,3 +535,39 @@ void ZoneRoom::makeIntersection() {
         }
     }
 }
+
+void ZoneRoom::makeTiles() {
+    for (uint32_t i = 0; i <_lesConnections.size(); i++) {
+        _lesConnections[i].applyTiles();
+    }
+    for (uint32_t i = 0; i < _rooms.size(); i++) {
+        _rooms[i].applyTiles();
+    }
+}
+
+void ZoneRoom::makeWalls() {
+    _walls = vector<Wall>();
+    for (uint32_t i = 0; i < _lesConnections.size(); i++) {
+        _lesConnections[i].applyWalls();
+    }
+    for (uint32_t i = 0; i < _rooms.size(); i++) {
+       _rooms[i].applyWalls();
+   }
+ 
+   for (uint32_t i = 0; i < _lesConnections.size(); i++) {
+        vector<Wall> lesW = _lesConnections[i].getWalls();
+        for (uint32_t k = 0; k < lesW.size(); k++) {
+            _walls.push_back(lesW[k]);
+        }
+    }
+    for (uint32_t i = 0; i < _rooms.size(); i++) {
+        vector<Wall> lesW = _rooms[i].getWalls();
+        for (uint32_t k = 0; k < lesW.size(); k++) {
+            _walls.push_back(lesW[k]);
+        }
+    }
+}
+
+vector<Wall> ZoneRoom::getWalls() {
+    return _walls;
+}

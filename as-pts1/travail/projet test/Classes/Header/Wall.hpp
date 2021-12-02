@@ -1,5 +1,5 @@
-#ifndef CORRIDOR_H_INCLUDED
-#define CORRIDOR_H_INCLUDED
+#ifndef WALL_H_INCLUDED
+#define WALL_H_INCLUDED
 
 
 #include <iostream>
@@ -10,15 +10,15 @@ class Wall {
 private:
     int64_t _x;
     int64_t _y;
-    int64_t _w;
-    int64_t _h;
+    uint32_t _w;
+    uint32_t _h;
 public:
-    Wall(int64_t, int64_t, int64_t, int64_t);
+    Wall(int64_t, int64_t, uint32_t, uint32_t);
 
     int64_t getY() const;
     int64_t getX() const;
-    int64_t getW() const;
-    int64_t getH() const;
+    uint32_t getW() const;
+    uint32_t getH() const;
     //retourne l'angle haut gauche (HG), bas droit (BD) ... d'un mur
     sf::Vector2i getHG() const;
     sf::Vector2i getHD() const;
@@ -27,4 +27,4 @@ public:
 };
 
 
-#endif // CORRIDOR_H_INCLUDED
+#endif // WALL_H_INCLUDED

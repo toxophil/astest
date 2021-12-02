@@ -1,11 +1,6 @@
 #include "..\Header\Connection.hpp"
 #include "..\Header\Room.hpp"
-//#include "..\Header\GameMaster.hpp"
-
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-using namespace sf;
+#include "..\Header\GameMaster.hpp"
 
 Connection::Connection(int64_t x, int64_t y, Room* roomA, Room* roomB, bool estVertical, vector<vector<uint32_t>> matrice) {
     _x = x;
@@ -40,7 +35,7 @@ void Connection::modifyMatrice(int32_t l, int32_t c, uint32_t val) {
 }
 
 void Connection::applyTiles() {
-    Sprite sprite;
+    sf::Sprite sprite;
 
     uint32_t h = _matrice.size();
     uint32_t w = _matrice[0].size();
@@ -52,27 +47,27 @@ void Connection::applyTiles() {
             _tiles.push_back(sprite);
 
             if (_matrice[i][r] == 0) {
-                //_tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
+                _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
                 _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
                 _tiles.push_back(sprite);
                 indice++;
             }
             else {
-                if (!estVertical) {
+                if (!_estVertical) {
 
-                    //_tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRL));
+                    _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRL));
                     _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
                     _tiles.push_back(sprite);
                     indice++;
                 }
                 else if (r == 0) {
-                    //_tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
+                    _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
                     _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
                     _tiles.push_back(sprite);
                     indice++;
                 }
                 else if (r == 2) {
-                    //_tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallLeft));
+                    _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallLeft));
                     _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
                     _tiles.push_back(sprite);
                     indice++;
@@ -84,4 +79,21 @@ void Connection::applyTiles() {
 
 vector<Sprite> Connection::getTiles() const {
     return _tiles;
+}
+
+
+void Connection::applyWalls() {
+    _walls = vector<Wall>();
+
+    if (_estVertical) {
+        _walls.push_back(Wall(_x * 32,_y * 32,32,getH()*32));
+        _walls.push_back(Wall(_x * 32 * 3, _y * 32,32, getH()*32));
+    }
+    else {
+        _walls.push_back(Wall(_x * 32, _y * 32 * 3, getW()*32, 32 ));
+        _walls.push_back(Wall( _x * 32, _y * 32, getW()*32, 32 ));
+    }
+}
+vector<Wall> Connection::getWalls() const {
+    return _walls;
 }

@@ -20,6 +20,9 @@ TextureLoader::TextureLoader()
 	loadLocation[TextureNames::WallLeft] = "Ressources/img/map/hd/mur5.png";
 	loadLocation[TextureNames::WallRight] = "Ressources/img/map/hd/mur4.png";
 
+	loadLocation[TextureNames::PillarLeft] = "Ressources/img/map/hd/tile038.png";
+	loadLocation[TextureNames::PillarRight] = "Ressources/img/map/hd/tile036.png";
+
 	loadLocation[TextureNames::Floor1] = "Ressources/img/map/hd/floor1.png";
 	loadLocation[TextureNames::Floor2] = "Ressources/img/map/hd/floor2.png";
 	loadLocation[TextureNames::Floor3] = "Ressources/img/map/hd/floor3.png";

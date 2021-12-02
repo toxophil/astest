@@ -9,6 +9,7 @@ using namespace std;
 
 #include <vector>
 #include "RoomObject.hpp"
+#include "Wall.hpp"
 
 class Connection;
 
@@ -23,11 +24,11 @@ private:
 
     vector<RoomObject> _contained;
     vector<Connection*> _lesConnections;
+    vector<Wall> _walls;
 public:
     Room();
     Room(uint32_t, vector<vector<uint32_t>>);
     vector<RoomObject> getContained() const;
-    vector<vector<uint32_t>> getMatrice() const;
 
     int64_t getX() const;
     int64_t getY() const;
@@ -43,10 +44,14 @@ public:
     uint32_t getNbConnection() const;
     void addConnection(Connection&);
 
+    vector<vector<uint32_t>> getMatrice() const;
     void modifyMatrice(int32_t, int32_t, uint32_t);
+
     void applyTiles();
     vector<sf::Sprite> getTiles() const;
 
+    void applyWalls();
+    vector<Wall> getWalls() const;
 };
 
 #endif

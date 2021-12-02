@@ -14,6 +14,7 @@ private:
     int64_t _h;
     vector<Room> _rooms;
     vector<Connection> _lesConnections;
+    vector<Wall> _walls;
 public:
     ZoneRoom(Room&);
     vector<Room> getRooms() const;
@@ -41,6 +42,10 @@ public:
     void addConnection(Connection&);
     vector<Connection> getConnections() const;
     void makeIntersection();
+    void makeTiles();
+    void makeWalls();
+
+    vector<Wall> getWalls();
 };
 
 #endif // ZONEROOM_H_INCLUDED

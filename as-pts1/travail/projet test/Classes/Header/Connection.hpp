@@ -1,6 +1,7 @@
 #ifndef CONNECTION_H_INCLUDED
 #define CONNECTION_H_INCLUDED
 
+#include "Wall.hpp"
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,6 @@ using namespace std;
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
 using namespace sf;
 
 class Room;
@@ -19,8 +19,10 @@ private:
 
     int64_t _x;
     int64_t _y;
+
     vector<vector<uint32_t>> _matrice;
     vector<sf::Sprite> _tiles;
+    vector<Wall> _walls;
 
     bool _estVertical;
 public:
@@ -37,6 +39,9 @@ public:
 
     void applyTiles();
     vector<sf::Sprite> getTiles() const;
+
+    void applyWalls();
+    vector<Wall> getWalls() const;
 };
 
 #endif // CONNECTION_H_INCLUDED

@@ -91,8 +91,8 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 void GameMaster::runGame()
 {
 	// Le générateur
-	//Generator leGen = Generator();
-	//Map laMap = leGen.makeMap(5);
+	Generator leGen = Generator();
+	Map laMap = leGen.makeMap(5);
 
 	//camera
 	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
@@ -150,7 +150,7 @@ void GameMaster::runGame()
 		window.clear();
 		
 
-		//cam.drawAll(_moveableObjectList, map);
+		laCam.drawMap(window, laMap);
 		for (auto& object : _moveableObjectList) {
 			window.draw(object->getSprite());
 		}
