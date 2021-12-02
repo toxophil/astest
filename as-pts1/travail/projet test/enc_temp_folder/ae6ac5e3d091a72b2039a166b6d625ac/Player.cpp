@@ -43,7 +43,7 @@ void Player::updatePhysics(const sf::Event& event)
 	nextDirection.y = std::min(nextDirection.y, speed);
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown() * (_attackSpeedModifier/100) ) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown() * _attackSpeedModifier/100) {
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
 			//attack
 			getEquippedWeapon()->attack(this, sf::Mouse::getPosition());
