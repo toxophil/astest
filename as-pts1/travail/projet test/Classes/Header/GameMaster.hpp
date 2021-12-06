@@ -18,6 +18,7 @@ using namespace std;
 class GameMaster
 {
 private:
+
 	Map _map;
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
@@ -46,6 +47,8 @@ public:
 	TextureLoader& getTextureLoader();
 
 	const Time& getTimeSinceLastUpdate() const;
+
+	//sf::RenderWindow& getWindow() const;
 	//---------------------------------
 
 	//fonction principale du jeu

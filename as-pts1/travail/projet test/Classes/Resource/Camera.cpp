@@ -20,7 +20,6 @@ Camera::Camera(int x, int y) {
 }
 
 void Camera::drawMap(sf::RenderWindow& window, Map m) {
-    cout << "A" << endl;
     vector<Connection> lesConnections = m.getConnections();
     vector<Room> lesRooms = m.getRoomList();
 

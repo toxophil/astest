@@ -15,7 +15,7 @@ Player::Player()
 	_timeSinceLastAttack.restart();
 }
 
-void Player::updatePhysics(const sf::Event& event)
+void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)) {
 		//déplacement vers la gauche
@@ -46,8 +46,9 @@ void Player::updatePhysics(const sf::Event& event)
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
 	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown()  * (_attackSpeedModifier / 100)) {
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-			//attack
-			getEquippedWeapon()->attack(this, sf::Mouse::getPosition());
+
+			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+			getEquippedWeapon()->attack(this, mousePosition);
 
 			//reset du temps depuis la derniere attaque
 			_timeSinceLastAttack.restart();

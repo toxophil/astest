@@ -26,7 +26,7 @@ float Weapon::getProjectileCooldown() const
     return _projectileCooldown;
 }
 
-bool Weapon::attack(HittableCharacter* lanceur, const sf::Vector2i& attackPoint)
+bool Weapon::attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint)
 {
     return false;
 }

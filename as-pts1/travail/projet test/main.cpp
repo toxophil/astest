@@ -13,10 +13,11 @@ int main()
     if (!music.openFromFile("Ressources/ana.ogg"))
         return -1; // error
      
-     music.setPitch(1);           // increase the pitch
-     music.setVolume(100);         // reduce the volume
-     music.setLoop(true);         // make it loop
-     music.play();
+    music.setPitch(1);           // increase the pitch
+    music.setVolume(0);         // reduce the volume
+    music.setLoop(true);         // make it loop
+    music.play();
+
 
     GameMaster& gm = GameMaster::getInstance();
 

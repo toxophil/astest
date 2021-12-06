@@ -29,7 +29,6 @@ void GameMaster::destroy()
 
 GameMaster::GameMaster()
 {
-	
 }
 
 //retourne la map actuelle
@@ -53,7 +52,6 @@ const Time& GameMaster::getTimeSinceLastUpdate() const
 {
 	return _deltaTime;
 }
-
 
 //ajoute un �l�ment d�placable � la liste des �l�ments d�placables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
@@ -94,7 +92,6 @@ void GameMaster::runGame()
 	Generator leGen = Generator();
 	Map laMap = leGen.makeMap(5);
 
-	//camera
 	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
 	window.setFramerateLimit(60);
 
@@ -132,7 +129,7 @@ void GameMaster::runGame()
 
 		//boucle de physique
 		for (auto& object : _moveableObjectList) {
-			object->updatePhysics(event);
+			object->updatePhysics(window,event);
 		}
 
 		//destruction des objets non n�cessaires

@@ -23,7 +23,7 @@ public:
 	virtual void update();
 
 	//fonction de mise à jour de la physique de l'objet (déplacerment, tir, etc...)
-	virtual void updatePhysics(const sf::Event& event);
+	virtual void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 
 };
 

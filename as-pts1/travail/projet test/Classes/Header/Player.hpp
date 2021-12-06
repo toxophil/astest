@@ -13,7 +13,7 @@ private:
 public:
 	Player();
 
-	void updatePhysics(const sf::Event& event);
+	void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 	void update();
 
 };

@@ -24,7 +24,7 @@ public:
 	float getProjectileCooldown() const;
 	
 	//fonction qui utilise l'arme pour attaquer (retourne vrai si l'attaque est réussie)
-	virtual bool attack(HittableCharacter* lanceur, const sf::Vector2i& attackPoint);
+	virtual bool attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint);
 };
 
 

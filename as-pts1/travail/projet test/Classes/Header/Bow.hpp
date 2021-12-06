@@ -12,7 +12,7 @@ class HittableCharacter;
 class Bow : public Weapon
 {
 public:
-	virtual bool attack(HittableCharacter* lanceur, const sf::Vector2i& attackPoint) override;
+	virtual bool attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint) override;
 };
 
 
