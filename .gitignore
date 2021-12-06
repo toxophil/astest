@@ -1,7 +1,5 @@
-*.o
-*.vs
-*\x64\*
-*.log
-*.ilk
-*.recipe
-travail/projet test/x64*
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Repos/v16/Browse.VC.opendb

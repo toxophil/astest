@@ -1,3 +1,0 @@
-G:\projet algo\travail\projet test\x64\Debug\projet test.exe
-C:\MAMP\htdocs\as-pts1\travail\projet test\x64\Debug\projet test.exe
-E:\Repos github\as-pts1\travail\projet test\x64\Debug\projet test.exe
