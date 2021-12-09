@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 TextureLoader::TextureLoader()
-{
+{	// METTRE _nos. pour ne pas activer le smooth des textures ! :)
 	//chargement de toutes les textures définies
 	Texture tempText;
 
@@ -12,8 +12,8 @@ TextureLoader::TextureLoader()
 	loadLocation[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
 
 	// Les persos
-	loadLocation[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1.png";
-	loadLocation[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1.png";
+	loadLocation[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
+	loadLocation[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1_nos.png";
 
 	// Les projectiles
 	loadLocation[TextureNames::Arrow] = "Ressources/img/projectile/arrow.png";
@@ -44,8 +44,15 @@ TextureLoader::TextureLoader()
 			//error dans le chargment...
 			throw invalid_argument("Erreur dans le chargement de la texture" + it.second);
 		}
-
+		
 		//on ajoute la texture dans la map des textures
+		size_t found = it.second.find("_nos.");
+		if (found != string::npos){
+			tempText.setSmooth(false);
+		}
+		else {
+			tempText.setSmooth(true);
+		}
 		_textureMap[it.first] = tempText;
 	}
 

@@ -10,15 +10,19 @@
 Camera::Camera() {
     _x = 0;
     _y = 0;
-    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(1920, 1080));
-    _laVue.zoom(0.4);
+
+    sf::VideoMode leScreen = sf::VideoMode::getDesktopMode();
+    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
+    _laVue.zoom(0.32);
 }
 
 Camera::Camera(int x, int y){
     _x = x;
     _y = y;
-    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(1920, 1080));
-    _laVue.zoom(0.4);
+
+    sf::VideoMode leScreen = sf::VideoMode::getDesktopMode();
+    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
+    _laVue.zoom(0.32);
 }
 
 void Camera::drawMap(sf::RenderWindow& window, Map m) {
@@ -59,17 +63,20 @@ void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosit
     laPosition.y = laPosition.y + localBounds.height / 2;
     laPosition.x = laPosition.x + localBounds.width / 2;
 
-    float xOffset = laPosition.x - ( (float)mousePosition.x - (float)windowSize.x / 2);
-    xOffset = min(xOffset,80.0f);
-    xOffset = max(xOffset, -80.0f);
+    float xOffset = (float)mousePosition.x - (float)windowSize.x / 2;
+    xOffset = min(xOffset,800.0f);
+    xOffset = max(xOffset, -800.0f);
 
-    float yOffset = laPosition.y- ( (float)mousePosition.y - (float)windowSize.y / 2);
-    yOffset = min(yOffset, 150);
-    yOffset = max(yOffset, -150);
+    float yOffset = ( (float)mousePosition.y - (float)windowSize.y / 2);
+    yOffset = min(yOffset, 1000.0f);
+    yOffset = max(yOffset, -1000.0f);
     
-    laPosition.x -= xOffset;
-    laPosition.y -= yOffset;
-    cout << mousePosition.x << " - "<< windowSize.x / 2 << " ET " <<  " y:" << mousePosition.y << endl;
+    yOffset = yOffset / 20;
+    xOffset = xOffset / 20;
+    laPosition.x += xOffset;
+    laPosition.y += yOffset;
+    
+    //cout << laPosition.x << " - "<< ((float)mousePosition.x - (float)windowSize.x / 2) << " ET " <<  " y:" << mousePosition.y << endl;
     _laVue.setCenter(laPosition);
     window.setView(_laVue);
 }

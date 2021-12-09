@@ -93,8 +93,9 @@ void GameMaster::runGame()
 	Map laMap = leGen.makeMap(5);
 	_map = laMap;
 
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
+	sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553", sf::Style::Fullscreen);
 	window.setFramerateLimit(60);
+	window.setVerticalSyncEnabled(true);
 
 	// Créer la camera 
 	Camera laCam;
