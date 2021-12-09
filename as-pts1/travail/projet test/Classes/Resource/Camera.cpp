@@ -1,5 +1,3 @@
-
-
 #include "..\Header\Camera.hpp"
 #include "..\Header\MoveableObject.hpp"
 #include "..\Header\Map.hpp"
@@ -55,9 +53,23 @@ void Camera::drawObject(sf::RenderWindow& window, const MoveableObject* object)c
 }
 
 void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosition, sf::FloatRect localBounds) {
+    sf::Vector2i mousePosition = sf::Mouse::getPosition();
+    sf::Vector2u windowSize = window.getSize();
+
     laPosition.y = laPosition.y + localBounds.height / 2;
     laPosition.x = laPosition.x + localBounds.width / 2;
 
+    float xOffset = laPosition.x - ( (float)mousePosition.x - (float)windowSize.x / 2);
+    xOffset = min(xOffset,80.0f);
+    xOffset = max(xOffset, -80.0f);
+
+    float yOffset = laPosition.y- ( (float)mousePosition.y - (float)windowSize.y / 2);
+    yOffset = min(yOffset, 150);
+    yOffset = max(yOffset, -150);
+    
+    laPosition.x -= xOffset;
+    laPosition.y -= yOffset;
+    cout << mousePosition.x << " - "<< windowSize.x / 2 << " ET " <<  " y:" << mousePosition.y << endl;
     _laVue.setCenter(laPosition);
     window.setView(_laVue);
 }
