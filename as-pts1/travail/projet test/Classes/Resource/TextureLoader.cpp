@@ -10,8 +10,13 @@ TextureLoader::TextureLoader()
 
 	//listes des textures à charger et leurs locations
 	loadLocation[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
-	loadLocation[TextureNames::PlayerThief] = "Ressources/player.jpg";
-	loadLocation[TextureNames::Arrow	] = "Ressources/Arrow.jpg";
+
+	// Les persos
+	loadLocation[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1.png";
+	loadLocation[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1.png";
+
+	// Les projectiles
+	loadLocation[TextureNames::Arrow] = "Ressources/img/projectile/arrow.png";
 
 	// Textures de la map
 	loadLocation[TextureNames::WallRL] = "Ressources/img/map/hd/mur3.png";

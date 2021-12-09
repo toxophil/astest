@@ -86,12 +86,12 @@ void Connection::applyWalls() {
     _walls = vector<Wall>();
 
     if (_estVertical) {
-        _walls.push_back(Wall(_x * 32,_y * 32,32,getH()*32));
-        _walls.push_back(Wall(_x * 32 * 3, _y * 32,32, getH()*32));
+        _walls.push_back(Wall( _x * 32 + 5, _y * 32, 32, getH() * 32)); // Gauche
+        _walls.push_back(Wall( _x * 32 + 32*2 + 10, _y * 32,32, getH()*32)); // Droite
     }
     else {
-        _walls.push_back(Wall(_x * 32, _y * 32 * 3, getW()*32, 32 ));
-        _walls.push_back(Wall( _x * 32, _y * 32, getW()*32, 32 ));
+        _walls.push_back(Wall(_x * 32, (_y+0.5) * 32 + 32*2, getW()*32, 32 )); // Bas
+        _walls.push_back(Wall( _x * 32, _y * 32, getW()*32, 32 )); // Haut
     }
 }
 vector<Wall> Connection::getWalls() const {

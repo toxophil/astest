@@ -22,6 +22,9 @@ public:
 	//fonction de mise à jour de la physique de l'objet (déplacerment, tir, etc...)
 	virtual void updatePhysics(sf::RenderWindow& ,const sf::Event &event) = 0;
 
+	// Appellé à chaque collision
+	virtual void onCollision();
+
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);
 };

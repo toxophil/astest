@@ -39,6 +39,6 @@ Angle& DrawableObject::getAngle() {
 	return _angle;
 }
 
-const sf::Sprite& DrawableObject::getSprite() const {
+const sf::Sprite& DrawableObject::getSprite() {
 	return _sprite;
 }

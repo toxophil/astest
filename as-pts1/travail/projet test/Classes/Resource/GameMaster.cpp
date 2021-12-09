@@ -91,10 +91,12 @@ void GameMaster::runGame()
 	// Le générateur
 	Generator leGen = Generator();
 	Map laMap = leGen.makeMap(5);
+	_map = laMap;
 
 	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553");
 	window.setFramerateLimit(60);
 
+	// Créer la camera 
 	Camera laCam;
 	//create a player
 	Thief player;
@@ -109,6 +111,8 @@ void GameMaster::runGame()
 
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
+
+
 
 	//boucle principale
 	while (window.isOpen())
@@ -139,6 +143,9 @@ void GameMaster::runGame()
 		for (auto &object : _moveableObjectList) {
 			object->update();
 		}
+
+		// Après avoir bougé, update la Caméra
+		laCam.updateCameraOnPlayer(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds());
 
 		//destruction des objets non n�cessaires
 		destroy();

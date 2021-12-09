@@ -36,9 +36,11 @@ void Projectile::update()
 	}
 }
 
-void Projectile::updatePhysics(sf::RenderWindow& ,const sf::Event& event)
+void Projectile::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 {
 	//check de collision avec un autre hittable character ou un mur
 }
-
-
+void Projectile::onCollision() {
+	GameMaster::getInstance().destroyMoveableObject(getId());
+	//delete this;
+}

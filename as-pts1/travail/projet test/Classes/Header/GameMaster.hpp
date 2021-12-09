@@ -18,7 +18,6 @@ using namespace std;
 class GameMaster
 {
 private:
-
 	Map _map;
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
@@ -26,6 +25,8 @@ private:
 	Camera _camera;
 	Time _deltaTime;
 
+	// Set une nouvelle _camera
+	
 	//fonction de destruction des objets de moveable object list a partir de la liste to destroy
 	void destroy();
 

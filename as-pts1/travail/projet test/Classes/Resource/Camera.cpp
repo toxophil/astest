@@ -9,14 +9,18 @@
 #include "..\Header\Connection.hpp"
 #include <vector>
 
-Camera::Camera(){
+Camera::Camera() {
     _x = 0;
     _y = 0;
+    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(1920, 1080));
+    _laVue.zoom(0.4);
 }
 
-Camera::Camera(int x, int y) {
+Camera::Camera(int x, int y){
     _x = x;
     _y = y;
+    _laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(1920, 1080));
+    _laVue.zoom(0.4);
 }
 
 void Camera::drawMap(sf::RenderWindow& window, Map m) {
@@ -39,7 +43,7 @@ void Camera::drawMap(sf::RenderWindow& window, Map m) {
 }
 
 void Camera::drawAll(sf::RenderWindow& window, const std::list<MoveableObject*> objectList, const Map m) {
-    cout << "/))) " << endl;
+    //cout << "/))) " << endl;
     drawMap(window,m);
     for (MoveableObject* object : objectList) {
         drawObject(window, object);
@@ -48,4 +52,12 @@ void Camera::drawAll(sf::RenderWindow& window, const std::list<MoveableObject*> 
 
 void Camera::drawObject(sf::RenderWindow& window, const MoveableObject* object)const {
 
+}
+
+void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosition, sf::FloatRect localBounds) {
+    laPosition.y = laPosition.y + localBounds.height / 2;
+    laPosition.x = laPosition.x + localBounds.width / 2;
+
+    _laVue.setCenter(laPosition);
+    window.setView(_laVue);
 }

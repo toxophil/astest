@@ -15,7 +15,7 @@ Generator::Generator() {}
 
 
 Map Generator::makeMap(uint32_t difficulter) const {
-    uint32_t nbSalle = 20;//difficulter*3;
+    uint32_t nbSalle = 5;//difficulter*3;
     vector<Room> lesSalles;
 
     // Crèer les ZoneRoom !
@@ -50,7 +50,7 @@ Map Generator::makeMap(uint32_t difficulter) const {
     laZoneRoom.makeIntersection();
     laZoneRoom.makeTiles();
     laZoneRoom.makeWalls();
-
+    cout << "CHECK NB WALL " << laZoneRoom.getWalls().size() << endl;
     Map generatedMap = Map(laZoneRoom.getRooms(), laZoneRoom.getConnections(), laZoneRoom.getWalls());
     return generatedMap;
 }

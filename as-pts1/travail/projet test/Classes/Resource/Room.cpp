@@ -173,19 +173,24 @@ void Room::applyWalls() {
     // Haut
     uint32_t wallSize = 0;
     uint32_t lastMade = 0;
+
     for (uint32_t i=0;i<getW();i++) {
         uint32_t matVal = _matrice[0][i];
         if (matVal == 1) {
             wallSize++;
         }
         else {
-            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32, wallSize * 32, 32));
+            _walls.push_back(Wall( _x*32+lastMade*32, _y*32, wallSize*32 + 5, 32));
             lastMade = wallSize;
             wallSize=0;
         }
     }
     if (wallSize != 0) {
-        _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32, wallSize * 32, 32));
+        if (lastMade == 0) {
+            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32, wallSize * 32, 32));
+        }else {
+            _walls.push_back(Wall( _x*32 + lastMade*32 + 32+10, _y*32, wallSize*32, 32));
+        }
     }
     // Bas
     wallSize = 0;
@@ -196,13 +201,17 @@ void Room::applyWalls() {
             wallSize++;
         }
         else {
-            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32 + getH() * 32, wallSize * 32, 32));
+            _walls.push_back(Wall( _x*32 + lastMade * 32 , _y* 32 + getH()*32 - 16, wallSize*32 + 5, 32));
             lastMade = wallSize;
             wallSize = 0;
         }
     }
     if (wallSize != 0) {
-        _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32 + getH() * 32, wallSize * 32, 32));
+        if (lastMade == 0) {
+            _walls.push_back(Wall(_x * 32 + lastMade * 32, _y * 32 + getH() * 32 - 16, wallSize * 32 + 5, 32));
+        } else {
+            _walls.push_back(Wall(_x * 32 + lastMade * 32 + 32 + 10, _y * 32 + getH() * 32 - 16, wallSize * 32 + 5, 32));
+        }
     }
     // Gauche
     wallSize = 0;
@@ -213,13 +222,18 @@ void Room::applyWalls() {
             wallSize++;
         }
         else {
-            _walls.push_back(Wall(_x * 32 , _y * 32 + lastMade * 32,  32, wallSize * 32));
+            _walls.push_back(Wall(_x * 32 - 16, _y * 32 + lastMade * 32,  32, wallSize * 32));
             lastMade = wallSize;
             wallSize = 0;
         }
     }
     if (wallSize != 0) {
-        _walls.push_back(Wall(_x * 32, _y * 32 + lastMade * 32, 32, wallSize * 32));
+        if (lastMade == 0) {
+            _walls.push_back(Wall(_x * 32 - 16, _y * 32 + lastMade * 32 + 32, 32, wallSize * 32 - 32));
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 - 16, _y * 32 + lastMade * 32 + 32 + 16, 32, wallSize * 32 - 32));
+        }
     }
 
     // Droite
@@ -237,7 +251,13 @@ void Room::applyWalls() {
         }
     }
     if (wallSize != 0) {
-        _walls.push_back(Wall(_x * 32 + getW() * 32, _y * 32 + lastMade * 32, 32, wallSize * 32));
+        if (lastMade == 0) {
+            _walls.push_back(Wall(_x * 32 + getW() * 32, _y * 32 + lastMade * 32 + 32, 32, wallSize * 32));
+        }
+        else {
+            _walls.push_back(Wall(_x * 32 + getW() * 32, _y * 32 + lastMade * 32 + 64, 32, wallSize * 32));
+        }
+
     }
 }
 vector<Wall> Room::getWalls() const {

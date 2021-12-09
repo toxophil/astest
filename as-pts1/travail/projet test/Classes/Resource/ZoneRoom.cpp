@@ -546,7 +546,7 @@ void ZoneRoom::makeTiles() {
 }
 
 void ZoneRoom::makeWalls() {
-    _walls = vector<Wall>();
+//    _walls = vector<Wall>();
     for (uint32_t i = 0; i < _lesConnections.size(); i++) {
         _lesConnections[i].applyWalls();
     }
@@ -566,6 +566,7 @@ void ZoneRoom::makeWalls() {
             _walls.push_back(lesW[k]);
         }
     }
+    //cout << "NBTOT WALL = " << _walls.size() << " EREEEEEEEEEEEEEEEEEEE" << endl;
 }
 
 vector<Wall> ZoneRoom::getWalls() {

@@ -352,6 +352,117 @@
     <Image Include="Ressources\sword.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Ressources\img\projectile\arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="projet test.cbp" />
