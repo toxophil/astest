@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/Repos/v16/Browse.VC.opendb
+*.json
+travail/projet test/.vs/projet test/v16/.suo
+*.db
+*.ipch
+*.obj
+*.sqlite
+*.enc
