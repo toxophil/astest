@@ -13,7 +13,7 @@ int main()
     if (!music.openFromFile("Ressources/music/HorrorsOfInfinity.ogg"))
         return -1; // error
      
-    music.setPitch(1);           // increase the pitch
+    music.setPitch(0.9);           // increase the pitch
     music.setVolume(22);         // reduce the volume
     music.setLoop(true);         // make it loop
     music.play();
