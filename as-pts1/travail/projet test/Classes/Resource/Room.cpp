@@ -87,18 +87,19 @@ void Room::applyTiles() {
                     indice++;
 
                     if (i == 0) { // En Haut
-
-                        if (r == 0) { // à gauche
-                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::LeftTop));
-                            _tiles[indice].setPosition(_x * 32, _y * 32);
-                            _tiles.push_back(sprite);
-                            indice++;
-                        }
-                        else if (r == getW() - 1) {
-                            _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::RightTop));
-                            _tiles[indice].setPosition(_x * 32 + (int64_t)r * (int64_t)32, _y * 32);
-                            _tiles.push_back(sprite);
-                            indice++;
+                        if (_matrice[i + 1][r] != 0) {
+                            if (r == 0) { // à gauche
+                                _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::LeftTop));
+                                _tiles[indice].setPosition(_x * 32, _y * 32);
+                                _tiles.push_back(sprite);
+                                indice++;
+                            }
+                            else if (r == getW() - 1) {
+                                _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::RightTop));
+                                _tiles[indice].setPosition(_x * 32 + (int64_t)r * (int64_t)32, _y * 32);
+                                _tiles.push_back(sprite);
+                                indice++;
+                            }
                         }
                     }
                     else { // En Bas
@@ -155,7 +156,7 @@ void Room::applyTiles() {
                             _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
                             _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                             _tiles.push_back(sprite);
-                            indice++;
+                            indice++; 
                         }
                     }
                 }
