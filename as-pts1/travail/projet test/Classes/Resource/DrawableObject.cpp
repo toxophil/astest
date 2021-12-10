@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\DrawableObject.hpp"
-#include "..\Header\Angle.hpp"
+#include "../Header/DrawableObject.hpp"
+#include "../Header/Angle.hpp"
 
 //initialisation de l'incrémenteur
 uint32_t DrawableObject::_nextId = 0;

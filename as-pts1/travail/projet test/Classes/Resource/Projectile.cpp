@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Projectile.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Projectile.hpp"
+#include "../Header/GameMaster.hpp"
 
 Projectile::Projectile()
 {

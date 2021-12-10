@@ -1,7 +1,7 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Skorpion.hpp"
+#include "../Header/Skorpion.hpp"
 
 Skorpion::Skorpion()
 {

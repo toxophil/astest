@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Arrow.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Arrow.hpp"
+#include "../Header/GameMaster.hpp"
 
 Arrow::Arrow()
 {

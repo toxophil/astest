@@ -1,7 +1,7 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\UsableItem.hpp"
+#include "../Header/UsableItem.hpp"
 
 bool UsableItem::use(Player &p){
     //TODO

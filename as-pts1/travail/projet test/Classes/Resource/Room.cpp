@@ -1,6 +1,6 @@
-#include "..\Header\Room.hpp"
-#include "..\Header\Connection.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Room.hpp"
+#include "../Header/Connection.hpp"
+#include "../Header/GameMaster.hpp"
 
 Room::Room() {
     _matrice = vector<vector<uint32_t>>();

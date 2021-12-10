@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\WandOfDestruction.hpp"
+#include "../Header/WandOfDestruction.hpp"

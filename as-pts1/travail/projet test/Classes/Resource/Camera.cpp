@@ -1,10 +1,10 @@
-#include "..\Header\Camera.hpp"
-#include "..\Header\MoveableObject.hpp"
-#include "..\Header\Map.hpp"
+#include "../Header/Camera.hpp"
+#include "../Header/MoveableObject.hpp"
+#include "../Header/Map.hpp"
 #include <SFML/Graphics.hpp>
 
-#include "..\Header\Room.hpp"
-#include "..\Header\Connection.hpp"
+#include "../Header/Room.hpp"
+#include "../Header/Connection.hpp"
 #include <vector>
 
 Camera::Camera() {

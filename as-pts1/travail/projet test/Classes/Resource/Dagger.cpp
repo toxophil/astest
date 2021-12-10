@@ -1,9 +1,9 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Dagger.hpp"
-#include "..\Header\Arrow.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Dagger.hpp"
+#include "../Header/Arrow.hpp"
+#include "../Header/GameMaster.hpp"
 
 bool Dagger::attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint)
 {

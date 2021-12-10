@@ -18,6 +18,9 @@ public:
 
 	//setter
 	void setEquippedWeapon(Weapon* newWeapon);
+	void setHealth(double health);
+	void HittableCharacter::changeHealth(double modificateur);
+
 
 	//getter
 	Weapon* getEquippedWeapon();
