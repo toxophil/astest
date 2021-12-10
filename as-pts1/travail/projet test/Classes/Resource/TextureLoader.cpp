@@ -12,7 +12,7 @@ TextureLoader::TextureLoader()
 	loadLocation[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
 
 	//les monstres
-	loadLocation[TextureNames::Skeleton] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
+	loadLocation[TextureNames::Skeleton] = "Ressources/img/ennemy/orc/goblin_idle_anim_f0_nos.png";
 	// Les persos
 	loadLocation[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
 	loadLocation[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1_nos.png";
