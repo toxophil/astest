@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\MoveableObject.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/MoveableObject.hpp"
+#include "../Header/GameMaster.hpp"
 #include <iostream>
 using namespace std;
 

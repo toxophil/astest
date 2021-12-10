@@ -1,9 +1,9 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Bow.hpp"
-#include "..\Header\Arrow.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Bow.hpp"
+#include "../Header/Arrow.hpp"
+#include "../Header/GameMaster.hpp"
 
 bool Bow::attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint)
 {

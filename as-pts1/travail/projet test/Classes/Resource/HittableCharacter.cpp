@@ -1,7 +1,7 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\HittableCharacter.hpp"
+#include "../Header/HittableCharacter.hpp"
 
 HittableCharacter::HittableCharacter()
 {

@@ -1,4 +1,4 @@
-#include "..\Header\ZoneRoom.hpp"
+#include "../Header/ZoneRoom.hpp"
 #include <cmath>
 ZoneRoom::ZoneRoom(Room& uneSalle) {
     _w = uneSalle.getW();

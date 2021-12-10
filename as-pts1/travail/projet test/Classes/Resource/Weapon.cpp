@@ -1,7 +1,7 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Weapon.hpp"
+#include "../Header/Weapon.hpp"
 
 Weapon::Weapon()
 {

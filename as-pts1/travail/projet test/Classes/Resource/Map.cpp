@@ -1,6 +1,6 @@
 
-#include "..\Header\Map.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Map.hpp"
+#include "../Header/GameMaster.hpp"
 #include <vector>
 
 Map::Map() {}

@@ -1,11 +1,11 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\GameMaster.hpp"
+#include "../Header/GameMaster.hpp"
 #include <type_traits>
-#include "..\Header\Skorpion.hpp"
-#include "..\Header\DaggerOfSpeed.hpp"
-#include "..\Header\Generator.hpp"
+#include "../Header/Skorpion.hpp"
+#include "../Header/DaggerOfSpeed.hpp"
+#include "../Header/Generator.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()

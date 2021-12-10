@@ -1,8 +1,8 @@
 #ifndef GENERATOR_H_INCLUDED
 #define GENERATOR_H_INCLUDED
 
-#include "..\Header\Map.hpp"
-#include "..\Header\Room.hpp"
+#include "../Header/Map.hpp"
+#include "../Header/Room.hpp"
 
 class Generator {
 public:

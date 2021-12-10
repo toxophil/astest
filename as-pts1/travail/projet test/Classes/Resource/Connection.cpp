@@ -1,6 +1,6 @@
-#include "..\Header\Connection.hpp"
-#include "..\Header\Room.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Connection.hpp"
+#include "../Header/Room.hpp"
+#include "../Header/GameMaster.hpp"
 
 Connection::Connection(int64_t x, int64_t y, Room* roomA, Room* roomB, bool estVertical, vector<vector<uint32_t>> matrice) {
     _x = x;

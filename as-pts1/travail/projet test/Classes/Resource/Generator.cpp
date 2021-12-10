@@ -1,6 +1,6 @@
-#include "..\Header\Generator.hpp"
-#include "..\Header\Connection.hpp"
-#include "..\Header\ZoneRoom.hpp"
+#include "../Header/Generator.hpp"
+#include "../Header/Connection.hpp"
+#include "../Header/ZoneRoom.hpp"
 
 #include <iostream>
 #include <fstream>

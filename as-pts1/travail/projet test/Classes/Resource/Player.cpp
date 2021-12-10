@@ -1,9 +1,9 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Player.hpp"
-#include "..\Header\GameMaster.hpp"
-#include "..\Header\Weapon.hpp"
+#include "../Header/Player.hpp"
+#include "../Header/GameMaster.hpp"
+#include "../Header/Weapon.hpp"
 Player::Player()
 {
 	_sprite.setPosition(100, 100);

@@ -1,4 +1,4 @@
-#include "..\Header\Wall.hpp"
+#include "../Header/Wall.hpp"
 
 
 Wall::Wall(int64_t x, int64_t y, uint32_t w, uint32_t h) {

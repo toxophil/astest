@@ -1,7 +1,7 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\DaggerOfSpeed.hpp"
+#include "../Header/DaggerOfSpeed.hpp"
 
 
 DaggerOfSpeed::DaggerOfSpeed()

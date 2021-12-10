@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Thief.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Thief.hpp"
+#include "../Header/GameMaster.hpp"
 
 Thief::Thief()
 {
