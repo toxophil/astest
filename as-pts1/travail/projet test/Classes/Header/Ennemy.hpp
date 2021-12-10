@@ -8,7 +8,17 @@
 
 class Ennemy : public HittableCharacter
 {
-	
+private:
+	float _attackSpeedModifier;
+	sf::Clock _timeSinceLastAttack;
+
+public:
+	Ennemy();
+
+	void updatePhysics(sf::RenderWindow&, const sf::Event& event);
+	void update();
+
+
 };
 
 

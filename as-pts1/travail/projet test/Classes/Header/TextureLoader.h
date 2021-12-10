@@ -10,6 +10,8 @@ class TextureLoader
 {
 public:
 	enum class TextureNames {
+		Orc,
+		Skeleton,
 		PlayerKnight,
 		PlayerThief,
 		Arrow,

@@ -11,6 +11,8 @@ TextureLoader::TextureLoader()
 	//listes des textures à charger et leurs locations
 	loadLocation[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
 
+	//les monstres
+	loadLocation[TextureNames::Skeleton] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
 	// Les persos
 	loadLocation[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
 	loadLocation[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1_nos.png";

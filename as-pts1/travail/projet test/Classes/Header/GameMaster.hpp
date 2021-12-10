@@ -10,6 +10,8 @@
 #include "TextureLoader.h"
 #include <vector>
 #include "Thief.hpp"
+#include "Skeleton.hpp"
+
 
 class Player;
 

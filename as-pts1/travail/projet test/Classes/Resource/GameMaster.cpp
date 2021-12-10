@@ -6,6 +6,7 @@
 #include "../Header/Skorpion.hpp"
 #include "../Header/DaggerOfSpeed.hpp"
 #include "../Header/Generator.hpp"
+#include "../Header/Skeleton.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -103,13 +104,16 @@ void GameMaster::runGame()
 	Thief player;
 	addMoveableObject(player);
 
+	Skeleton ennemy;
+	addMoveableObject(ennemy);
+
 	//create his bow
 	Skorpion thiefBow;
 	DaggerOfSpeed thiefDagger;
 	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
-
+	ennemy.setEquippedWeapon(&thiefBow);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
 
