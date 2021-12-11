@@ -1,0 +1,3 @@
+G:\projet algo\travail\projet test\x64\Debug\projet test.exe
+C:\MAMP\htdocs\as-pts1\travail\projet test\x64\Debug\projet test.exe
+C:\Users\origa\OneDrive\Documents\école\DUT AS\Algorithmique\projet tutore 2\travail\projet test\x64\Debug\projet test.exe
