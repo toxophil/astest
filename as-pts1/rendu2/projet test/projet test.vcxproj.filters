@@ -150,6 +150,15 @@
     <ClCompile Include="Classes\Resource\TextureLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Resource\Connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\Generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\ZoneRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Header\Angle.hpp">
@@ -284,5 +293,214 @@
     <ClInclude Include="Classes\Header\TextureLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Header\Connection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Generator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\ZoneRoom.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sfml-network-2.dll" />
+    <None Include="bin\Debug\sfml-network-d-2.dll" />
+    <None Include="bin\Debug\sfml-system-2.dll" />
+    <None Include="bin\Debug\sfml-system-d-2.dll" />
+    <None Include="bin\Debug\sfml-window-2.dll" />
+    <None Include="bin\Debug\sfml-window-d-2.dll" />
+    <None Include="bin\Debug\openal32.dll" />
+    <None Include="bin\Debug\sfml-audio-2.dll" />
+    <None Include="bin\Debug\sfml-audio-d-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-d-2.dll" />
+    <None Include="Ressources\ana.ogg" />
+    <None Include="Ressources\orchestral.ogg" />
+    <None Include="openal32.dll" />
+    <None Include="projet test.cbp" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\ana.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\Arrow.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\defaultTexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\FireSword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\player.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\playerTempo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\sword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\projectile\arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_hit_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="projet test.cbp" />
+    <None Include="Ressources\ana.ogg" />
+    <None Include="Ressources\orchestral.ogg" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-audio-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-graphics-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-network-d-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-window-d-2.dll" />
+    <None Include="openal32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Ressources\sword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\Arrow.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\defaultTexture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\FireSword.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\player.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Ressources\playerTempo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Ressources\ana.mp3" />
   </ItemGroup>
 </Project>

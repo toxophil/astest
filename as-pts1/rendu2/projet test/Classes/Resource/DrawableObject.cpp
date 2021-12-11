@@ -1,8 +1,8 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\DrawableObject.hpp"
-#include "..\Header\Angle.hpp"
+#include "../Header/DrawableObject.hpp"
+#include "../Header/Angle.hpp"
 
 //initialisation de l'incrémenteur
 uint32_t DrawableObject::_nextId = 0;
@@ -39,6 +39,6 @@ Angle& DrawableObject::getAngle() {
 	return _angle;
 }
 
-const sf::Sprite& DrawableObject::getSprite() const {
+const sf::Sprite& DrawableObject::getSprite() {
 	return _sprite;
 }

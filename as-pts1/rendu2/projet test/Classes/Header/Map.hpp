@@ -4,15 +4,28 @@
 #ifndef DEF_MAP
 #define DEF_MAP
 
-#include "Room.hpp"
-#include <vector>
+#include <iostream>
+using namespace std;
 
-class Map
-{
-	private :
-		std::vector<Room> RoomList;
-		
-	
+#include <vector>
+#include "Room.hpp"
+#include "Wall.hpp"
+#include "Connection.hpp"
+
+class Map {
+private:
+    vector<Room> _roomList;
+    vector<Connection> _lesConnections;
+    vector<Wall> _wallList;
+public:
+    Map();
+    Map(vector<Room>, vector<Connection>, vector<Wall>);
+    Map(vector<Room>, vector<Connection>);
+
+    vector<Room> getRoomList() const;
+    vector<Connection> getConnections() const;
+    vector<Wall> getWallList() const;
+    void addRoom(const Room&);
 };
 
 

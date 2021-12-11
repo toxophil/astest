@@ -1,19 +1,19 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Projectile.hpp"
-#include "..\Header\GameMaster.hpp"
+#include "../Header/Projectile.hpp"
+#include "../Header/GameMaster.hpp"
 
 Projectile::Projectile()
 {
-	sf::Vector2i direction(200, 0);
-	sf::Vector2f directionF(direction);
+	sf::Vector2f directionF(200, 0);
 
 	nextDirection = directionF;
 	_damage = 1;
 	speed = 200;
 	maxLifetime = 5;
 	lifetime.restart();
+	_estEnnemi	; // 0 joueur 1 ennemie
 }
 
 Projectile::Projectile(const sf::Vector2i& launchDirection, double damage) {
@@ -37,9 +37,11 @@ void Projectile::update()
 	}
 }
 
-void Projectile::updatePhysics(const sf::Event& event)
+void Projectile::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 {
-	//check de collision avec un autre hittable character
+	//check de collision avec un autre hittable character ou un mur
 }
-
-
+void Projectile::onCollision() {
+		GameMaster::getInstance().destroyMoveableObject(getId());
+	//delete this;
+}

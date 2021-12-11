@@ -8,7 +8,9 @@
 
 class FriendlyCharacter : public HittableCharacter
 {
-	
+public :
+
+
 };
 
 

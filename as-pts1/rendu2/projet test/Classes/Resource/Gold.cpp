@@ -1,4 +1,4 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\Gold.hpp"
+#include "../Header/Gold.hpp"

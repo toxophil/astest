@@ -1,9 +1,12 @@
 
 /* Generated from GenMyModel */
 
-#include "..\Header\GameMaster.hpp"
+#include "../Header/GameMaster.hpp"
 #include <type_traits>
-#include "..\Header\Skorpion.hpp"
+#include "../Header/Skorpion.hpp"
+#include "../Header/DaggerOfSpeed.hpp"
+#include "../Header/Generator.hpp"
+#include "../Header/Skeleton.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -15,7 +18,7 @@ GameMaster& GameMaster::getInstance()
 
 void GameMaster::destroy()
 {
-	//destruction des objets non nécessaires
+	//destruction des objets non nï¿½cessaires
 	std::list<std::list<MoveableObject*>::iterator>::iterator i = _toDestroy.begin();
 	while (i != _toDestroy.end())
 	{
@@ -27,7 +30,6 @@ void GameMaster::destroy()
 
 GameMaster::GameMaster()
 {
-	
 }
 
 //retourne la map actuelle
@@ -36,7 +38,7 @@ const Map& GameMaster::getMap() const
 	return _map;
 }
 
-//retourne la liste des éléments déplaçables
+//retourne la liste des ï¿½lï¿½ments dï¿½plaï¿½ables
 const std::list<MoveableObject*>& GameMaster::getMoveableObjectList()
 {
 	return _moveableObjectList;
@@ -52,8 +54,7 @@ const Time& GameMaster::getTimeSinceLastUpdate() const
 	return _deltaTime;
 }
 
-
-//ajoute un élément déplacable à la liste des éléments déplacables
+//ajoute un ï¿½lï¿½ment dï¿½placable ï¿½ la liste des ï¿½lï¿½ments dï¿½placables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 {
 	_moveableObjectList.push_back(&moveableObject);
@@ -66,7 +67,7 @@ bool GameMaster::addMoveableObject(MoveableObject* moveableObject)
 	return true;
 }
 
-//supprime la référence à l'élément d'identifier (id) dans la liste des éléments déplacables
+//supprime la rï¿½fï¿½rence ï¿½ l'ï¿½lï¿½ment d'identifier (id) dans la liste des ï¿½lï¿½ments dï¿½placables
 bool GameMaster::destroyMoveableObject(uint32_t id)
 {
 
@@ -88,25 +89,36 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 
 void GameMaster::runGame()
 {
-	//caméra
-	sf::RenderWindow window(sf::VideoMode(1000, 1000), "SFML works!");
+	// Le gÃ©nÃ©rateur
+	Generator leGen = Generator();
+	Map laMap = leGen.makeMap(5);
+	_map = laMap;
 
+	sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Super DÃ©dale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553", sf::Style::Fullscreen);
+	window.setFramerateLimit(60);
+	window.setVerticalSyncEnabled(true);
+
+	// CrÃ©er la camera 
+	Camera laCam;
 	//create a player
 	Thief player;
 	addMoveableObject(player);
 
+	//create a skeleton
+	Skeleton ennemy;
+	addMoveableObject(ennemy);
+
 	//create his bow
 	Skorpion thiefBow;
+	DaggerOfSpeed thiefDagger;
 	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
-
-	//start of game
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
-
+	ennemy.setEquippedWeapon(&thiefBow);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
+
+
 
 	//boucle principale
 	while (window.isOpen())
@@ -114,10 +126,10 @@ void GameMaster::runGame()
 		//mise a jour du delta
 		_deltaTime = clk.restart();
 
-		//gestionnaire d'évènements
+		//gestionnaire d'ï¿½vï¿½nements
 		sf::Event event;
 
-		//evènement 
+		//evï¿½nement 
 		while (window.pollEvent(event))
 		{
 
@@ -127,10 +139,27 @@ void GameMaster::runGame()
 
 		//boucle de physique
 		for (auto& object : _moveableObjectList) {
-			object->updatePhysics(event);
+			object->updatePhysics(window,event);
+			
 		}
 
-		//destruction des objets non nécessaires
+		if (event.type == sf::Event::MouseWheelScrolled)
+		{
+			if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
+			{
+				if (event.mouseWheelScroll.delta == 1)
+				{
+					player.setEquippedWeapon(&thiefBow);
+				}
+				else
+				{
+				player.setEquippedWeapon(&thiefDagger);
+				}
+			}
+		}
+
+
+		//destruction des objets non nï¿½cessaires
 		destroy();
 
 		//logique du jeu
@@ -138,17 +167,20 @@ void GameMaster::runGame()
 			object->update();
 		}
 
-		//destruction des objets non nécessaires
+		// AprÃ¨s avoir bougÃ©, update la CamÃ©ra
+		laCam.updateCameraOnPlayer(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds());
+
+		//destruction des objets non nï¿½cessaires
 		destroy();
 
 		//Affichage de la frame
 		window.clear();
-	
-		//Camera.drawAll();
+		
+
+		laCam.drawMap(window, laMap);
 		for (auto& object : _moveableObjectList) {
 			window.draw(object->getSprite());
 		}
-
 		window.display();
 	}
 }

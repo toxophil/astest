@@ -10,10 +10,30 @@ class TextureLoader
 {
 public:
 	enum class TextureNames {
+		Orc,
+		Skeleton,
 		PlayerKnight,
 		PlayerThief,
 		Arrow,
-		defaultTexture
+		defaultTexture,
+		/* mur*/
+
+		WallRL,
+		RightTop,
+		LeftTop,
+		WallLeft,
+		WallRight,
+
+		PillarLeft,
+		PillarRight,
+
+		Floor1,
+		Floor2,
+		Floor3,
+		Floor4,
+		Floor5,
+		Floor6,
+		Floor7
 	};
 
 	TextureLoader();

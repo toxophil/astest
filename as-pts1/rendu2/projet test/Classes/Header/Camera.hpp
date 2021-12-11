@@ -5,20 +5,26 @@
 
 #include "Map.hpp"
 #include "MoveableObject.hpp"
+#include "Player.hpp"
 #include <vector>
+#include <type_traits>
+#include <list>
 
 using namespace std;
 
 class Camera {
 private:
+
 	int _x, _y;
+	sf::View _laVue;
 
 public:
 	Camera();
 	Camera(int x, int y);
-	void drawMap(const Map m, sf::RenderWindow& window) const;
-	void drawAll(const vector<DrawableObject>& objectList, sf::RenderWindow& window, const Map m) const;
-	void drawObject(const DrawableObject& object, sf::RenderWindow& window) const;
+	void drawMap(sf::RenderWindow&, const Map m);
+	void drawAll(sf::RenderWindow&, const std::list<MoveableObject*> objectList, const Map m);
+	void drawObject(sf::RenderWindow&, const MoveableObject* object) const;
+	void updateCameraOnPlayer(sf::RenderWindow&, sf::Vector2f, sf::FloatRect);
 };
 
 

@@ -18,12 +18,12 @@ public:
 
 	//setter
 	void setEquippedWeapon(Weapon* newWeapon);
+	void setHealth(double health);
+	void HittableCharacter::changeHealth(double modificateur);
+
 
 	//getter
 	Weapon* getEquippedWeapon();
-	
-	//fonction qui attaque en utilisant l'arme équipée (retourne vrai si l'attaque est réussie)
-	bool attack() const;
 };
 
 

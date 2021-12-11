@@ -8,7 +8,8 @@
 
 class Skorpion : public Bow
 {
-	
+public:
+	Skorpion();
 };
 
 

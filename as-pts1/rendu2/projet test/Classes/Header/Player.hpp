@@ -7,13 +7,13 @@
 class Player : public FriendlyCharacter
 {
 private:
-	float _attackSpeed;
+	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
 
 public:
 	Player();
 
-	void updatePhysics(const sf::Event& event);
+	void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 	void update();
 
 };

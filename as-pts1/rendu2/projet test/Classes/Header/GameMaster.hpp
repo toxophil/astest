@@ -10,6 +10,8 @@
 #include "TextureLoader.h"
 #include <vector>
 #include "Thief.hpp"
+#include "Skeleton.hpp"
+
 
 class Player;
 
@@ -25,6 +27,8 @@ private:
 	Camera _camera;
 	Time _deltaTime;
 
+	// Set une nouvelle _camera
+	
 	//fonction de destruction des objets de moveable object list a partir de la liste to destroy
 	void destroy();
 
@@ -46,6 +50,8 @@ public:
 	TextureLoader& getTextureLoader();
 
 	const Time& getTimeSinceLastUpdate() const;
+
+	//sf::RenderWindow& getWindow() const;
 	//---------------------------------
 
 	//fonction principale du jeu
