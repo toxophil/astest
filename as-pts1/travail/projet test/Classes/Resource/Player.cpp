@@ -7,6 +7,7 @@
 
 Player::Player()
 {
+	_estEnnemi = 0;
 	_sprite.setPosition(100, 100);
 	nextDirection = sf::Vector2f(0, 0);
 	speed = 200;
@@ -34,11 +35,7 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 		//déplacement vers le bas
 		nextDirection += sf::Vector2f(0, speed);
 	}
-	/*if (event.type == sf::Event::MouseWheelMoved)
-	{
-	
-		setEquippedWeapon(&thiefDagger);
-	}*/
+
 
 	//normalisation du vecteur de longeur speed
 	nextDirection.x = std::min(nextDirection.x, speed);

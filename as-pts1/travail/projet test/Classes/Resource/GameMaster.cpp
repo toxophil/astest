@@ -104,6 +104,7 @@ void GameMaster::runGame()
 	Thief player;
 	addMoveableObject(player);
 
+	//create a skeleton
 	Skeleton ennemy;
 	addMoveableObject(ennemy);
 
@@ -139,7 +140,24 @@ void GameMaster::runGame()
 		//boucle de physique
 		for (auto& object : _moveableObjectList) {
 			object->updatePhysics(window,event);
+			
 		}
+
+		if (event.type == sf::Event::MouseWheelScrolled)
+		{
+			if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
+			{
+				if (event.mouseWheelScroll.delta == 1)
+				{
+					player.setEquippedWeapon(&thiefBow);
+				}
+				else
+				{
+				player.setEquippedWeapon(&thiefDagger);
+				}
+			}
+		}
+
 
 		//destruction des objets non n�cessaires
 		destroy();

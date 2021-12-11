@@ -7,7 +7,8 @@
 Skeleton::Skeleton()
 {
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Skeleton));
-	_sprite.setScale(sf::Vector2f(1, 1));
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
 	_sprite.setOrigin(localBounds.width / 2, localBounds.height / 2);
+	_sprite.setScale(sf::Vector2f(1, 1));
+
 }

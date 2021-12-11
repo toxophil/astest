@@ -14,6 +14,7 @@ protected:
 	sf::Vector2f nextDirection;
 	//vitesse de l'objet
 	float speed;
+	bool _estEnnemi;
 
 public:
 	//fonction de misa a jour de la logique de l'objet

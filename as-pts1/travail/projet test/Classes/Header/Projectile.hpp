@@ -13,7 +13,7 @@ protected:
 	double _damage;
 	sf::Clock lifetime;
 	float maxLifetime;
-
+	
 public:
 	Projectile();
 

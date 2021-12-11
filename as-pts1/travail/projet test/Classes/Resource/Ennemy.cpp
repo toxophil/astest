@@ -7,6 +7,7 @@
 
 Ennemy::Ennemy()
 {
+	_estEnnemi=1;
 	_sprite.setPosition(80, 80);
 	nextDirection = sf::Vector2f(0, 0);
 	speed = 200;
