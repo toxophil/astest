@@ -2,6 +2,8 @@
 /* Generated from GenMyModel */
 
 #include "../Header/HittableCharacter.hpp"
+#include "Weapon.cpp"
+
 
 HittableCharacter::HittableCharacter()
 {

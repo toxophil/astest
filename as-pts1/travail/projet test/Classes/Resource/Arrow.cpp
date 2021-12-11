@@ -14,12 +14,13 @@ Arrow::Arrow()
 
 }
 
-Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& startPosition,float vitesse,float dureeVie) {
+Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& startPosition,float vitesse,float dureeVie,bool side) {
 	//set de la texture de la fleche
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Arrow));
 	_damage = damage;
 	speed = vitesse/2;
 	nextDirection = sf::Vector2f(launchPos);
+	_estEnnemi = side;
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
 
 	// Set la pos

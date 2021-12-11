@@ -13,7 +13,7 @@ bool Dagger::attack(HittableCharacter* lanceur, const sf::Vector2f& attackPoint)
 
     sf::Vector2f launchDirection = attackPoint - lanceurPos;
 
-    auto myProjectile = new Arrow(launchDirection, 1, lanceur->getSprite().getPosition(), _attackSpeed, _attackDuration);
+    auto myProjectile = new Arrow(launchDirection, 1, lanceur->getSprite().getPosition(), _attackSpeed, _attackDuration, _side);
 
     GameMaster::getInstance().addMoveableObject(myProjectile);
 
