@@ -9,7 +9,6 @@
 #include "Ennemy.hpp"
 #include "TextureLoader.h"
 #include <vector>
-#include "Thief.hpp"
 #include "Skeleton.hpp"
 
 
@@ -23,7 +22,7 @@ private:
 	Map _map;
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
-	TextureLoader _textures;
+	TextureLoader _textureLoader;
 	Camera _camera;
 	Time _deltaTime;
 

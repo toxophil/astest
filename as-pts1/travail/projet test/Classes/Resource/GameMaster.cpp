@@ -46,7 +46,7 @@ const std::list<MoveableObject*>& GameMaster::getMoveableObjectList()
 
 TextureLoader& GameMaster::getTextureLoader()
 {
-	return _textures;
+	return _textureLoader;
 }
 
 const Time& GameMaster::getTimeSinceLastUpdate() const
@@ -100,17 +100,25 @@ void GameMaster::runGame()
 
 	// Créer la camera 
 	Camera laCam;
+
+	// Créer la Classe
+	Skorpion thiefBow;
+	DaggerOfSpeed thiefDagger;
+
+	// Weapon defWeapon, Animation idleAnim, Animation walkAnim, uint8_t defLife, uint16_t defSpeed
 	//create a player
-	Thief player;
+
+	Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
+	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
+
+	Player player(classeDragonF);
 	addMoveableObject(player);
 
 	//create a skeleton
 	Skeleton ennemy;
 	addMoveableObject(ennemy);
 
-	//create his bow
-	Skorpion thiefBow;
-	DaggerOfSpeed thiefDagger;
+
 	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);

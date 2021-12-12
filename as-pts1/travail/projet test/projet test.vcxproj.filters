@@ -75,9 +75,6 @@
     <ClCompile Include="Classes\Resource\Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Resource\Knight.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Resource\Map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -126,9 +123,6 @@
     <ClCompile Include="Classes\Resource\Sword.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Resource\Thief.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Resource\UnusableItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -157,6 +151,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\ZoneRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\Classe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -218,9 +221,6 @@
     <ClInclude Include="Classes\Header\Item.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Header\Knight.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Header\Map.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -269,9 +269,6 @@
     <ClInclude Include="Classes\Header\Sword.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Header\Thief.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Header\UnusableItem.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -300,6 +297,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\ZoneRoom.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Animation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Inventory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Classe.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,16 +5,22 @@
 #include "../Header/GameMaster.hpp"
 #include "../Header/Weapon.hpp"
 
-Player::Player()
+Player::Player(Classe laClasse)
 {
 	_estEnnemi = 0;
 	_sprite.setPosition(100, 100);
 	nextDirection = sf::Vector2f(0, 0);
-	speed = 200;
+	speed = laClasse.getDefaultSpeed();
 
-	//modifier de l'attack speed en pourcentage
-	_attackSpeedModifier = 100.0f;
 	_timeSinceLastAttack.restart();
+	_inventory = &Inventory();
+
+	_animTime.restart();
+	_laClasse = laClasse;
+	setHealth(laClasse.getDefaultLife());
+	setEquippedWeapon( laClasse.getDefaultWeapon());
+	anim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
+
 }
 
 void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
@@ -42,7 +48,7 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 	nextDirection.y = std::min(nextDirection.y, speed);
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown()  * (_attackSpeedModifier / 100)) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown()  * 1) {
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
 
 			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
@@ -57,5 +63,27 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 void Player::update() {
 	//TODO
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
+	if (nextDirection.x != 0 || nextDirection.y != 0) {	
+		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getWalkAnim().getSpeed()) {
+			cout << "nextttt : " << endl;
+			_sprite.setTexture(_laClasse.getWalkAnim().getNextFrame());
+			_animTime.restart();
+		}
+	}
+	else {
+		
+		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getIdleAnim().getSpeed()) {
+			_sprite.setTexture(_laClasse.getIdleAnim().getNextFrame());
+			cout << "gooooo : " << endl;
+			//_sprite.setTexture(anim.getNextFrame());
+			_animTime.restart();
+		}
+	}
+
 	nextDirection = sf::Vector2f(0, 0);
+}
+
+
+Inventory* Player::getInventory() {
+	return _inventory;
 }
