@@ -14,9 +14,6 @@ TextureLoader::TextureLoader()
 
 	//les monstres
 	loadLocationTexture[TextureNames::Skeleton] = "Ressources/img/ennemy/orc/goblin_idle_anim_f0_nos.png";
-	// Les persos
-	loadLocationTexture[TextureNames::PlayerKnight] = "Ressources/img/player/knight/knight_f_idle_anim_f1_nos.png";
-	loadLocationTexture[TextureNames::PlayerThief] = "Ressources/img/player/lizard_b/lizard_m_idle_anim_f1_nos.png";
 
 	// Les projectiles
 	loadLocationTexture[TextureNames::Arrow] = "Ressources/img/projectile/arrow.png";
@@ -39,20 +36,105 @@ TextureLoader::TextureLoader()
 	loadLocationTexture[TextureNames::Floor6] = "Ressources/img/map/hd/floor6.png";
 	loadLocationTexture[TextureNames::Floor7] = "Ressources/img/map/hd/floor7.png";
 
+	loadLocationTexture[TextureNames::Logo] = "Ressources/img/menu/logo.png";
+
 	// Les animations
 	unordered_map<AnimationNames, vector<String>> loadLocationAnimation;
-
-	loadLocationAnimation[AnimationNames::Lizard_F_Idle] = {
-		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f0.png",
-		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f1.png",
-		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f2.png",
-		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f3.png" 
+	// Animation Lézard
+	loadLocationAnimation[AnimationNames::Lizard_M_Walking] = {
+		"Ressources/img/player/lizard_m/walking/lizard_m_run_anim_f0.png",
+		"Ressources/img/player/lizard_m/walking/lizard_m_run_anim_f1.png",
+		"Ressources/img/player/lizard_m/walking/lizard_m_run_anim_f2.png",
+		"Ressources/img/player/lizard_m/walking/lizard_m_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Lizard_M_Idle] = {
+		"Ressources/img/player/lizard_m/idle/lizard_m_idle_anim_f0.png",
+		"Ressources/img/player/lizard_m/idle/lizard_m_idle_anim_f1.png",
+		"Ressources/img/player/lizard_m/idle/lizard_m_idle_anim_f2.png",
+		"Ressources/img/player/lizard_m/idle/lizard_m_idle_anim_f3.png"
 	};
 	loadLocationAnimation[AnimationNames::Lizard_F_Walking] = {
 		"Ressources/img/player/lizard_f/walking/lizard_f_run_anim_f0.png",
 		"Ressources/img/player/lizard_f/walking/lizard_f_run_anim_f1.png",
 		"Ressources/img/player/lizard_f/walking/lizard_f_run_anim_f2.png",
 		"Ressources/img/player/lizard_f/walking/lizard_f_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Lizard_F_Idle] = {
+		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f0.png",
+		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f1.png",
+		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f2.png",
+		"Ressources/img/player/lizard_f/idle/lizard_f_idle_anim_f3.png" 
+	};
+	// Animation Magicien
+	loadLocationAnimation[AnimationNames::Wizzard_M_Walking] = {
+		"Ressources/img/player/wizzard_m/walking/wizzard_m_run_anim_f0.png",
+		"Ressources/img/player/wizzard_m/walking/wizzard_m_run_anim_f1.png",
+		"Ressources/img/player/wizzard_m/walking/wizzard_m_run_anim_f2.png",
+		"Ressources/img/player/wizzard_m/walking/wizzard_m_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Wizzard_M_Idle] = {
+		"Ressources/img/player/wizzard_m/idle/wizzard_m_idle_anim_f0.png",
+		"Ressources/img/player/wizzard_m/idle/wizzard_m_idle_anim_f1.png",
+		"Ressources/img/player/wizzard_m/idle/wizzard_m_idle_anim_f2.png",
+		"Ressources/img/player/wizzard_m/idle/wizzard_m_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Wizzard_F_Walking] = {
+		"Ressources/img/player/wizzard_f/walking/wizzard_f_run_anim_f0.png",
+		"Ressources/img/player/wizzard_f/walking/wizzard_f_run_anim_f1.png",
+		"Ressources/img/player/wizzard_f/walking/wizzard_f_run_anim_f2.png",
+		"Ressources/img/player/wizzard_f/walking/wizzard_f_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Wizzard_F_Idle] = {
+		"Ressources/img/player/wizzard_f/idle/wizzard_f_idle_anim_f0.png",
+		"Ressources/img/player/wizzard_f/idle/wizzard_f_idle_anim_f1.png",
+		"Ressources/img/player/wizzard_f/idle/wizzard_f_idle_anim_f2.png",
+		"Ressources/img/player/wizzard_f/idle/wizzard_f_idle_anim_f3.png"
+	};
+	// Animation Elf
+	loadLocationAnimation[AnimationNames::Elf_M_Walking] = {
+		"Ressources/img/player/elf_m/walking/elf_m_run_anim_f0.png",
+		"Ressources/img/player/elf_m/walking/elf_m_run_anim_f1.png",
+		"Ressources/img/player/elf_m/walking/elf_m_run_anim_f2.png",
+		"Ressources/img/player/elf_m/walking/elf_m_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Elf_M_Idle] = {
+		"Ressources/img/player/elf_m/idle/elf_m_idle_anim_f0.png",
+		"Ressources/img/player/elf_m/idle/elf_m_idle_anim_f1.png",
+		"Ressources/img/player/elf_m/idle/elf_m_idle_anim_f2.png",
+		"Ressources/img/player/elf_m/idle/elf_m_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Elf_F_Walking] = {
+		"Ressources/img/player/elf_f/walking/elf_f_run_anim_f0.png",
+		"Ressources/img/player/elf_f/walking/elf_f_run_anim_f1.png",
+		"Ressources/img/player/elf_f/walking/elf_f_run_anim_f2.png",
+		"Ressources/img/player/elf_f/walking/elf_f_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Elf_F_Idle] = {
+		"Ressources/img/player/elf_f/idle/elf_f_idle_anim_f0.png",
+		"Ressources/img/player/elf_f/idle/elf_f_idle_anim_f1.png",
+		"Ressources/img/player/elf_f/idle/elf_f_idle_anim_f2.png",
+		"Ressources/img/player/elf_f/idle/elf_f_idle_anim_f3.png"
+	};
+	// Animation Knight
+	loadLocationAnimation[AnimationNames::Knight_Walking] = {
+		"Ressources/img/player/knight/walking/knight_run_anim_f0.png",
+		"Ressources/img/player/knight/walking/knight_run_anim_f1.png",
+		"Ressources/img/player/knight/walking/knight_run_anim_f2.png",
+		"Ressources/img/player/knight/walking/knight_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Knight_Idle] = {
+		"Ressources/img/player/knight/idle/knight_idle_anim_f0.png",
+		"Ressources/img/player/knight/idle/knight_idle_anim_f1.png",
+		"Ressources/img/player/knight/idle/knight_idle_anim_f2.png",
+		"Ressources/img/player/knight/idle/knight_idle_anim_f3.png"
+	};
+
+	// Background Menu Wild
+	loadLocationAnimation[AnimationNames::Background_Wild] = {
+		"Ressources/img/menu/background/wild_1.jpg",
+		"Ressources/img/menu/background/wild_2.jpg",
+		"Ressources/img/menu/background/wild_3.jpg",
+		"Ressources/img/menu/background/wild_4.jpg"
 	};
 
 	for(auto& it: loadLocationTexture){

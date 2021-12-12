@@ -17,6 +17,7 @@ public:
 	Animation(const Animation& copyAnim); // Copy Constructor
 	Texture& getNextFrame();
 	uint32_t getSpeed() const;
+	void setSpeed(uint32_t speed);
 	void addFrame(Texture&);
 };
 

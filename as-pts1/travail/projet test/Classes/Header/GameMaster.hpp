@@ -34,6 +34,8 @@ private:
 	//private pour design pattern singleton
 	GameMaster();
 
+	uint64_t _screenW;
+	uint64_t _screenH;
 public:
 	//-------Singleton
 	static GameMaster& getInstance();
@@ -50,6 +52,8 @@ public:
 
 	const Time& getTimeSinceLastUpdate() const;
 
+	const uint64_t getScreenW() const;
+	const uint64_t getScreenH() const;
 	//sf::RenderWindow& getWindow() const;
 	//---------------------------------
 

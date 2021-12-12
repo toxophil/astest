@@ -7,6 +7,7 @@
 #include "../Header/DaggerOfSpeed.hpp"
 #include "../Header/Generator.hpp"
 #include "../Header/Skeleton.hpp"
+#include "../Header/Menu.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -54,6 +55,13 @@ const Time& GameMaster::getTimeSinceLastUpdate() const
 	return _deltaTime;
 }
 
+const uint64_t GameMaster::getScreenW() const {
+	return _screenW;
+}
+const uint64_t GameMaster::getScreenH() const {
+	return _screenH;
+}
+
 //ajoute un �l�ment d�placable � la liste des �l�ments d�placables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 {
@@ -94,9 +102,13 @@ void GameMaster::runGame()
 	Map laMap = leGen.makeMap(5);
 	_map = laMap;
 
-	sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553", sf::Style::Fullscreen);
+	sf::VideoMode leModeVideo = sf::VideoMode::getDesktopMode();
+	sf::RenderWindow window(leModeVideo, "Super Dédale Bros ULtimate 2 feat. Dante from Devil May Cry EXTENDED Edition ver 1.246859553", sf::Style::Fullscreen);
 	window.setFramerateLimit(60);
 	window.setVerticalSyncEnabled(true);
+
+	_screenW = leModeVideo.width;
+	_screenH = leModeVideo.height;
 
 	// Créer la camera 
 	Camera laCam;
@@ -125,8 +137,8 @@ void GameMaster::runGame()
 	ennemy.setEquippedWeapon(&thiefBow);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
-
-
+	bool openMainMenu = true;
+	Menu leMenuP;
 
 	//boucle principale
 	while (window.isOpen())
@@ -136,59 +148,71 @@ void GameMaster::runGame()
 
 		//gestionnaire d'�v�nements
 		sf::Event event;
-
-		//ev�nement 
-		while (window.pollEvent(event))
-		{
-
-			if (event.type == sf::Event::Closed)
-				window.close();
-		}
-
-		//boucle de physique
-		for (auto& object : _moveableObjectList) {
-			object->updatePhysics(window,event);
-			
-		}
-
-		if (event.type == sf::Event::MouseWheelScrolled)
-		{
-			if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
+		if (openMainMenu) {
+			while (window.pollEvent(event))
 			{
-				if (event.mouseWheelScroll.delta == 1)
+
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
+			window.clear(); // Clear avant
+				leMenuP.logicMenu(window, event); // Affichage Menu
+			window.display();
+		}
+		else {
+			//ev�nement 
+			while (window.pollEvent(event))
+			{
+
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
+
+			//boucle de physique
+			for (auto& object : _moveableObjectList) {
+				object->updatePhysics(window, event);
+
+			}
+
+			if (event.type == sf::Event::MouseWheelScrolled)
+			{
+				if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
 				{
-					player.setEquippedWeapon(&thiefBow);
-				}
-				else
-				{
-				player.setEquippedWeapon(&thiefDagger);
+					if (event.mouseWheelScroll.delta == 1)
+					{
+						player.setEquippedWeapon(&thiefBow);
+					}
+					else
+					{
+						player.setEquippedWeapon(&thiefDagger);
+					}
 				}
 			}
+
+
+			//destruction des objets non n�cessaires
+			destroy();
+
+			//logique du jeu
+			for (auto& object : _moveableObjectList) {
+				object->update();
+			}
+
+			// Après avoir bougé, update la Caméra
+			laCam.updateCameraOnPlayer(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds());
+
+			//destruction des objets non n�cessaires
+			destroy();
+
+			//Affichage de la frame
+			window.clear();
+
+			
+			laCam.drawMap(window, laMap);
+			for (auto& object : _moveableObjectList) {
+				window.draw(object->getSprite());
+			}
+			window.display();
 		}
-
-
-		//destruction des objets non n�cessaires
-		destroy();
-
-		//logique du jeu
-		for (auto &object : _moveableObjectList) {
-			object->update();
-		}
-
-		// Après avoir bougé, update la Caméra
-		laCam.updateCameraOnPlayer(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds());
-
-		//destruction des objets non n�cessaires
-		destroy();
-
-		//Affichage de la frame
-		window.clear();
-		
-
-		laCam.drawMap(window, laMap);
-		for (auto& object : _moveableObjectList) {
-			window.draw(object->getSprite());
-		}
-		window.display();
 	}
 }

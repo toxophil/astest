@@ -15,7 +15,9 @@ Texture& Animation::getNextFrame() {
 uint32_t Animation::getSpeed() const {
 	return _speed;
 }
-
+void Animation::setSpeed(uint32_t speed) {
+	_speed = speed;
+}
 void Animation::addFrame(Texture& laTexture) {
 	if (_lesTextures.size() < 255) {
 		_lesTextures.push_back(laTexture);

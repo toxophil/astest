@@ -14,8 +14,6 @@ public:
 	enum class TextureNames {
 		Orc,
 		Skeleton,
-		PlayerKnight,
-		PlayerThief,
 		Arrow,
 		defaultTexture,
 		/* mur*/
@@ -35,14 +33,34 @@ public:
 		Floor4,
 		Floor5,
 		Floor6,
-		Floor7
+		Floor7,
+
+		Logo
 	};
 
 	enum class AnimationNames {
 		defaultAnimation,
 
+		Lizard_M_Walking,
+		Lizard_M_Idle,
 		Lizard_F_Walking,
-		Lizard_F_Idle
+		Lizard_F_Idle,
+
+		Wizzard_M_Walking,
+		Wizzard_M_Idle,
+		Wizzard_F_Walking,
+		Wizzard_F_Idle,
+
+		Elf_M_Walking,
+		Elf_M_Idle,
+		Elf_F_Walking,
+		Elf_F_Idle,
+
+		Knight_Walking,
+		Knight_Idle,
+
+		Background_Wild
+
 	};
 
 	TextureLoader();
