@@ -1,0 +1,1317 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='24 185 2146 1296' xmlns:xlink='http://www.w3.org/1999/xlink' width='2146.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='1296.0px'>
+  <defs>
+<style type='text/css'><![CDATA[svg text {text-rendering: geometricPrecision;}]]></style>    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ff6347' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='72499f48-3855-44b1-a0e5-c4769ffe6fa2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='98fb98' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='34334763-6d32-4fbf-b5ea-457c0cb3fd83' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ffd700' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c41b2e1b-f346-4c08-8860-7daf402a8d6b' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='591b94fe-630c-4bf6-b6dc-1a8b2a8929aa' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c39ee30f-2a3d-4760-bda3-4bbc17282636' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='3fbe3539-345b-454f-9323-bc5f2acd6404' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='fe0a47f5-91d0-43ce-b996-e975b8b04151' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6adaff' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='94eefa1a-877a-499f-bf97-b2647e1f91d0' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='924b1913-0f0b-407a-b638-4f17b1b37760' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='fd4f8328-ce13-425f-a24e-2bf8422af6de' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='398a32bd-e323-466a-b799-069ebf98a194' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c6e650b7-c0f2-4980-9333-e54beef40293' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='8f3baef5-40a0-4d5a-a947-9448705128ec' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c54179f9-05a4-47bf-84bd-d74ba1656813' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4e687cd9-2a53-4818-b3b1-1e9cac7b81a7' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='55b55a9e-cd4f-4fcc-b723-d52819854e19' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='62ae5696-34a4-4151-b049-4fdbf0b3b252' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='da70d6' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='762f2e56-ef5b-4989-b813-690b2d26c1d9' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6feba92d-9121-40e8-bf8c-b63bc4a758f5' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6071ddd5-d034-43a2-b568-a5756c5d8066' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a43f8971-c171-4c64-9579-a5a7f069b5e5' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='906408df-4f6d-4c1d-a4cf-3d322490680e' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='4173f859-f847-4a54-be1c-98b1ea49eb2b' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1fe2ad0a-354c-4c5b-9d74-3690f1194956' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='8b2aed60-399f-4329-a21c-0ad5b1ed839d' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='87920e7b-7179-4518-a9c8-b8236f45b334' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='3556fe74-6c65-492a-8c8f-d82db200633f' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='84580915-1a87-4434-9484-18647620f052' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='b86e05ea-c7d5-4026-891d-9877a66510ea' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='592c9068-07d7-45cd-b132-cb681680d4b2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='5917d6d0-d743-4641-9082-7acb09a54796' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='041f507d-aa60-4ca4-ad1d-a8233e6e75ef' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1541981d-8e0d-4b84-bf89-a2a7b326abf4' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='2a3092b3-21fc-4e21-a41c-8ca5fc0da87b' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ce2dea81-f5c6-4000-877d-bd9cb1c21330' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 0)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 215, 0)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='05a10171-01e6-43ef-9cb3-39cbef41fea0' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='01f0a3c2-0297-4134-80d6-9c5a0cb0dbba' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a22b70a0-be14-4ae1-a8ed-b94ab92b7ad9' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='7c68c98a-a260-4842-8f3e-cf0ce0fd9097' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(190, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(106, 218, 255)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='333333' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(91, 91, 91)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(51, 51, 51)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9c2f2e2e-72f7-49b1-a8fb-7e2369e77a0e' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(91, 91, 91)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(51, 51, 51)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='e9117acb-cd80-4c92-a14e-027eec44310e' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(91, 91, 91)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(51, 51, 51)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='fbccfde3-032e-412b-8e28-0774d4051630' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(91, 91, 91)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(51, 51, 51)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ea1b45e6-f6d8-43b8-b524-629b1dddf80a' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 178, 127)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(255, 99, 71)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='8a906201-5a96-4942-8ea8-aede20a0009a' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6d4c3847-d08a-4ff9-b6d5-41a2b1336a04' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 201, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(218, 112, 214)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='c6de52e6-fd58-4ebb-a80a-27bc0b3b2634' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='af3e5bc1-f28a-4a9b-b97e-e2b9b1aa9157' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(152, 251, 152)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f5393539-35c6-4930-a334-cf1683db434a' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='171a2f40-5f31-42c1-9a4f-59ccf6b5f324' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='82f28bb8-ad8c-4726-aef2-c6ba1e97e88a' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='ffea2c13-0141-4a44-b6b1-80f114ebc004' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='e5c31bb4-b442-47bd-a129-48959570f643' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='e923711d-516d-41ed-b542-6021e4cba06d' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='8e66d222-bec2-48d7-a5ab-a9a6d03eab55' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f283e29f-cc9a-46b2-8afc-9638f10feefb' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='d6f7238e-2b22-491f-adad-2967efffddbb' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='a2e7837b-edea-440c-ae20-ca96861a3d27' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='85798104-73da-41ce-ac9f-76d4df625545' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='52598ea2-fec2-4528-9f26-3b0e77ad1ba2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='6e4b075d-e6db-40d0-b41e-af6800670172' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='94b9f754-c1a0-4bbc-9d17-9312b7f1a7f2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='bb24bf3b-91d0-4b0e-ba15-e6954ee68ce1' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='fbfc2518-55c6-453e-b8e1-4e8951bd2da4' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='3e29a13e-c942-481d-a62b-9ff628c763b2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='39a54eb9-5c08-4990-addd-f173d27b26ac' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='cef6c7e3-53ab-402b-aea4-e9abf0125629' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9df8d435-f354-4d70-ae09-8603c6e816bc' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='f633c42f-9775-475e-9b2e-fa5cbe6c67c9' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='0db82299-d53a-4c8a-9b28-d8abc34d2cb2' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='336c7ee2-808f-4f20-8121-10e02f7ee2de' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+  </defs>
+  <desc>ClassDiagram</desc>
+  <g transform='translate(988.0,787.0)' id='_FSurkAsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='256.0px' y='0.0' stroke-width='1.0' fill='url(#72499f48-3855-44b1-a0e5-c4769ffe6fa2)' stroke='rgb(153, 60, 43)' look='allInOne' height='176.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='128.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 30, 22)'>GameMaster</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='256.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_ykbqUQs3EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 30, 22)'>Map: Map</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_5Z_z8Qs3EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 30, 22)'>MoveableObjectList: MoveableObject[*]</text>
+    </g>
+    <g transform='translate(0.0,66.0)' id='_J-PCUQs4EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 30, 22)'>Camera: Camera</text>
+    </g>
+    <g transform='translate(0.0,86.0)' id='_SSLZAQs5EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' text-decoration='underline' x='22.0' y='16.0' font-size='13' fill='rgb(77, 30, 22)'>GameMasterInstance: GameMaster</text>
+    </g>
+    <line y1='110.0' x1='0.0' y2='110.0' x2='256.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+    <g transform='translate(0.0,110.0)' id='_NWn6cAs4EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 30, 22)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getMap(): Map</text>
+    </g>
+    <g transform='translate(0.0,130.0)' id='_agCLQgs5EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 30, 22)'></text>
+      <text text-anchor='start' text-decoration='underline' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getGameMaster(): GameMaster</text>
+    </g>
+    <g transform='translate(0.0,150.0)' id='_g9ri4Q5UEDq2pLR3tGm8ug'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 30, 22)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>update()</text>
+    </g>
+  </g>
+  <g transform='translate(1359.0,899.0)' id='_ZeYskAsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='114.0px' y='0.0' stroke-width='1.0' fill='url(#34334763-6d32-4fbf-b5ea-457c0cb3fd83)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='57.0' y='19.0' font-size='13' font-style='normal' fill='rgb(46, 76, 46)'>Camera</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='114.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_iYdfsRSzEDqxbZD0H1yLJQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(46, 76, 46)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>drawGame()</text>
+    </g>
+  </g>
+  <g transform='translate(820.0,514.0)' id='_c2kJUAsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='178.0px' y='0.0' stroke-width='1.0' fill='url(#c41b2e1b-f346-4c08-8860-7daf402a8d6b)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='89.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 65, 0)'>Map</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='178.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_jAm6oAs4EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 65, 0)'>RoomList: Room[1..*]</text>
+    </g>
+    <line y1='50.0' x1='0.0' y2='50.0' x2='178.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+    <g transform='translate(0.0,50.0)' id='_6KqmcQs4EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 65, 0)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>getRoomList(): Room[1..*]</text>
+    </g>
+  </g>
+  <g transform='translate(574.0,458.0)' id='_dy6c0AsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='199.0px' y='0.0' stroke-width='1.0' fill='url(#591b94fe-630c-4bf6-b6dc-1a8b2a8929aa)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='99.5' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 65, 0)'>Room</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='199.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_2bLkMQy9EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 65, 0)'>type: Integer</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_EnEC0Qy4EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 65, 0)'>RoomObjects: RoomObject[*]</text>
+    </g>
+  </g>
+  <g transform='translate(1026.0,301.0)' id='_fZKo8AsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='84.0px' y='0.0' stroke-width='1.0' fill='url(#c39ee30f-2a3d-4760-bda3-4bbc17282636)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='42.0' y='19.0' font-size='13' font-style='italic' fill='rgb(77, 65, 0)'>SolidObject</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='84.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+  </g>
+  <g transform='translate(1136.0,301.0)' id='_f0-bMAsvEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#3fbe3539-345b-454f-9323-bc5f2acd6404)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 65, 0)'>Wall</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+  </g>
+  <g transform='translate(1590.0,819.0)' id='_PeYx0AswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='184.0px' y='0.0' stroke-width='1.0' fill='url(#fe0a47f5-91d0-43ce-b996-e975b8b04151)' stroke='rgb(153, 60, 43)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='92.0' y='19.0' font-size='13' font-style='italic' fill='rgb(77, 30, 22)'>MoveableObject</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='184.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_D2QiAAs5EDqQR5zlfybP8A'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 30, 22)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>move(Real, Real): Boolean</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_k3eSUQy8EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(77, 30, 22)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>update(): Boolean</text>
+    </g>
+  </g>
+  <g transform='translate(1434.0,1076.0)' id='_TbfgkAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='123.0px' y='0.0' stroke-width='1.0' fill='url(#94eefa1a-877a-499f-bf97-b2647e1f91d0)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='61.5' y='19.0' font-size='13' font-style='italic' fill='rgb(32, 66, 77)'>FriendlyCharacter</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='123.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+  </g>
+  <g transform='translate(1805.0,985.0)' id='_T3QPgAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='71.0px' y='0.0' stroke-width='1.0' fill='url(#924b1913-0f0b-407a-b638-4f17b1b37760)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='35.5' y='19.0' font-size='13' font-style='italic' fill='rgb(32, 66, 77)'>Projectile</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='71.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+  </g>
+  <g transform='translate(1560.0,1256.0)' id='_UzxiIAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='63.0px' y='0.0' stroke-width='1.0' fill='url(#fd4f8328-ce13-425f-a24e-2bf8422af6de)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='31.5' y='19.0' font-size='13' font-style='italic' fill='rgb(46, 76, 46)'>Ennemy</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='63.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+  </g>
+  <g transform='translate(1116.0,1182.0)' id='_VFCRQAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#398a32bd-e323-466a-b799-069ebf98a194)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(32, 66, 77)'>Player</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+  </g>
+  <g transform='translate(1837.0,1113.0)' id='_VwELQAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#c6e650b7-c0f2-4980-9333-e54beef40293)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(32, 66, 77)'>Arrow</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+  </g>
+  <g transform='translate(1561.0,1371.0)' id='_XnmUoAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#8f3baef5-40a0-4d5a-a947-9448705128ec)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(46, 76, 46)'>Slime</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+  </g>
+  <g transform='translate(1430.0,1371.0)' id='_YbFnEAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='66.0px' y='0.0' stroke-width='1.0' fill='url(#c54179f9-05a4-47bf-84bd-d74ba1656813)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='33.0' y='19.0' font-size='13' font-style='normal' fill='rgb(46, 76, 46)'>Skeleton</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='66.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+  </g>
+  <g transform='translate(1293.0,1182.0)' id='_-MxqoAswEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='108.0px' y='0.0' stroke-width='1.0' fill='url(#4e687cd9-2a53-4818-b3b1-1e9cac7b81a7)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='54.0' y='19.0' font-size='13' font-style='italic' fill='rgb(32, 66, 77)'>Skill</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='108.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_Iudjwgy9EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(32, 66, 77)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>use(Player)</text>
+    </g>
+  </g>
+  <g transform='translate(1434.0,1182.0)' id='_AekHEAsxEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#55b55a9e-cd4f-4fcc-b723-d52819854e19)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(32, 66, 77)'>Fireball</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+  </g>
+  <g transform='translate(1134.0,389.0)' id='_dWnbAAsyEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='64.0px' y='0.0' stroke-width='1.0' fill='url(#62ae5696-34a4-4151-b049-4fdbf0b3b252)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='32.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 65, 0)'>Flooring</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='64.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+  </g>
+  <g transform='translate(1003.0,1039.0)' id='_D5K60AszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#762f2e56-ef5b-4989-b813-690b2d26c1d9)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Item</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(800.0,877.0)' id='_Ey8bcAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='163.0px' y='0.0' stroke-width='1.0' fill='url(#6feba92d-9121-40e8-bf8c-b63bc4a758f5)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='81.5' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Weapon</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='163.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_yTiO0Ay8EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(66, 34, 65)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>attack(Player): Boolean</text>
+    </g>
+  </g>
+  <g transform='translate(800.0,1039.0)' id='_FFpVAAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='175.0px' y='0.0' stroke-width='1.0' fill='url(#6071ddd5-d034-43a2-b568-a5756c5d8066)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='87.5' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Armor</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='175.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_5O9v4Qy8EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(66, 34, 65)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>unequip(Player): Boolean</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_3ZSAoQy8EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(66, 34, 65)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>equip(Player): Boolean</text>
+    </g>
+  </g>
+  <g transform='translate(800.0,1163.0)' id='_F5M44AszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='149.0px' y='0.0' stroke-width='1.0' fill='url(#a43f8971-c171-4c64-9579-a5a7f069b5e5)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='74.5' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>UsableItem</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='149.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_AeQoIQy9EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(66, 34, 65)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='italic' fill='rgb(0, 0, 0)'>use(Player): Boolean</text>
+    </g>
+  </g>
+  <g transform='translate(800.0,1289.0)' id='_HA6H0AszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='97.0px' y='0.0' stroke-width='1.0' fill='url(#906408df-4f6d-4c1d-a4cf-3d322490680e)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='48.5' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>UnusableItem</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='97.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(699.0,899.0)' id='_ff8CgAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#4173f859-f847-4a54-be1c-98b1ea49eb2b)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Sword</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(699.0,805.0)' id='_fwveoAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#1fe2ad0a-354c-4c5b-9d74-3690f1194956)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Bow</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(699.0,719.0)' id='_gD_KwAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#8b2aed60-399f-4329-a21c-0ad5b1ed839d)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Wand</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(699.0,626.0)' id='_ghJA0AszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#87920e7b-7179-4518-a9c8-b8236f45b334)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='italic' fill='rgb(66, 34, 65)'>Dagger</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(634.0,1289.0)' id='_rOzdYAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#3556fe74-6c65-492a-8c8f-d82db200633f)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>Gold</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(1014.0,389.0)' id='_IYFEMAs1EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='109.0px' y='0.0' stroke-width='1.0' fill='url(#84580915-1a87-4434-9484-18647620f052)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='54.5' y='19.0' font-size='13' font-style='italic' fill='rgb(77, 65, 0)'>PassableObject</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='109.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+  </g>
+  <g transform='translate(609.0,1163.0)' id='_sAupkAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='109.0px' y='0.0' stroke-width='1.0' fill='url(#b86e05ea-c7d5-4026-891d-9877a66510ea)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='54.5' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>ScrollOfFireball</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='109.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(594.0,1039.0)' id='_tkAaMAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='137.0px' y='0.0' stroke-width='1.0' fill='url(#592c9068-07d7-45cd-b132-cb681680d4b2)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='68.5' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>RejuvenatingHelmet</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='137.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(540.0,626.0)' id='_vWgSkAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='110.0px' y='0.0' stroke-width='1.0' fill='url(#5917d6d0-d743-4641-9082-7acb09a54796)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='55.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>DaggerOfSpeed</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='110.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(543.0,719.0)' id='_vkedIAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='134.0px' y='0.0' stroke-width='1.0' fill='url(#041f507d-aa60-4ca4-ad1d-a8233e6e75ef)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='67.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>WandOfDestruction</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='134.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(561.0,805.0)' id='_vzdUUAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='68.0px' y='0.0' stroke-width='1.0' fill='url(#1541981d-8e0d-4b84-bf89-a2a7b326abf4)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='34.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>Skorpion</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='68.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(557.0,899.0)' id='_wA7IkAszEDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='76.0px' y='0.0' stroke-width='1.0' fill='url(#2a3092b3-21fc-4e21-a41c-8ca5fc0da87b)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='38.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>FireSword</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='76.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+  </g>
+  <g transform='translate(877.0,338.0)' id='_IO-LgAs1EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='89.0px' y='0.0' stroke-width='1.0' fill='url(#ce2dea81-f5c6-4000-877d-bd9cb1c21330)' stroke='rgb(153, 129, 0)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='44.5' y='19.0' font-size='13' font-style='italic' fill='rgb(77, 65, 0)'>RoomObject</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='89.0' stroke-width='1.0' stroke='rgb(153, 129, 0)' look='border'/>
+  </g>
+  <g transform='translate(1615.0,514.0)' id='_UyzqEAs2EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='86.0px' y='0.0' stroke-width='1.0' fill='url(#05a10171-01e6-43ef-9cb3-39cbef41fea0)' stroke='rgb(153, 60, 43)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='43.0' y='19.0' font-size='13' font-style='italic' fill='rgb(77, 30, 22)'>GUIElement</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='86.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+  </g>
+  <g transform='translate(1614.0,626.0)' id='_f-_1sAs2EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='88.0px' y='0.0' stroke-width='1.0' fill='url(#01f0a3c2-0297-4134-80d6-9c5a0cb0dbba)' stroke='rgb(153, 60, 43)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='44.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 30, 22)'>AttributeBar</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='88.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+  </g>
+  <g transform='translate(1276.0,514.0)' id='_hrEV8As2EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#a22b70a0-be14-4ae1-a8ed-b94ab92b7ad9)' stroke='rgb(153, 60, 43)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 30, 22)'>Menu</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+  </g>
+  <g transform='translate(1532.0,985.0)' id='_IuMzQAs3EDqQR5zlfybP8A'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='192.0px' y='0.0' stroke-width='1.0' fill='url(#7c68c98a-a260-4842-8f3e-cf0ce0fd9097)' stroke='rgb(64, 131, 153)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='96.0' y='19.0' font-size='13' font-style='italic' fill='rgb(32, 66, 77)'>HittableCharacter</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='192.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_eJkacAy9EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(32, 66, 77)'>health: Real</text>
+    </g>
+    <line y1='50.0' x1='0.0' y2='50.0' x2='192.0' stroke-width='1.0' stroke='rgb(64, 131, 153)' look='border'/>
+    <g transform='translate(0.0,50.0)' id='_Yak3UQy9EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(32, 66, 77)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>takeDamage(Real): Boolean</text>
+    </g>
+  </g>
+  <g transform='translate(1940.0,349.0)' id='_Q39vsQs3EDqQR5zlfybP8A'>
+    <polygon stroke-width='0.5' fill='url(#9c2f2e2e-72f7-49b1-a8fb-7e2369e77a0e)' stroke='rgb(31, 31, 31)' look='allInOne' points='0.0,0.0 0.0,160.0 200.0,160.0 200.0,15.0 185.0,0.0'/>
+    <polygon stroke-width='1.0' fill='rgb(31, 31, 31)' look='border' stroke='rgb(31, 31, 31)' points='185.0,1.0 185.0,15.0 199.0,15.0'/>
+    <clipPath id='clip_Q39vsQs3EDqQR5zlfybP8A'>
+      <rect x='5.0' width='175.0px' y='5.0' height='150.0px'/>
+    </clipPath>
+    <g transform='translate(0.0,0.0)'>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='18.0' font-size='13' fill='rgb(255, 255, 255)'>Les couleurs reprentent les</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='31.0' font-size='13' fill='rgb(255, 255, 255)'>différents grands points qu&apos;on</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='44.0' font-size='13' fill='rgb(255, 255, 255)'>a attribué a chacun</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='57.0' font-size='13' fill='rgb(255, 255, 255)'>Jaune = arthur</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='70.0' font-size='13' fill='rgb(255, 255, 255)'>Rouge = nicolas</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='83.0' font-size='13' fill='rgb(255, 255, 255)'>bleu = corentin</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='96.0' font-size='13' fill='rgb(255, 255, 255)'>violet = théophile</text>
+      <text clip-path='url(#clip_Q39vsQs3EDqQR5zlfybP8A)' x='5.0' y='109.0' font-size='13' fill='rgb(255, 255, 255)'>vert = maxime</text>
+    </g>
+  </g>
+  <g transform='translate(54.0,1081.0)' id='_a5EoQQs3EDqQR5zlfybP8A'>
+    <polygon stroke-width='0.5' fill='url(#e9117acb-cd80-4c92-a14e-027eec44310e)' stroke='rgb(31, 31, 31)' look='allInOne' points='0.0,0.0 0.0,190.0 270.0,190.0 270.0,15.0 255.0,0.0'/>
+    <polygon stroke-width='1.0' fill='rgb(31, 31, 31)' look='border' stroke='rgb(31, 31, 31)' points='255.0,1.0 255.0,15.0 269.0,15.0'/>
+    <clipPath id='clip_a5EoQQs3EDqQR5zlfybP8A'>
+      <rect x='5.0' width='245.0px' y='5.0' height='180.0px'/>
+    </clipPath>
+    <g transform='translate(0.0,0.0)'>
+      <text clip-path='url(#clip_a5EoQQs3EDqQR5zlfybP8A)' x='5.0' y='18.0' font-size='13' fill='rgb(255, 255, 255)'>Les objets héritent du type qu&apos;ils sont afin</text>
+      <text clip-path='url(#clip_a5EoQQs3EDqQR5zlfybP8A)' x='5.0' y='31.0' font-size='13' fill='rgb(255, 255, 255)'>de pouvoir avoir des effets spéciaux sur</text>
+      <text clip-path='url(#clip_a5EoQQs3EDqQR5zlfybP8A)' x='5.0' y='44.0' font-size='13' fill='rgb(255, 255, 255)'>certain (genre retourner du dégat quand</text>
+      <text clip-path='url(#clip_a5EoQQs3EDqQR5zlfybP8A)' x='5.0' y='57.0' font-size='13' fill='rgb(255, 255, 255)'>tu te fait toucher, lancer un projectile</text>
+      <text clip-path='url(#clip_a5EoQQs3EDqQR5zlfybP8A)' x='5.0' y='70.0' font-size='13' fill='rgb(255, 255, 255)'>bonus quand tu attaque etc...)</text>
+    </g>
+  </g>
+  <g transform='translate(1959.0,559.0)' id='_nE2BkQs3EDqQR5zlfybP8A'>
+    <polygon stroke-width='0.5' fill='url(#fbccfde3-032e-412b-8e28-0774d4051630)' stroke='rgb(31, 31, 31)' look='allInOne' points='0.0,0.0 0.0,100.0 150.0,100.0 150.0,15.0 135.0,0.0'/>
+    <polygon stroke-width='1.0' fill='rgb(31, 31, 31)' look='border' stroke='rgb(31, 31, 31)' points='135.0,1.0 135.0,15.0 149.0,15.0'/>
+    <clipPath id='clip_nE2BkQs3EDqQR5zlfybP8A'>
+      <rect x='5.0' width='125.0px' y='5.0' height='90.0px'/>
+    </clipPath>
+    <g transform='translate(0.0,0.0)'>
+      <text clip-path='url(#clip_nE2BkQs3EDqQR5zlfybP8A)' x='5.0' y='18.0' font-size='13' fill='rgb(255, 255, 255)'>A aggrandir bien sur,</text>
+      <text clip-path='url(#clip_nE2BkQs3EDqQR5zlfybP8A)' x='5.0' y='31.0' font-size='13' fill='rgb(255, 255, 255)'>j&apos;ai pas fait tout les</text>
+      <text clip-path='url(#clip_nE2BkQs3EDqQR5zlfybP8A)' x='5.0' y='44.0' font-size='13' fill='rgb(255, 255, 255)'>ennemis, items,</text>
+      <text clip-path='url(#clip_nE2BkQs3EDqQR5zlfybP8A)' x='5.0' y='57.0' font-size='13' fill='rgb(255, 255, 255)'>murs qu&apos;on aura au</text>
+      <text clip-path='url(#clip_nE2BkQs3EDqQR5zlfybP8A)' x='5.0' y='70.0' font-size='13' fill='rgb(255, 255, 255)'>final</text>
+    </g>
+  </g>
+  <g transform='translate(1890.0,729.0)' id='_WfHpgAy4EDqAxJCb4J3oQw'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='97.0px' y='0.0' stroke-width='1.0' fill='url(#ea1b45e6-f6d8-43b8-b524-629b1dddf80a)' stroke='rgb(153, 60, 43)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='48.5' y='19.0' font-size='13' font-style='normal' fill='rgb(77, 30, 22)'>Angle</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='97.0' stroke-width='1.0' stroke='rgb(153, 60, 43)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_YtwEQAy4EDqAxJCb4J3oQw'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(77, 30, 22)'>valeur: Real</text>
+    </g>
+  </g>
+  <g transform='translate(1263.0,671.0)' id='_HCSl8A9nEDq5zeTXISOr7g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='110.0px' y='0.0' stroke-width='1.0' fill='url(#8a906201-5a96-4942-8ea8-aede20a0009a)' stroke='rgb(92, 151, 92)' look='allInOne' height='155.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='55.0' y='19.0' font-size='13' font-style='italic' fill='rgb(46, 76, 46)'>DrawableObject</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='110.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_SAzh8Q9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(46, 76, 46)'>x: Real</text>
+    </g>
+    <g transform='translate(0.0,46.0)' id='_SgRsMw9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(46, 76, 46)'>y: Real</text>
+    </g>
+    <g transform='translate(0.0,66.0)' id='_Sre2oQ9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(46, 76, 46)'>width: Real</text>
+    </g>
+    <g transform='translate(0.0,86.0)' id='_SzaqoA9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(46, 76, 46)'>height: Real</text>
+    </g>
+    <g transform='translate(0.0,106.0)' id='_TScwBA9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(46, 76, 46)'>angle: Angle</text>
+    </g>
+    <line y1='130.0' x1='0.0' y2='130.0' x2='110.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+    <g transform='translate(0.0,130.0)' id='_b1l1wQ9nEDq5zeTXISOr7g'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8HBw6Ky1rfD3Ymh0au73Ku62Yag0aq72bPB27fD2b7J3YWh0Ieiz4ahzomk0Z2z2Ki72bPD3L7J23eXyIajz7TE27PD2rTD2maPxbvK38PP32OMwGSMvYamz7PE2LXE10V/vkh/v0d/vEiAvUh+vFGEu1OEvGaEpqC40kaBvUWAukd/ukmBvGGQvmSGqWOEpZ+61QA9cwA8cgA7cQI7cAM8czZ0rT16sEF9s0J9tUSBuE6GuVGFt2OGpmSHp2OEo2WGpWSFpAA8cAA9cAA7bwA8bgA9bgA7bQI8bgI8bD18slCGtWKFo2OGpGSHpQA9bAA7aDR3rAWBSUOcbHGxdf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH1d5AAAABYdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wB4m8IIAAAA2UlEQVR42lSPzUoCURhAz/0cUrhjTYzuIu0PicZFy57ABxjQdxR8iQQJYmrTDYJZNEZQC2fGHPIndVyUkGdz4OyO6rCL/Mqkj//Ce8iR8Uge/sJzNUqG+etocH4PqA6TQEpfUzWvlBoOFDyKrsnOLnQi1weAEKRG37iTWWs8iJ9AqN9Ns/0sqL3oVf8YCl7UGO05lbKTDRer0FxZXNL8CE/tNMaHHgLx9+zkU9++gUDXgqK45Z8YH8DHAh3Z9tIGAWFtATUID2GNykFtb7vgq7y3vYV2G3JgMwDzTEnCPC8r9AAAAABJRU5ErkJggg==' height='16.0'/>
+      <text x='22.0' y='16.0' font-size='12' fill='rgb(46, 76, 46)'></text>
+      <text text-anchor='start' x='24.0' y='16.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>draw()</text>
+    </g>
+  </g>
+  <g transform='translate(1151.0,985.0)' id='_3sluUDy4EDqPSIvgAy4poQ'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='104.0px' y='0.0' stroke-width='1.0' fill='url(#6d4c3847-d08a-4ff9-b6d5-41a2b1336a04)' stroke='rgb(131, 68, 129)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='52.0' y='19.0' font-size='13' font-style='normal' fill='rgb(66, 34, 65)'>Inventory</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='104.0' stroke-width='1.0' stroke='rgb(131, 68, 129)' look='border'/>
+    <g transform='translate(0.0,26.0)' id='_HUFAkDy5EDqPSIvgAy4poQ'>
+      <image x='4.0' width='16.0' y='5.0' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG8dAAB6pAAA9NYAAIZwAAB37gAA9bAAADqjAAAVsi1zQqwAAAMAUExURQAAAP///8gdLP3+/zt4ripvqCtuqCtvqDF0qzJzqzp5rzp4rjp5rkN/skOAskR/sk2Ftk2GtlWMulaMulaNulaMuV6Svl6RvV6SvV+SvWWWwGWXwGqawvr9/+35//b8//L7/+T3/+H3/+T4/+j5/+z6/+36/+P4/+f5//L8//b9/8lHPvV8fP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALr1MDoAAAAudFJOU////////////////////////////////////////////////////////////wCCj3NVAAAAjklEQVR42lyPsQ6CYAyEv/4WcGFwM8bZwej7vwiR3U0ddDIG/rYOYBBuuXx3Q69yZq60YJTnP25Q/DbxFpS86wkhBIoMitWPeuhfVQ8Je/e4V155iIFihVNGLs2tcFBsZXcAPuswULzfdwnwpNlAiWsKkA6ABuUwnGiOy+mtiIi0Os28jL/8FMyD0+jfAQAK/zLXcxrOkQAAAABJRU5ErkJggg==' height='16.0'/>
+      <text text-anchor='start' x='22.0' y='16.0' font-size='13' fill='rgb(66, 34, 65)'>tabItem: Item</text>
+    </g>
+  </g>
+  <g transform='translate(1419.0,389.0)' id='_l0aCgj5-EDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#c6de52e6-fd58-4ebb-a80a-27bc0b3b2634)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(46, 76, 46)'>HUD</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+  </g>
+  <g transform='translate(1276.0,379.0)' id='_yWpbET5-EDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#af3e5bc1-f28a-4a9b-b97e-e2b9b1aa9157)' stroke='rgb(92, 151, 92)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(46, 76, 46)'>bouton</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(92, 151, 92)' look='border'/>
+  </g>
+  <g transform='translate(1116.0,1350.0)' id='_O5d7UD5_EDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='60.0px' y='0.0' stroke-width='1.0' fill='url(#f5393539-35c6-4930-a334-cf1683db434a)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='30.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Classe</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='60.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  </g>
+  <g transform='translate(748.0,215.0)' id='_h2TYwD5_EDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='74.0px' y='0.0' stroke-width='1.0' fill='url(#171a2f40-5f31-42c1-9a4f-59ccf6b5f324)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='37.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Generator</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='74.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  </g>
+  <g transform='translate(525.0,301.0)' id='_zC8q8D5_EDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='83.0px' y='0.0' stroke-width='1.0' fill='url(#82f28bb8-ad8c-4726-aef2-c6ba1e97e88a)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='41.5' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Connection</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='83.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  </g>
+  <g transform='translate(1014.0,586.0)' id='_gL7PsD6BEDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='76.0px' y='0.0' stroke-width='1.0' fill='url(#ffea2c13-0141-4a44-b6b1-80f114ebc004)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='38.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>Animation</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='76.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  </g>
+  <g transform='translate(1096.0,497.0)' id='_AmYv4D6CEDq1hZNluMzW4g'>
+    <rect rx='3.0' ry='3.0' x='0.0' width='102.0px' y='0.0' stroke-width='1.0' fill='url(#e5c31bb4-b442-47bd-a129-48959570f643)' stroke='rgb(187, 187, 187)' look='allInOne' height='80.0px'/>
+    <text font-weight='bold' text-anchor='middle' x='51.0' y='19.0' font-size='13' font-style='normal' fill='rgb(3, 54, 86)'>TextureLoader</text>
+    <line y1='26.0' x1='0.0' y2='26.0' x2='102.0' stroke-width='1.0' stroke='rgb(187, 187, 187)' look='border'/>
+  </g>
+  <text text-anchor='middle' x='809.0' y='508.0' fill='rgb(0, 0, 0)'>+map</text>
+  <text text-anchor='middle' x='801.0' y='555.0' fill='rgb(0, 0, 0)'>+salle</text>
+  <text text-anchor='middle' x='800.0' y='546.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='793.0' y='516.0' fill='rgb(0, 0, 0)'>1..*</text>
+  <text text-anchor='middle' x='1291.0' y='946.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='1326.0' y='921.0' fill='rgb(0, 0, 0)'>+camera</text>
+  <text text-anchor='middle' x='1262.0' y='925.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1341.0' y='951.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1254.0' y='1299.0' fill='rgb(0, 0, 0)'>+player</text>
+  <text text-anchor='middle' x='1272.0' y='1217.0' fill='rgb(0, 0, 0)'>+skill</text>
+  <text text-anchor='middle' x='1194.0' y='1217.0' fill='rgb(0, 0, 0)'>0..3</text>
+  <text text-anchor='middle' x='1275.0' y='1238.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='837.0' y='368.0' fill='rgb(0, 0, 0)'>+roomObject</text>
+  <text text-anchor='middle' x='795.0' y='504.0' fill='rgb(0, 0, 0)'>+room</text>
+  <text text-anchor='middle' x='857.0' y='398.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='793.0' y='474.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1284.0' y='879.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='1538.0' y='849.0' fill='rgb(0, 0, 0)'>+moveableObject</text>
+  <text text-anchor='middle' x='1264.0' y='849.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1570.0' y='879.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1031.0' y='779.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='978.0' y='618.0' fill='rgb(0, 0, 0)'>+map</text>
+  <text text-anchor='middle' x='978.0' y='772.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1008.0' y='619.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1088.0' y='1212.0' fill='rgb(0, 0, 0)'>+player</text>
+  <text text-anchor='middle' x='1085.0' y='1112.0' fill='rgb(0, 0, 0)'>+item</text>
+  <text text-anchor='middle' x='1096.0' y='1242.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1083.0' y='1082.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1483.0' y='977.0' fill='rgb(0, 0, 0)'>+camera</text>
+  <text text-anchor='middle' x='1604.0' y='527.0' fill='rgb(0, 0, 0)'>+gUIElement</text>
+  <text text-anchor='middle' x='1493.0' y='929.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1595.0' y='587.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1716.0' y='783.0' fill='rgb(0, 0, 0)'>+moveableObject</text>
+  <text text-anchor='middle' x='1614.0' y='753.0' fill='rgb(0, 0, 0)'>+attributeBar</text>
+  <text text-anchor='middle' x='1643.0' y='804.0' fill='rgb(0, 0, 0)'>*</text>
+  <text text-anchor='middle' x='1676.0' y='737.0' fill='rgb(0, 0, 0)'>1</text>
+  <text text-anchor='middle' x='1254.0' y='544.0' fill='rgb(0, 0, 0)'>+menu</text>
+  <text text-anchor='middle' x='1256.0' y='574.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1232.0' y='752.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='1202.0' y='772.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1131.0' y='1295.0' fill='rgb(0, 0, 0)'>+player</text>
+  <text text-anchor='middle' x='1161.0' y='1287.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1161.0' y='1330.0' fill='rgb(0, 0, 0)'>+class</text>
+  <text text-anchor='middle' x='1131.0' y='1335.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='775.0' y='441.0' fill='rgb(0, 0, 0)'>+room</text>
+  <text text-anchor='middle' x='745.0' y='443.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='745.0' y='337.0' fill='rgb(0, 0, 0)'>+generator</text>
+  <text text-anchor='middle' x='775.0' y='320.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='648.0' y='361.0' fill='rgb(0, 0, 0)'>+connection</text>
+  <text text-anchor='middle' x='628.0' y='331.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='711.0' y='245.0' fill='rgb(0, 0, 0)'>+generator</text>
+  <text text-anchor='middle' x='728.0' y='275.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='576.0' y='426.0' fill='rgb(0, 0, 0)'>+connection</text>
+  <text text-anchor='middle' x='606.0' y='406.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='606.0' y='441.0' fill='rgb(0, 0, 0)'>+room</text>
+  <text text-anchor='middle' x='576.0' y='443.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='859.0' y='272.0' fill='rgb(0, 0, 0)'>+generator</text>
+  <text text-anchor='middle' x='842.0' y='242.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1175.0' y='284.0' fill='rgb(0, 0, 0)'>+wall</text>
+  <text text-anchor='middle' x='1145.0' y='286.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1067.0' y='752.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='1037.0' y='772.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1037.0' y='708.0' fill='rgb(0, 0, 0)'>+animation</text>
+  <text text-anchor='middle' x='1067.0' y='691.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1132.0' y='631.0' fill='rgb(0, 0, 0)'>+textureLoader</text>
+  <text text-anchor='middle' x='1162.0' y='602.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1162.0' y='752.0' fill='rgb(0, 0, 0)'>+gameMaster</text>
+  <text text-anchor='middle' x='1132.0' y='772.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1498.0' y='449.0' fill='rgb(0, 0, 0)'>+hUD</text>
+  <text text-anchor='middle' x='1499.0' y='419.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <text text-anchor='middle' x='1575.0' y='530.0' fill='rgb(0, 0, 0)'>+gUIElement</text>
+  <text text-anchor='middle' x='1595.0' y='560.0' fill='rgb(0, 0, 0)'>0..1</text>
+  <g transform='translate(770.0,541.0)' id='_6orHMAsvEDqQR5zlfybP8A'/>
+  <g transform='translate(1251.0,946.0)' id='_YMqUEAsxEDqQR5zlfybP8A'/>
+  <g transform='translate(1199.0,1237.0)' id='_floswAsxEDqQR5zlfybP8A'/>
+  <g transform='translate(777.0,446.0)' id='_O4EmcAs1EDqQR5zlfybP8A'/>
+  <g transform='translate(1342.0,874.0)' id='_4hrWwAs1EDqQR5zlfybP8A'/>
+  <g transform='translate(951.0,706.0)' id='__d9MYAs1EDqQR5zlfybP8A'/>
+  <g transform='translate(1057.0,1172.0)' id='_IPyOYAs2EDqQR5zlfybP8A'/>
+  <g transform='translate(1493.0,768.0)' id='_YJ2eYAs2EDqQR5zlfybP8A'/>
+  <g transform='translate(1577.0,778.0)' id='_1PmskAs2EDqQR5zlfybP8A'/>
+  <g transform='translate(1172.0,676.0)' id='_1stX8D5-EDq1hZNluMzW4g'/>
+  <g transform='translate(1110.0,1321.0)' id='_QMBvYD5_EDq1hZNluMzW4g'/>
+  <g transform='translate(718.0,392.0)' id='_n_BDcD5_EDq1hZNluMzW4g'/>
+  <g transform='translate(618.0,313.0)' id='_2G_qwD5_EDq1hZNluMzW4g'/>
+  <g transform='translate(546.0,435.0)' id='_3AnaYD5_EDq1hZNluMzW4g'/>
+  <g transform='translate(1118.0,282.0)' id='_5zd8gD5_EDq1hZNluMzW4g'/>
+  <g transform='translate(992.0,742.0)' id='_tf7cYD6BEDq1hZNluMzW4g'/>
+  <g transform='translate(1075.0,697.0)' id='_CyDWMD6CEDq1hZNluMzW4g'/>
+  <g transform='translate(1505.0,500.0)' id='_OhYrID6CEDq1hZNluMzW4g'/>
+  <g id='_8fuWIAs0EDqQR5zlfybP8A'>
+    <line y1='341.0' x1='1136.0' y2='341.0' x2='1123.0' id='_8fvkQgs0EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_8fuWIAs0EDqQR5zlfybP8A'>
+    <line y1='341.0' x1='1123.0' y2='341.0' x2='1123.0' id='_8fvkRQs0EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_8fuWIAs0EDqQR5zlfybP8A'>
+    <line y1='341.0' x1='1123.0' y2='341.0' x2='1110.0' id='_8fvkRgs0EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1110.0,341.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_NQZeAgs1EDqQR5zlfybP8A'>
+    <line y1='359.0' x1='1026.0' y2='359.0' x2='996.0' id='_NQZeBws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_NQZeAgs1EDqQR5zlfybP8A'>
+    <line y1='359.0' x1='996.0' y2='359.0' x2='996.0' id='_NQZeCgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_NQZeAgs1EDqQR5zlfybP8A'>
+    <line y1='359.0' x1='996.0' y2='359.0' x2='966.0' id='_NQZeCws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(966.0,359.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_6oXlMQsvEDqQR5zlfybP8A'>
+    <line y1='526.0' x1='820.0' y2='526.0' x2='797.0' id='_6ob2ogsvEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_6oXlMQsvEDqQR5zlfybP8A'>
+    <line y1='526.0' x1='797.0' y2='526.0' x2='796.0' id='_6ob2pQsvEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_6oXlMQsvEDqQR5zlfybP8A'>
+    <line y1='526.0' x1='796.0' y2='526.0' x2='773.0' id='_6ob2pgsvEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YMR5kQsxEDqQR5zlfybP8A'>
+    <line y1='931.0' x1='1244.0' y2='931.0' x2='1301.0' id='_YMU84gsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YMR5kQsxEDqQR5zlfybP8A'>
+    <line y1='931.0' x1='1301.0' y2='931.0' x2='1302.0' id='_YMU85QsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YMR5kQsxEDqQR5zlfybP8A'>
+    <line y1='931.0' x1='1302.0' y2='931.0' x2='1359.0' id='_YMU85gsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_flUjswsxEDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1176.0' y2='1222.0' x2='1234.0' id='_flXnAgsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_flUjswsxEDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1234.0' y2='1222.0' x2='1235.0' id='_flXnBQsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_flUjswsxEDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1235.0' y2='1222.0' x2='1293.0' id='_flXnBgsxEDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MUlWAgs1EDqQR5zlfybP8A'>
+    <line y1='429.0' x1='1134.0' y2='429.0' x2='1129.0' id='_MUl9FAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MUlWAgs1EDqQR5zlfybP8A'>
+    <line y1='429.0' x1='1129.0' y2='429.0' x2='1128.0' id='_MUmkIgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MUlWAgs1EDqQR5zlfybP8A'>
+    <line y1='429.0' x1='1128.0' y2='429.0' x2='1123.0' id='_MUmkIws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1123.0,429.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_NDTdMgs1EDqQR5zlfybP8A'>
+    <line y1='403.0' x1='1014.0' y2='403.0' x2='990.0' id='_NDTdNws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_NDTdMgs1EDqQR5zlfybP8A'>
+    <line y1='403.0' x1='990.0' y2='403.0' x2='990.0' id='_NDTdOgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_NDTdMgs1EDqQR5zlfybP8A'>
+    <line y1='403.0' x1='990.0' y2='403.0' x2='966.0' id='_NDTdOws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(966.0,403.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_O3pIpAs1EDqQR5zlfybP8A'>
+    <line y1='378.0' x1='877.0' y2='378.0' x2='825.0' id='_O3sL8gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_O3pIpAs1EDqQR5zlfybP8A'>
+    <line y1='378.0' x1='825.0' y2='484.0' x2='825.0' id='_O3sL9Qs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_O3pIpAs1EDqQR5zlfybP8A'>
+    <line y1='484.0' x1='825.0' y2='484.0' x2='773.0' id='_O3sL9gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_g2Ww8As1EDqQR5zlfybP8A'>
+    <line y1='666.0' x1='650.0' y2='666.0' x2='674.0' id='_g2XYBAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_g2Ww8As1EDqQR5zlfybP8A'>
+    <line y1='666.0' x1='674.0' y2='666.0' x2='675.0' id='_g2XYBws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_g2Ww8As1EDqQR5zlfybP8A'>
+    <line y1='666.0' x1='675.0' y2='666.0' x2='699.0' id='_g2XYCAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(699.0,666.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_g_yZwgs1EDqQR5zlfybP8A'>
+    <line y1='759.0' x1='677.0' y2='759.0' x2='688.0' id='_g_yZxws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_g_yZwgs1EDqQR5zlfybP8A'>
+    <line y1='759.0' x1='688.0' y2='759.0' x2='688.0' id='_g_yZygs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_g_yZwgs1EDqQR5zlfybP8A'>
+    <line y1='759.0' x1='688.0' y2='759.0' x2='699.0' id='_g_yZyws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(699.0,759.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_hJDqgQs1EDqQR5zlfybP8A'>
+    <line y1='845.0' x1='629.0' y2='845.0' x2='664.0' id='_hJDqhgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hJDqgQs1EDqQR5zlfybP8A'>
+    <line y1='845.0' x1='664.0' y2='845.0' x2='664.0' id='_hJERkAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hJDqgQs1EDqQR5zlfybP8A'>
+    <line y1='845.0' x1='664.0' y2='845.0' x2='699.0' id='_hJERkQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(699.0,845.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_hRGMMgs1EDqQR5zlfybP8A'>
+    <line y1='939.0' x1='633.0' y2='939.0' x2='666.0' id='_hRGMNws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hRGMMgs1EDqQR5zlfybP8A'>
+    <line y1='939.0' x1='666.0' y2='939.0' x2='666.0' id='_hRGMOgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hRGMMgs1EDqQR5zlfybP8A'>
+    <line y1='939.0' x1='666.0' y2='939.0' x2='699.0' id='_hRGMOws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(699.0,939.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_hbhTggs1EDqQR5zlfybP8A'>
+    <line y1='665.0' x1='759.0' y2='665.0' x2='900.0' id='_hbhThws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hbhTggs1EDqQR5zlfybP8A'>
+    <line y1='665.0' x1='900.0' y2='857.0' x2='900.0' id='_hbhTigs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hbhTggs1EDqQR5zlfybP8A'>
+    <line y1='857.0' x1='900.0' y2='877.0' x2='900.0' id='_hbhTiws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(900.0,877.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_hwmLogs1EDqQR5zlfybP8A'>
+    <line y1='750.0' x1='759.0' y2='750.0' x2='868.0' id='_hwmLpws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hwmLogs1EDqQR5zlfybP8A'>
+    <line y1='750.0' x1='868.0' y2='857.0' x2='868.0' id='_hwmLqgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_hwmLogs1EDqQR5zlfybP8A'>
+    <line y1='857.0' x1='868.0' y2='877.0' x2='868.0' id='_hwmLqws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(868.0,877.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_h79HEgs1EDqQR5zlfybP8A'>
+    <line y1='881.0' x1='759.0' y2='881.0' x2='779.0' id='_h79HFws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_h79HEgs1EDqQR5zlfybP8A'>
+    <line y1='881.0' x1='779.0' y2='881.0' x2='780.0' id='_h79HGgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_h79HEgs1EDqQR5zlfybP8A'>
+    <line y1='881.0' x1='780.0' y2='881.0' x2='800.0' id='_h79HGws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(800.0,881.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_iGmQ0gs1EDqQR5zlfybP8A'>
+    <line y1='928.0' x1='759.0' y2='928.0' x2='779.0' id='_iGmQ1ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iGmQ0gs1EDqQR5zlfybP8A'>
+    <line y1='928.0' x1='779.0' y2='928.0' x2='780.0' id='_iGmQ2gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iGmQ0gs1EDqQR5zlfybP8A'>
+    <line y1='928.0' x1='780.0' y2='928.0' x2='800.0' id='_iGmQ2ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(800.0,928.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_iRBYIQs1EDqQR5zlfybP8A'>
+    <line y1='957.0' x1='882.0' y2='998.0' x2='882.0' id='_iRBYJgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iRBYIQs1EDqQR5zlfybP8A'>
+    <line y1='998.0' x1='882.0' y2='998.0' x2='1033.0' id='_iRBYKQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iRBYIQs1EDqQR5zlfybP8A'>
+    <line y1='998.0' x1='1033.0' y2='1039.0' x2='1033.0' id='_iRBYKgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1033.0,1039.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_iagEQgs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='731.0' y2='1079.0' x2='765.0' id='_iagERws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iagEQgs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='765.0' y2='1079.0' x2='766.0' id='_iagESgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_iagEQgs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='766.0' y2='1079.0' x2='800.0' id='_iagrUAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(800.0,1079.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_ijUpEgs1EDqQR5zlfybP8A'>
+    <line y1='1203.0' x1='718.0' y2='1203.0' x2='759.0' id='_ijVQIQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_ijUpEgs1EDqQR5zlfybP8A'>
+    <line y1='1203.0' x1='759.0' y2='1203.0' x2='759.0' id='_ijVQJAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_ijUpEgs1EDqQR5zlfybP8A'>
+    <line y1='1203.0' x1='759.0' y2='1203.0' x2='800.0' id='_ijVQJQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(800.0,1203.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_itFCAgs1EDqQR5zlfybP8A'>
+    <line y1='1329.0' x1='694.0' y2='1329.0' x2='747.0' id='_itFCBws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_itFCAgs1EDqQR5zlfybP8A'>
+    <line y1='1329.0' x1='747.0' y2='1329.0' x2='747.0' id='_itFCCgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_itFCAgs1EDqQR5zlfybP8A'>
+    <line y1='1329.0' x1='747.0' y2='1329.0' x2='800.0' id='_itFCCws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(800.0,1329.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_i2mKYgs1EDqQR5zlfybP8A'>
+    <line y1='1296.0' x1='897.0' y2='1296.0' x2='1052.0' id='_i2mxdAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_i2mKYgs1EDqQR5zlfybP8A'>
+    <line y1='1296.0' x1='1052.0' y2='1139.0' x2='1052.0' id='_i2mxdws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_i2mKYgs1EDqQR5zlfybP8A'>
+    <line y1='1139.0' x1='1052.0' y2='1119.0' x2='1052.0' id='_i2mxeAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1052.0,1119.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_jJqQUQs1EDqQR5zlfybP8A'>
+    <line y1='1163.0' x1='875.0' y2='1141.0' x2='875.0' id='_jJqQVgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_jJqQUQs1EDqQR5zlfybP8A'>
+    <line y1='1141.0' x1='875.0' y2='1141.0' x2='1033.0' id='_jJqQWQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_jJqQUQs1EDqQR5zlfybP8A'>
+    <line y1='1141.0' x1='1033.0' y2='1119.0' x2='1033.0' id='_jJqQWgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1033.0,1119.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_jTW-4gs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='975.0' y2='1079.0' x2='989.0' id='_jTXl8ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_jTW-4gs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='989.0' y2='1079.0' x2='989.0' id='_jTXl9gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_jTW-4gs1EDqQR5zlfybP8A'>
+    <line y1='1079.0' x1='989.0' y2='1079.0' x2='1003.0' id='_jTXl9ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1003.0,1079.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_wl5L8As1EDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1434.0' y2='1222.0' x2='1418.0' id='_wl5zAgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_wl5L8As1EDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1418.0' y2='1222.0' x2='1417.0' id='_wl5zBQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_wl5L8As1EDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1417.0' y2='1222.0' x2='1401.0' id='_wl5zBgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1401.0,1222.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_xFEbQgs1EDqQR5zlfybP8A'>
+    <line y1='1182.0' x1='1146.0' y2='1169.0' x2='1146.0' id='_xFFCUws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xFEbQgs1EDqQR5zlfybP8A'>
+    <line y1='1169.0' x1='1146.0' y2='1169.0' x2='1496.0' id='_xFFCVgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xFEbQgs1EDqQR5zlfybP8A'>
+    <line y1='1169.0' x1='1496.0' y2='1156.0' x2='1496.0' id='_xFFCVws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1496.0,1156.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_xck8Ugs1EDqQR5zlfybP8A'>
+    <line y1='1371.0' x1='1463.0' y2='1353.0' x2='1463.0' id='_xck8Vws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xck8Ugs1EDqQR5zlfybP8A'>
+    <line y1='1353.0' x1='1463.0' y2='1354.0' x2='1592.0' id='_xck8Wgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xck8Ugs1EDqQR5zlfybP8A'>
+    <line y1='1354.0' x1='1592.0' y2='1336.0' x2='1592.0' id='_xck8Wws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1592.0,1336.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_xl5QYgs1EDqQR5zlfybP8A'>
+    <line y1='1371.0' x1='1591.0' y2='1353.0' x2='1591.0' id='_xl53dAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xl5QYgs1EDqQR5zlfybP8A'>
+    <line y1='1353.0' x1='1591.0' y2='1354.0' x2='1591.0' id='_xl53dws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_xl5QYgs1EDqQR5zlfybP8A'>
+    <line y1='1354.0' x1='1591.0' y2='1336.0' x2='1591.0' id='_xl53eAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1591.0,1336.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_yD5bAgs1EDqQR5zlfybP8A'>
+    <line y1='1113.0' x1='1856.0' y2='1089.0' x2='1856.0' id='_yD6CFAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_yD5bAgs1EDqQR5zlfybP8A'>
+    <line y1='1089.0' x1='1856.0' y2='1089.0' x2='1856.0' id='_yD6CFws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_yD5bAgs1EDqQR5zlfybP8A'>
+    <line y1='1089.0' x1='1856.0' y2='1065.0' x2='1856.0' id='_yD6CGAs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1856.0,1065.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_yRmf0gs1EDqQR5zlfybP8A'>
+    <line y1='985.0' x1='1841.0' y2='942.0' x2='1841.0' id='_yRmf1ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_yRmf0gs1EDqQR5zlfybP8A'>
+    <line y1='942.0' x1='1841.0' y2='942.0' x2='1682.0' id='_yRmf2gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_yRmf0gs1EDqQR5zlfybP8A'>
+    <line y1='942.0' x1='1682.0' y2='899.0' x2='1682.0' id='_yRmf2ws1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1682.0,899.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_4gx-4ws1EDqQR5zlfybP8A'>
+    <line y1='859.0' x1='1244.0' y2='859.0' x2='1417.0' id='_4g2QUgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_4gx-4ws1EDqQR5zlfybP8A'>
+    <line y1='859.0' x1='1417.0' y2='859.0' x2='1417.0' id='_4g2QVQs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_4gx-4ws1EDqQR5zlfybP8A'>
+    <line y1='859.0' x1='1417.0' y2='859.0' x2='1590.0' id='_4g2QVgs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='__dLwUgs1EDqQR5zlfybP8A'>
+    <line y1='787.0' x1='993.0' y2='690.0' x2='993.0' id='__dRP4gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='__dLwUgs1EDqQR5zlfybP8A'>
+    <line y1='690.0' x1='993.0' y2='691.0' x2='993.0' id='__dRP5Qs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='__dLwUgs1EDqQR5zlfybP8A'>
+    <line y1='691.0' x1='993.0' y2='594.0' x2='993.0' id='__dRP5gs1EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_IPXXpQs2EDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1116.0' y2='1222.0' x2='1090.0' id='_IPZz4gs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_IPXXpQs2EDqQR5zlfybP8A'>
+    <line y1='1222.0' x1='1090.0' y2='1092.0' x2='1089.0' id='_IPZz5Qs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_IPXXpQs2EDqQR5zlfybP8A'>
+    <line y1='1092.0' x1='1089.0' y2='1092.0' x2='1063.0' id='_IPZz5gs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YJX9RQs2EDqQR5zlfybP8A'>
+    <line y1='939.0' x1='1473.0' y2='939.0' x2='1544.0' id='_YJbAkgs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YJX9RQs2EDqQR5zlfybP8A'>
+    <line y1='939.0' x1='1544.0' y2='567.0' x2='1544.0' id='_YJbAlQs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_YJX9RQs2EDqQR5zlfybP8A'>
+    <line y1='567.0' x1='1544.0' y2='567.0' x2='1615.0' id='_YJbAlgs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_1PL11Qs2EDqQR5zlfybP8A'>
+    <line y1='819.0' x1='1658.0' y2='762.0' x2='1658.0' id='_1PPgMgs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_1PL11Qs2EDqQR5zlfybP8A'>
+    <line y1='762.0' x1='1658.0' y2='763.0' x2='1658.0' id='_1PPgNQs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_1PL11Qs2EDqQR5zlfybP8A'>
+    <line y1='763.0' x1='1658.0' y2='706.0' x2='1658.0' id='_1PPgNgs2EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MF-AUgs3EDqQR5zlfybP8A'>
+    <line y1='1256.0' x1='1591.0' y2='1160.0' x2='1591.0' id='_MF-nZAs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MF-AUgs3EDqQR5zlfybP8A'>
+    <line y1='1160.0' x1='1591.0' y2='1161.0' x2='1591.0' id='_MF-nZws3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MF-AUgs3EDqQR5zlfybP8A'>
+    <line y1='1161.0' x1='1591.0' y2='1065.0' x2='1591.0' id='_MF-naAs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1591.0,1065.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_MpEtYgs3EDqQR5zlfybP8A'>
+    <line y1='1076.0' x1='1544.0' y2='1070.0' x2='1544.0' id='_MpEtZws3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MpEtYgs3EDqQR5zlfybP8A'>
+    <line y1='1070.0' x1='1544.0' y2='1071.0' x2='1544.0' id='_MpFUcAs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_MpEtYgs3EDqQR5zlfybP8A'>
+    <line y1='1071.0' x1='1544.0' y2='1065.0' x2='1544.0' id='_MpFUcQs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1544.0,1065.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_M0xnEAs3EDqQR5zlfybP8A'>
+    <line y1='985.0' x1='1657.0' y2='942.0' x2='1657.0' id='_M0xnFQs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_M0xnEAs3EDqQR5zlfybP8A'>
+    <line y1='942.0' x1='1657.0' y2='942.0' x2='1657.0' id='_M0xnGAs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_M0xnEAs3EDqQR5zlfybP8A'>
+    <line y1='942.0' x1='1657.0' y2='899.0' x2='1657.0' id='_M0xnGQs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1657.0,899.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_OGEP0gs3EDqQR5zlfybP8A'>
+    <line y1='626.0' x1='1658.0' y2='610.0' x2='1658.0' id='_OGE24gs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_OGEP0gs3EDqQR5zlfybP8A'>
+    <line y1='610.0' x1='1658.0' y2='610.0' x2='1658.0' id='_OGE25Qs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_OGEP0gs3EDqQR5zlfybP8A'>
+    <line y1='610.0' x1='1658.0' y2='594.0' x2='1658.0' id='_OGE25gs3EDqQR5zlfybP8A' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1658.0,594.0) rotate(-0.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_P5tSkg9nEDq5zeTXISOr7g'>
+    <line y1='822.0' x1='1590.0' y2='822.0' x2='1482.0' id='_P5t5pA9nEDq5zeTXISOr7g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_P5tSkg9nEDq5zeTXISOr7g'>
+    <line y1='822.0' x1='1482.0' y2='822.0' x2='1481.0' id='_P5ugsA9nEDq5zeTXISOr7g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_P5tSkg9nEDq5zeTXISOr7g'>
+    <line y1='822.0' x1='1481.0' y2='822.0' x2='1373.0' id='_P5ugsQ9nEDq5zeTXISOr7g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1373.0,822.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_8CeJcDy4EDqPSIvgAy4poQ'>
+    <line y1='1052.0' x1='1151.0' y2='1052.0' x2='1107.0' id='_8Cia4Dy4EDqPSIvgAy4poQ' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_8CeJcDy4EDqPSIvgAy4poQ'>
+    <line y1='1052.0' x1='1107.0' y2='1052.0' x2='1107.0' id='_8Cia4Ty4EDqPSIvgAy4poQ' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_8CeJcDy4EDqPSIvgAy4poQ'>
+    <line y1='1052.0' x1='1107.0' y2='1052.0' x2='1063.0' id='_8Cia4jy4EDqPSIvgAy4poQ' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1063.0,1052.0) rotate(-90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_1r11QD5-EDq1hZNluMzW4g'>
+    <line y1='554.0' x1='1276.0' y2='554.0' x2='1217.0' id='_1r6GtD5-EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_1r11QD5-EDq1hZNluMzW4g'>
+    <line y1='554.0' x1='1217.0' y2='767.0' x2='1217.0' id='_1r6twD5-EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_1r11QD5-EDq1hZNluMzW4g'>
+    <line y1='767.0' x1='1217.0' y2='787.0' x2='1217.0' id='_1r6twT5-EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_QLuNYD5_EDq1hZNluMzW4g'>
+    <line y1='1262.0' x1='1146.0' y2='1306.0' x2='1146.0' id='_QLwCkj5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_QLuNYD5_EDq1hZNluMzW4g'>
+    <line y1='1306.0' x1='1146.0' y2='1306.0' x2='1146.0' id='_QLwCkz5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_QLuNYD5_EDq1hZNluMzW4g'>
+    <line y1='1306.0' x1='1146.0' y2='1350.0' x2='1146.0' id='_QLwClD5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_n-lloD5_EDq1hZNluMzW4g'>
+    <line y1='458.0' x1='760.0' y2='376.0' x2='760.0' id='_n-pQBD5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_n-lloD5_EDq1hZNluMzW4g'>
+    <line y1='376.0' x1='760.0' y2='377.0' x2='760.0' id='_n-p3ED5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_n-lloD5_EDq1hZNluMzW4g'>
+    <line y1='377.0' x1='760.0' y2='295.0' x2='760.0' id='_n-p3ET5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_2GetYD5_EDq1hZNluMzW4g'>
+    <line y1='341.0' x1='608.0' y2='341.0' x2='678.0' id='_2Ggikj5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_2GetYD5_EDq1hZNluMzW4g'>
+    <line y1='341.0' x1='678.0' y2='255.0' x2='678.0' id='_2Ggikz5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_2GetYD5_EDq1hZNluMzW4g'>
+    <line y1='255.0' x1='678.0' y2='255.0' x2='748.0' id='_2GhJoD5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_3AL8kD5_EDq1hZNluMzW4g'>
+    <line y1='381.0' x1='591.0' y2='420.0' x2='591.0' id='_3ANxxD5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_3AL8kD5_EDq1hZNluMzW4g'>
+    <line y1='420.0' x1='591.0' y2='419.0' x2='591.0' id='_3AOY0D5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_3AL8kD5_EDq1hZNluMzW4g'>
+    <line y1='419.0' x1='591.0' y2='458.0' x2='591.0' id='_3AOY0T5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_5zE68D5_EDq1hZNluMzW4g'>
+    <line y1='252.0' x1='822.0' y2='252.0' x2='1160.0' id='_5zGwIj5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_5zE68D5_EDq1hZNluMzW4g'>
+    <line y1='252.0' x1='1160.0' y2='281.0' x2='1160.0' id='_5zGwIz5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_5zE68D5_EDq1hZNluMzW4g'>
+    <line y1='281.0' x1='1160.0' y2='301.0' x2='1160.0' id='_5zGwJD5_EDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_tfc7QD6BEDq1hZNluMzW4g'>
+    <line y1='787.0' x1='1052.0' y2='726.0' x2='1052.0' id='_tfhMsT6BEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_tfc7QD6BEDq1hZNluMzW4g'>
+    <line y1='726.0' x1='1052.0' y2='727.0' x2='1052.0' id='_tfhMsj6BEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_tfc7QD6BEDq1hZNluMzW4g'>
+    <line y1='727.0' x1='1052.0' y2='666.0' x2='1052.0' id='_tfhMsz6BEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Cxq7sD6CEDq1hZNluMzW4g'>
+    <line y1='577.0' x1='1147.0' y2='682.0' x2='1147.0' id='_CxtX8T6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Cxq7sD6CEDq1hZNluMzW4g'>
+    <line y1='682.0' x1='1147.0' y2='682.0' x2='1147.0' id='_CxtX8j6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Cxq7sD6CEDq1hZNluMzW4g'>
+    <line y1='682.0' x1='1147.0' y2='787.0' x2='1147.0' id='_CxtX8z6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Og90YD6CEDq1hZNluMzW4g'>
+    <line y1='429.0' x1='1479.0' y2='429.0' x2='1547.0' id='_OhBewj6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Og90YD6CEDq1hZNluMzW4g'>
+    <line y1='429.0' x1='1547.0' y2='540.0' x2='1547.0' id='_OhCF0D6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_Og90YD6CEDq1hZNluMzW4g'>
+    <line y1='540.0' x1='1547.0' y2='540.0' x2='1615.0' id='_OhCF0T6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_RApi4D6CEDq1hZNluMzW4g'>
+    <line y1='424.0' x1='1336.0' y2='424.0' x2='1377.0' id='_RAqxBD6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_RApi4D6CEDq1hZNluMzW4g'>
+    <line y1='424.0' x1='1377.0' y2='424.0' x2='1378.0' id='_RAqxBT6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_RApi4D6CEDq1hZNluMzW4g'>
+    <line y1='424.0' x1='1378.0' y2='424.0' x2='1419.0' id='_RArYED6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1419.0,424.0) rotate(90.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+  <g id='_RcACID6CEDq1hZNluMzW4g'>
+    <line y1='459.0' x1='1306.0' y2='487.0' x2='1306.0' id='_RcBQRD6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_RcACID6CEDq1hZNluMzW4g'>
+    <line y1='487.0' x1='1306.0' y2='486.0' x2='1306.0' id='_RcBQRT6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_RcACID6CEDq1hZNluMzW4g'>
+    <line y1='486.0' x1='1306.0' y2='514.0' x2='1306.0' id='_RcBQRj6CEDq1hZNluMzW4g' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+    <polygon transform='translate(1306.0,514.0) rotate(-180.0)' stroke-width='1.0' fill='rgb(255, 255, 255)' stroke='rgb(0, 0, 0)' points='-6.0,10.0 0.0,0.0 6.0,10.0'/>
+  </g>
+</svg>
