@@ -8,16 +8,6 @@ using namespace sf;
 int main()
 {
     srand(time(NULL));
-    /* start music)*/
-    Music music;
-    if (!music.openFromFile("Ressources/music/menu/background/epic.ogg"))
-        return -1; // error
-     
-    music.setPitch(1);           // increase the pitch
-    music.setVolume(140);        
-    music.setLoop(true);         // make it loop
-    music.play();
-
     // Créer la View par default
     GameMaster& gm = GameMaster::getInstance();
 

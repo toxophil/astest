@@ -10,7 +10,7 @@
 #include "TextureLoader.h"
 #include <vector>
 #include "Skeleton.hpp"
-
+#include "MusicManager.hpp"
 
 class Player;
 
@@ -19,6 +19,7 @@ using namespace std;
 class GameMaster
 {
 private:
+	MusicManager _leMusicManager;
 	Map _map;
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
@@ -54,6 +55,8 @@ public:
 
 	const uint64_t getScreenW() const;
 	const uint64_t getScreenH() const;
+	MusicManager& getMusicManager();
+
 	//sf::RenderWindow& getWindow() const;
 	//---------------------------------
 

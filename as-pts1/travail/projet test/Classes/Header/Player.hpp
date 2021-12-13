@@ -23,4 +23,3 @@ public:
 	Inventory* getInventory();
 
 };
-

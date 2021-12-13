@@ -62,6 +62,10 @@ const uint64_t GameMaster::getScreenH() const {
 	return _screenH;
 }
 
+MusicManager& GameMaster::getMusicManager() {
+	return _leMusicManager;
+}
+
 //ajoute un �l�ment d�placable � la liste des �l�ments d�placables
 bool GameMaster::addMoveableObject(MoveableObject& moveableObject)
 {
@@ -97,6 +101,7 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 
 void GameMaster::runGame()
 {
+
 	// Le générateur
 	Generator leGen = Generator();
 	Map laMap = leGen.makeMap(5);
@@ -133,8 +138,6 @@ void GameMaster::runGame()
 	Skeleton ennemy;
 	addMoveableObject(ennemy);
 
-
-	
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
 	ennemy.setEquippedWeapon(&thiefBow);
@@ -143,9 +146,17 @@ void GameMaster::runGame()
 	bool openMainMenu = false;
 	Menu leMenuP;
 
+	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::GothicDark), false);
 	//boucle principale
+	sf::Clock _musicCd;
+	_musicCd.restart();
+
+	bool done = false;
 	while (window.isOpen())
 	{
+		if (_musicCd.getElapsedTime().asSeconds() > 5 && !done) {
+			_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), true);
+		}
 		//mise a jour du delta
 		_deltaTime = clk.restart();
 
@@ -161,8 +172,10 @@ void GameMaster::runGame()
 			window.clear(); // Clear avant
 				leMenuP.logicMenu(window, event); // Affichage Menu
 			window.display();
+
 		}
 		else {
+			
 			//ev�nement 
 			while (window.pollEvent(event))
 			{
@@ -217,5 +230,7 @@ void GameMaster::runGame()
 			}
 			window.display();
 		}
+
+		_leMusicManager.logicMenu();
 	}
 }
