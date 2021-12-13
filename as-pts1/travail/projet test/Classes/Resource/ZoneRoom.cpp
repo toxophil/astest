@@ -19,13 +19,13 @@ uint32_t ZoneRoom::getW() const {
 
 void ZoneRoom::addRoom(Room& uneRoom) {
     vector<uint32_t> lesRoomsAttachable;
-    cout << "============================================================== " << uneRoom.getID() << endl;
+    //cout << "============================================================== " << uneRoom.getID() << endl;
     uint32_t wA, hA, wB, hB, rdmPosA, rdmPosB, distanceMax, rdmSide, roomIDSelected;
     int64_t xA, yA, xB, yB;
     Room aConnecter;
     do {
         rdmSide = rand() % (4 - 1 + 1) + 1;
-        //cout << rdmSide << endl;
+        ////cout << rdmSide << endl;
         switch (rdmSide) {
         case 1: // Haut
             lesRoomsAttachable = getTopFree();
@@ -43,8 +43,8 @@ void ZoneRoom::addRoom(Room& uneRoom) {
         roomIDSelected = lesRoomsAttachable[rand() % lesRoomsAttachable.size()];
         aConnecter = _rooms[roomIDSelected];
 
-        cout << "POUR " << uneRoom.getID() << " ";
-        cout << "Selected: " << aConnecter.getID();
+        //cout << "POUR " << uneRoom.getID() << " ";
+        //cout << "Selected: " << aConnecter.getID();
         rdmPosA;
         rdmPosB;
 
@@ -82,7 +82,7 @@ void ZoneRoom::addRoom(Room& uneRoom) {
 
 
 
-        cout << "Dist max: " << distanceMax << endl;
+        //cout << "Dist max: " << distanceMax << endl;
         switch (rdmSide) {
         case 1: // haut
             yA = yA - distanceMax - hA;
@@ -105,12 +105,12 @@ void ZoneRoom::addRoom(Room& uneRoom) {
     } while (!isFree(xA, yA, wA, hA));
     uneRoom.setX(xA);
     uneRoom.setY(yA);
-    cout << "===== A" << endl;
-    cout << "X:" << xA << " Y:" << yA << endl;
-    cout << "W:" << wA << " H:" << hA << endl;
-    cout << "===== B" << endl;
-    cout << "X:" << xB << " Y:" << yB << endl;
-    cout << "W:" << wB << " H:" << hB << endl;
+    //cout << "===== A" << endl;
+    //cout << "X:" << xA << " Y:" << yA << endl;
+    //cout << "W:" << wA << " H:" << hA << endl;
+    //cout << "===== B" << endl;
+    //cout << "X:" << xB << " Y:" << yB << endl;
+    //cout << "W:" << wB << " H:" << hB << endl;
     // Créer les entrés dans les salles
     switch (rdmSide) {
     case 1: // haut
@@ -167,7 +167,7 @@ void ZoneRoom::addRoom(Room& uneRoom) {
         hC = abs(yA - yB - hB);
         break;
     }
-    cout << "Gonna ste " << rdmSide << ": " << hC << "   et " << wC << endl;
+    //cout << "Gonna ste " << rdmSide << ": " << hC << "   et " << wC << endl;
     if (estVertical) {
         for (uint32_t i = 0; i < hC; i++) {
             matriceConnection.push_back(vector<uint32_t>());
@@ -194,11 +194,11 @@ void ZoneRoom::addRoom(Room& uneRoom) {
             }
         }
     }
-    cout << "OWO Connections:   w=" << wC << " h=" << hC << " x=" << xC << " y=" << yC << endl;
+    //cout << "OWO Connections:   w=" << wC << " h=" << hC << " x=" << xC << " y=" << yC << endl;
 
     Connection laConnection = Connection(xC, yC, &uneRoom, &aConnecter, estVertical, matriceConnection);
 
-    cout << "VERIF x= " << laConnection.getX() << "  Y=" << laConnection.getY() << endl;
+    //cout << "VERIF x= " << laConnection.getX() << "  Y=" << laConnection.getY() << endl;
     uneRoom.addConnection(laConnection);
     _rooms[roomIDSelected].addConnection(laConnection);
     _lesConnections.push_back(laConnection);
@@ -278,12 +278,12 @@ vector<uint32_t> ZoneRoom::getRightFree() const {
 
                 jusquaX2 = x2 + w2;
                 jusquaY2 = y2 + h2;
-                //    cout << "Verif... " << _rooms[i].getID() << " POUR " << _rooms[l].getID() << "   ";
-                  //  cout << (x<x2) << " et: " << (y<y2 && jusquaY >= y2) << (y>=y2 && y <= jusquaY2) << endl;
+                //    //cout << "Verif... " << _rooms[i].getID() << " POUR " << _rooms[l].getID() << "   ";
+                  //  //cout << (x<x2) << " et: " << (y<y2 && jusquaY >= y2) << (y>=y2 && y <= jusquaY2) << endl;
                 if (x < x2) {
                     if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
                         doAdd = false;
-                        //cout << "Nopn!!!" << endl;
+                        ////cout << "Nopn!!!" << endl;
                         break;
                     }
                 }
@@ -431,7 +431,7 @@ bool ZoneRoom::isFree(int64_t x, int64_t y, uint32_t w, uint32_t h) const {
 
     int64_t jusquaX = x + w;
     int64_t jusquaY = y + h;
-    //cout << x << " Y:" << y << endl;
+    ////cout << x << " Y:" << y << endl;
     for (uint32_t k = 0; k < _rooms.size(); k++) {
         Room uneRoom = _rooms[k];
 
@@ -487,7 +487,7 @@ void ZoneRoom::makeIntersection() {
     bool estVertical;
 
     for (uint32_t i = 0; i < _lesConnections.size(); i++) {
-        cout << "====== " << i << endl;
+        //cout << "====== " << i << endl;
         Connection& uneConnection = _lesConnections[i];
 
         x = uneConnection.getX();
@@ -503,7 +503,7 @@ void ZoneRoom::makeIntersection() {
 
         for (uint32_t k = 0; k < _lesConnections.size(); k++) {
             if (k != i) {
-                //cout << k << ":" << i << endl;
+                ////cout << k << ":" << i << endl;
                 x2 = _lesConnections[k].getX();
                 y2 = _lesConnections[k].getY();
 
@@ -516,14 +516,14 @@ void ZoneRoom::makeIntersection() {
 
                 if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
                     if ((x < x2 && jusquaX >= x2) || (x >= x2 && x <= jusquaX2)) {
-                        cout << "Oui Pour " << k << endl;
+                        //cout << "Oui Pour " << k << endl;
                         if (estVertical) {
-                            cout << "EST VERTICAL !  Ligne: " << (abs(y - y2) + 3) << endl;
+                            //cout << "EST VERTICAL !  Ligne: " << (abs(y - y2) + 3) << endl;
                             uneConnection.modifyMatrice((abs(y - y2) + 1), 0, 0);
                             uneConnection.modifyMatrice((abs(y - y2) + 1), 2, 0);
                         }
                         else {
-                            cout << "EST Horizontal !  Ligne: " << abs(x2) - abs(x) << " " << endl;
+                            //cout << "EST Horizontal !  Ligne: " << abs(x2) - abs(x) << " " << endl;
                             uint64_t val = abs(abs(x2) - abs(x));
                             uneConnection.modifyMatrice(0, val + 1, 0);
                             uneConnection.modifyMatrice(2, val + 1, 0);
@@ -566,7 +566,7 @@ void ZoneRoom::makeWalls() {
             _walls.push_back(lesW[k]);
         }
     }
-    //cout << "NBTOT WALL = " << _walls.size() << " EREEEEEEEEEEEEEEEEEEE" << endl;
+    ////cout << "NBTOT WALL = " << _walls.size() << " EREEEEEEEEEEEEEEEEEEE" << endl;
 }
 
 vector<Wall> ZoneRoom::getWalls() {

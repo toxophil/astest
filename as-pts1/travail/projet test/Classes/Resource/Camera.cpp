@@ -45,7 +45,7 @@ void Camera::drawMap(sf::RenderWindow& window, Map m) {
 }
 
 void Camera::drawAll(sf::RenderWindow& window, const std::list<MoveableObject*> objectList, const Map m) {
-    //cout << "/))) " << endl;
+    ////cout << "/))) " << endl;
     drawMap(window,m);
     for (MoveableObject* object : objectList) {
         drawObject(window, object);
@@ -76,7 +76,7 @@ void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosit
     laPosition.x += xOffset;
     laPosition.y += yOffset;
     
-    //cout << laPosition.x << " - "<< ((float)mousePosition.x - (float)windowSize.x / 2) << " ET " <<  " y:" << mousePosition.y << endl;
+    ////cout << laPosition.x << " - "<< ((float)mousePosition.x - (float)windowSize.x / 2) << " ET " <<  " y:" << mousePosition.y << endl;
     _laVue.setCenter(laPosition);
     window.setView(_laVue);
 }

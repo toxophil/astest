@@ -41,6 +41,5 @@ Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& s
 
 	float angle = atan2(nextDirection.y, nextDirection.x);
 	_sprite.setRotation((angle * 180 / PI) + 90.f);
-	cout << angle << endl;
 
 }

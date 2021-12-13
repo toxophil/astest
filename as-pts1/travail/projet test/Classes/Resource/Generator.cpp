@@ -38,7 +38,7 @@ Map Generator::makeMap(uint32_t difficulter) const {
                 }
             }
         }
-        //cout << ha << " : " << wa << endl;
+        ////cout << ha << " : " << wa << endl;
         lesSalles.push_back(Room(i, matriceRoom));
     }
     ZoneRoom laZoneRoom = ZoneRoom(lesSalles[0]);
@@ -50,7 +50,7 @@ Map Generator::makeMap(uint32_t difficulter) const {
     laZoneRoom.makeIntersection();
     laZoneRoom.makeTiles();
     laZoneRoom.makeWalls();
-    cout << "CHECK NB WALL " << laZoneRoom.getWalls().size() << endl;
+    //cout << "CHECK NB WALL " << laZoneRoom.getWalls().size() << endl;
     Map generatedMap = Map(laZoneRoom.getRooms(), laZoneRoom.getConnections(), laZoneRoom.getWalls());
     return generatedMap;
 }

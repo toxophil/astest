@@ -28,7 +28,7 @@ Menu::Menu() {
 	int64_t x = - (int64_t)buttonW / 2;
 	int64_t y = -(int64_t) buttonH/2;
 
-	cout << "X: " << x << endl;
+	//cout << "X: " << x << endl;
 	_lesBoutons.push_back(Button("Explorer",x,y,buttonW,buttonH, fontMenu));
 	y += offsetY;
 	_lesBoutons.push_back(Button("Comment jouer ?", x, y, buttonW, buttonH, fontMenu));
@@ -49,7 +49,7 @@ Menu::Menu() {
 	_backgroundSprite.setOrigin(scaledSize.width / 2, scaledSize.height / 2);
 	_backgroundSprite.setPosition(_laVue.getCenter());
 
-	cout << GameMaster::getInstance().getScreenW() << endl;
+	////cout << GameMaster::getInstance().getScreenW() << endl;
 	Texture logoTexture = GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Logo);
 	Vector2u sizeLogo = logoTexture.getSize();
 
