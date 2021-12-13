@@ -57,7 +57,7 @@ void Camera::drawObject(sf::RenderWindow& window, const MoveableObject* object)c
 }
 
 void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosition, sf::FloatRect localBounds) {
-    sf::Vector2i mousePosition = sf::Mouse::getPosition();
+    sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
     sf::Vector2u windowSize = window.getSize();
 
     laPosition.y = laPosition.y + localBounds.height / 2;

@@ -153,6 +153,7 @@
     <ClCompile Include="Classes\Resource\Map.cpp" />
     <ClCompile Include="Classes\Resource\Menu.cpp" />
     <ClCompile Include="Classes\Resource\MoveableObject.cpp" />
+    <ClCompile Include="Classes\Resource\MusicManager.cpp" />
     <ClCompile Include="Classes\Resource\PassableObject.cpp" />
     <ClCompile Include="Classes\Resource\Player.cpp" />
     <ClCompile Include="Classes\Resource\Projectile.cpp" />
@@ -205,6 +206,7 @@
     <ClInclude Include="Classes\Header\Map.hpp" />
     <ClInclude Include="Classes\Header\Menu.hpp" />
     <ClInclude Include="Classes\Header\MoveableObject.hpp" />
+    <ClInclude Include="Classes\Header\MusicManager.hpp" />
     <ClInclude Include="Classes\Header\PassableObject.hpp" />
     <ClInclude Include="Classes\Header\Player.hpp" />
     <ClInclude Include="Classes\Header\Projectile.hpp" />

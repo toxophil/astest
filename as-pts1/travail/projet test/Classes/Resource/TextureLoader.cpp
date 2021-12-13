@@ -16,7 +16,7 @@ TextureLoader::TextureLoader()
 	loadLocationTexture[TextureNames::Skeleton] = "Ressources/img/ennemy/orc/goblin_idle_anim_f0_nos.png";
 
 	// Les projectiles
-	loadLocationTexture[TextureNames::Arrow] = "Ressources/img/projectile/arrow.png";
+	loadLocationTexture[TextureNames::Arrow] = "Ressources/img/projectile/arrow_nos.png";
 
 	// Textures de la map
 	loadLocationTexture[TextureNames::WallRL] = "Ressources/img/map/hd/mur3.png";
@@ -149,7 +149,7 @@ TextureLoader::TextureLoader()
 			tempText.setSmooth(false);
 		}
 		else {
-			tempText.setSmooth(true);
+			tempText.setSmooth(false);
 		}
 		_textureMap[it.first] = tempText;
 	}

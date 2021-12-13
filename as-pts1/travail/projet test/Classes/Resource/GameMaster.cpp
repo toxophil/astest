@@ -107,6 +107,7 @@ void GameMaster::runGame()
 	window.setFramerateLimit(60);
 	window.setVerticalSyncEnabled(true);
 
+
 	_screenW = leModeVideo.width;
 	_screenH = leModeVideo.height;
 
@@ -120,7 +121,9 @@ void GameMaster::runGame()
 	// Weapon defWeapon, Animation idleAnim, Animation walkAnim, uint8_t defLife, uint16_t defSpeed
 	//create a player
 
-	Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
+	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
+	Classe classeDragonF(&thiefBow, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 200);
+
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
 	Player player(classeDragonF);
