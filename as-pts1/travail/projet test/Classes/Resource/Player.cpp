@@ -42,6 +42,16 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 		nextDirection += sf::Vector2f(0, speed);
 	}
 
+	const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+	if (mousePosition.x > _sprite.getPosition().x  ) {
+		_sprite.setScale(1.f, 1.f);
+	}
+	else {
+		_sprite.setScale(-1.f, 1.f);
+	}
+	// Reset origine
+	sf::FloatRect globalBounds = _sprite.getGlobalBounds();
+	_sprite.setOrigin(globalBounds.width/2, globalBounds.height/2);
 
 	//normalisation du vecteur de longeur speed
 	nextDirection.x = std::min(nextDirection.x, speed);
@@ -79,7 +89,6 @@ void Player::update() {
 			_animTime.restart();
 		}
 	}
-
 	nextDirection = sf::Vector2f(0, 0);
 }
 
