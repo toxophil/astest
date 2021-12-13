@@ -131,6 +131,7 @@
     <ClCompile Include="Classes\Resource\Arrow.cpp" />
     <ClCompile Include="Classes\Resource\AttributeBar.cpp" />
     <ClCompile Include="Classes\Resource\Bow.cpp" />
+    <ClCompile Include="Classes\Resource\Button.cpp" />
     <ClCompile Include="Classes\Resource\Camera.cpp" />
     <ClCompile Include="Classes\Resource\Classe.cpp" />
     <ClCompile Include="Classes\Resource\Connection.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Classes\Header\Arrow.hpp" />
     <ClInclude Include="Classes\Header\AttributeBar.hpp" />
     <ClInclude Include="Classes\Header\Bow.hpp" />
+    <ClInclude Include="Classes\Header\Button.hpp" />
     <ClInclude Include="Classes\Header\Camera.hpp" />
     <ClInclude Include="Classes\Header\Classe.hpp" />
     <ClInclude Include="Classes\Header\Connection.hpp" />
