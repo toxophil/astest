@@ -3,11 +3,13 @@
 #define DEF_MENU
 
 #include "Animation.hpp"
+#include "Button.hpp"
 
 class Menu
 {
 private:
-	vector<String> _lesBoutons;
+	sf::Font fontMenu;
+	vector<Button> _lesBoutons;
 	Animation _backgroundAnim;
 	sf::Clock _animTime;
 

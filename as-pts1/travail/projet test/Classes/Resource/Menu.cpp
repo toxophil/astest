@@ -12,13 +12,31 @@ sf::Sprite _logoSprite;
 
 Menu::Menu() {
 	// Créer la view
+
+	if (!fontMenu.loadFromFile("Ressources/fonts/BebasNeue-Light.ttf")) {
+		throw invalid_argument("Font inexistante");
+	}
+
 	sf::VideoMode leScreen = sf::VideoMode::getDesktopMode();
 	_laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
 
-	_lesBoutons.push_back("Explorer");
-	_lesBoutons.push_back("Comment jouer ?");
-	_lesBoutons.push_back("L’histoire");
-	_lesBoutons.push_back("Quitter");
+	uint64_t buttonW = leScreen.width/3;
+	uint64_t buttonH = leScreen.height/5;
+
+	int64_t offsetY = buttonH +5;
+
+	int64_t x = leScreen.width / 2 - buttonW / 2;
+	int64_t y = offsetY;
+
+	
+	_lesBoutons.push_back(Button("Explorer",x,y,buttonW,buttonH, fontMenu));
+	y += offsetY;
+	_lesBoutons.push_back(Button("Comment jouer ?", x, y, buttonW, buttonH, fontMenu));
+	y += offsetY;
+	_lesBoutons.push_back(Button("L'histoire", x, y, buttonW, buttonH, fontMenu));
+	y += offsetY;
+	_lesBoutons.push_back(Button("Quitter", x, y, buttonW, buttonH, fontMenu));
+
 
 	_backgroundAnim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Background_Wild);
 	_backgroundAnim.setSpeed(120);
@@ -60,4 +78,8 @@ void Menu::logicMenu(sf::RenderWindow& window, const sf::Event& event) {
 	
 	window.draw(_backgroundSprite);
 	window.draw(_logoSprite);
+
+	for (uint8_t i = 0; i < 4; i++) {
+		_lesBoutons[i].draw(window);
+	}
 }
