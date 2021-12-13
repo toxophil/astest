@@ -1,10 +1,11 @@
 #include "../Header/ZoneRoom.hpp"
 #include <cmath>
-ZoneRoom::ZoneRoom(Room& uneSalle) {
+ZoneRoom::ZoneRoom(Room& uneSalle, MapTheme& leTheme) {
     _w = uneSalle.getW();
     _h = uneSalle.getH();
 
     _rooms.push_back(uneSalle);
+    _leTheme = leTheme;
 }
 
 vector<Room> ZoneRoom::getRooms() const {
@@ -538,10 +539,10 @@ void ZoneRoom::makeIntersection() {
 
 void ZoneRoom::makeTiles() {
     for (uint32_t i = 0; i <_lesConnections.size(); i++) {
-        _lesConnections[i].applyTiles();
+        _lesConnections[i].applyTiles(_leTheme);
     }
     for (uint32_t i = 0; i < _rooms.size(); i++) {
-        _rooms[i].applyTiles();
+        _rooms[i].applyTiles(_leTheme);
     }
 }
 

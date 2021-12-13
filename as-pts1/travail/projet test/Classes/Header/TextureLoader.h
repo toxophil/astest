@@ -35,6 +35,16 @@ public:
 		Floor6,
 		Floor7,
 
+		DecorDoor,
+		DecorDoorLeft,
+		DecorDoorRight,
+		DecorPillard,
+		DecorWallA,
+		DecorWallB,
+		DecorWallC,
+		DecorWallD,
+		DecorWallE,
+
 		Logo
 	};
 
@@ -65,7 +75,7 @@ public:
 
 	TextureLoader();
 
-	const Texture& getTexture(TextureNames texture);
+	Texture& getTexture(TextureNames texture);
 	Animation& getAnimation(AnimationNames animation);
 
 private:

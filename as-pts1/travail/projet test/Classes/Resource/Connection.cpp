@@ -34,7 +34,7 @@ void Connection::modifyMatrice(int32_t l, int32_t c, uint32_t val) {
     _matrice[l][c] = val;
 }
 
-void Connection::applyTiles() {
+void Connection::applyTiles(MapTheme& leTheme) {
     sf::Sprite sprite;
 
     uint32_t h = _matrice.size();
@@ -47,7 +47,7 @@ void Connection::applyTiles() {
             _tiles.push_back(sprite);
 
             if (_matrice[i][r] == 0) {
-                _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
+                _tiles[indice].setTexture(leTheme.getTile());
                 _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
                 _tiles.push_back(sprite);
                 indice++;

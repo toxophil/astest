@@ -36,6 +36,18 @@ TextureLoader::TextureLoader()
 	loadLocationTexture[TextureNames::Floor6] = "Ressources/img/map/hd/floor6.png";
 	loadLocationTexture[TextureNames::Floor7] = "Ressources/img/map/hd/floor7.png";
 
+	// Les décors de la map
+	loadLocationTexture[TextureNames::DecorDoor] = "Ressources/img/map/hd/mur7.png";
+	loadLocationTexture[TextureNames::DecorDoorLeft] = "Ressources/img/map/hd/tile004.png";
+	loadLocationTexture[TextureNames::DecorDoorRight] = "Ressources/img/map/hd/tile005.png";
+	loadLocationTexture[TextureNames::DecorPillard] = "Ressources/img/map/hd/pillier.png";
+	loadLocationTexture[TextureNames::DecorWallA] = "Ressources/img/map/hd/porte1.png";
+	loadLocationTexture[TextureNames::DecorWallB] = "Ressources/img/map/hd/porte2.png";
+	loadLocationTexture[TextureNames::DecorWallC] = "Ressources/img/map/hd/porte3.png";
+	loadLocationTexture[TextureNames::DecorWallD] = "Ressources/img/map/hd/porte4.png";
+	loadLocationTexture[TextureNames::DecorWallE] = "Ressources/img/map/hd/porte5.png";
+
+
 	loadLocationTexture[TextureNames::Logo] = "Ressources/img/menu/logo.png";
 
 	// Les animations
@@ -172,7 +184,7 @@ TextureLoader::TextureLoader()
 
 }
 
-const Texture& TextureLoader::getTexture(TextureNames texture)
+Texture& TextureLoader::getTexture(TextureNames texture)
 {
 	auto it = _textureMap.find(texture);
 	if (it == _textureMap.end()) {

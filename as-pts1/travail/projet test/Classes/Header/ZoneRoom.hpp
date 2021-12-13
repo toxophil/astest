@@ -7,16 +7,18 @@ using namespace std;
 #include <vector>
 #include "Room.hpp"
 #include "Connection.hpp"
+#include "MapTheme.hpp"
 
 class ZoneRoom {
 private:
+    MapTheme _leTheme;
     int64_t _w;
     int64_t _h;
     vector<Room> _rooms;
     vector<Connection> _lesConnections;
     vector<Wall> _walls;
 public:
-    ZoneRoom(Room&);
+    ZoneRoom(Room&, MapTheme&);
     vector<Room> getRooms() const;
 
 

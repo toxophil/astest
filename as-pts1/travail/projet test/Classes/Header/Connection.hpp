@@ -6,6 +6,7 @@
 using namespace std;
 
 #include <vector>
+#include "MapTheme.hpp"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
@@ -37,7 +38,7 @@ public:
     vector<vector<uint32_t>> getMatrice() const;
     void modifyMatrice(int32_t, int32_t, uint32_t);
 
-    void applyTiles();
+    void applyTiles(MapTheme&);
     vector<sf::Sprite> getTiles() const;
 
     void applyWalls();

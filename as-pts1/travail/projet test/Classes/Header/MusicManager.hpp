@@ -7,7 +7,7 @@
 using namespace sf;
 using namespace std;
 
-const float cdFade = 0.5;
+const float cdFade = 1.0f;
 class MusicManager
 {
 public:

@@ -1,6 +1,7 @@
 #include "../Header/Generator.hpp"
 #include "../Header/Connection.hpp"
 #include "../Header/ZoneRoom.hpp"
+#include "../Header/GameMaster.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -11,10 +12,46 @@
 
 #include <math.h>
 
-Generator::Generator() {}
+Generator::Generator() {
+    MapTheme themeA(TextureLoader::TextureNames::Floor1);
+    MapTheme themeB(TextureLoader::TextureNames::Floor2);
+    MapTheme themeC(TextureLoader::TextureNames::Floor3);
+    MapTheme themeD(TextureLoader::TextureNames::Floor4);
+    MapTheme themeE(TextureLoader::TextureNames::Floor5);
+    MapTheme themeF(TextureLoader::TextureNames::Floor6);
+    MapTheme themeG(TextureLoader::TextureNames::Floor7);
 
+    themeA.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeB.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeC.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeD.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeE.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeF.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeG.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
 
-Map Generator::makeMap(uint32_t difficulter) const {
+    themeA.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallA));
+    themeB.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallA));
+    themeC.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallB));
+    themeD.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallC));
+    themeE.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallC));
+    themeF.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallD));
+    themeG.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallE));
+
+    _lesThemes.push_back(themeA);
+    _lesThemes.push_back(themeB);
+    _lesThemes.push_back(themeC);
+    _lesThemes.push_back(themeD);
+    _lesThemes.push_back(themeE);
+    _lesThemes.push_back(themeF);
+    _lesThemes.push_back(themeG);
+}
+
+MapTheme& Generator::getRdmTheme() {
+    int rdm = rand() % _lesThemes.size();
+    return _lesThemes[rdm];
+}
+
+Map Generator::makeMap(uint32_t difficulter) {
     uint32_t nbSalle = 5;//difficulter*3;
     vector<Room> lesSalles;
 
@@ -41,7 +78,7 @@ Map Generator::makeMap(uint32_t difficulter) const {
         ////cout << ha << " : " << wa << endl;
         lesSalles.push_back(Room(i, matriceRoom));
     }
-    ZoneRoom laZoneRoom = ZoneRoom(lesSalles[0]);
+    ZoneRoom laZoneRoom = ZoneRoom(lesSalles[0], getRdmTheme());
 
     for (uint32_t i = 1; i < nbSalle + 1; i++) {
         laZoneRoom.addRoom(lesSalles[i]);

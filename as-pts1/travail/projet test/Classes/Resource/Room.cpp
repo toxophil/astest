@@ -62,7 +62,7 @@ void Room::modifyMatrice(int32_t l, int32_t c, uint32_t val) {
     _matrice[l][c] = val;
 }
 
-void Room::applyTiles() {
+void Room::applyTiles(MapTheme& leTheme) {
     sf::Sprite sprite;
 
     _tiles = vector<sf::Sprite>();
@@ -73,7 +73,7 @@ void Room::applyTiles() {
             _tiles.push_back(sprite);
 
             if (_matrice[i][r] == 0) {
-                _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
+                _tiles[indice].setTexture(leTheme.getTile());
                 _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                 _tiles.push_back(sprite);
                 indice++;
@@ -127,7 +127,7 @@ void Room::applyTiles() {
                 }
                 else if (_matrice[i][r] != 0) { // Millieu et pas le sol
 
-                    _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Floor1));
+                    _tiles[indice].setTexture(leTheme.getTile());
                     _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                     _tiles.push_back(sprite);
                     indice++;
