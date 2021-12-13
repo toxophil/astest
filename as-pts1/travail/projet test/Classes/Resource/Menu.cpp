@@ -21,7 +21,7 @@ Menu::Menu() {
 	_lesBoutons.push_back("Quitter");
 
 	_backgroundAnim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Background_Wild);
-	_backgroundAnim.setSpeed(100);
+	_backgroundAnim.setSpeed(120);
 
 	// ReSize
 	Vector2u backGSize = _backgroundAnim.getNextFrame().getSize();
