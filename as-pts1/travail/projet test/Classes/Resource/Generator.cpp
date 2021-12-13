@@ -21,21 +21,21 @@ Generator::Generator() {
     MapTheme themeF(TextureLoader::TextureNames::Floor6);
     MapTheme themeG(TextureLoader::TextureNames::Floor7);
 
-    themeA.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeB.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeC.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeD.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeE.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeF.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
-    themeG.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorPillard));
+    themeA.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeB.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeC.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeD.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeE.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeF.addTexture(TextureLoader::TextureNames::DecorPillard);
+    themeG.addTexture(TextureLoader::TextureNames::DecorPillard);
 
-    themeA.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallA));
-    themeB.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallA));
-    themeC.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallB));
-    themeD.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallC));
-    themeE.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallC));
-    themeF.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallD));
-    themeG.addTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::DecorWallE));
+    themeA.addTexture(TextureLoader::TextureNames::DecorWallA);
+    themeB.addTexture(TextureLoader::TextureNames::DecorWallA);
+    themeC.addTexture(TextureLoader::TextureNames::DecorWallB);
+    themeD.addTexture(TextureLoader::TextureNames::DecorWallC);
+    themeE.addTexture(TextureLoader::TextureNames::DecorWallC);
+    themeF.addTexture(TextureLoader::TextureNames::DecorWallD);
+    themeG.addTexture(TextureLoader::TextureNames::DecorWallE);
 
     _lesThemes.push_back(themeA);
     _lesThemes.push_back(themeB);

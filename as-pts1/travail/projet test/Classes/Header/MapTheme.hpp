@@ -15,7 +15,7 @@ using namespace sf;
 class MapTheme {
 private:
     TextureLoader::TextureNames _enumTexture;
-    vector<Texture> _lesWalls;
+    vector<TextureLoader::TextureNames> _lesWalls;
     vector<MusicManager::MusicNames>  _lesMusiques;
 
 public:
@@ -23,7 +23,7 @@ public:
     MapTheme(TextureLoader::TextureNames);
     MapTheme(const MapTheme& copyMapTheme); // Copy Constructor
 
-    void addTexture(Texture&);
+    void addTexture(TextureLoader::TextureNames);
     void addMusic(MusicManager::MusicNames&);
     Texture& getRdmWall();
     MusicManager::MusicNames& getRdmMusic();

@@ -48,27 +48,34 @@ void Connection::applyTiles(MapTheme& leTheme) {
 
             if (_matrice[i][r] == 0) {
                 _tiles[indice].setTexture(leTheme.getTile());
-                _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
+                _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                 _tiles.push_back(sprite);
                 indice++;
             }
             else {
                 if (!_estVertical) {
-
-                    _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRL));
-                    _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
-                    _tiles.push_back(sprite);
-                    indice++;
+                    if (rand() % 3 != 0) {
+                        _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRL));
+                        _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
+                        _tiles.push_back(sprite);
+                        indice++;
+                    }
+                    else {
+                        _tiles[indice].setTexture(leTheme.getRdmWall());
+                        _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
+                        _tiles.push_back(sprite);
+                        indice++;
+                    }
                 }
                 else if (r == 0) {
                     _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallRight));
-                    _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
+                    _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                     _tiles.push_back(sprite);
                     indice++;
                 }
                 else if (r == 2) {
                     _tiles[indice].setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::WallLeft));
-                    _tiles[indice].setPosition(_x * 32 + r * 32, _y * 32 + i * 32);
+                    _tiles[indice].setPosition(_x * 32 + (int64_t)r * 32, _y * 32 + (int64_t)i * 32);
                     _tiles.push_back(sprite);
                     indice++;
                 }
@@ -90,7 +97,7 @@ void Connection::applyWalls() {
         _walls.push_back(Wall( _x * 32 + 32*2 + 10, _y * 32,32, getH()*32)); // Droite
     }
     else {
-        _walls.push_back(Wall(_x * 32, (_y+0.5) * 32 + 32*2, getW()*32, 32 )); // Bas
+        _walls.push_back(Wall(_x * 32, (_y+0.5) * 32 + (int64_t)32*2, getW()*32, 32 )); // Bas
         _walls.push_back(Wall( _x * 32, _y * 32, getW()*32, 32 )); // Haut
     }
 }
