@@ -20,15 +20,15 @@ Menu::Menu() {
 	sf::VideoMode leScreen = sf::VideoMode::getDesktopMode();
 	_laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
 
-	uint64_t buttonW = leScreen.width/3;
-	uint64_t buttonH = leScreen.height/5;
+	uint64_t buttonW = leScreen.width/6;
+	uint64_t buttonH = leScreen.height/10;
 
 	int64_t offsetY = buttonH +5;
 
-	int64_t x = leScreen.width / 2 - buttonW / 2;
-	int64_t y = offsetY;
+	int64_t x = - (int64_t)buttonW / 2;
+	int64_t y = -(int64_t) buttonH/2;
 
-	
+	cout << "X: " << x << endl;
 	_lesBoutons.push_back(Button("Explorer",x,y,buttonW,buttonH, fontMenu));
 	y += offsetY;
 	_lesBoutons.push_back(Button("Comment jouer ?", x, y, buttonW, buttonH, fontMenu));

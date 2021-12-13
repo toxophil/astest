@@ -2,7 +2,7 @@
 
 bool Button::isHovered(sf::RenderWindow& laWindow) {
 	const sf::Vector2f mousePosition = laWindow.mapPixelToCoords(sf::Mouse::getPosition(laWindow));
-	if (mousePosition.x >= _x && mousePosition.x <= _x + _w && mousePosition.y <= _y && mousePosition.y >= _y + _h) {
+	if (mousePosition.x >= _x && mousePosition.x <= _x + _w && mousePosition.y >= _y && mousePosition.y <= _y + _h) {
 		return true;
 	}
 	return false;
@@ -12,8 +12,10 @@ Button::Button(string text, int64_t x, int64_t y, uint64_t w, uint64_t h, sf::Fo
 
 	_text.setFont(laFont);
 	_text.setString(text);
-	_text.setPosition(x, y - h/2);
-	_text.setCharacterSize(24);
+	_text.setCharacterSize(32);
+
+	sf::FloatRect globalBounds = _text.getGlobalBounds();
+	_text.setPosition(x+w/2 - globalBounds.width/2, y + (int64_t)h/2 - 16);
 	_text.setFillColor(sf::Color::Black);
 
 	_x = x;
@@ -21,7 +23,8 @@ Button::Button(string text, int64_t x, int64_t y, uint64_t w, uint64_t h, sf::Fo
 	_w = w;
 	_h = h;
 
-	_rectangle = sf::RectangleShape(sf::Vector2f(x, y));
+	_rectangle = sf::RectangleShape();
+	_rectangle.setPosition(x, y);
 	_rectangle.setSize(sf::Vector2f(w, h));
 	_rectangle.setFillColor(sf::Color::White);
 }
