@@ -8,6 +8,7 @@
 class Menu
 {
 private:
+	sf::Font fontMenu;
 	vector<Button> _lesBoutons;
 	Animation _backgroundAnim;
 	sf::Clock _animTime;

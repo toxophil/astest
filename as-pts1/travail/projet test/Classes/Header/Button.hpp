@@ -8,7 +8,6 @@ using namespace std;
 
 class Button {
 private:
-
 	sf::Text _text;
 	int64_t _x;
 	int64_t _y;
@@ -18,7 +17,7 @@ private:
 
 	bool isHovered(sf::RenderWindow&);
 public:
-	Button(string, int64_t, int64_t, uint64_t, uint64_t);
+	Button(string, int64_t, int64_t, uint64_t, uint64_t, sf::Font&);
 	void draw(sf::RenderWindow&);
 };
 

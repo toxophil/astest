@@ -8,10 +8,13 @@ bool Button::isHovered(sf::RenderWindow& laWindow) {
 	return false;
 }
 
-Button::Button(string text, int64_t x, int64_t y, uint64_t w, uint64_t h) {
+Button::Button(string text, int64_t x, int64_t y, uint64_t w, uint64_t h, sf::Font& laFont ) {
+
+	_text.setFont(laFont);
 	_text.setString(text);
-	_text.setFillColor(sf::Color::Black);
 	_text.setPosition(x, y - h/2);
+	_text.setCharacterSize(24);
+	_text.setFillColor(sf::Color::Black);
 
 	_x = x;
 	_y = y;
