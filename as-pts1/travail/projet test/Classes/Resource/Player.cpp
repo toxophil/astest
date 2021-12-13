@@ -75,7 +75,7 @@ void Player::update() {
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	if (nextDirection.x != 0 || nextDirection.y != 0) {	
 		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getWalkAnim().getSpeed()) {
-			cout << "nextttt : " << endl;
+			////cout << "nextttt : " << endl;
 			_sprite.setTexture(_laClasse.getWalkAnim().getNextFrame());
 			_animTime.restart();
 		}
@@ -84,7 +84,6 @@ void Player::update() {
 		
 		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getIdleAnim().getSpeed()) {
 			_sprite.setTexture(_laClasse.getIdleAnim().getNextFrame());
-			cout << "gooooo : " << endl;
 			//_sprite.setTexture(anim.getNextFrame());
 			_animTime.restart();
 		}

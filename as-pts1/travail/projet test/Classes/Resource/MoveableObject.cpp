@@ -32,7 +32,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
 	float y = pos.y + direction.y;
     float jusquaX = x + gBounds.width;
     float jusquaY = y + gBounds.height;
-    //cout << "LesWall nb : " << lesWalls.size() << endl;
+    ////cout << "LesWall nb : " << lesWalls.size() << endl;
     
 
 
@@ -51,7 +51,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
         if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
             if ((x < x2 && jusquaX >= x2) || (x >= x2 && x <= jusquaX2)) {
                 
-                //cout << "NOP " << lesWalls[l].getX() << endl;
+                ////cout << "NOP " << lesWalls[l].getX() << endl;
                 //_sprite.move(sf::Vector2f(x2, y2));//direction);
                 
                 //lancement evenement collision
