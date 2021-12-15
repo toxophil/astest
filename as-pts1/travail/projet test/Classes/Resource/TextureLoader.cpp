@@ -50,6 +50,10 @@ TextureLoader::TextureLoader()
 
 	loadLocationTexture[TextureNames::Logo] = "Ressources/img/menu/logo.png";
 
+	loadLocationTexture[TextureNames::HeartFull] = "Ressources/img/hud/heart/ui_heart_full.png";
+	loadLocationTexture[TextureNames::HeartDemi] = "Ressources/img/hud/heart/ui_heart_half.png";
+	loadLocationTexture[TextureNames::HeartEmpty] = "Ressources/img/hud/heart/ui_heart_empty.png";
+
 	// Les animations
 	unordered_map<AnimationNames, vector<String>> loadLocationAnimation;
 	// Animation Lézard
@@ -148,6 +152,15 @@ TextureLoader::TextureLoader()
 		"Ressources/img/menu/background/wild_3.jpg",
 		"Ressources/img/menu/background/wild_4.jpg"
 	};
+
+	// Coin
+	loadLocationAnimation[AnimationNames::Coin] = {
+		"Ressources/img/hud/coin/coin_anim_f0.png",
+		"Ressources/img/hud/coin/coin_anim_f1.png",
+		"Ressources/img/hud/coin/coin_anim_f2.png",
+		"Ressources/img/hud/coin/coin_anim_f3.png"
+	};
+	
 
 	for(auto& it: loadLocationTexture){
 		if (!tempText.loadFromFile(it.second)) {

@@ -53,8 +53,11 @@ void Room::setY(int64_t y) {
 uint32_t Room::getNbConnection() const {
     return _lesConnections.size();
 }
-void Room::addConnection(Connection& uneConnection) {
-    _lesConnections.push_back(&uneConnection);
+vector<uint32_t> Room::getConnections() {
+    return _lesConnections;
+}
+void Room::addConnection(uint32_t index) {
+    _lesConnections.push_back(index);
 }
 
 

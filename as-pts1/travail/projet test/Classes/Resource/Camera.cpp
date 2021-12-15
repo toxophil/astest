@@ -25,11 +25,63 @@ Camera::Camera(int x, int y){
     _laVue.zoom(0.32);
 }
 
-void Camera::drawMap(sf::RenderWindow& window, Map m) {
-    vector<Connection> lesConnections = m.getConnections();
-    vector<Room> lesRooms = m.getRoomList();
+void Camera::drawMap(sf::RenderWindow& window, Map m, sf::Vector2f playerPos) {
+    vector<Connection>& lesConnections = m.getConnections();
+    vector<Room>& lesRooms = m.getRoomList();
 
-   for (uint32_t i = 0; i < lesConnections.size(); i++) {
+    bool trouver = false;
+    for (uint32_t i = 0; i < lesRooms.size(); i++) {
+        Room& uneRoom = lesRooms[i];
+        if (uneRoom.getX() * 32 < playerPos.x && uneRoom.getX() * 32 + (int)uneRoom.getW() * 32 > playerPos.x) {
+            if (uneRoom.getY() * 32 < playerPos.y && uneRoom.getY() * 32 + (int)uneRoom.getH() * 32 > playerPos.y) {
+                trouver = true;
+                vector<sf::Sprite> lesTiles = uneRoom.getTiles();
+                for (uint32_t r = 0; r < lesTiles.size(); r++) {
+                    window.draw(lesTiles[r]);
+                }
+                //vector<Connection>& lesConnectionsRoom = lesConnections[uneRoom.getConnections()];
+               
+                vector<uint32_t>& lesIndexConnections = uneRoom.getConnections();
+                //cout << "NB CONNECTIONS: " << lesIndexConnections.size() << endl;
+                for (uint32_t i = 0; i < lesIndexConnections.size(); i++) {
+                    vector<sf::Sprite> lesTiles = lesConnections[lesIndexConnections[i]].getTiles();
+                    for (uint32_t r = 0; r < lesTiles.size(); r++) {
+                        window.draw(lesTiles[r]);
+                    }
+                }
+
+                break;
+                //uneRoom.get
+            }
+        }
+    }
+    if (!trouver) {
+        for (uint32_t i = 0; i < lesRooms.size(); i++) {
+            Connection& uneConnection = lesConnections[i];
+            if (uneConnection.getX() * 32 < playerPos.x && uneConnection.getX() * 32 + (int)uneConnection.getW() * 32 > playerPos.x) {
+                if (uneConnection.getY() * 32 < playerPos.y && uneConnection.getY() * 32 + (int)uneConnection.getH() * 32 > playerPos.y) {
+
+                    vector<sf::Sprite> lesTiles = uneConnection.getTiles();
+                    for (uint32_t r = 0; r < lesTiles.size(); r++) {
+                        window.draw(lesTiles[r]);
+                    }
+                    //vector<Connection>& lesConnectionsRoom = lesConnections[uneRoom.getConnections()];
+                   
+                    vector<uint32_t>& lesIndexRooms = uneConnection.getRooms();
+                  //  cout << "NB CONNECTIONS: " << lesIndexRooms.size() << endl;
+                    for (uint32_t i = 0; i < lesIndexRooms.size(); i++) {
+                        vector<sf::Sprite> lesTiles = lesRooms[lesIndexRooms[i]].getTiles();
+                        for (uint32_t r = 0; r < lesTiles.size(); r++) {
+                            window.draw(lesTiles[r]);
+                        }
+                    }
+
+                    break;
+                }
+            }
+        }
+    }
+   /*for (uint32_t i = 0; i < lesConnections.size(); i++) {
         vector<sf::Sprite> lesTiles = lesConnections[i].getTiles();
         for (uint32_t r = 0; r < lesTiles.size(); r++) {
             window.draw(lesTiles[r]);
@@ -41,12 +93,12 @@ void Camera::drawMap(sf::RenderWindow& window, Map m) {
             window.draw(lesTiles[r]);
         }
     }
-
+    */
 }
 
 void Camera::drawAll(sf::RenderWindow& window, const std::list<MoveableObject*> objectList, const Map m) {
     ////cout << "/))) " << endl;
-    drawMap(window,m);
+    //drawMap(window,m);
     for (MoveableObject* object : objectList) {
         drawObject(window, object);
     }
@@ -79,4 +131,8 @@ void Camera::updateCameraOnPlayer(sf::RenderWindow& window, sf::Vector2f laPosit
     ////cout << laPosition.x << " - "<< ((float)mousePosition.x - (float)windowSize.x / 2) << " ET " <<  " y:" << mousePosition.y << endl;
     _laVue.setCenter(laPosition);
     window.setView(_laVue);
+}
+
+void Camera::focus(sf::RenderWindow& laWindow) {
+    laWindow.setView(_laVue);
 }

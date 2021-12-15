@@ -8,6 +8,7 @@
 #include "../Header/Generator.hpp"
 #include "../Header/Skeleton.hpp"
 #include "../Header/Menu.hpp"
+#include "../Header/Hud.hpp"
 
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
@@ -127,7 +128,7 @@ void GameMaster::runGame()
 	//create a player
 
 	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
-	Classe classeDragonF(&thiefBow, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 200);
+	Classe classeDragonF(&thiefBow, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
 
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
@@ -146,17 +147,19 @@ void GameMaster::runGame()
 	bool openMainMenu = false;
 	Menu leMenuP;
 
-	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::GothicDark), false);
+	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), false);
 	//boucle principale
 	sf::Clock _musicCd;
 	_musicCd.restart();
 
+	Hud leHud(5);
+	leHud.updateMoney(1500);
 	bool done = false;
 	while (window.isOpen())
 	{
-		if (_musicCd.getElapsedTime().asSeconds() > 5 && !done) {
+		/*if (_musicCd.getElapsedTime().asSeconds() > 5 && !done) {
 			_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), true);
-		}
+		}*/
 		//mise a jour du delta
 		_deltaTime = clk.restart();
 
@@ -224,10 +227,13 @@ void GameMaster::runGame()
 			window.clear();
 
 			
-			laCam.drawMap(window, laMap);
+			laCam.drawMap(window, laMap, player.getSprite().getPosition());
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getSprite());
 			}
+			leHud.draw(window,3);
+
+			laCam.focus(window);
 			window.display();
 		}
 

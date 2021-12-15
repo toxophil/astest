@@ -12,10 +12,10 @@ Button::Button(string text, int64_t x, int64_t y, uint64_t w, uint64_t h, sf::Fo
 
 	_text.setFont(laFont);
 	_text.setString(text);
-	_text.setCharacterSize(32);
+	_text.setCharacterSize(38);
 
 	sf::FloatRect globalBounds = _text.getGlobalBounds();
-	_text.setPosition(x+w/2 - globalBounds.width/2, y + (int64_t)h/2 - 16);
+	_text.setPosition(x+w/2 - globalBounds.width/2, y + (int64_t)h/2 - 19 - 4);
 	_text.setFillColor(sf::Color::Black);
 
 	_x = x;

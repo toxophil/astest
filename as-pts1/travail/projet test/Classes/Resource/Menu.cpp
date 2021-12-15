@@ -21,7 +21,7 @@ Menu::Menu() {
 	_laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
 
 	uint64_t buttonW = leScreen.width/6;
-	uint64_t buttonH = leScreen.height/10;
+	uint64_t buttonH = leScreen.height/11;
 
 	int64_t offsetY = buttonH +5;
 

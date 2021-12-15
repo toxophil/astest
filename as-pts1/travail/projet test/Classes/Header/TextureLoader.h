@@ -45,7 +45,11 @@ public:
 		DecorWallD,
 		DecorWallE,
 
-		Logo
+		Logo,
+
+		HeartFull,
+		HeartDemi,
+		HeartEmpty
 	};
 
 	enum class AnimationNames {
@@ -69,7 +73,8 @@ public:
 		Knight_Walking,
 		Knight_Idle,
 
-		Background_Wild
+		Background_Wild,
+		Coin
 
 	};
 

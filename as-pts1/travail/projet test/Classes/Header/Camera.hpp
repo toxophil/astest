@@ -21,10 +21,11 @@ private:
 public:
 	Camera();
 	Camera(int x, int y);
-	void drawMap(sf::RenderWindow&, const Map m);
+	void drawMap(sf::RenderWindow&, const Map m, sf::Vector2f);
 	void drawAll(sf::RenderWindow&, const std::list<MoveableObject*> objectList, const Map m);
 	void drawObject(sf::RenderWindow&, const MoveableObject* object) const;
 	void updateCameraOnPlayer(sf::RenderWindow&, sf::Vector2f, sf::FloatRect);
+	void focus(sf::RenderWindow&);
 };
 
 

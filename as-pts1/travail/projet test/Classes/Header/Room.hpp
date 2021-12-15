@@ -24,7 +24,7 @@ private:
     uint32_t _id;
 
     vector<RoomObject> _contained;
-    vector<Connection*> _lesConnections;
+    vector<uint32_t> _lesConnections;
     vector<Wall> _walls;
 public:
     Room();
@@ -43,7 +43,8 @@ public:
     void setY(int64_t);
 
     uint32_t getNbConnection() const;
-    void addConnection(Connection&);
+    vector<uint32_t> getConnections();
+    void addConnection(uint32_t index);
 
     vector<vector<uint32_t>> getMatrice() const;
     void modifyMatrice(int32_t, int32_t, uint32_t);

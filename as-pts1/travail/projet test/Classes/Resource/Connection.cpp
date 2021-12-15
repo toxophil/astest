@@ -10,6 +10,18 @@ Connection::Connection(int64_t x, int64_t y, Room* roomA, Room* roomB, bool estV
     _estVertical = estVertical;
     _matrice = matrice;
 }
+
+/*Connection::Connection(const Connection& copyConnection) {
+    _x = copyConnection._x;
+    _y = copyConnection._y;
+    _roomA = copyConnection._roomA;
+    _roomB = copyConnection._roomB;
+    _estVertical = copyConnection._estVertical;
+    _matrice = copyConnection._matrice;
+    _walls = copyConnection._walls;
+    _tiles  = copyConnection._tiles;
+}*/
+
 int64_t Connection::getX() const {
     return _x;
 }
@@ -24,6 +36,13 @@ uint32_t Connection::getH() const {
 }
 bool Connection::estVertical() const {
     return _estVertical;
+}
+
+vector<uint32_t> Connection::getRooms() {
+    return _lesRooms;
+}
+void Connection::addRoom(uint32_t index) {
+    _lesRooms.push_back(index);
 }
 
 vector<vector<uint32_t>> Connection::getMatrice() const {

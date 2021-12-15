@@ -52,7 +52,7 @@ MapTheme& Generator::getRdmTheme() {
 }
 
 Map Generator::makeMap(uint32_t difficulter) {
-    uint32_t nbSalle = 5;//difficulter*3;
+    uint32_t nbSalle = 40;//difficulter*3;
     vector<Room> lesSalles;
 
     // Crèer les ZoneRoom !
@@ -60,8 +60,8 @@ Map Generator::makeMap(uint32_t difficulter) {
     int32_t ha = 3;
     int32_t wa = 3;
     for (uint32_t i = 0; i < nbSalle + 1; i++) {
-        ha = rand() % 20 + 5;
-        wa = rand() % 20 + 5; // 12 et 5
+        ha = rand() % 10 + 5;
+        wa = rand() % 10 + 5; // 12 et 5
 
         vector<vector<uint32_t>> matriceRoom;
         for (uint32_t r = 0; r < ha + 1; r++) {

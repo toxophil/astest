@@ -200,9 +200,15 @@ void ZoneRoom::addRoom(Room& uneRoom) {
     Connection laConnection = Connection(xC, yC, &uneRoom, &aConnecter, estVertical, matriceConnection);
 
     //cout << "VERIF x= " << laConnection.getX() << "  Y=" << laConnection.getY() << endl;
-    uneRoom.addConnection(laConnection);
-    _rooms[roomIDSelected].addConnection(laConnection);
+    // Ajoute les index de room annexe à la connection
     _lesConnections.push_back(laConnection);
+
+    _rooms[_rooms.size()-1].addConnection(_lesConnections.size()-1); // La nouvelle room ajouté
+    _rooms[roomIDSelected].addConnection(_lesConnections.size() - 1); // La room selectionné pour y être connecté
+
+    _lesConnections[_lesConnections.size()-1].addRoom(_rooms.size() - 1);
+    _lesConnections[_lesConnections.size() - 1].addRoom(roomIDSelected);
+
 }
 void ZoneRoom::setW(uint32_t w) {
     _w = w;

@@ -148,6 +148,7 @@
     <ClCompile Include="Classes\Resource\Gold.cpp" />
     <ClCompile Include="Classes\Resource\GUIElement.cpp" />
     <ClCompile Include="Classes\Resource\HittableCharacter.cpp" />
+    <ClCompile Include="Classes\Resource\Hud.cpp" />
     <ClCompile Include="Classes\Resource\Inventory.cpp" />
     <ClCompile Include="Classes\Resource\Item.cpp" />
     <ClCompile Include="Classes\Resource\Map.cpp" />
@@ -202,6 +203,7 @@
     <ClInclude Include="Classes\Header\Gold.hpp" />
     <ClInclude Include="Classes\Header\GUIElement.hpp" />
     <ClInclude Include="Classes\Header\HittableCharacter.hpp" />
+    <ClInclude Include="Classes\Header\Hud.hpp" />
     <ClInclude Include="Classes\Header\Inventory.hpp" />
     <ClInclude Include="Classes\Header\Item.hpp" />
     <ClInclude Include="Classes\Header\Map.hpp" />
