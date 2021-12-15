@@ -144,7 +144,7 @@ void GameMaster::runGame()
 	ennemy.setEquippedWeapon(&thiefBow);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
-	bool openMainMenu = false;
+	bool openMainMenu = true;
 	Menu leMenuP;
 
 	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), false);
