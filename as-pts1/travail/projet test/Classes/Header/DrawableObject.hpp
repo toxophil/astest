@@ -13,9 +13,10 @@ class DrawableObject
 	static uint32_t _nextId;
 
 	private :
-		uint32_t _id;
+		
 
 protected:
+	uint32_t _id;
 	double _width;
 	double _height;
 	Angle _angle;
