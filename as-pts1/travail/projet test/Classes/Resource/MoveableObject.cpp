@@ -104,7 +104,9 @@ return true;
 }
 
 int MoveableObject::onCollision() {
-    return 0;
+    return 2;
 }
 
-void MoveableObject::onTouche() {}
+void MoveableObject::onTouche()  {
+
+}
