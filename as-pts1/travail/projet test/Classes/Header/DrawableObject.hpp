@@ -21,7 +21,7 @@ protected:
 	double _height;
 	Angle _angle;
 	sf::Sprite _sprite;
-
+	int _estEnnemi;
 public:
 	DrawableObject();
 	DrawableObject(Angle& a, uint32_t h, uint32_t w);

@@ -15,6 +15,7 @@ DrawableObject::DrawableObject(){
 	_angle = Angle();
 	_height = 1;
 	_width = 1;
+
 }
 DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	//génère un id différent par objet

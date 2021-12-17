@@ -29,7 +29,8 @@ Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& s
 	// Set la pos
 	_sprite.setOrigin(localBounds.width/2, localBounds.height/2);
 	_sprite.setPosition(startPosition);
-
+	//neutre
+	_estEnnemi = 0;
 
 	//_sprite.setRotation(arrowAngle);
 	

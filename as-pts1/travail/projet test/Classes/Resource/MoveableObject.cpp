@@ -13,44 +13,56 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
     //map de gamemaster puis walls de la map de gamemaster  
 	Map laMap = GameMaster::getInstance().getMap();
 	vector<Wall> lesWalls = laMap.getWallList();
-
-    // les bounds de la sprite de drawable object
-    sf::FloatRect gBounds = _sprite.getGlobalBounds();    
-    
+  
     //positions du sprite de drawable object
     sf::Vector2f pos = _sprite.getPosition();
+    // les bounds de la sprite de drawable object
+    sf::FloatRect gBounds = _sprite.getGlobalBounds();
 
     //coordonnée des 4 points update + direction
 	float x = pos.x + direction.x;
 	float y = pos.y + direction.y;
     float jusquaX = x + gBounds.width;
     float jusquaY = y + gBounds.height;
-    ////cout << "LesWall nb : " << lesWalls.size() << endl;
-    
-     //liste MoveableObject de gamemaster
- std::list<MoveableObject*> moveable = GameMaster::getInstance().getMoveableObjectList();
-    //ces acteurs ne sont pas des static objets comme les murs
-    //on recup les projectiles & les players et les ennemies
 
- float a1, b1, a2, b2;
- sf::FloatRect temp;
 
-     for (auto& object : moveable) 
-     {
-         if(object->_id == _id )
-         { }
-         else
-         {
-             temp = object->_sprite.getGlobalBounds();
-             float a1 = pos.x;
-             float b1 = pos.y;
-             float a2 = a1 + temp.width;
-             float b2 = b1 + temp.height;
+    //liste des MoveableObject de gamemaster
+     std::list<MoveableObject*> moveable = GameMaster::getInstance().getMoveableObjectList();
+
+     float a1, b1, a2, b2;
+     sf::FloatRect temp;
+     bool detruit=true;
+     uint32_t idtemp = _id;
+
+     for (auto& object : moveable){
+         temp = object->_sprite.getGlobalBounds(); //les bounds d'un de la liste des moveable
+         if(object->_id == idtemp) {
+            //si c'est le meme ojet on ne fait rien
+         }   
+         else{
+            float a1 = temp.left;
+            float b1 = temp.top;
+            float a2 = a1 + temp.width;
+            float b2 = b1 + temp.height;
 
              if ((y < b1 && jusquaY >= b1) || (y >= b1 && y <= b2)) {
-                 if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)) {
-                     //onTouche(); 
-                    // cout << "touche "<< _id <<" is "<< object->_id << endl;
+                 if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)){
+                     if(object->_estEnnemi == _estEnnemi ) {
+                         // check if allied ?
+                     } 
+                     else{
+                        //update properties on hit
+                        onTouche();            
+                        //destruction du moveable si c'est une fleche
+                        if (1 == onCollision())
+                        {
+                            //cout << "destruction" << endl;
+                            //cout << "fleche touche " << idtemp << " is " << object->_id << endl;
+                            return false();  
+                            
+                        }
+                        
+                     }
                  }
              }
          }
@@ -68,19 +80,31 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
 
         if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
             if ((x < x2 && jusquaX >= x2) || (x >= x2 && x <= jusquaX2)) {
-                
-                //cout << "NOP " << lesWalls[l].getX() << endl;
-                //_sprite.move(sf::Vector2f(x2, y2));//direction);
-                
-                //lancement evenement collision
-                onCollision();
                 //ne peut pas bouger
-                return false;
+                //detruit si est projectile
+                 
+                if(onCollision() == 1)
+                {
+                    //cout << "detruit par mur" << endl;
+                }
+                else
+                {
+                   // cout << "ne peut pas bouger" << idtemp << " is " << endl;
+                }
+                
+                
+                return false;   
             }
         }
     }
-	_sprite.move(direction);
-	return true;
+//si on a pas encore quitté le pgm on peut bouger
+_sprite.move(direction);
+return true;
+    
 }
 
-void MoveableObject::onCollision() {}
+int MoveableObject::onCollision() {
+    return 0;
+}
+
+void MoveableObject::onTouche() {}
