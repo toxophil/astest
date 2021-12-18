@@ -7,6 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include "Angle.hpp"
 
+
 class DrawableObject
 {
 	//utilisé pour savoir quel id donner au prochain objet
@@ -23,9 +24,12 @@ protected:
 	sf::Sprite _sprite;
 	int _estEnnemi;
 	float _nbVie; //10 = max nb vie player
-	uint32_t _pvMonstre; //pv pour les monstres
+	uint32_t _pvMonstre=10; //pv pour les monstres
 	uint32_t _nbPiece;
 	float _degat;
+
+	sf::Text _pvText;
+	sf::Font _fontText;
 
 public:
 	DrawableObject();

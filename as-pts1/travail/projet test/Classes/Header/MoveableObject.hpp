@@ -26,11 +26,16 @@ public:
 	// Appellé à chaque collision
 	virtual int onCollision();
 
-	// Appelé à chaque touche entre moveable
+	//mise a jour des proprietes de l'objet apres collisions
 	virtual void onTouche();
 
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);
+
+	void affichagePv();
+
+	sf::Text getPvText();
+
 };
 
 

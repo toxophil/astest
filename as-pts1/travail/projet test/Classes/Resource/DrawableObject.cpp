@@ -3,6 +3,7 @@
 
 #include "../Header/DrawableObject.hpp"
 #include "../Header/Angle.hpp"
+using namespace std;
 
 //initialisation de l'incrémenteur
 uint32_t DrawableObject::_nextId = 0;
@@ -19,11 +20,22 @@ DrawableObject::DrawableObject(){
 	_nbPiece = 1500;
 	_degat = 0.1;
 	_estEnnemi = 0;
+	_fontText = sf::Font();
+	_fontText.loadFromFile("Ressources/fonts/BitPotionExt.ttf");
+	_pvText.setFont(_fontText);
+	_pvText.setString("0");
+	_pvText.setCharacterSize(10);
+	_pvText.setOrigin(20, 20);
+	_pvText.setColor(sf::Color(255, 255, 255));
+	//_pvText.setPosition((-((int)leScreen.width) / 2) + 3 + (int)spriteSize.x * 8, leScreen.height / 2 - spriteSize.y * 7 - 20 + 10.5);
+
+
 }
 DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	//génère un id différent par objet
 	_id = DrawableObject::_nextId++;
-
+	_fontText = sf::Font();
+	_fontText.loadFromFile("Ressources/fonts/BitPotionExt.ttf");
 	_angle = a;
 	_height = h;
 	_width = w;
@@ -31,6 +43,11 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_nbPiece = 1500;
 	_degat = 0.1;
 	_estEnnemi = 0;
+	_pvText.setFont(_fontText);
+	_pvText.setString("salut");
+	_pvText.setCharacterSize(10);
+	_pvText.setOrigin(20, 20);
+	_pvText.setColor(sf::Color(255, 255, 255));
 }
 
 int DrawableObject::getNbVie() const
@@ -61,3 +78,4 @@ Angle& DrawableObject::getAngle() {
 const sf::Sprite& DrawableObject::getSprite() {
 	return _sprite;
 }
+

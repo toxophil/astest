@@ -11,6 +11,7 @@ class Hud {
 private:
 	sf::Font _fontText;
 	sf::Text _monneyText;
+	
 
 	vector<sf::Sprite> _lesCoeurs;
 

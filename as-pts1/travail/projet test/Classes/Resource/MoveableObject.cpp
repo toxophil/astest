@@ -99,6 +99,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
     }
 //si on a pas encore quitté le pgm on peut bouger
 _sprite.move(direction);
+affichagePv();
 return true;
     
 }
@@ -110,3 +111,16 @@ int MoveableObject::onCollision() {
 void MoveableObject::onTouche()  {
 
 }
+
+void MoveableObject::affichagePv()
+{
+    _pvText.setPosition(_sprite.getPosition().x+_sprite.getScale().x/2,_sprite.getPosition().y+_sprite.getScale().y/2);
+    _pvText.setString(to_string(_pvMonstre));
+    
+}
+
+sf::Text MoveableObject::getPvText()
+{
+    return _pvText;
+}
+

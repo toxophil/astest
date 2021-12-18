@@ -231,6 +231,9 @@ void GameMaster::runGame()
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getSprite());
 			}
+			for (auto& object : _moveableObjectList) {
+				window.draw(object->getPvText());
+			}
 			leHud.draw(window,player.getNbVie());
 			leHud.updateMoney(player.getNbPiece());
 			laCam.focus(window);

@@ -97,6 +97,6 @@ Inventory* Player::getInventory() {
 }
 
 void Player::onTouche(){
-	_nbVie = _nbVie - _degat;
-	_nbPiece++;
+	_nbVie = _nbVie - _degat; //on enleve des pvs si collisions avec ennemies
+	_nbPiece++; //on ajoute des pieces si collisions
 }
