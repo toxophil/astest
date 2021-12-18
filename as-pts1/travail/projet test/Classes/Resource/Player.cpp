@@ -95,3 +95,8 @@ void Player::update() {
 Inventory* Player::getInventory() {
 	return _inventory;
 }
+
+void onTouche()
+{
+
+}

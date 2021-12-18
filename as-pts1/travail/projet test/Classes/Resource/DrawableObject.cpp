@@ -26,7 +26,14 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_width = w;
 }
 
-
+int DrawableObject::getNbVie() const
+{
+	return nbVie;
+}
+int DrawableObject::getNbPiece() const
+{
+	return nbPiece;
+}
 uint32_t DrawableObject::getId() const {
 	return _id;
 }

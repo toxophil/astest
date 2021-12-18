@@ -14,12 +14,16 @@ private:
 	Inventory* _inventory;
 	Classe _laClasse;
 	Animation anim;
-
+	
 public:
 	Player(Classe laClasse);
 
 	void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 	void update();
 	Inventory* getInventory();
-
+	void onTouche()
+	{
+		nbVie--;
+		nbPiece++;
+	}
 };

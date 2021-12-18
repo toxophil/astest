@@ -22,10 +22,14 @@ protected:
 	Angle _angle;
 	sf::Sprite _sprite;
 	int _estEnnemi;
+	int nbVie=9; //10 = max nb vie player 
+	uint32_t nbPiece=1500;
 public:
 	DrawableObject();
 	DrawableObject(Angle& a, uint32_t h, uint32_t w);
 	
+	int getNbVie() const;
+	int getNbPiece() const;
 	uint32_t getId() const;
 	uint32_t getWidth() const;
 	uint32_t getHeight() const;

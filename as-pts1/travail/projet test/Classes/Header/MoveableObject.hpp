@@ -16,7 +16,6 @@ protected:
 	float speed;
 	
 
-
 public:
 	//fonction de misa a jour de la logique de l'objet
 	virtual void update() = 0;

@@ -27,7 +27,7 @@ public:
 	Hud(std::uint16_t);
 	void addHeart();
 	void updateMoney(uint32_t);
-	void draw(sf::RenderWindow&, float);
+	void draw(sf::RenderWindow&, int);
 };
 
 
