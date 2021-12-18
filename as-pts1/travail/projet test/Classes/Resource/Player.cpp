@@ -11,7 +11,7 @@ Player::Player(Classe laClasse)
 	_sprite.setPosition(100, 100);
 	nextDirection = sf::Vector2f(0, 0);
 	speed = laClasse.getDefaultSpeed();
-
+	_degat = 0.01;
 	_timeSinceLastAttack.restart();
 	_inventory = &Inventory();
 
@@ -96,7 +96,7 @@ Inventory* Player::getInventory() {
 	return _inventory;
 }
 
-void onTouche()
-{
-
+void Player::onTouche(){
+	_nbVie = _nbVie - _degat;
+	_nbPiece++;
 }

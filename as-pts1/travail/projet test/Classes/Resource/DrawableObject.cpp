@@ -15,7 +15,10 @@ DrawableObject::DrawableObject(){
 	_angle = Angle();
 	_height = 1;
 	_width = 1;
-
+	_nbVie = 9; //10 = max nb vie player 
+	_nbPiece = 1500;
+	_degat = 0.1;
+	_estEnnemi = 0;
 }
 DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	//génère un id différent par objet
@@ -24,15 +27,23 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_angle = a;
 	_height = h;
 	_width = w;
+	_nbVie = 9; //10 = max nb vie player 
+	_nbPiece = 1500;
+	_degat = 0.1;
+	_estEnnemi = 0;
 }
 
 int DrawableObject::getNbVie() const
 {
-	return nbVie;
+	return _nbVie;
 }
 int DrawableObject::getNbPiece() const
 {
-	return nbPiece;
+	return _nbPiece;
+}
+uint32_t DrawableObject::getDegat() const
+{
+	return _nbPiece;
 }
 uint32_t DrawableObject::getId() const {
 	return _id;

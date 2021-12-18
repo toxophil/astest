@@ -21,9 +21,5 @@ public:
 	void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 	void update();
 	Inventory* getInventory();
-	void onTouche()
-	{
-		nbVie--;
-		nbPiece++;
-	}
+	void onTouche();
 };
