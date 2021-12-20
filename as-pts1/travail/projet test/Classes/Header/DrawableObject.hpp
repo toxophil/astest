@@ -23,10 +23,17 @@ protected:
 	Angle _angle;
 	sf::Sprite _sprite;
 	int _estEnnemi;
+	int _type; //1 player 2 ennemie 3 projectile 0 default
+
 	float _nbVie; //10 = max nb vie player
-	uint32_t _pvMonstre=10; //pv pour les monstres
+	float _pvMonstre; //pv pour les monstres
 	uint32_t _nbPiece;
 	float _degat;
+	float _pvLargeur ; //largeur en pixel
+	float _pvHauteur ; //hauteur en pixel
+	sf::RectangleShape _restant;
+	sf::RectangleShape _max;
+
 
 	sf::Text _pvText;
 	sf::Font _fontText;

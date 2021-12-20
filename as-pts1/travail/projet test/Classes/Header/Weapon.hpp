@@ -15,7 +15,7 @@ protected:
 	float _attackSpeed;
 	float _attackDuration;
 	float _projectileCooldown;
-
+	int estEnnemie;
 public:
 	Weapon();
 

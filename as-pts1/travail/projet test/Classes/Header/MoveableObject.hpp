@@ -6,6 +6,7 @@
 
 #include "DrawableObject.hpp"
 
+
 class MoveableObject : public DrawableObject
 {
 private:
@@ -27,14 +28,18 @@ public:
 	virtual int onCollision();
 
 	//mise a jour des proprietes de l'objet apres collisions
-	virtual void onTouche();
+	virtual bool updateOnTouche(MoveableObject * obj);
 
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);
 
-	void affichagePv();
+	void updateAffichagePv();
 
 	sf::Text getPvText();
+
+	sf::RectangleShape getMax();
+
+	sf::RectangleShape getRestant();
 
 };
 

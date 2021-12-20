@@ -121,8 +121,10 @@ void GameMaster::runGame()
 	Camera laCam;
 
 	// Créer la Classe
-	Skorpion thiefBow;
-	DaggerOfSpeed thiefDagger;
+	Skorpion thiefBow(0);
+	DaggerOfSpeed thiefDagger(0);
+	Skorpion ennemyBow(1);
+	DaggerOfSpeed ennemyDagger(1);
 
 	// Weapon defWeapon, Animation idleAnim, Animation walkAnim, uint8_t defLife, uint16_t defSpeed
 	//create a player
@@ -141,7 +143,7 @@ void GameMaster::runGame()
 
 	//equip his bow
 	player.setEquippedWeapon(&thiefBow);
-	ennemy.setEquippedWeapon(&thiefBow);
+	ennemy.setEquippedWeapon(&ennemyBow);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
 	bool openMainMenu = false;
@@ -208,7 +210,6 @@ void GameMaster::runGame()
 				}
 			}
 
-
 			//destruction des objets non n�cessaires
 			destroy();
 
@@ -233,6 +234,8 @@ void GameMaster::runGame()
 			}
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getPvText());
+				window.draw(object->getMax());
+				window.draw(object->getRestant());
 			}
 			leHud.draw(window,player.getNbVie());
 			leHud.updateMoney(player.getNbPiece());

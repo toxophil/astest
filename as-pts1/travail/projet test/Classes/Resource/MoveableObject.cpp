@@ -7,6 +7,61 @@
 
 using namespace std;
 
+
+void MoveableObject::updateAffichagePv()
+{
+
+    _pvText.setPosition(_sprite.getPosition().x, _sprite.getPosition().y);
+    _pvText.setString(to_string(_pvMonstre));
+
+    // on met a jour la taille
+    _restant.setSize(sf::Vector2f(_pvMonstre/10, _pvHauteur));
+    _max.setSize(sf::Vector2f(_pvLargeur/10, _pvHauteur));
+    //la couleur - pourra etre mis en initialisation
+    _restant.setFillColor(sf::Color::Green);
+    _max.setFillColor(sf::Color::Red);
+    //on met la position
+    _restant.setPosition(_sprite.getPosition().x + 10, _sprite.getPosition().y - 4);
+    _max.setPosition(_sprite.getPosition().x + 10, _sprite.getPosition().y - 4);
+}
+
+
+sf::Text MoveableObject::getPvText()
+{
+    return _pvText;
+}
+
+sf::RectangleShape MoveableObject::getRestant()
+{
+    return _restant;
+}
+
+sf::RectangleShape MoveableObject::getMax()
+{
+    return _max;
+}
+
+int MoveableObject::onCollision() {
+    return 0;
+}
+
+bool MoveableObject::updateOnTouche(MoveableObject *obj) {
+    /*bullshit*/
+    _nbVie = _nbVie - _degat; 
+    _nbPiece++; 
+    /**/
+    _pvMonstre = _pvMonstre - obj->_degat; 
+    if (_pvMonstre <= 0)
+    {
+        cout << obj->_degat << endl;
+        cout << _pvMonstre << endl;
+        GameMaster::getInstance().destroyMoveableObject(getId());
+        return false;
+    }
+    return true;
+}
+
+
 //check des collisions
 bool MoveableObject::moveObject(const sf::Vector2f& direction)
 {
@@ -47,27 +102,41 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
 
              if ((y < b1 && jusquaY >= b1) || (y >= b1 && y <= b2)) {
                  if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)){
-                     if(object->_estEnnemi == _estEnnemi ) {
-                         // check if allied ?
-                     } 
-                     else{
-                        //update properties on hit
-                        onTouche();            
-                        //destruction du moveable si c'est une fleche
-                        if (1 == onCollision())
+                     if(object->_estEnnemi != _estEnnemi ) {
+                        //update stats 1
+                        //update stats 2
+                        //check 1 alive 
+                        //check 2 alive
+                        //si check 1 dead 
+                         if (object->_type == 1)
+                         {   //player
+                             //1 update things
+                             //2 check if it should be dead
+                             if (!updateOnTouche(object))
+                             {
+                                 return false;
+                             }
+                         }
+                        if (object->_type == 2)
                         {
-                            //cout << "destruction" << endl;
-                            //cout << "fleche touche " << idtemp << " is " << object->_id << endl;
-                            return false();  
-                            
+                            if (!updateOnTouche(object))
+                            {
+                                return false;
+                            }
                         }
-                        
+                        if (object->_type == 3)
+                        {
+                            if (!updateOnTouche(object))
+                            {
+                                return false;
+                            }
+                        }
                      }
                  }
              }
          }
      }
-    for (uint32_t l = 0; l < lesWalls.size(); l++) {
+     for (uint32_t l = 0; l < lesWalls.size(); l++) {
         //calculs des coordonnées des 4 coins tout les murs
         float x2 = lesWalls[l].getX();
         float y2 = lesWalls[l].getY();
@@ -75,52 +144,24 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
         uint32_t h2 = lesWalls[l].getH();
         float jusquaX2 = x2 + w2;
         float jusquaY2 = y2 + h2;
-        //test pour moveable object type projectile appel oncollision de joueur & projectile 
-        //-> pour detruire projectile & enlever les pvs
 
         if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
             if ((x < x2 && jusquaX >= x2) || (x >= x2 && x <= jusquaX2)) {
-                //ne peut pas bouger
                 //detruit si est projectile
-                 
-                if(onCollision() == 1)
+                if(_type == 3) //si collision retourne 1 c'est que c'est un projectile
                 {
-                    //cout << "detruit par mur" << endl;
-                }
-                else
-                {
-                   // cout << "ne peut pas bouger" << idtemp << " is " << endl;
-                }
-                
-                
+                    GameMaster::getInstance().destroyMoveableObject(getId());
+                } 
                 return false;   
             }
         }
-    }
-//si on a pas encore quitté le pgm on peut bouger
+     }//update coord
 _sprite.move(direction);
-affichagePv();
+//update barre pv
+updateAffichagePv();
 return true;
     
 }
 
-int MoveableObject::onCollision() {
-    return 2;
-}
 
-void MoveableObject::onTouche()  {
-
-}
-
-void MoveableObject::affichagePv()
-{
-    _pvText.setPosition(_sprite.getPosition().x+_sprite.getScale().x/2,_sprite.getPosition().y+_sprite.getScale().y/2);
-    _pvText.setString(to_string(_pvMonstre));
-    
-}
-
-sf::Text MoveableObject::getPvText()
-{
-    return _pvText;
-}
 

@@ -7,8 +7,9 @@
 
 Player::Player(Classe laClasse)
 {
+	_type = 1;
 	_estEnnemi = 0;
-	_sprite.setPosition(100, 100);
+	_sprite.setPosition(120, 120);
 	nextDirection = sf::Vector2f(0, 0);
 	speed = laClasse.getDefaultSpeed();
 	_degat = 0.01;
@@ -96,7 +97,14 @@ Inventory* Player::getInventory() {
 	return _inventory;
 }
 
-void Player::onTouche(){
+/*bool Player::updateOnTouche() {
 	_nbVie = _nbVie - _degat; //on enleve des pvs si collisions avec ennemies
 	_nbPiece++; //on ajoute des pieces si collisions
+	_pvMonstre=_pvMonstre-0.1;
+
+}*/
+
+int Player::onCollision()
+{
+	return 1;
 }

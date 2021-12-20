@@ -9,7 +9,7 @@
 class DaggerOfSpeed : public Dagger
 {
 public :
-	DaggerOfSpeed();
+	DaggerOfSpeed(int camp);
 };
 
 

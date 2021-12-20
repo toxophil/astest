@@ -16,12 +16,15 @@ Arrow::Arrow()
 
 
 const float PI = 3.14159265359f;
-Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& startPosition,float vitesse,float dureeVie) {
+Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& startPosition,float vitesse,float dureeVie,int camp) {
 	//set de la texture de la fleche
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Arrow));
 	_sprite.setScale(0.8,0.8);
-
+	_pvLargeur=_pvMonstre;
+	_type = 3;
 	_damage = damage;
+	_damage = 0.1;
+	_pvMonstre = 2;
 	speed = vitesse/2;
 	nextDirection = sf::Vector2f(launchPos);
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
@@ -30,9 +33,8 @@ Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& s
 	_sprite.setOrigin(localBounds.width/2, localBounds.height/2);
 	_sprite.setPosition(startPosition);
 	//neutre
-	_estEnnemi = 0;
+	_estEnnemi = camp;
 
-	//_sprite.setRotation(arrowAngle);
 	
 	//calcul de la longeur du vecteur
 	float vectorLength = std::sqrtf(std::powf((nextDirection.x), 2) + std::powf((nextDirection.y), 2));

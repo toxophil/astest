@@ -17,7 +17,7 @@ protected:
 public:
 	Projectile();
 
-	Projectile(const sf::Vector2i& launchDirection, double damage);
+	Projectile(const sf::Vector2i& launchDirection, double damage,int estEnnemie);
 
 	//fonction de misa a jour de la logique de l'objet
 	virtual void update();
@@ -26,6 +26,7 @@ public:
 	virtual void updatePhysics(sf::RenderWindow& ,const sf::Event& event);
 
 	int onCollision();
+	//bool updateOnTouche();
 };
 
 

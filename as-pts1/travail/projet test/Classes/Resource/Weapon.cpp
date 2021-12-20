@@ -8,7 +8,7 @@ Weapon::Weapon()
     _attackSpeed = 1.0f;
     _attackDuration = 1.0f;
     _projectileCooldown = 1.0f;
-
+    estEnnemie = 2;
 }
 
 float Weapon::getAttackSpeed() const

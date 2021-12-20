@@ -9,7 +9,7 @@
 class Skorpion : public Bow
 {
 public:
-	Skorpion();
+	Skorpion(int camp);
 };
 
 

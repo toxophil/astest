@@ -7,11 +7,12 @@
 
 Ennemy::Ennemy()
 {
+	_type = 1;
 	_estEnnemi=1;
 	_sprite.setPosition(80, 80);
 	nextDirection = sf::Vector2f(0, 0);
 	speed = 200;
-	_pvMonstre = 10;
+	_pvMonstre = 200;
 	//modifier de l'attack speed en pourcentage
 	_attackSpeedModifier = 100.0f;
 	_timeSinceLastAttack.restart();
@@ -58,4 +59,9 @@ void Ennemy::update() {
 	//TODO
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	nextDirection = sf::Vector2f(0, 0);
+}
+
+int Ennemy::onCollision()
+{
+	return 2;
 }

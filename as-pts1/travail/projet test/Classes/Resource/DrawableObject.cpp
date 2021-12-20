@@ -28,8 +28,17 @@ DrawableObject::DrawableObject(){
 	_pvText.setOrigin(20, 20);
 	_pvText.setColor(sf::Color(255, 255, 255));
 	//_pvText.setPosition((-((int)leScreen.width) / 2) + 3 + (int)spriteSize.x * 8, leScreen.height / 2 - spriteSize.y * 7 - 20 + 10.5);
-
-
+	_pvMonstre = 100;
+	_pvHauteur = 4;
+	_pvLargeur = _pvMonstre;
+	_type = 0;
+	sf::RectangleShape _restant(sf::Vector2f(_pvMonstre, _pvHauteur));
+	sf::RectangleShape _max(sf::Vector2f(_pvLargeur, _pvHauteur));
+	/*float _nbVie = 10; //10 = max nb vie player
+	uint32_t _pvMonstre = 50; //pv pour les monstres
+	uint32_t _nbPiece;
+	float _degat = 0.1;
+	*/
 }
 DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	//génère un id différent par objet
@@ -42,12 +51,17 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_nbVie = 9; //10 = max nb vie player 
 	_nbPiece = 1500;
 	_degat = 0.1;
+	_pvMonstre = 100;
 	_estEnnemi = 0;
 	_pvText.setFont(_fontText);
 	_pvText.setString("salut");
 	_pvText.setCharacterSize(10);
 	_pvText.setOrigin(20, 20);
 	_pvText.setColor(sf::Color(255, 255, 255));
+	_pvLargeur= _pvMonstre;
+	_pvHauteur= 10; 
+	sf::RectangleShape _restant(sf::Vector2f(_pvMonstre , _pvHauteur));
+	sf::RectangleShape _max(sf::Vector2f(_pvLargeur, _pvHauteur));
 }
 
 int DrawableObject::getNbVie() const
