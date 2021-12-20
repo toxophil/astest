@@ -93,3 +93,8 @@ const sf::Sprite& DrawableObject::getSprite() {
 	return _sprite;
 }
 
+int DrawableObject::getType()
+{
+	return _type;
+}
+

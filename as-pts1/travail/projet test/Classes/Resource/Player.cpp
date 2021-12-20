@@ -108,3 +108,13 @@ int Player::onCollision()
 {
 	return 1;
 }
+/*bool Player::onTouche(MoveableObject * obj)
+{
+	if(obj->getType()==3)
+	{
+		_pvMonstre = _pvMonstre - obj->getDegat();
+		GameMaster::getInstance().destroyMoveableObject(obj->getId());
+		cout << "la fleche doit etre detruite" << endl;
+	}
+	return true;
+}*/

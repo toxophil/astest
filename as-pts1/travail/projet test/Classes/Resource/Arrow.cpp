@@ -23,9 +23,9 @@ Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& s
 	_pvLargeur=_pvMonstre;
 	_type = 3;
 	_damage = damage;
-	_damage = 0.1;
-	_pvMonstre = 2;
-	speed = vitesse/2;
+	_damage = 1;
+	_pvMonstre = 1;
+	speed = vitesse/5;
 	nextDirection = sf::Vector2f(launchPos);
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
 

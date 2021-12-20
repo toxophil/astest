@@ -49,6 +49,7 @@ public:
 	uint32_t getWidth() const;
 	uint32_t getHeight() const;
 	Angle& getAngle();
+	int getType();
 	const sf::Sprite& getSprite();
 };
 

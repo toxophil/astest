@@ -233,7 +233,7 @@ void GameMaster::runGame()
 				window.draw(object->getSprite());
 			}
 			for (auto& object : _moveableObjectList) {
-				window.draw(object->getPvText());
+				window.draw( object->getPvText());
 				window.draw(object->getMax());
 				window.draw(object->getRestant());
 			}

@@ -23,5 +23,6 @@ public:
 	Inventory* getInventory();
 	//bool updateOnTouche();
 	int onCollision();
+	//bool onTouche(MoveableObject* obj);
 
 };

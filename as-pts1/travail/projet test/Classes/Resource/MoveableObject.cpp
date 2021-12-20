@@ -12,7 +12,7 @@ void MoveableObject::updateAffichagePv()
 {
 
     _pvText.setPosition(_sprite.getPosition().x, _sprite.getPosition().y);
-    _pvText.setString(to_string(_pvMonstre));
+    _pvText.setString(to_string((int)_pvMonstre));
 
     // on met a jour la taille
     _restant.setSize(sf::Vector2f(_pvMonstre/10, _pvHauteur));
@@ -51,7 +51,7 @@ bool MoveableObject::updateOnTouche(MoveableObject *obj) {
     _nbPiece++; 
     /**/
     _pvMonstre = _pvMonstre - obj->_degat; 
-    if (_pvMonstre <= 0)
+    if (_pvMonstre <= 0 || obj->_type !=3)
     {
         cout << obj->_degat << endl;
         cout << _pvMonstre << endl;
