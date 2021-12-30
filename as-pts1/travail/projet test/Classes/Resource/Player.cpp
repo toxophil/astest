@@ -104,10 +104,6 @@ Inventory* Player::getInventory() {
 
 }*/
 
-int Player::onCollision()
-{
-	return 1;
-}
 /*bool Player::onTouche(MoveableObject * obj)
 {
 	if(obj->getType()==3)
