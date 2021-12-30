@@ -46,19 +46,58 @@ int MoveableObject::onCollision() {
 }
 
 bool MoveableObject::updateOnTouche(MoveableObject *obj) {
-    /*bullshit*/
-    _nbVie = _nbVie - _degat; 
-    _nbPiece++; 
-    /**/
-    _pvMonstre = _pvMonstre - obj->_degat; 
-    if (_pvMonstre <= 0 || obj->_type !=3)
+    //fleche - fleche   fleche sera abimé 
+    //fleche - move     fleche detruit move abimé
+    //move - fleche     move abimé fleche detruit
+    // attention ce dernier cas se presente comme un doublon
+    // en effet chaque move sera checké 1 fois si l'on modifie le obj à cette endroit on risque de 
+    // modifier 2 fois chaque move en collision
+    // pour éviter ce problème on ne modifie pas les obj directement
+    //move - move       move abimé - move abimé corp à corp passif
+    if (_type == 3 && obj->_type == 3)
     {
-        cout << obj->_degat << endl;
-        cout << _pvMonstre << endl;
+        _pvMonstre -= obj->_degat;
+        obj->_pvMonstre -= _pvMonstre;
+        if (_pvMonstre <= 0)
+        {
+            GameMaster::getInstance().destroyMoveableObject(getId());
+            return false;
+        }
+        if (obj->_pvMonstre <= 0)
+        {
+            GameMaster::getInstance().destroyMoveableObject(obj->getId());
+        }
+    }
+    
+    if (_type == 3 && (obj->_type == 1 || obj->_type == 2))
+    {
+        obj->_pvMonstre -= _degat;
+        if (obj->_pvMonstre <= 0)
+        {
+            GameMaster::getInstance().destroyMoveableObject(obj->getId());
+        }
         GameMaster::getInstance().destroyMoveableObject(getId());
         return false;
     }
-    return true;
+
+    if ( (_type == 1 || _type == 2 )&& obj->_type == 3)
+    {
+        _pvMonstre -= obj->_degat;
+        if (_pvMonstre <= 0)
+        {
+            GameMaster::getInstance().destroyMoveableObject(getId());
+            return false;
+        }
+        GameMaster::getInstance().destroyMoveableObject(obj->getId());
+    }
+   
+    if (_type == 1 || _type == 2 && _type == 1 || _type == 2)
+    {
+
+    }
+    //_nbVie = _nbVie - _degat;
+    //_nbPiece++;
+return true;
 }
 
 
@@ -91,6 +130,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
 
      for (auto& object : moveable){
          temp = object->_sprite.getGlobalBounds(); //les bounds d'un de la liste des moveable
+         
          if(object->_id == idtemp) {
             //si c'est le meme ojet on ne fait rien
          }   
@@ -103,34 +143,28 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
              if ((y < b1 && jusquaY >= b1) || (y >= b1 && y <= b2)) {
                  if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)){
                      if(object->_estEnnemi != _estEnnemi ) {
-                        //update stats 1
-                        //update stats 2
-                        //check 1 alive 
-                        //check 2 alive
-                        //si check 1 dead 
                          if (object->_type == 1)
-                         {   //player
-                             //1 update things
-                             //2 check if it should be dead
+                         {  
+                            if (!updateOnTouche(object))
+                            {
+                                return false;
+                            }
+                         }
+                         if (object->_type == 2)
+                         {
                              if (!updateOnTouche(object))
                              {
-                                 return false;
+                                return false;
                              }
                          }
-                        if (object->_type == 2)
-                        {
-                            if (!updateOnTouche(object))
-                            {
+                         if (object->_type == 3)
+                         {
+                             if (!updateOnTouche(object))
+                             {
                                 return false;
-                            }
-                        }
-                        if (object->_type == 3)
-                        {
-                            if (!updateOnTouche(object))
-                            {
-                                return false;
-                            }
-                        }
+                             }
+                             cout << "type 3 :";
+                         }
                      }
                  }
              }
