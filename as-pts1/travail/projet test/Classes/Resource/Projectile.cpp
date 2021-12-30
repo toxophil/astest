@@ -9,14 +9,15 @@ Projectile::Projectile()
 	sf::Vector2f directionF(200, 0);
 
 	nextDirection = directionF;
-	_damage = 1;
 	speed = 200;
 	maxLifetime = 5;
 	lifetime.restart();
-	_estEnnemi	; // 0 joueur 1 ennemie
+	_estEnnemi	; // 0 joueur 1 ennemie 
+	_type = 3;
 }
 
-Projectile::Projectile(const sf::Vector2i& launchDirection, double damage) {
+Projectile::Projectile(const sf::Vector2i& launchDirection, double damage,int estEnnemi) {
+	_estEnnemi = estEnnemi;
 	_damage = damage;
 	speed = 200;
 	maxLifetime = 5;
@@ -41,7 +42,12 @@ void Projectile::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 {
 	//check de collision avec un autre hittable character ou un mur
 }
-void Projectile::onCollision() {
+int Projectile::onCollision() {
 		GameMaster::getInstance().destroyMoveableObject(getId());
+		return false;
 	//delete this;
 }
+/*bool Projectile::updateOnTouche()
+{
+	
+}*/

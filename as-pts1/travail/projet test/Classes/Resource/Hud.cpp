@@ -52,7 +52,7 @@ void Hud::updateMoney(uint32_t moneyNb) {
 	_monneyText.setString(to_string(moneyNb));
 }
 
-void Hud::draw(sf::RenderWindow& laWindow, std::uint16_t nbVie) {
+void Hud::draw(sf::RenderWindow& laWindow, int nbVie) {
 	laWindow.setView(_laVue);
 	for (uint16_t i = 0; i < _lesCoeurs.size(); i++) {
 		if (nbVie >= 2) {

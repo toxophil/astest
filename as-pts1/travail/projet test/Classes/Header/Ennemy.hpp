@@ -17,6 +17,7 @@ public:
 
 	void updatePhysics(sf::RenderWindow&, const sf::Event& event);
 	void update();
+	int onCollision();
 
 
 };

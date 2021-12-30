@@ -11,6 +11,7 @@ class Hud {
 private:
 	sf::Font _fontText;
 	sf::Text _monneyText;
+	
 
 	vector<sf::Sprite> _lesCoeurs;
 
@@ -27,7 +28,7 @@ public:
 	Hud(std::uint16_t);
 	void addHeart();
 	void updateMoney(uint32_t);
-	void draw(sf::RenderWindow&, std::uint16_t);
+	void draw(sf::RenderWindow&, int);
 };
 
 

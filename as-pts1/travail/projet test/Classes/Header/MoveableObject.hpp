@@ -6,6 +6,7 @@
 
 #include "DrawableObject.hpp"
 
+
 class MoveableObject : public DrawableObject
 {
 private:
@@ -14,7 +15,7 @@ protected:
 	sf::Vector2f nextDirection;
 	//vitesse de l'objet
 	float speed;
-	bool _estEnnemi;
+	
 
 public:
 	//fonction de misa a jour de la logique de l'objet
@@ -24,10 +25,22 @@ public:
 	virtual void updatePhysics(sf::RenderWindow& ,const sf::Event &event) = 0;
 
 	// Appellé à chaque collision
-	virtual void onCollision();
+	virtual int onCollision();
+
+	//mise a jour des proprietes de l'objet apres collisions
+	virtual bool updateOnTouche(MoveableObject * obj);
 
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);
+
+	void updateAffichagePv();
+
+	sf::Text getPvText();
+
+	sf::RectangleShape getMax();
+
+	sf::RectangleShape getRestant();
+
 };
 
 

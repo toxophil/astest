@@ -7,37 +7,136 @@
 
 using namespace std;
 
+
+void MoveableObject::updateAffichagePv()
+{
+
+    _pvText.setPosition(_sprite.getPosition().x, _sprite.getPosition().y);
+    _pvText.setString(to_string((int)_pvMonstre));
+
+    // on met a jour la taille
+    _restant.setSize(sf::Vector2f(_pvMonstre/10, _pvHauteur));
+    _max.setSize(sf::Vector2f(_pvLargeur/10, _pvHauteur));
+    //la couleur - pourra etre mis en initialisation
+    _restant.setFillColor(sf::Color::Green);
+    _max.setFillColor(sf::Color::Red);
+    //on met la position
+    _restant.setPosition(_sprite.getPosition().x + 10, _sprite.getPosition().y - 4);
+    _max.setPosition(_sprite.getPosition().x + 10, _sprite.getPosition().y - 4);
+}
+
+
+sf::Text MoveableObject::getPvText()
+{
+    return _pvText;
+}
+
+sf::RectangleShape MoveableObject::getRestant()
+{
+    return _restant;
+}
+
+sf::RectangleShape MoveableObject::getMax()
+{
+    return _max;
+}
+
+int MoveableObject::onCollision() {
+    return 0;
+}
+
+bool MoveableObject::updateOnTouche(MoveableObject *obj) {
+    /*bullshit*/
+    _nbVie = _nbVie - _degat; 
+    _nbPiece++; 
+    /**/
+    _pvMonstre = _pvMonstre - obj->_degat; 
+    if (_pvMonstre <= 0 || obj->_type !=3)
+    {
+        cout << obj->_degat << endl;
+        cout << _pvMonstre << endl;
+        GameMaster::getInstance().destroyMoveableObject(getId());
+        return false;
+    }
+    return true;
+}
+
+
 //check des collisions
 bool MoveableObject::moveObject(const sf::Vector2f& direction)
 {
     //map de gamemaster puis walls de la map de gamemaster  
 	Map laMap = GameMaster::getInstance().getMap();
 	vector<Wall> lesWalls = laMap.getWallList();
-
-    // les bounds de la sprite de drawable object
-    sf::FloatRect gBounds = _sprite.getGlobalBounds();
-
-    //liste MoveableObject de gamemaster
-    std::list<MoveableObject*> list = GameMaster::getInstance().getMoveableObjectList();
-    //ces acteurs ne sont pas des static objets comme les murs
-    //on recup les projectiles & les players et les ennemies
-    //vector<Player> lesjoueurs = list.
-
-    
+  
     //positions du sprite de drawable object
     sf::Vector2f pos = _sprite.getPosition();
+    // les bounds de la sprite de drawable object
+    sf::FloatRect gBounds = _sprite.getGlobalBounds();
 
     //coordonnée des 4 points update + direction
 	float x = pos.x + direction.x;
 	float y = pos.y + direction.y;
     float jusquaX = x + gBounds.width;
     float jusquaY = y + gBounds.height;
-    ////cout << "LesWall nb : " << lesWalls.size() << endl;
-    
 
 
-    
-    for (uint32_t l = 0; l < lesWalls.size(); l++) {
+    //liste des MoveableObject de gamemaster
+     std::list<MoveableObject*> moveable = GameMaster::getInstance().getMoveableObjectList();
+
+     float a1, b1, a2, b2;
+     sf::FloatRect temp;
+     bool detruit=true;
+     uint32_t idtemp = _id;
+
+     for (auto& object : moveable){
+         temp = object->_sprite.getGlobalBounds(); //les bounds d'un de la liste des moveable
+         if(object->_id == idtemp) {
+            //si c'est le meme ojet on ne fait rien
+         }   
+         else{
+            float a1 = temp.left;
+            float b1 = temp.top;
+            float a2 = a1 + temp.width;
+            float b2 = b1 + temp.height;
+
+             if ((y < b1 && jusquaY >= b1) || (y >= b1 && y <= b2)) {
+                 if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)){
+                     if(object->_estEnnemi != _estEnnemi ) {
+                        //update stats 1
+                        //update stats 2
+                        //check 1 alive 
+                        //check 2 alive
+                        //si check 1 dead 
+                         if (object->_type == 1)
+                         {   //player
+                             //1 update things
+                             //2 check if it should be dead
+                             if (!updateOnTouche(object))
+                             {
+                                 return false;
+                             }
+                         }
+                        if (object->_type == 2)
+                        {
+                            if (!updateOnTouche(object))
+                            {
+                                return false;
+                            }
+                        }
+                        if (object->_type == 3)
+                        {
+                            if (!updateOnTouche(object))
+                            {
+                                return false;
+                            }
+                        }
+                     }
+                 }
+             }
+         }
+     }
+     for (uint32_t l = 0; l < lesWalls.size(); l++) {
         //calculs des coordonnées des 4 coins tout les murs
         float x2 = lesWalls[l].getX();
         float y2 = lesWalls[l].getY();
@@ -45,24 +144,24 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
         uint32_t h2 = lesWalls[l].getH();
         float jusquaX2 = x2 + w2;
         float jusquaY2 = y2 + h2;
-        //test pour moveable object type projectile appel oncollision de joueur & projectile 
-        //-> pour detruire projectile & enlever les pvs
 
         if ((y < y2 && jusquaY >= y2) || (y >= y2 && y <= jusquaY2)) {
             if ((x < x2 && jusquaX >= x2) || (x >= x2 && x <= jusquaX2)) {
-                
-                ////cout << "NOP " << lesWalls[l].getX() << endl;
-                //_sprite.move(sf::Vector2f(x2, y2));//direction);
-                
-                //lancement evenement collision
-                onCollision();
-                //ne peut pas bouger
-                return false;
+                //detruit si est projectile
+                if(_type == 3) //si collision retourne 1 c'est que c'est un projectile
+                {
+                    GameMaster::getInstance().destroyMoveableObject(getId());
+                } 
+                return false;   
             }
         }
-    }
-	_sprite.move(direction);
-	return true;
+     }//update coord
+_sprite.move(direction);
+//update barre pv
+updateAffichagePv();
+return true;
+    
 }
 
-void MoveableObject::onCollision() {}
+
+
