@@ -15,6 +15,8 @@ private:
 	Classe _laClasse;
 	Animation anim;
 
+	sf::Sprite _holdingWeapon;
+
 public:
 	Player(Classe laClasse);
 

@@ -16,19 +16,20 @@ Arrow::Arrow()
 
 
 const float PI = 3.14159265359f;
-Arrow::Arrow(const sf::Vector2f& launchPos, double damage, const sf::Vector2f& startPosition,float vitesse,float dureeVie) {
+Arrow::Arrow(const sf::Vector2f& aimPos, const sf::Vector2f& initPos, double damage,float vitesse) {
+
 	//set de la texture de la fleche
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Arrow));
 	_sprite.setScale(0.8,0.8);
 
 	_damage = damage;
 	speed = vitesse/2;
-	nextDirection = sf::Vector2f(launchPos);
+	nextDirection = sf::Vector2f(aimPos);
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
 
 	// Set la pos
 	_sprite.setOrigin(localBounds.width/2, localBounds.height/2);
-	_sprite.setPosition(startPosition);
+	_sprite.setPosition(initPos);
 
 
 	//_sprite.setRotation(arrowAngle);

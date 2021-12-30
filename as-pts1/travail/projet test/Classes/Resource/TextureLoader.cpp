@@ -10,6 +10,7 @@ TextureLoader::TextureLoader()
 	unordered_map<TextureNames, string> loadLocationTexture;
 
 	//listes des textures à charger et leurs locations
+	loadLocationTexture[TextureNames::ErrorTexture] = "Ressources/img/defaultTexture.jpg";
 	loadLocationTexture[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
 
 	//les monstres
@@ -54,6 +55,9 @@ TextureLoader::TextureLoader()
 	loadLocationTexture[TextureNames::HeartDemi] = "Ressources/img/hud/heart/ui_heart_half.png";
 	loadLocationTexture[TextureNames::HeartEmpty] = "Ressources/img/hud/heart/ui_heart_empty.png";
 
+	loadLocationTexture[TextureNames::Bow] = "Ressources/img/weapon/weapon_bow.png";
+	loadLocationTexture[TextureNames::Anime_Sword] = "Ressources/img/weapon/weapon_anime_sword.png";
+	 
 	// Les animations
 	unordered_map<AnimationNames, vector<String>> loadLocationAnimation;
 	// Animation Lézard

@@ -30,28 +30,13 @@
     <ClCompile Include="Classes\Resource\AttributeBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Resource\Bow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Resource\Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Dagger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\DaggerOfSpeed.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\DrawableObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\Ennemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Fireball.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\FireSword.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\Flooring.cpp">
@@ -102,16 +87,10 @@
     <ClCompile Include="Classes\Resource\RoomObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Resource\ScrollOfFireball.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Resource\Skeleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\Skill.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Skorpion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\Slime.cpp">
@@ -120,22 +99,10 @@
     <ClCompile Include="Classes\Resource\SolidObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Resource\Sword.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Classes\Resource\UnusableItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\UsableItem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Wall.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Wand.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\WandOfDestruction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Classes\Resource\Weapon.cpp">
@@ -174,6 +141,12 @@
     <ClCompile Include="Classes\Resource\Hud.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Resource\Wall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Resource\Bow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Header\Angle.hpp">
@@ -188,16 +161,7 @@
     <ClInclude Include="Classes\Header\AttributeBar.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Header\Bow.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Header\Camera.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Dagger.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\DaggerOfSpeed.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\DrawableObject.hpp">
@@ -207,9 +171,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Fireball.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\FireSword.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Flooring.hpp">
@@ -260,25 +221,16 @@
     <ClInclude Include="Classes\Header\RoomObject.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Header\ScrollOfFireball.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Header\Skeleton.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Skill.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classes\Header\Skorpion.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Classes\Header\Slime.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\SolidObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Sword.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\UnusableItem.hpp">
@@ -288,12 +240,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Wall.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Wand.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\WandOfDestruction.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Weapon.hpp">
@@ -330,6 +276,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Hud.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Bow.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

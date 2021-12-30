@@ -3,13 +3,12 @@
 
 #include "../Header/GameMaster.hpp"
 #include <type_traits>
-#include "../Header/Skorpion.hpp"
-#include "../Header/DaggerOfSpeed.hpp"
 #include "../Header/Generator.hpp"
 #include "../Header/Skeleton.hpp"
 #include "../Header/Menu.hpp"
 #include "../Header/Hud.hpp"
 
+#include "../Header/Bow.hpp"
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
 {
@@ -121,14 +120,13 @@ void GameMaster::runGame()
 	Camera laCam;
 
 	// Créer la Classe
-	Skorpion thiefBow;
-	DaggerOfSpeed thiefDagger;
+	Bow arcCool(_textureLoader.getTexture(TextureLoader::TextureNames::Anime_Sword));
 
 	// Weapon defWeapon, Animation idleAnim, Animation walkAnim, uint8_t defLife, uint16_t defSpeed
 	//create a player
 
 	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
-	Classe classeDragonF(&thiefBow, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
+	Classe classeDragonF(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
 
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
@@ -140,11 +138,11 @@ void GameMaster::runGame()
 	addMoveableObject(ennemy);
 
 	//equip his bow
-	player.setEquippedWeapon(&thiefBow);
-	ennemy.setEquippedWeapon(&thiefBow);
+	player.setEquippedWeapon(&arcCool);
+	ennemy.setEquippedWeapon(&arcCool);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
-	bool openMainMenu = true;
+	bool openMainMenu = false;
 	Menu leMenuP;
 
 	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), false);
@@ -157,6 +155,9 @@ void GameMaster::runGame()
 	bool done = false;
 	while (window.isOpen())
 	{
+		/*if (!window.hasFocus()) {
+			continue;
+		}*/
 		/*if (_musicCd.getElapsedTime().asSeconds() > 5 && !done) {
 			_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), true);
 		}*/
@@ -199,11 +200,11 @@ void GameMaster::runGame()
 				{
 					if (event.mouseWheelScroll.delta == 1)
 					{
-						player.setEquippedWeapon(&thiefBow);
+						player.setEquippedWeapon(&arcCool);
 					}
 					else
 					{
-						player.setEquippedWeapon(&thiefDagger);
+						player.setEquippedWeapon(&arcCool);
 					}
 				}
 			}
@@ -231,9 +232,11 @@ void GameMaster::runGame()
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getSprite());
 			}
-			leHud.draw(window,3);
+			player.getEquippedWeapon()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
 
+			leHud.draw(window,3);
 			laCam.focus(window);
+
 			window.display();
 		}
 

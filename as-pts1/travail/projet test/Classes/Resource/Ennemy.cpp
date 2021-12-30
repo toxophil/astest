@@ -42,7 +42,7 @@ void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 	nextDirection.y = std::min(nextDirection.y, speed);
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getProjectileCooldown() * (_attackSpeedModifier / 100)) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getAttackCd() * (_attackSpeedModifier / 100)) {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 
 			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
