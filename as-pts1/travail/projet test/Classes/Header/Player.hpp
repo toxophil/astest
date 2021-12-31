@@ -14,7 +14,9 @@ private:
 	Inventory* _inventory;
 	Classe _laClasse;
 	Animation anim;
-	
+
+	sf::Sprite _holdingWeapon;
+
 public:
 	Player(Classe laClasse);
 
@@ -24,5 +26,6 @@ public:
 	//bool updateOnTouche();
 	int onCollision();
 	//bool onTouche(MoveableObject* obj);
+
 
 };

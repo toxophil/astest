@@ -9,7 +9,8 @@
 #include "../Header/Skeleton.hpp"
 #include "../Header/Menu.hpp"
 #include "../Header/Hud.hpp"
-
+#include "../Header/Bow.hpp"
+#include "../Header/Sword.hpp"
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
 {
@@ -125,12 +126,13 @@ void GameMaster::runGame()
 	DaggerOfSpeed thiefDagger(0);
 	Skorpion ennemyBow(1);
 	DaggerOfSpeed ennemyDagger(1);
-
+	
 	// Weapon defWeapon, Animation idleAnim, Animation walkAnim, uint8_t defLife, uint16_t defSpeed
 	//create a player
 
 	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
-	Classe classeDragonF(&thiefBow, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
+	Sword epeeDiamant(_textureLoader.getTexture(TextureLoader::TextureNames::Anime_Sword));
+	Classe classeDragonF(&epeeDiamant, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
 
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
@@ -139,11 +141,14 @@ void GameMaster::runGame()
 
 	//create a skeleton
 	Skeleton ennemy;
+	Skeleton ennemy2;
 	addMoveableObject(ennemy);
+	addMoveableObject(ennemy2);
 
 	//equip his bow
-	player.setEquippedWeapon(&thiefBow);
-	ennemy.setEquippedWeapon(&ennemyBow);
+	player.setEquippedWeapon(&epeeDiamant);
+	ennemy.setEquippedWeapon(&thiefBow);
+	ennemy2.setEquippedWeapon(&epeeDiamant);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
 	bool openMainMenu = false;
@@ -159,6 +164,9 @@ void GameMaster::runGame()
 	bool done = false;
 	while (window.isOpen())
 	{
+		/*if (!window.hasFocus()) {
+			continue;
+		}*/
 		/*if (_musicCd.getElapsedTime().asSeconds() > 5 && !done) {
 			_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), true);
 		}*/
@@ -205,10 +213,11 @@ void GameMaster::runGame()
 					}
 					else
 					{
-						player.setEquippedWeapon(&thiefDagger);
+						player.setEquippedWeapon(&epeeDiamant);
 					}
 				}
 			}
+
 
 			//destruction des objets non n�cessaires
 			destroy();
@@ -232,6 +241,11 @@ void GameMaster::runGame()
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getSprite());
 			}
+			player.getEquippedWeapon()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
+
+			leHud.draw(window,3);
+
+
 			for (auto& object : _moveableObjectList) {
 				window.draw( object->getPvText());
 				window.draw(object->getMax());

@@ -46,6 +46,10 @@ int MoveableObject::onCollision() {
 }
 
 bool MoveableObject::updateOnTouche(MoveableObject *obj) {
+    /*bullshit*/
+    _nbVie = _nbVie - _degat; 
+    _nbPiece++; 
+    /**/
     //fleche - fleche   fleche sera abimé 
     //fleche - move     fleche detruit move abimé
     //move - fleche     move abimé fleche detruit
@@ -68,7 +72,7 @@ bool MoveableObject::updateOnTouche(MoveableObject *obj) {
             GameMaster::getInstance().destroyMoveableObject(obj->getId());
         }
     }
-    
+
     if (_type == 3 && (obj->_type == 1 || obj->_type == 2))
     {
         obj->_pvMonstre -= _degat;
@@ -90,14 +94,14 @@ bool MoveableObject::updateOnTouche(MoveableObject *obj) {
         }
         GameMaster::getInstance().destroyMoveableObject(obj->getId());
     }
-   
+
     if (_type == 1 || _type == 2 && _type == 1 || _type == 2)
     {
 
     }
     //_nbVie = _nbVie - _degat;
     //_nbPiece++;
-return true;
+    return true;
 }
 
 
@@ -130,7 +134,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
 
      for (auto& object : moveable){
          temp = object->_sprite.getGlobalBounds(); //les bounds d'un de la liste des moveable
-         
+
          if(object->_id == idtemp) {
             //si c'est le meme ojet on ne fait rien
          }   
@@ -143,28 +147,36 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
              if ((y < b1 && jusquaY >= b1) || (y >= b1 && y <= b2)) {
                  if ((x < a1 && jusquaX >= a1) || (x >= a1 && x <= a2)){
                      if(object->_estEnnemi != _estEnnemi ) {
+                        //update stats 1
+                        //update stats 2
+                        //check 1 alive 
+                        //check 2 alive
+                        //si check 1 dead 
                          if (object->_type == 1)
-                         {  
+                         {   
+                             //player
+                             //1 update things
+                             //2 check if it should be dead
+                             if (!updateOnTouche(object))
+                             {
+                                 return false;
+                             }
+                         }
+                        if (object->_type == 2)
+                        {
                             if (!updateOnTouche(object))
                             {
                                 return false;
                             }
-                         }
-                         if (object->_type == 2)
-                         {
-                             if (!updateOnTouche(object))
-                             {
+                        }
+                        if (object->_type == 3)
+                        {
+                            if (!updateOnTouche(object))
+                            {
                                 return false;
-                             }
-                         }
-                         if (object->_type == 3)
-                         {
-                             if (!updateOnTouche(object))
-                             {
-                                return false;
-                             }
-                             cout << "type 3 :";
-                         }
+                            }
+                            cout << "type 3 :";
+                        }
                      }
                  }
              }

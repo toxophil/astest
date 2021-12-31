@@ -12,6 +12,7 @@ class TextureLoader
 {
 public:
 	enum class TextureNames {
+		ErrorTexture,
 		Orc,
 		Skeleton,
 		Arrow,
@@ -49,7 +50,10 @@ public:
 
 		HeartFull,
 		HeartDemi,
-		HeartEmpty
+		HeartEmpty,
+
+		Bow,
+		Anime_Sword
 	};
 
 	enum class AnimationNames {
