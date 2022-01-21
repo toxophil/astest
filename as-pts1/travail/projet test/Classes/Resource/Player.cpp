@@ -4,6 +4,8 @@
 #include "../Header/Player.hpp"
 #include "../Header/GameMaster.hpp"
 #include "../Header/Weapon.hpp"
+#include "../Header/Sword.hpp"
+#include "../Header/Bow.hpp"
 
 Player::Player() {
 	_type = 1;
@@ -23,9 +25,8 @@ Player::Player(Classe laClasse)
 	_animTime.restart();
 	_laClasse = laClasse;
 	setHealth(laClasse.getDefaultLife());
-	setEquippedWeapon( laClasse.getDefaultWeapon());
+	setEquippedWeapon1(laClasse.getDefaultWeapon());
 	anim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
-
 }
 
 void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
@@ -63,11 +64,23 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 	nextDirection.y = std::min(nextDirection.y, speed);
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getAttackCd()  * 1) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon1()->getAttackCd() * 1) {
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
 
 			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-			getEquippedWeapon()->attack(this, mousePosition);
+			Bow* bow = dynamic_cast<Bow*>(getEquippedWeapon1());
+			bow->attack(this, mousePosition);
+
+			//reset du temps depuis la derniere attaque
+			_timeSinceLastAttack.restart();
+		}
+	}
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon2()->getAttackCd() * 1) {
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Right)) {
+
+			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+			Sword* sword = dynamic_cast<Sword*>(getEquippedWeapon2());
+			sword->attackSword(this,mousePosition);
 
 			//reset du temps depuis la derniere attaque
 			_timeSinceLastAttack.restart();

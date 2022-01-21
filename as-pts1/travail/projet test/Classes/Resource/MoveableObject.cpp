@@ -45,21 +45,21 @@ int MoveableObject::onCollision() {
     return 0;
 }
 
-bool MoveableObject::updateOnTouche(MoveableObject *obj) {
-    /*bullshit*/
-    _nbVie = _nbVie - _degat; 
-    _nbPiece++; 
-    /**/
-    _pvMonstre = _pvMonstre - obj->_degat; 
-    if (_pvMonstre <= 0 || obj->_type !=3)
-    {
-        //cout << obj->_degat << endl;
-        //cout << _pvMonstre << endl;
-        //GameMaster::getInstance().destroyMoveableObject(getId());
-        return false;
+bool MoveableObject::updateOnTouche(MoveableObject* obj) {
+    if (obj->getType() == 2) {
+        HittableCharacter* p = dynamic_cast<HittableCharacter*>(obj);
+        if (p->getHealth() <= 0)
+        {
+            //cout << obj->_degat << endl;
+            //cout << _pvMonstre << endl;
+            GameMaster::getInstance().destroyMoveableObject(p->getId());
+            return false;
+        }
     }
     return true;
 }
+
+
 
 
 //check des collisions
@@ -92,7 +92,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
      for (auto& object : moveable){
          temp = object->_sprite.getGlobalBounds(); //les bounds d'un de la liste des moveable
          if(object->_id == idtemp) {
-            //si c'est le meme ojet on ne fait rien
+            //si c'est le meme objet on ne fait rien
          }   
          else{
             float a1 = temp.left;
@@ -114,21 +114,21 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
                              //2 check if it should be dead
                              if (!updateOnTouche(object))
                              {
-                                // return false;
+                                 return false;
                              }
                          }
                         if (object->_type == 2)
                         {
                             if (!updateOnTouche(object))
                             {
-                               // return false;
+                                return false;
                             }
                         }
                         if (object->_type == 3)
                         {
                             if (!updateOnTouche(object))
                             {
-                             //   return false;
+                                return false;
                             }
                         }
                      }
@@ -152,9 +152,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
                 {
                     GameMaster::getInstance().destroyMoveableObject(getId());
                 } 
-                if (!_estEnnemi) {
-                    return false;
-                }
+                return false;   
             }
         }
      }//update coord

@@ -7,8 +7,12 @@
 
 Ennemy::Ennemy()
 {
+<<<<<<< HEAD
 	_doAttack = true;
 	_type = 5;
+=======
+	_type = 2;
+>>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
 	_estEnnemi=1;
 	_sprite.setPosition(80, 80);
 	nextDirection = sf::Vector2f(0, 0);
@@ -45,19 +49,25 @@ void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 		nextDirection = nextDirection / temp;
 	}
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0
-	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon()->getAttackCd() * (_attackSpeedModifier / 100)) {
+	if (_timeSinceLastAttack.getElapsedTime().asSeconds() >= getEquippedWeapon1()->getAttackCd() * (_attackSpeedModifier / 100)) {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 
 			const sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-			getEquippedWeapon()->attack(this, mousePosition);
+			getEquippedWeapon1()->attack(this, mousePosition);
 
 			//reset du temps depuis la derniere attaque
 			_timeSinceLastAttack.restart();
 		}
 	}
+<<<<<<< HEAD
 	moveObject(nextDirection * speed  * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	//moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	nextDirection = sf::Vector2f(0, 0);
+=======
+	if (getHealth() <= 0) {
+		GameMaster::getInstance().destroyMoveableObject(this->getId());
+	}
+>>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
 }
 
 void Ennemy::update() {

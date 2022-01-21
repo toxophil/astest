@@ -147,7 +147,11 @@
     <ClCompile Include="Classes\Resource\Bow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Classes\Resource\Node.cpp">
+=======
+    <ClCompile Include="Classes\Resource\Sword.cpp">
+>>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -284,7 +288,11 @@
     <ClInclude Include="Classes\Header\Bow.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Classes\Header\Node.hpp">
+=======
+    <ClInclude Include="Classes\Header\Sword.hpp">
+>>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

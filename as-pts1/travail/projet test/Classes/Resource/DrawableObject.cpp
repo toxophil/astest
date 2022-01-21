@@ -59,7 +59,7 @@ DrawableObject::DrawableObject(Angle& a, uint32_t h, uint32_t w) {
 	_pvText.setOrigin(20, 20);
 	_pvText.setColor(sf::Color(255, 255, 255));
 	_pvLargeur= _pvMonstre;
-	_pvHauteur= 10; 
+	_pvHauteur= 10;
 	sf::RectangleShape _restant(sf::Vector2f(_pvMonstre , _pvHauteur));
 	sf::RectangleShape _max(sf::Vector2f(_pvLargeur, _pvHauteur));
 }
@@ -91,6 +91,16 @@ Angle& DrawableObject::getAngle() {
 
 const sf::Sprite& DrawableObject::getSprite() {
 	return _sprite;
+}
+
+float DrawableObject::getPvMonstre()
+{
+	return _pvMonstre;
+}
+
+void DrawableObject::setPvMonstre(float hp)
+{
+	_pvMonstre = hp;
 }
 
 int DrawableObject::getType()

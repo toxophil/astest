@@ -27,9 +27,6 @@ public:
 	// Appellé à chaque collision
 	virtual int onCollision();
 
-	//mise a jour des proprietes de l'objet apres collisions
-	virtual bool updateOnTouche(MoveableObject * obj);
-
 	//fonction de déplacement de l'objet (retourne si le déplacement a été possible) - 
 	bool moveObject(const sf::Vector2f& direction);
 
@@ -41,6 +38,7 @@ public:
 
 	sf::RectangleShape getRestant();
 
+	bool updateOnTouche(MoveableObject* obj);
 };
 
 
