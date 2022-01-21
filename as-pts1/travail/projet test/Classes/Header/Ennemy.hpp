@@ -9,6 +9,7 @@
 class Ennemy : public HittableCharacter
 {
 private:
+	bool _doAttack;
 	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
 

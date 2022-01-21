@@ -5,6 +5,10 @@
 #include "../Header/GameMaster.hpp"
 #include "../Header/Weapon.hpp"
 
+Player::Player() {
+	_type = 1;
+	_estEnnemi = 0;
+}
 Player::Player(Classe laClasse)
 {
 	_type = 1;
@@ -75,7 +79,7 @@ void Player::update() {
 	//TODO
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	if (nextDirection.x != 0 || nextDirection.y != 0) {	
-		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getWalkAnim().getSpeed()) {
+		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getWalkAnim().getSpeed()) {_animTime.restart();
 			////cout << "nextttt : " << endl;
 			_sprite.setTexture(_laClasse.getWalkAnim().getNextFrame());
 			_animTime.restart();
@@ -97,6 +101,9 @@ Inventory* Player::getInventory() {
 	return _inventory;
 }
 
+sf::Vector2f Player::getPos() const {
+	return _sprite.getPosition() + _sprite.getOrigin();
+}
 /*bool Player::updateOnTouche() {
 	_nbVie = _nbVie - _degat; //on enleve des pvs si collisions avec ennemies
 	_nbPiece++; //on ajoute des pieces si collisions
@@ -114,3 +121,7 @@ Inventory* Player::getInventory() {
 	}
 	return true;
 }*/
+
+void Player::setPos(int x, int y) {
+	_sprite.setPosition(x, y);
+}

@@ -21,6 +21,8 @@ class GameMaster
 private:
 	MusicManager _leMusicManager;
 	Map _map;
+	Player* _leJoueur;
+
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
 	TextureLoader _textureLoader;
@@ -46,6 +48,8 @@ public:
 
 	//--------------GETTERS------------
 	const Map& getMap() const;
+	const sf::Vector2f getPlayerPos() const;
+	void setPlayerPos(int, int);
 
 	const std::list<MoveableObject*>& getMoveableObjectList();
 

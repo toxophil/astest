@@ -52,7 +52,7 @@ MapTheme& Generator::getRdmTheme() {
 }
 
 Map Generator::makeMap(uint32_t difficulter) {
-    uint32_t nbSalle = 40;//difficulter*3;
+    uint32_t nbSalle = 10;//difficulter*3;
     vector<Room> lesSalles;
 
     // Crèer les ZoneRoom !
@@ -85,10 +85,15 @@ Map Generator::makeMap(uint32_t difficulter) {
     }
 
     laZoneRoom.makeIntersection();
+    laZoneRoom.makeNodes();
     laZoneRoom.makeTiles();
     laZoneRoom.makeWalls();
     //cout << "CHECK NB WALL " << laZoneRoom.getWalls().size() << endl;
-    Map generatedMap = Map(laZoneRoom.getRooms(), laZoneRoom.getConnections(), laZoneRoom.getWalls());
+    for (uint32_t i = 0; i < laZoneRoom.getNodes().size(); i++) {
+        cout << laZoneRoom.getNodes()[i].getConnections().size() << endl;
+        cout << "MH " << endl;
+    }
+    Map generatedMap = Map(laZoneRoom.getRooms(), laZoneRoom.getConnections(), laZoneRoom.getWalls(), laZoneRoom.getNodes());
     return generatedMap;
 }
 

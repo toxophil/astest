@@ -20,4 +20,3 @@ public:
 	void setSpeed(uint32_t speed);
 	void addFrame(Texture&);
 };
-

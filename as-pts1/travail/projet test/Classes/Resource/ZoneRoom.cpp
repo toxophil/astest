@@ -26,6 +26,7 @@ void ZoneRoom::addRoom(Room& uneRoom) {
     Room aConnecter;
     do {
         rdmSide = rand() % (4 - 1 + 1) + 1;
+        rdmSide = 1;
         ////cout << rdmSide << endl;
         switch (rdmSide) {
         case 1: // Haut
@@ -73,7 +74,7 @@ void ZoneRoom::addRoom(Room& uneRoom) {
             break;
         }
 
-        distanceMax = rand() % 6 + 1;
+        distanceMax = rand() % 6 + 3;
 
         xA = aConnecter.getX();
         yA = aConnecter.getY();
@@ -543,6 +544,108 @@ void ZoneRoom::makeIntersection() {
     }
 }
 
+void ZoneRoom::makeNodes() {
+    for (uint32_t i = 0; i < _lesConnections.size(); i++) {
+        vector<uint32_t> lesRooms = _lesConnections[i].getRooms();
+
+
+        if (_lesConnections[i].estVertical()) {
+
+            Node a(i, true,_lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY()*32 - 10); // Haut
+            Node b(i, true, _lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY() * 32 + _lesConnections[i].getH()*32 + 30);
+            
+            a.addConnection(b);
+            b.addConnection(a);
+
+            // ajoute Node dans les rooms
+            // ajout Node dans les rooms
+            int64_t yA = _rooms[lesRooms[0]].getY();
+            int64_t yB = _rooms[lesRooms[1]].getY();
+           // uint32_t hA = _rooms[lesRooms[0]].getH();
+            //Node a;
+            //Node b;
+            Node c;
+            Node d;
+            if (yA < yB) {
+                c = Node(lesRooms[0], false, _lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY() * 32 - 64); // haut
+                d = Node(lesRooms[1], false, _lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY() * 32 + _lesConnections[i].getH() * 32 + 64);
+            }
+            else {
+                c = Node(lesRooms[1], false, _lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY() * 32 - 64); // haut
+                d = Node(lesRooms[0], false, _lesConnections[i].getX() * 32 + 32 + 16, _lesConnections[i].getY() * 32 + _lesConnections[i].getH() * 32 + 64);
+            }
+
+            a.addConnection(c);
+            c.addConnection(a);
+
+            b.addConnection(d);
+            d.addConnection(b);
+
+            a.setLabel(" Haut ");
+            b.setLabel(" Bas ");
+            c.setLabel( " R Haut ");
+            d.setLabel( " R Bas ");
+            _lesNodes.push_back(a);
+            _lesNodes.push_back(b);
+            _lesNodes.push_back(c);
+            _lesNodes.push_back(d);
+        }
+        else {
+
+            Node a(i, true, _lesConnections[i].getX() * 32 + 32, _lesConnections[i].getY() * 32 + 32 + 16); // Gauche
+            Node b(i, true, _lesConnections[i].getX() * 32 + _lesConnections[i].getW() * 32 - 32, _lesConnections[i].getY() * 32 +32 + 16 ); // Droite
+
+            a.addConnection(b);
+            b.addConnection(a);
+
+            // ajoute Node dans les rooms
+            // ajout Node dans les rooms
+            int64_t xA = _rooms[lesRooms[0]].getX();
+            int64_t xB = _rooms[lesRooms[1]].getX();
+            //uint32_t wA = _rooms[lesRooms[0]].getW();
+
+            Node c;
+            Node d;
+            if (xA < xB) {
+                c = Node(lesRooms[0], false, _lesConnections[i].getX() * 32 - 32, _lesConnections[i].getY() * 32 + 32 + 16); // Gauche ?
+                d = Node(lesRooms[1], false, _lesConnections[i].getX() * 32 + _lesConnections[i].getW() * 32 + 32, _lesConnections[i].getY() * 32 + 32 + 16);
+            }
+            else {
+                c = Node(lesRooms[1], false, _lesConnections[i].getX() * 32 - 32, _lesConnections[i].getY() * 32 + 32 + 16); // Gauche ?
+                d = Node(lesRooms[0], false, _lesConnections[i].getX() * 32 + _lesConnections[i].getW() * 32 + 32, _lesConnections[i].getY() * 32 + 32 + 16);
+            }
+
+            a.addConnection(c);
+            c.addConnection(a);
+
+            b.addConnection(d);
+            d.addConnection(b);
+
+            a.setLabel(" Haut ");
+            b.setLabel(" Bas ");
+            c.setLabel(" R Haut ");
+            d.setLabel(" R Bas ");
+
+            _lesNodes.push_back(a);
+            _lesNodes.push_back(b);
+            _lesNodes.push_back(c);
+            _lesNodes.push_back(d);
+        }
+    }
+    // Ajoute les connections entre les nodes des salles
+    for (uint32_t i = 0; i < _lesNodes.size(); i++) {
+        if (_lesNodes[i].estConnection()) {
+            continue;
+        }
+        for (uint32_t j = 0; j < _lesNodes.size(); j++) {
+            if (i != j && !_lesNodes[j].estConnection()) {
+                if (_lesNodes[i].getIdSalle() == _lesNodes[j].getIdSalle()) {
+                    _lesNodes[i].addConnection(_lesNodes[j]);
+                }
+            }
+        }
+    }
+}
 void ZoneRoom::makeTiles() {
     for (uint32_t i = 0; i <_lesConnections.size(); i++) {
         _lesConnections[i].applyTiles(_leTheme);
@@ -574,6 +677,10 @@ void ZoneRoom::makeWalls() {
         }
     }
     ////cout << "NBTOT WALL = " << _walls.size() << " EREEEEEEEEEEEEEEEEEEE" << endl;
+}
+
+vector<Node> ZoneRoom::getNodes() {
+    return _lesNodes;
 }
 
 vector<Wall> ZoneRoom::getWalls() {

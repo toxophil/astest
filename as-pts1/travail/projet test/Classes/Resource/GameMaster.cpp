@@ -38,6 +38,14 @@ const Map& GameMaster::getMap() const
 {
 	return _map;
 }
+const sf::Vector2f GameMaster::getPlayerPos() const
+{
+	return _leJoueur->getSprite().getPosition() + _leJoueur->getSprite().getOrigin();
+}
+void GameMaster::setPlayerPos(int x, int y)
+{
+	_leJoueur->setPos(x, y);
+}
 
 //retourne la liste des �l�ments d�pla�ables
 const std::list<MoveableObject*>& GameMaster::getMoveableObjectList()
@@ -128,6 +136,7 @@ void GameMaster::runGame()
 	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
 	Classe classeDragonF(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
 
+	Ennemy en();
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
 	Player player(classeDragonF);
@@ -153,6 +162,9 @@ void GameMaster::runGame()
 	Hud leHud(5);
 	leHud.updateMoney(1500);
 	bool done = false;
+
+	// SET LE PLAYER, IMPORTANT POUR LE GET POUR LE PATHFINDING!!!!!!!!!!!!!!!!!!
+	_leJoueur = &player;
 	while (window.isOpen())
 	{
 		/*if (!window.hasFocus()) {
@@ -237,6 +249,10 @@ void GameMaster::runGame()
 			leHud.draw(window,3);
 			laCam.focus(window);
 
+
+		//	cout << "Room Index: " << laMap.getRoomByPos(player.getSprite().getPosition()) << endl;
+		//	cout << "Connection Index: " << laMap.getConnectionByPos(player.getSprite().getPosition()) << endl;
+		//	cout << "===" << endl;
 			window.display();
 		}
 

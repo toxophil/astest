@@ -28,7 +28,19 @@ Camera::Camera(int x, int y){
 void Camera::drawMap(sf::RenderWindow& window, Map m, sf::Vector2f playerPos) {
     vector<Connection>& lesConnections = m.getConnections();
     vector<Room>& lesRooms = m.getRoomList();
-
+    for (uint32_t i = 0; i < lesConnections.size(); i++) {
+        vector<sf::Sprite> lesTiles = lesConnections[i].getTiles();
+        for (uint32_t r = 0; r < lesTiles.size(); r++) {
+            window.draw(lesTiles[r]);
+        }
+    }
+    for (uint32_t i = 0; i < lesRooms.size(); i++) {
+        vector<sf::Sprite> lesTiles = lesRooms[i].getTiles();
+        for (uint32_t r = 0; r < lesTiles.size(); r++) {
+            window.draw(lesTiles[r]);
+        }
+    }
+    /*
     bool trouver = false;
     for (uint32_t i = 0; i < lesRooms.size(); i++) {
         Room& uneRoom = lesRooms[i];
@@ -79,18 +91,6 @@ void Camera::drawMap(sf::RenderWindow& window, Map m, sf::Vector2f playerPos) {
                     break;
                 }
             }
-        }
-    }
-   /*for (uint32_t i = 0; i < lesConnections.size(); i++) {
-        vector<sf::Sprite> lesTiles = lesConnections[i].getTiles();
-        for (uint32_t r = 0; r < lesTiles.size(); r++) {
-            window.draw(lesTiles[r]);
-        }
-    }
-    for (uint32_t i = 0; i < lesRooms.size(); i++) {
-        vector<sf::Sprite> lesTiles = lesRooms[i].getTiles();
-        for (uint32_t r = 0; r < lesTiles.size(); r++) {
-            window.draw(lesTiles[r]);
         }
     }
     */

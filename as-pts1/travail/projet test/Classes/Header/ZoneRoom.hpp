@@ -8,6 +8,7 @@ using namespace std;
 #include "Room.hpp"
 #include "Connection.hpp"
 #include "MapTheme.hpp"
+#include "Node.hpp"
 
 class ZoneRoom {
 private:
@@ -16,6 +17,7 @@ private:
     int64_t _h;
     vector<Room> _rooms;
     vector<Connection> _lesConnections;
+    vector<Node> _lesNodes;
     vector<Wall> _walls;
 public:
     ZoneRoom(Room&, MapTheme&);
@@ -43,10 +45,13 @@ public:
 
     void addConnection(Connection&);
     vector<Connection> getConnections() const;
+
     void makeIntersection();
+    void makeNodes();
     void makeTiles();
     void makeWalls();
 
+    vector<Node> getNodes();
     vector<Wall> getWalls();
 };
 

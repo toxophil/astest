@@ -35,7 +35,7 @@ void Weapon::drawEquiped(sf::RenderWindow& window, sf::Vector2f laPosition, sf::
     
     float xOffset = mousePosition.x - laPosition.x;
     float yOffset = mousePosition.y - laPosition.y;
-    cout << yOffset << endl;
+
     if (mousePosition.x > laPosition.x) {
         _leSprite.setScale(1.f, 1.f);
 
@@ -61,7 +61,6 @@ void Weapon::drawEquiped(sf::RenderWindow& window, sf::Vector2f laPosition, sf::
     xOffset = xOffset / 5;
     yOffset = yOffset / 10;
 
-    cout << ":::::::" << endl;
     laPosition.x += xOffset;
     laPosition.y += yOffset - 8;
 
