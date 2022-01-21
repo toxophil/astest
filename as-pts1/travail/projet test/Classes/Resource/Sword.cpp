@@ -21,7 +21,7 @@ bool Sword::attackSword(HittableCharacter* lanceur, const sf::Vector2f& attackPo
         float oy = object->getSprite().getPosition().y;
         float lx = lanceur->getSprite().getPosition().x;
         float ly = lanceur->getSprite().getPosition().y;    //Rend le if qui suis *bien* plus lisible
-        if (object->getType() == 2 && ox < lx + 20000 && ox > lx - 20000 && oy < ly + 20000 && oy > ly - 20000) {
+        if (object->getType() == 2 && ox < lx + 40 && ox > lx - 40 && oy < ly + 25 && oy > ly - 25) {
             HittableCharacter* p = dynamic_cast<HittableCharacter*>(object);
             cout << p->getHealth() << endl;
             p->setHealth(p->getHealth() - _damage);
