@@ -7,12 +7,12 @@
 
 Ennemy::Ennemy()
 {
-<<<<<<< HEAD
+
 	_doAttack = true;
 	_type = 5;
-=======
+
 	_type = 2;
->>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
+
 	_estEnnemi=1;
 	_sprite.setPosition(80, 80);
 	nextDirection = sf::Vector2f(0, 0);
@@ -59,15 +59,15 @@ void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 			_timeSinceLastAttack.restart();
 		}
 	}
-<<<<<<< HEAD
+
 	moveObject(nextDirection * speed  * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	//moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	nextDirection = sf::Vector2f(0, 0);
-=======
+
 	if (getHealth() <= 0) {
 		GameMaster::getInstance().destroyMoveableObject(this->getId());
 	}
->>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
+
 }
 
 void Ennemy::update() {

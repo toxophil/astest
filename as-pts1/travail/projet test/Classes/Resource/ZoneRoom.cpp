@@ -26,7 +26,7 @@ void ZoneRoom::addRoom(Room& uneRoom) {
     Room aConnecter;
     do {
         rdmSide = rand() % (4 - 1 + 1) + 1;
-        rdmSide = 1;
+        //rdmSide = 1;
         ////cout << rdmSide << endl;
         switch (rdmSide) {
         case 1: // Haut
