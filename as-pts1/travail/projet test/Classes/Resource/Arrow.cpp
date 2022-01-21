@@ -9,7 +9,7 @@ Arrow::Arrow()
 	sf::Vector2f directionF(200, 0);
 
 	nextDirection = directionF;
-	_damage = 1;
+	_damage = 10;
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Arrow));
 
 }
@@ -42,5 +42,4 @@ Arrow::Arrow(const sf::Vector2f& aimPos, const sf::Vector2f& initPos, double dam
 
 	float angle = atan2(nextDirection.y, nextDirection.x);
 	_sprite.setRotation((angle * 180 / PI) + 90.f);
-
 }

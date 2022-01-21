@@ -51,6 +51,8 @@ public:
 	Angle& getAngle();
 	int getType();
 	const sf::Sprite& getSprite();
+	float getPvMonstre();
+	void setPvMonstre(float hp);
 };
 
 

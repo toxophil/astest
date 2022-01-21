@@ -9,6 +9,7 @@
 #include "../Header/Hud.hpp"
 
 #include "../Header/Bow.hpp"
+#include "../Header/Sword.hpp"
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
 {
@@ -25,7 +26,6 @@ void GameMaster::destroy()
 	{
 		_moveableObjectList.erase((*i));
 		_toDestroy.erase(i++);
-
 	}
 }
 
@@ -58,6 +58,7 @@ const Time& GameMaster::getTimeSinceLastUpdate() const
 const uint64_t GameMaster::getScreenW() const {
 	return _screenW;
 }
+
 const uint64_t GameMaster::getScreenH() const {
 	return _screenH;
 }
@@ -82,9 +83,7 @@ bool GameMaster::addMoveableObject(MoveableObject* moveableObject)
 //supprime la r�f�rence � l'�l�ment d'identifier (id) dans la liste des �l�ments d�placables
 bool GameMaster::destroyMoveableObject(uint32_t id)
 {
-
 	bool destroyed = false;
-
 	std::list<MoveableObject*>::iterator i = _moveableObjectList.begin();
 	while (i != _moveableObjectList.end() && !destroyed)
 	{
@@ -97,7 +96,6 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 	}
 	return destroyed;
 }
-
 
 void GameMaster::runGame()
 {
@@ -131,15 +129,16 @@ void GameMaster::runGame()
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
 	Player player(classeDragonF);
+	Sword sword(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Anime_Sword));
+	player.setEquippedWeapon2(&sword);
 	addMoveableObject(player);
 
 	//create a skeleton
 	Skeleton ennemy;
-	addMoveableObject(ennemy);
 
 	//equip his bow
-	player.setEquippedWeapon(&arcCool);
-	ennemy.setEquippedWeapon(&arcCool);
+	//player.setEquippedWeapon1(&arcCool);		//L'arc est déja équippé, et ça fait buguer des bails
+	ennemy.setEquippedWeapon1(&arcCool);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
 	bool openMainMenu = false;
@@ -200,11 +199,11 @@ void GameMaster::runGame()
 				{
 					if (event.mouseWheelScroll.delta == 1)
 					{
-						player.setEquippedWeapon(&arcCool);
+						player.setEquippedWeapon1(&arcCool);
 					}
 					else
 					{
-						player.setEquippedWeapon(&arcCool);
+						player.setEquippedWeapon1(&arcCool);
 					}
 				}
 			}
@@ -232,7 +231,7 @@ void GameMaster::runGame()
 			for (auto& object : _moveableObjectList) {
 				window.draw(object->getSprite());
 			}
-			player.getEquippedWeapon()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
+			player.getEquippedWeapon1()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
 
 			leHud.draw(window,3);
 			laCam.focus(window);

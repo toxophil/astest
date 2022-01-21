@@ -10,5 +10,7 @@ Skeleton::Skeleton()
 	sf::FloatRect localBounds = _sprite.getGlobalBounds();
 	_sprite.setOrigin(localBounds.width / 2, localBounds.height / 2);
 	_sprite.setScale(sf::Vector2f(1, 1));
-
+	_pvMonstre = 1;
+	_type = 2;
+	GameMaster::getInstance().addMoveableObject(this);
 }

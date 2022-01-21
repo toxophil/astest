@@ -30,7 +30,6 @@ Projectile::Projectile(const sf::Vector2i& launchDirection, double damage,int es
 void Projectile::update()
 {
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
-
 	//destruction de l'objet si sa vie arrive à sa fin
 	if (lifetime.getElapsedTime().asSeconds() >= maxLifetime) {
 		GameMaster::getInstance().destroyMoveableObject(getId());
@@ -40,7 +39,18 @@ void Projectile::update()
 
 void Projectile::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 {
-	//check de collision avec un autre hittable character ou un mur
+	std::list<MoveableObject*> moveable = GameMaster::getInstance().getMoveableObjectList();
+	for (auto& object : moveable) {
+		float ox = object->getSprite().getPosition().x;
+		float oy = object->getSprite().getPosition().y;
+		float lx = this->getSprite().getPosition().x;
+		float ly = this->getSprite().getPosition().y;    //Rend le if qui suis *bien* plus lisible
+		if (object->getType() == 2 && ox < lx + 10 && ox > lx - 10 && oy < ly + 10 && oy > ly - 10) {
+			HittableCharacter* p = dynamic_cast<HittableCharacter*>(object);
+			p->setHealth(p->getHealth() - _damage);
+			GameMaster::getInstance().destroyMoveableObject(this->getId());
+		}
+	}
 }
 int Projectile::onCollision() {
 		GameMaster::getInstance().destroyMoveableObject(getId());

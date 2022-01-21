@@ -147,6 +147,9 @@
     <ClCompile Include="Classes\Resource\Bow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Resource\Sword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Header\Angle.hpp">
@@ -279,6 +282,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Classes\Header\Bow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Header\Sword.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
