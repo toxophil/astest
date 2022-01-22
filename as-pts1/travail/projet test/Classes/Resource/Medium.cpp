@@ -4,8 +4,9 @@
 
 Medium::Medium()
 {
-	_pvMonstre = 50;
 	_health = 50;
+	_maxHealth = 50;
+
 	speed = 90;
 	_type = 2;
 	//GameMaster::getInstance().addMoveableObject(this);

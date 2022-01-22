@@ -53,6 +53,7 @@ public:
 	const sf::Sprite& getSprite();
 	float getPvMonstre();
 	void setPvMonstre(float hp);
+	virtual void draw(sf::RenderWindow&);
 };
 
 

@@ -22,7 +22,7 @@ public:
 
 	bool isPlayerSpotted();
 	int onCollision();
-
+	void draw(sf::RenderWindow&);
 
 };
 

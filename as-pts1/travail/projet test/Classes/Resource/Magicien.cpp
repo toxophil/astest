@@ -4,8 +4,9 @@
 
 Magicien::Magicien()
 {
-	_pvMonstre = 40;
+	//_pvMonstre = 40;
 	_health = 40;
+	_maxHealth = 40;
 
 	speed = 100;
 	_type = 2;

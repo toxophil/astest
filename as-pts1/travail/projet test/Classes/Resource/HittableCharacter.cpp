@@ -7,6 +7,7 @@
 HittableCharacter::HittableCharacter()
 {
     _health = 10;
+    _maxHealth = 10;
     _equippedWeapon1 = nullptr;
     _equippedWeapon2 = nullptr;
 }

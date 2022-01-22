@@ -84,3 +84,24 @@ bool Ennemy::isPlayerSpotted()
 
 	return false;
 }
+
+void Ennemy::draw(sf::RenderWindow& laWindow) {
+	laWindow.draw(_sprite);
+
+	cout << "pos x:" << _sprite.getPosition().x <<  " y:" << _sprite.getPosition().y << endl;
+	int wBar = _sprite.getGlobalBounds().width;
+	float diffw = 0;
+	if (_health != 0) {
+		diffw = _health / _maxHealth * wBar;
+	}
+	sf::RectangleShape barRouge(sf::Vector2f(wBar, 2));
+	barRouge.setPosition(_sprite.getPosition() + sf::Vector2f(0, _sprite.getGlobalBounds().height + 2) - _sprite.getOrigin());
+	barRouge.setFillColor(sf::Color(230, 0, 0));
+
+	sf::RectangleShape barVerte(sf::Vector2f(diffw, 2));
+	barVerte.setPosition(_sprite.getPosition() + sf::Vector2f(0, _sprite.getGlobalBounds().height + 2) - _sprite.getOrigin());
+	barVerte.setFillColor(sf::Color(51, 204, 51));
+
+	laWindow.draw(barRouge);
+	laWindow.draw(barVerte);
+}

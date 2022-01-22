@@ -256,7 +256,8 @@ void GameMaster::runGame()
 			
 			laCam.drawMap(window, laMap, player.getSprite().getPosition());
 			for (auto& object : _moveableObjectList) {
-				window.draw(object->getSprite());
+				//window.draw(object->getSprite());
+				object->draw(window);
 			}
 			player.getEquippedWeapon1()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
 

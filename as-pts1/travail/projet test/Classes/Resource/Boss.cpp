@@ -5,8 +5,9 @@
 Boss::Boss()
 {
 
-	_pvMonstre = 150;
 	_health = 150;
+	_maxHealth = 150;
+
 	speed = 70;
 	_type = 2;
 	//GameMaster::getInstance().addMoveableObject(this);

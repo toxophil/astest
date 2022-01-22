@@ -7,7 +7,7 @@
 
 using namespace std;
 
-
+/*
 void MoveableObject::updateAffichagePv()
 {
 
@@ -39,7 +39,7 @@ sf::RectangleShape MoveableObject::getRestant()
 sf::RectangleShape MoveableObject::getMax()
 {
     return _max;
-}
+}*/
 
 int MoveableObject::onCollision() {
     return 0;
@@ -160,7 +160,7 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
      }//update coord
 _sprite.move(direction);
 //update barre pv
-updateAffichagePv();
+//updateAffichagePv();
 return true;
     
 }

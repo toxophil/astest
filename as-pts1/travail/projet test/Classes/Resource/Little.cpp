@@ -4,8 +4,9 @@
 
 Little::Little()
 {
-	_pvMonstre = 10;
 	_health = 10;
+	_maxHealth = 40;
+
 	speed = 110;
 	_type = 2;
 	//GameMaster::getInstance().addMoveableObject(this);

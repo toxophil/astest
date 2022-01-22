@@ -3,6 +3,7 @@
 
 #include "../Header/DrawableObject.hpp"
 #include "../Header/Angle.hpp"
+#include <iostream>
 using namespace std;
 
 //initialisation de l'incrémenteur
@@ -108,3 +109,6 @@ int DrawableObject::getType()
 	return _type;
 }
 
+void DrawableObject::draw(sf::RenderWindow& laWindow) {
+	laWindow.draw(_sprite);
+}
