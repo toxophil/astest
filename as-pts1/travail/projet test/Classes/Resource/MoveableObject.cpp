@@ -114,21 +114,21 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
                              //2 check if it should be dead
                              if (!updateOnTouche(object))
                              {
-                                 return false;
+                                // return false;
                              }
                          }
                         if (object->_type == 2)
                         {
                             if (!updateOnTouche(object))
                             {
-                                return false;
+                               // return false;
                             }
                         }
                         if (object->_type == 3)
                         {
                             if (!updateOnTouche(object))
                             {
-                                return false;
+                             //   return false;
                             }
                         }
                      }
@@ -152,7 +152,9 @@ bool MoveableObject::moveObject(const sf::Vector2f& direction)
                 {
                     GameMaster::getInstance().destroyMoveableObject(getId());
                 } 
-                return false;   
+                if (!_estEnnemi) {
+                    return false;
+                }
             }
         }
      }//update coord

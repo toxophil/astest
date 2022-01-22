@@ -7,12 +7,9 @@
 
 Ennemy::Ennemy()
 {
-
+	_type = 2;
 	_doAttack = true;
 	_type = 5;
-
-	_type = 2;
-
 	_estEnnemi=1;
 	_sprite.setPosition(80, 80);
 	nextDirection = sf::Vector2f(0, 0);
@@ -59,15 +56,12 @@ void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 			_timeSinceLastAttack.restart();
 		}
 	}
-
-	moveObject(nextDirection * speed  * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
-	//moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
-	nextDirection = sf::Vector2f(0, 0);
-
 	if (getHealth() <= 0) {
 		GameMaster::getInstance().destroyMoveableObject(this->getId());
 	}
-
+	moveObject(nextDirection * speed  * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
+	//moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
+	nextDirection = sf::Vector2f(0, 0);
 }
 
 void Ennemy::update() {
