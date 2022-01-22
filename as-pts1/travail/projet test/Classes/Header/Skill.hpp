@@ -1,14 +1,23 @@
+#pragma once
 
-/* Generated from GenMyModel */
+#include "FriendlyCharacter.hpp"
+#include <algorithm>
+#include "Classe.hpp"
 
-#ifndef DEF_SKILL
-#define DEF_SKILL
+class Skill : public HittableCharacter{
+	private :
+		std::string _name;
+		float _cooldown;
+		float _power;
+		string _desc;
+		bool _isOur;
 
-
-class Skill
-{
-	
+	public :
+		Skill(std::string nom, float cd, float pwr, std::string d);
+		std::string getName();
+		float getPower();
+		float getCooldown();
+		bool usable();
+		void setIsOurTrue();
 };
 
-
-#endif
