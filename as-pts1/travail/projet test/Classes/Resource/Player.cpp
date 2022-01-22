@@ -86,14 +86,113 @@ void Player::updatePhysics(sf::RenderWindow& window,const sf::Event& event)
 			_timeSinceLastAttack.restart();
 		}
 	}
+
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	//														partie skills
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+	// utilisation des skills : 
+
+	// /!\ keyPressed fait une erreur donc change pour isKeyPressed
+
+	//initialisation premiere des timers.
+	//IMPOSSIBLE NE PAS FAIRE ICI
+
+	//lancement des skills uniquement si le cooldown d'attaque est à 0
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1)) useFirstSkill();
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2)) useSecondSkill();
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3)) useThirdSkill();
+	
+	//a mettre dans gamemaster TRES COMPLIQUE A IMPLEMENTER
+	//affiche le tableau des compétences possédées pour les affilier
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)) showSkills();
+	
 }
 
+//touches pour utiliser les compétences
+void Player::useFirstSkill() {
+	if (playerSkills[0].getCooldown().getElapsedTime().asSeconds() >= _skill0.getElapsedTime().asSeconds()) {
+		useSkill(0);
+		_skill0.restart();
+		_skill0.getElapsedTime();
+	}
+}
+void Player::useSecondSkill() {
+	if (playerSkills[1].getCooldown().getElapsedTime().asSeconds() >= _skill1.getElapsedTime().asSeconds()) {
+		useSkill(1);
+		_skill1.restart();
+		_skill1.getElapsedTime();
+	}
+}
+void Player::useThirdSkill() {
+	if (playerSkills[2].getCooldown().getElapsedTime().asSeconds() >= _skill2.getElapsedTime().asSeconds()) {
+		useSkill(2);
+		_skill2.restart();
+		_skill2.getElapsedTime();
+	}
+}
+
+
+//utilisation d'une compétence
+void Skill::useSkill(int a) {}
+
+
+//affiche le tableau des compétences possédées pour les affilier
+void Player::showSkills() {
+
+	if (allSkills.size() >= 0) {
+		for (int i = 0; i > allSkills.size(); i++) {
+			if (allSkills[i].usable()) {
+				std::cout << i << " " << playerSkills[i].getName() << " " << playerSkills[i].getPower() << " " << playerSkills[i].getCooldown() << " " << endl;
+			}
+		}
+		//affiliation des competences
+		std::cout << "You can link up to 3 skills" << endl;
+		//choix skill 1
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1)) {
+			int j;
+			std::cout << "Which skill do you want first ?" << endl;
+			std::cout << "(enter its number)" << endl;
+			std::cin >> j;
+			if (allSkills[j].usable()) {
+				playerSkills[1] = allSkills[j];
+			}
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2)) {
+			int j;
+			std::cout << "Which skill do you want second ?" << endl;
+			std::cout << "(enter its number)" << endl;
+			std::cin >> j;
+			if (allSkills[j].usable()) {
+				playerSkills[2] = allSkills[j];
+			}
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3)) {
+			int j;
+			std::cout << "Which skill do you want third ?" << endl;
+			std::cout << "(enter its number)" << endl;
+			std::cin >> j;
+			if (allSkills[j].usable()) {
+				playerSkills[3] = allSkills[j];
+			}
+		}
+	}
+	//check skills level abilty
+	else {
+		std::cout << "You don't have skills" << endl;
+	}
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//														fin partie skills
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//deplacement
 void Player::update() {
 	//TODO
 	moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	if (nextDirection.x != 0 || nextDirection.y != 0) {	
 		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getWalkAnim().getSpeed()) {_animTime.restart();
-			////cout << "nextttt : " << endl;
 			_sprite.setTexture(_laClasse.getWalkAnim().getNextFrame());
 			_animTime.restart();
 		}
@@ -102,39 +201,17 @@ void Player::update() {
 		
 		if (_animTime.getElapsedTime().asMilliseconds() >= _laClasse.getIdleAnim().getSpeed()) {
 			_sprite.setTexture(_laClasse.getIdleAnim().getNextFrame());
-			//_sprite.setTexture(anim.getNextFrame());
 			_animTime.restart();
 		}
 	}
 	nextDirection = sf::Vector2f(0, 0);
 }
-
-
 Inventory* Player::getInventory() {
 	return _inventory;
 }
-
 sf::Vector2f Player::getPos() const {
 	return _sprite.getPosition() + _sprite.getOrigin();
 }
-/*bool Player::updateOnTouche() {
-	_nbVie = _nbVie - _degat; //on enleve des pvs si collisions avec ennemies
-	_nbPiece++; //on ajoute des pieces si collisions
-	_pvMonstre=_pvMonstre-0.1;
-
-}*/
-
-/*bool Player::onTouche(MoveableObject * obj)
-{
-	if(obj->getType()==3)
-	{
-		_pvMonstre = _pvMonstre - obj->getDegat();
-		GameMaster::getInstance().destroyMoveableObject(obj->getId());
-		cout << "la fleche doit etre detruite" << endl;
-	}
-	return true;
-}*/
-
 void Player::setPos(int x, int y) {
 	_sprite.setPosition(x, y);
 }

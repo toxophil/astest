@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\as-pts1",
+    "\\as-pts1\\travail",
+    "\\as-pts1\\travail\\projet test",
+    "\\as-pts1\\travail\\projet test\\Classes",
+    "\\as-pts1\\travail\\projet test\\Classes\\Header",
+    "\\as-pts1\\travail\\projet test\\Classes\\Resource"
   ],
-  "SelectedNode": "\\projet test.sln (as-pts1\\travail\\projet test\\projet test.sln)",
   "PreviewInSolutionExplorer": false
 }

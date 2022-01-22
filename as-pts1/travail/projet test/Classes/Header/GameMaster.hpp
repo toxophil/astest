@@ -28,6 +28,9 @@ private:
 	TextureLoader _textureLoader;
 	Camera _camera;
 	Time _deltaTime;
+	
+	//tableau des compétences
+	vector<Skill> allSkills;
 
 	// Set une nouvelle _camera
 	
