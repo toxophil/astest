@@ -9,6 +9,7 @@
 class Ennemy : public HittableCharacter
 {
 private:
+	uint32_t _spotRange;
 	bool _doAttack;
 	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
@@ -16,8 +17,10 @@ private:
 public:
 	Ennemy();
 
-	void updatePhysics(sf::RenderWindow&, const sf::Event& event);
-	void update();
+	virtual void updatePhysics(sf::RenderWindow&, const sf::Event& event) = 0;
+	virtual void update() = 0;
+
+	bool isPlayerSpotted();
 	int onCollision();
 
 

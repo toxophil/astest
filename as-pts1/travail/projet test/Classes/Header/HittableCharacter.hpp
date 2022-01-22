@@ -10,10 +10,11 @@
 class HittableCharacter : public MoveableObject
 {
 private :
-	double _health;
 	Weapon* _equippedWeapon1;
 	Weapon* _equippedWeapon2;
 
+protected:
+	double _health;
 public:
 	HittableCharacter();
 

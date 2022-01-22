@@ -1,463 +1,196 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
-    </Filter>
+    <ClCompile Include="Classes\Resource\Angle.cpp" />
+    <ClCompile Include="Classes\Resource\Animation.cpp" />
+    <ClCompile Include="Classes\Resource\Armor.cpp" />
+    <ClCompile Include="Classes\Resource\Arrow.cpp" />
+    <ClCompile Include="Classes\Resource\AttributeBar.cpp" />
+    <ClCompile Include="Classes\Resource\Bow.cpp" />
+    <ClCompile Include="Classes\Resource\Button.cpp" />
+    <ClCompile Include="Classes\Resource\Camera.cpp" />
+    <ClCompile Include="Classes\Resource\Classe.cpp" />
+    <ClCompile Include="Classes\Resource\Connection.cpp" />
+    <ClCompile Include="Classes\Resource\DrawableObject.cpp" />
+    <ClCompile Include="Classes\Resource\Ennemy.cpp" />
+    <ClCompile Include="Classes\Resource\Flooring.cpp" />
+    <ClCompile Include="Classes\Resource\FriendlyCharacter.cpp" />
+    <ClCompile Include="Classes\Resource\GameMaster.cpp" />
+    <ClCompile Include="Classes\Resource\Generator.cpp" />
+    <ClCompile Include="Classes\Resource\Gold.cpp" />
+    <ClCompile Include="Classes\Resource\GUIElement.cpp" />
+    <ClCompile Include="Classes\Resource\HittableCharacter.cpp" />
+    <ClCompile Include="Classes\Resource\Hud.cpp" />
+    <ClCompile Include="Classes\Resource\Inventory.cpp" />
+    <ClCompile Include="Classes\Resource\Item.cpp" />
+    <ClCompile Include="Classes\Resource\Map.cpp" />
+    <ClCompile Include="Classes\Resource\MapTheme.cpp" />
+    <ClCompile Include="Classes\Resource\Menu.cpp" />
+    <ClCompile Include="Classes\Resource\MoveableObject.cpp" />
+    <ClCompile Include="Classes\Resource\MusicManager.cpp" />
+    <ClCompile Include="Classes\Resource\Node.cpp" />
+    <ClCompile Include="Classes\Resource\PassableObject.cpp" />
+    <ClCompile Include="Classes\Resource\Player.cpp" />
+    <ClCompile Include="Classes\Resource\Projectile.cpp" />
+    <ClCompile Include="Classes\Resource\RejuvenatingHelmet.cpp" />
+    <ClCompile Include="Classes\Resource\Room.cpp" />
+    <ClCompile Include="Classes\Resource\RoomObject.cpp" />
+    <ClCompile Include="Classes\Resource\Skeleton.cpp" />
+    <ClCompile Include="Classes\Resource\Skill.cpp" />
+    <ClCompile Include="Classes\Resource\Slime.cpp" />
+    <ClCompile Include="Classes\Resource\SolidObject.cpp" />
+    <ClCompile Include="Classes\Resource\Sword.cpp" />
+    <ClCompile Include="Classes\Resource\TextureLoader.cpp" />
+    <ClCompile Include="Classes\Resource\UnusableItem.cpp" />
+    <ClCompile Include="Classes\Resource\UsableItem.cpp" />
+    <ClCompile Include="Classes\Resource\Wall.cpp" />
+    <ClCompile Include="Classes\Resource\Weapon.cpp" />
+    <ClCompile Include="Classes\Resource\ZoneRoom.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Classes\Resource\Magicien.cpp" />
+    <ClCompile Include="Classes\Resource\MagicienDemon.cpp" />
+    <ClCompile Include="Classes\Resource\MagicienOrc.cpp" />
+    <ClCompile Include="Classes\Resource\MagicienUndead.cpp" />
+    <ClCompile Include="Classes\Resource\Boss.cpp" />
+    <ClCompile Include="Classes\Resource\BossDemon.cpp" />
+    <ClCompile Include="Classes\Resource\BossOrc.cpp" />
+    <ClCompile Include="Classes\Resource\BossUndead.cpp" />
+    <ClCompile Include="Classes\Resource\Little.cpp" />
+    <ClCompile Include="Classes\Resource\LittleDemon.cpp" />
+    <ClCompile Include="Classes\Resource\LittleOrc.cpp" />
+    <ClCompile Include="Classes\Resource\LittleUndead.cpp" />
+    <ClCompile Include="Classes\Resource\Medium.cpp" />
+    <ClCompile Include="Classes\Resource\MediumDemon.cpp" />
+    <ClCompile Include="Classes\Resource\MediumOrc.cpp" />
+    <ClCompile Include="Classes\Resource\MediumUndead.cpp" />
+    <ClCompile Include="Classes\Resource\SoundLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Angle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Armor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Arrow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\AttributeBar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\DrawableObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Ennemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Flooring.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\FriendlyCharacter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\GameMaster.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Gold.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\GUIElement.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\HittableCharacter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Map.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\MoveableObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\PassableObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Projectile.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\RejuvenatingHelmet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Room.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\RoomObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Skeleton.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Skill.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Slime.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\SolidObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\UnusableItem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\UsableItem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Weapon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\TextureLoader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Connection.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Generator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\ZoneRoom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Animation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Inventory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Classe.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Button.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\MusicManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\MapTheme.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Hud.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Wall.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes\Resource\Bow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="Classes\Resource\Node.cpp">
-=======
-    <ClCompile Include="Classes\Resource\Sword.cpp">
->>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Classes\Header\Angle.hpp" />
+    <ClInclude Include="Classes\Header\Animation.hpp" />
+    <ClInclude Include="Classes\Header\Armor.hpp" />
+    <ClInclude Include="Classes\Header\Arrow.hpp" />
+    <ClInclude Include="Classes\Header\AttributeBar.hpp" />
+    <ClInclude Include="Classes\Header\Bow.hpp" />
+    <ClInclude Include="Classes\Header\Button.hpp" />
+    <ClInclude Include="Classes\Header\Camera.hpp" />
+    <ClInclude Include="Classes\Header\Classe.hpp" />
+    <ClInclude Include="Classes\Header\Connection.hpp" />
+    <ClInclude Include="Classes\Header\DrawableObject.hpp" />
+    <ClInclude Include="Classes\Header\Ennemy.hpp" />
+    <ClInclude Include="Classes\Header\Fireball.hpp" />
+    <ClInclude Include="Classes\Header\Flooring.hpp" />
+    <ClInclude Include="Classes\Header\FriendlyCharacter.hpp" />
+    <ClInclude Include="Classes\Header\GameMaster.hpp" />
+    <ClInclude Include="Classes\Header\Generator.hpp" />
+    <ClInclude Include="Classes\Header\Gold.hpp" />
+    <ClInclude Include="Classes\Header\GUIElement.hpp" />
+    <ClInclude Include="Classes\Header\HittableCharacter.hpp" />
+    <ClInclude Include="Classes\Header\Hud.hpp" />
+    <ClInclude Include="Classes\Header\Inventory.hpp" />
+    <ClInclude Include="Classes\Header\Item.hpp" />
+    <ClInclude Include="Classes\Header\Map.hpp" />
+    <ClInclude Include="Classes\Header\MapTheme.hpp" />
+    <ClInclude Include="Classes\Header\Menu.hpp" />
+    <ClInclude Include="Classes\Header\MoveableObject.hpp" />
+    <ClInclude Include="Classes\Header\MusicManager.hpp" />
+    <ClInclude Include="Classes\Header\Node.hpp" />
+    <ClInclude Include="Classes\Header\PassableObject.hpp" />
+    <ClInclude Include="Classes\Header\Player.hpp" />
+    <ClInclude Include="Classes\Header\Projectile.hpp" />
+    <ClInclude Include="Classes\Header\RejuvenatingHelmet.hpp" />
+    <ClInclude Include="Classes\Header\Room.hpp" />
+    <ClInclude Include="Classes\Header\RoomObject.hpp" />
+    <ClInclude Include="Classes\Header\Skeleton.hpp" />
+    <ClInclude Include="Classes\Header\Skill.hpp" />
+    <ClInclude Include="Classes\Header\Slime.hpp" />
+    <ClInclude Include="Classes\Header\SolidObject.hpp" />
+    <ClInclude Include="Classes\Header\Sword.hpp" />
+    <ClInclude Include="Classes\Header\TextureLoader.h" />
+    <ClInclude Include="Classes\Header\UnusableItem.hpp" />
+    <ClInclude Include="Classes\Header\UsableItem.hpp" />
+    <ClInclude Include="Classes\Header\Wall.hpp" />
+    <ClInclude Include="Classes\Header\Weapon.hpp" />
+    <ClInclude Include="Classes\Header\ZoneRoom.hpp" />
+    <ClInclude Include="Classes\Header\Magicien.hpp" />
+    <ClInclude Include="Classes\Header\MagicienDemon.hpp" />
+    <ClInclude Include="Classes\Header\MagicienOrc.hpp" />
+    <ClInclude Include="Classes\Header\MagicienUndead.hpp" />
+    <ClInclude Include="Classes\Header\Boss.hpp" />
+    <ClInclude Include="Classes\Header\BossDemon.hpp" />
+    <ClInclude Include="Classes\Header\BossOrc.hpp" />
+    <ClInclude Include="Classes\Header\BossUndead.hpp" />
+    <ClInclude Include="Classes\Header\Little.hpp" />
+    <ClInclude Include="Classes\Header\LittleDemon.hpp" />
+    <ClInclude Include="Classes\Header\LittleOrc.hpp" />
+    <ClInclude Include="Classes\Header\LittleUndead.hpp" />
+    <ClInclude Include="Classes\Header\Medium.hpp" />
+    <ClInclude Include="Classes\Header\MediumDemon.hpp" />
+    <ClInclude Include="Classes\Header\MediumOrc.hpp" />
+    <ClInclude Include="Classes\Header\MediumUndead.hpp" />
+    <ClInclude Include="Classes\Header\SoundLoader.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Classes\Header\Angle.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Armor.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Arrow.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\AttributeBar.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Camera.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\DrawableObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Ennemy.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Fireball.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Flooring.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\FriendlyCharacter.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\GameMaster.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Gold.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\GUIElement.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\HittableCharacter.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Item.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Map.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Menu.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\MoveableObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\PassableObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Player.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Projectile.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\RejuvenatingHelmet.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Room.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\RoomObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Skeleton.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Skill.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Slime.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\SolidObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\UnusableItem.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\UsableItem.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Wall.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Weapon.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\TextureLoader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Connection.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Generator.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\ZoneRoom.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Animation.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Inventory.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Classe.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Button.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\MusicManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\MapTheme.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Hud.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes\Header\Bow.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Classes\Header\Node.hpp">
-=======
-    <ClInclude Include="Classes\Header\Sword.hpp">
->>>>>>> 9de73ec9b073ba56ed1dec854b7fb5cb805b7872
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Media Include="Ressources\ana.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Ressources\Arrow.jpg" />
+    <Image Include="Ressources\defaultTexture.png" />
+    <Image Include="Ressources\FireSword.jpg" />
+    <Image Include="Ressources\img\player\knight\knight_f_hit_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f1.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f2.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f3.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f1.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f2.png" />
+    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f3.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_hit_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f1.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f2.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f3.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f0.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f1.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f2.png" />
+    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f3.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_hit_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f1.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f2.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f3.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f1.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f2.png" />
+    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f3.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_hit_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f1.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f2.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f3.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f0.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f1.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f2.png" />
+    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f3.png" />
+    <Image Include="Ressources\img\projectile\arrow.png" />
+    <Image Include="Ressources\player.jpg" />
+    <Image Include="Ressources\playerTempo.png" />
+    <Image Include="Ressources\sword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\openal32.dll" />
+    <None Include="bin\Debug\sfml-audio-2.dll" />
+    <None Include="bin\Debug\sfml-audio-d-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-2.dll" />
+    <None Include="bin\Debug\sfml-graphics-d-2.dll" />
     <None Include="bin\Debug\sfml-network-2.dll" />
     <None Include="bin\Debug\sfml-network-d-2.dll" />
     <None Include="bin\Debug\sfml-system-2.dll" />
     <None Include="bin\Debug\sfml-system-d-2.dll" />
     <None Include="bin\Debug\sfml-window-2.dll" />
     <None Include="bin\Debug\sfml-window-d-2.dll" />
-    <None Include="bin\Debug\openal32.dll" />
-    <None Include="bin\Debug\sfml-audio-2.dll" />
-    <None Include="bin\Debug\sfml-audio-d-2.dll" />
-    <None Include="bin\Debug\sfml-graphics-2.dll" />
-    <None Include="bin\Debug\sfml-graphics-d-2.dll" />
-    <None Include="Ressources\ana.ogg" />
-    <None Include="Ressources\orchestral.ogg" />
     <None Include="openal32.dll" />
-    <None Include="projet test.cbp" />
-    <None Include="sfml-audio-2.dll" />
-    <None Include="sfml-audio-d-2.dll" />
-    <None Include="sfml-graphics-2.dll" />
-    <None Include="sfml-graphics-d-2.dll" />
-    <None Include="sfml-network-2.dll" />
-    <None Include="sfml-network-d-2.dll" />
-    <None Include="sfml-system-2.dll" />
-    <None Include="sfml-system-d-2.dll" />
-    <None Include="sfml-window-2.dll" />
-    <None Include="sfml-window-d-2.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="Ressources\ana.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Ressources\Arrow.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\defaultTexture.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\FireSword.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\player.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\playerTempo.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\sword.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\projectile\arrow.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_hit_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_idle_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_f_run_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_hit_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_idle_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\knight\knight_m_run_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_hit_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_idle_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_a\lizard_f_run_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_hit_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_idle_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\img\player\lizard_b\lizard_m_run_anim_f3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="projet test.cbp" />
     <None Include="Ressources\ana.ogg" />
     <None Include="Ressources\orchestral.ogg" />
@@ -471,29 +204,5 @@
     <None Include="sfml-system-d-2.dll" />
     <None Include="sfml-window-2.dll" />
     <None Include="sfml-window-d-2.dll" />
-    <None Include="openal32.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Ressources\sword.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\Arrow.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\defaultTexture.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\FireSword.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\player.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Ressources\playerTempo.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="Ressources\ana.mp3" />
   </ItemGroup>
 </Project>

@@ -4,12 +4,24 @@
 #include "../Header/GameMaster.hpp"
 #include <type_traits>
 #include "../Header/Generator.hpp"
-#include "../Header/Skeleton.hpp"
 #include "../Header/Menu.hpp"
 #include "../Header/Hud.hpp"
 
 #include "../Header/Bow.hpp"
 #include "../Header/Sword.hpp"
+
+#include "../Header/MagicienUndead.hpp"
+#include "../Header/MagicienDemon.hpp"
+#include "../Header/MagicienOrc.hpp"
+#include "../Header/MediumUndead.hpp"
+#include "../Header/MediumDemon.hpp"
+#include "../Header/MediumOrc.hpp"
+#include "../Header/LittleUndead.hpp"
+#include "../Header/LittleDemon.hpp"
+#include "../Header/LittleOrc.hpp"
+#include "../Header/BossUndead.hpp"
+#include "../Header/BossDemon.hpp"
+#include "../Header/BossOrc.hpp"
 //retourne l'instance du GameMaster
 GameMaster& GameMaster::getInstance()
 {
@@ -73,6 +85,9 @@ const uint64_t GameMaster::getScreenH() const {
 
 MusicManager& GameMaster::getMusicManager() {
 	return _leMusicManager;
+}
+SoundLoader& GameMaster::getSoundLoader() {
+	return _leSoundLoader;
 }
 
 //ajoute un �l�ment d�placable � la liste des �l�ments d�placables
@@ -143,11 +158,11 @@ void GameMaster::runGame()
 	addMoveableObject(player);
 
 	//create a skeleton
-	Skeleton ennemy;
+	BossDemon ennemy;
 
 	//equip his bow
 	//player.setEquippedWeapon1(&arcCool);		//L'arc est déja équippé, et ça fait buguer des bails
-	ennemy.setEquippedWeapon1(&arcCool);
+	//ennemy.setEquippedWeapon1(&arcCool);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
 	bool openMainMenu = false;

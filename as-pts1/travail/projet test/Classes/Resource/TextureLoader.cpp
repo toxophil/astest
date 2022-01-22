@@ -14,7 +14,7 @@ TextureLoader::TextureLoader()
 	loadLocationTexture[TextureNames::defaultTexture] = "Ressources/defaultTexture.png";
 
 	//les monstres
-	loadLocationTexture[TextureNames::Skeleton] = "Ressources/img/ennemy/orc/goblin_idle_anim_f0_nos.png";
+	loadLocationTexture[TextureNames::Skeleton] = "Ressources/img/ennemy/orc/goblin_idle_anim_f1.png";
 
 	// Les projectiles
 	loadLocationTexture[TextureNames::Arrow] = "Ressources/img/projectile/arrow_nos.png";
@@ -147,6 +147,152 @@ TextureLoader::TextureLoader()
 		"Ressources/img/player/knight/idle/knight_idle_anim_f1.png",
 		"Ressources/img/player/knight/idle/knight_idle_anim_f2.png",
 		"Ressources/img/player/knight/idle/knight_idle_anim_f3.png"
+	};
+
+	loadLocationAnimation[AnimationNames::Demon_Mage_Walking] = {
+		"Ressources/img/ennemy/demon/necromancer_run_anim_f0.png",
+		"Ressources/img/ennemy/demon/necromancer_run_anim_f1.png",
+		"Ressources/img/ennemy/demon/necromancer_run_anim_f2.png",
+		"Ressources/img/ennemy/demon/necromancer_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Mage_Idle] = {
+		"Ressources/img/ennemy/demon/necromancer_idle_anim_f0.png",
+		"Ressources/img/ennemy/demon/necromancer_idle_anim_f1.png",
+		"Ressources/img/ennemy/demon/necromancer_idle_anim_f2.png",
+		"Ressources/img/ennemy/demon/necromancer_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Little_Walking] = {
+		"Ressources/img/ennemy/demon/imp_run_anim_f0.png",
+		"Ressources/img/ennemy/demon/imp_run_anim_f1.png",
+		"Ressources/img/ennemy/demon/imp_run_anim_f2.png",
+		"Ressources/img/ennemy/demon/imp_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Little_Idle] = {
+		"Ressources/img/ennemy/demon/imp_idle_anim_f0.png",
+		"Ressources/img/ennemy/demon/imp_idle_anim_f1.png",
+		"Ressources/img/ennemy/demon/imp_idle_anim_f2.png",
+		"Ressources/img/ennemy/demon/imp_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Medium_Walking] = {
+		"Ressources/img/ennemy/demon/chort_run_anim_f0.png",
+		"Ressources/img/ennemy/demon/chort_run_anim_f1.png",
+		"Ressources/img/ennemy/demon/chort_run_anim_f2.png",
+		"Ressources/img/ennemy/demon/chort_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Medium_Idle] = {
+		"Ressources/img/ennemy/demon/chort_idle_anim_f0.png",
+		"Ressources/img/ennemy/demon/chort_idle_anim_f1.png",
+		"Ressources/img/ennemy/demon/chort_idle_anim_f2.png",
+		"Ressources/img/ennemy/demon/chort_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Boss_Walking] = {
+		"Ressources/img/ennemy/demon/big_demon_run_anim_f0.png",
+		"Ressources/img/ennemy/demon/big_demon_run_anim_f1.png",
+		"Ressources/img/ennemy/demon/big_demon_run_anim_f2.png",
+		"Ressources/img/ennemy/demon/big_demon_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Demon_Boss_Idle] = {
+		"Ressources/img/ennemy/demon/big_demon_idle_anim_f0.png",
+		"Ressources/img/ennemy/demon/big_demon_idle_anim_f1.png",
+		"Ressources/img/ennemy/demon/big_demon_idle_anim_f2.png",
+		"Ressources/img/ennemy/demon/big_demon_idle_anim_f3.png"
+	};
+	// ORC
+	loadLocationAnimation[AnimationNames::Orc_Mage_Walking] = {
+		"Ressources/img/ennemy/orc/orc_shaman_run_anim_f0.png",
+		"Ressources/img/ennemy/orc/orc_shaman_run_anim_f1.png",
+		"Ressources/img/ennemy/orc/orc_shaman_run_anim_f2.png",
+		"Ressources/img/ennemy/orc/orc_shaman_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Mage_Idle] = {
+		"Ressources/img/ennemy/orc/orc_shaman_idle_anim_f0.png",
+		"Ressources/img/ennemy/orc/orc_shaman_idle_anim_f1.png",
+		"Ressources/img/ennemy/orc/orc_shaman_idle_anim_f2.png",
+		"Ressources/img/ennemy/orc/orc_shaman_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Little_Walking] = {
+		"Ressources/img/ennemy/orc/goblin_run_anim_f0.png",
+		"Ressources/img/ennemy/orc/goblin_run_anim_f1.png",
+		"Ressources/img/ennemy/orc/goblin_run_anim_f2.png",
+		"Ressources/img/ennemy/orc/goblin_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Little_Idle] = {
+		"Ressources/img/ennemy/orc/goblin_idle_anim_f1.png",
+		"Ressources/img/ennemy/orc/goblin_idle_anim_f2.png",
+		"Ressources/img/ennemy/orc/goblin_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Medium_Walking] = {
+		"Ressources/img/ennemy/orc/orc_warrior_run_anim_f0.png",
+		"Ressources/img/ennemy/orc/orc_warrior_run_anim_f1.png",
+		"Ressources/img/ennemy/orc/orc_warrior_run_anim_f2.png",
+		"Ressources/img/ennemy/orc/orc_warrior_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Medium_Idle] = {
+		"Ressources/img/ennemy/orc/orc_warrior_idle_anim_f0.png",
+		"Ressources/img/ennemy/orc/orc_warrior_idle_anim_f1.png",
+		"Ressources/img/ennemy/orc/orc_warrior_idle_anim_f2.png",
+		"Ressources/img/ennemy/orc/orc_warrior_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Boss_Walking] = {
+		"Ressources/img/ennemy/orc/ogre_run_anim_f0.png",
+		"Ressources/img/ennemy/orc/ogre_run_anim_f1.png",
+		"Ressources/img/ennemy/orc/ogre_run_anim_f2.png",
+		"Ressources/img/ennemy/orc/ogre_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Orc_Boss_Idle] = {
+		"Ressources/img/ennemy/orc/ogre_idle_anim_f0.png",
+		"Ressources/img/ennemy/orc/ogre_idle_anim_f1.png",
+		"Ressources/img/ennemy/orc/ogre_idle_anim_f2.png",
+		"Ressources/img/ennemy/orc/ogre_idle_anim_f3.png"
+	};
+
+	// Undead
+	loadLocationAnimation[AnimationNames::Undead_Mage_Walking] = {
+		"Ressources/img/ennemy/undead/ice_zombie_run_anim_f0.png",
+		"Ressources/img/ennemy/undead/ice_zombie_run_anim_f1.png",
+		"Ressources/img/ennemy/undead/ice_zombie_run_anim_f2.png",
+		"Ressources/img/ennemy/undead/ice_zombie_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Mage_Idle] = {
+		"Ressources/img/ennemy/undead/ice_zombie_idle_anim_f0.png",
+		"Ressources/img/ennemy/undead/ice_zombie_idle_anim_f1.png",
+		"Ressources/img/ennemy/undead/ice_zombie_idle_anim_f2.png",
+		"Ressources/img/ennemy/undead/ice_zombie_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Little_Walking] = {
+		"Ressources/img/ennemy/undead/tiny_zombie_run_anim_f0.png",
+		"Ressources/img/ennemy/undead/tiny_zombie_run_anim_f1.png",
+		"Ressources/img/ennemy/undead/tiny_zombie_run_anim_f2.png",
+		"Ressources/img/ennemy/undead/tiny_zombie_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Little_Idle] = {
+		"Ressources/img/ennemy/undead/tiny_zombie_idle_anim_f1.png",
+		"Ressources/img/ennemy/undead/tiny_zombie_idle_anim_f2.png",
+		"Ressources/img/ennemy/undead/tiny_zombie_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Medium_Walking] = {
+		"Ressources/img/ennemy/undead/skelet_run_anim_f0.png",
+		"Ressources/img/ennemy/undead/skelet_run_anim_f1.png",
+		"Ressources/img/ennemy/undead/skelet_run_anim_f2.png",
+		"Ressources/img/ennemy/undead/skelet_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Medium_Idle] = {
+		"Ressources/img/ennemy/undead/skelet_idle_anim_f0.png",
+		"Ressources/img/ennemy/undead/skelet_idle_anim_f1.png",
+		"Ressources/img/ennemy/undead/skelet_idle_anim_f2.png",
+		"Ressources/img/ennemy/undead/skelet_idle_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Boss_Walking] = {
+		"Ressources/img/ennemy/undead/big_zombie_run_anim_f0.png",
+		"Ressources/img/ennemy/undead/big_zombie_run_anim_f1.png",
+		"Ressources/img/ennemy/undead/big_zombie_run_anim_f2.png",
+		"Ressources/img/ennemy/undead/big_zombie_run_anim_f3.png"
+	};
+	loadLocationAnimation[AnimationNames::Undead_Boss_Idle] = {
+		"Ressources/img/ennemy/undead/big_zombie_idle_anim_f0.png",
+		"Ressources/img/ennemy/undead/big_zombie_idle_anim_f1.png",
+		"Ressources/img/ennemy/undead/big_zombie_idle_anim_f2.png",
+		"Ressources/img/ennemy/undead/big_zombie_idle_anim_f3.png"
 	};
 
 	// Background Menu Wild

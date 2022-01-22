@@ -11,6 +11,7 @@
 #include <vector>
 #include "Skeleton.hpp"
 #include "MusicManager.hpp"
+#include "SoundLoader.hpp"
 
 class Player;
 
@@ -20,6 +21,8 @@ class GameMaster
 {
 private:
 	MusicManager _leMusicManager;
+	SoundLoader _leSoundLoader;
+
 	Map _map;
 	Player* _leJoueur;
 
@@ -59,7 +62,9 @@ public:
 
 	const uint64_t getScreenW() const;
 	const uint64_t getScreenH() const;
+	
 	MusicManager& getMusicManager();
+	SoundLoader& getSoundLoader();
 
 	//sf::RenderWindow& getWindow() const;
 	//---------------------------------

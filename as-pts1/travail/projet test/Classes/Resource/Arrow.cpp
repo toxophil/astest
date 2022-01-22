@@ -11,7 +11,7 @@ Arrow::Arrow()
 	nextDirection = directionF;
 	_damage = 10;
 	_sprite.setTexture(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Arrow));
-
+	GameMaster::getInstance().getSoundLoader().playSound(SoundLoader::MusicNames::ArrowShoot);
 }
 
 
@@ -42,4 +42,6 @@ Arrow::Arrow(const sf::Vector2f& aimPos, const sf::Vector2f& initPos, double dam
 
 	float angle = atan2(nextDirection.y, nextDirection.x);
 	_sprite.setRotation((angle * 180 / PI) + 90.f);
+
+	GameMaster::getInstance().getSoundLoader().playSound(SoundLoader::MusicNames::ArrowShoot);
 }

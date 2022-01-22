@@ -7,6 +7,8 @@
 
 Ennemy::Ennemy()
 {
+
+	_spotRange = 20000;
 	_type = 2;
 	_doAttack = true;
 	_type = 5;
@@ -20,25 +22,8 @@ Ennemy::Ennemy()
 	_timeSinceLastAttack.restart();
 }
 
-void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
+/*void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-		//déplacement vers la gauche
-		nextDirection += sf::Vector2f(-speed, 0);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-		//déplacement vers la droite
-		nextDirection += sf::Vector2f(speed, 0);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-		//déplacement vers le haut
-		nextDirection += sf::Vector2f(0, -speed);
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-		//déplacement vers le bas
-		nextDirection += sf::Vector2f(0, speed);
-	}
-
 
 	// Normalisation...
 	float temp = sqrt((nextDirection.x * nextDirection.x + nextDirection.y * nextDirection.y));
@@ -62,9 +47,9 @@ void Ennemy::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 	moveObject(nextDirection * speed  * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	//moveObject(nextDirection * GameMaster::getInstance().getTimeSinceLastUpdate().asSeconds());
 	nextDirection = sf::Vector2f(0, 0);
-}
+}*/
 
-void Ennemy::update() {
+/*void Ennemy::update() {
 	//TODO
 
 
@@ -87,9 +72,15 @@ void Ennemy::update() {
 	}
 
 	nextDirection = toGoPos;
-}
+}*/
 
 int Ennemy::onCollision()
 {
 	return -1;
+}
+
+bool Ennemy::isPlayerSpotted()
+{
+
+	return false;
 }

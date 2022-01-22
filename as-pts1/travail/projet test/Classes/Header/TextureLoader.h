@@ -77,6 +77,33 @@ public:
 		Knight_Walking,
 		Knight_Idle,
 
+		Demon_Mage_Walking,
+		Demon_Mage_Idle,
+		Demon_Little_Walking,
+		Demon_Little_Idle,
+		Demon_Medium_Walking,
+		Demon_Medium_Idle,
+		Demon_Boss_Walking,
+		Demon_Boss_Idle,
+
+		Orc_Mage_Walking,
+		Orc_Mage_Idle,
+		Orc_Little_Walking,
+		Orc_Little_Idle,
+		Orc_Medium_Walking,
+		Orc_Medium_Idle,
+		Orc_Boss_Walking,
+		Orc_Boss_Idle,
+
+		Undead_Mage_Walking,
+		Undead_Mage_Idle,
+		Undead_Little_Walking,
+		Undead_Little_Idle,
+		Undead_Medium_Walking,
+		Undead_Medium_Idle,
+		Undead_Boss_Walking,
+		Undead_Boss_Idle,
+
 		Background_Wild,
 		Coin
 
