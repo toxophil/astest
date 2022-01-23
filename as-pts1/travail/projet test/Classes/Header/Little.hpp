@@ -12,7 +12,6 @@ private:
 	sf::Clock _timeSinceLastAttack;
 
 
-
 protected:
 	sf::Clock _animTime;
 	Animation _animIdle;

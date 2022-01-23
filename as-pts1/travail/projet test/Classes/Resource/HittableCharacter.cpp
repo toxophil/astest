@@ -43,6 +43,15 @@ void HittableCharacter::changeHealth(double modificateur)
     }
 }
 
+void HittableCharacter::addDamage(double dmg)
+{
+    if (dmg > _health) {
+        _health = 0;
+    }
+    else {
+        _health -= dmg;
+    }
+}
 Weapon* HittableCharacter::getEquippedWeapon1()
 {
     return HittableCharacter::_equippedWeapon1;

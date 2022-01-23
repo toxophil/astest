@@ -42,6 +42,8 @@ private:
 
 	uint64_t _screenW;
 	uint64_t _screenH;
+
+	bool _openMainMenu = true;
 public:
 	//-------Singleton
 	static GameMaster& getInstance();
@@ -53,6 +55,7 @@ public:
 	const Map& getMap() const;
 	const sf::Vector2f getPlayerPos() const;
 	void setPlayerPos(int, int);
+	void addDamageToPlayer(double);
 
 	const std::list<MoveableObject*>& getMoveableObjectList();
 
@@ -70,8 +73,12 @@ public:
 	//---------------------------------
 
 	//fonction principale du jeu
-	void runGame();
+	void startGame(uint8_t);
+	void nextGame();
+	void endGame();
 
+	void runGame();
+	
 	//ajoute un élément déplacable à la liste des éléments déplacables
 	bool addMoveableObject(MoveableObject& moveableObject);
 

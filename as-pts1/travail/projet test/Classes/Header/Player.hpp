@@ -26,5 +26,6 @@ public:
 	Inventory* getInventory();
 	sf::Vector2f getPos() const;
 
+	void addDamage(double hp);
 	void setPos(int, int);
 };

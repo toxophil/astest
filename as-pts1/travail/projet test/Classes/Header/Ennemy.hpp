@@ -9,11 +9,13 @@
 class Ennemy : public HittableCharacter
 {
 private:
-	uint32_t _spotRange;
 	bool _doAttack;
 	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
-
+protected:
+	int _attackCD = 2000;
+	bool _isSpotted = false;
+	double euclideDist(sf::Vector2f, sf::Vector2f);
 public:
 	Ennemy();
 

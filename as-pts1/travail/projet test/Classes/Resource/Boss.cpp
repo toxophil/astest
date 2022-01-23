@@ -7,6 +7,7 @@ Boss::Boss()
 
 	_health = 150;
 	_maxHealth = 150;
+	_attackCD = 2500;
 
 	speed = 70;
 	_type = 2;
@@ -38,23 +39,42 @@ void Boss::updatePhysics(sf::RenderWindow& window, const sf::Event& event)
 
 	sf::Vector2f toGoPos = plyPos - selfPos;
 
-	if ((roomIdSelf != roomIdPly || roomIdPly == -1) && (connectionIdPly != connectionIdSelf || connectionIdSelf == -1)) {
-		toGoPos = laMap.getNextNodePos(selfPos, plyPos) - selfPos;
-		//cout << toGoPos.x << "  " << toGoPos.y << "  SORTIE" << endl;
+	if (roomIdPly == roomIdSelf) {
+		_isSpotted = true;
 	}
-	nextDirection = toGoPos;
+	//cout << abs(toGoPos.x) << "  y:" << abs(toGoPos.y) << endl;
+	if (_isSpotted) {
+		//cout << "ATTACK DIST: " << euclideDist(plyPos, selfPos) << endl;
+		if (euclideDist(plyPos, selfPos) < 2000) {
+			if (_timeSinceLastAttack.getElapsedTime().asMilliseconds() > _attackCD) {
+				_timeSinceLastAttack.restart();
+				cout << "ATTACK Beee!!! " << endl;
+				GameMaster::getInstance().addDamageToPlayer(1);
+			}
+		}
+		if (abs(toGoPos.x) < 10 && abs(toGoPos.y) < 6) {
+			nextDirection = sf::Vector2f(0, 0);
+		}
+		else {
+			if ((roomIdSelf != roomIdPly || roomIdPly == -1) && (connectionIdPly != connectionIdSelf || connectionIdSelf == -1)) {
+				toGoPos = laMap.getNextNodePos(selfPos, plyPos) - selfPos;
+				//cout << toGoPos.x << "  " << toGoPos.y << "  SORTIE" << endl;
+			}
+			nextDirection = toGoPos;
 
-	if (toGoPos.x > 0) {
-		_sprite.setScale(1.f, 1.f);
-	}
-	else {
-		_sprite.setScale(-1.f, 1.f);
-	}
+			if (toGoPos.x > 0) {
+				_sprite.setScale(1.f, 1.f);
+			}
+			else {
+				_sprite.setScale(-1.f, 1.f);
+			}
 
-	// Normalisation...
-	float temp = sqrt((nextDirection.x * nextDirection.x + nextDirection.y * nextDirection.y));
-	if (temp != 0) {
-		nextDirection = nextDirection / temp;
+			// Normalisation...
+			float temp = sqrt((nextDirection.x * nextDirection.x + nextDirection.y * nextDirection.y));
+			if (temp != 0) {
+				nextDirection = nextDirection / temp;
+			}
+		}
 	}
 
 	//lancement de l'attaque uniquement si le cooldown d'attaque est à 0

@@ -8,7 +8,6 @@
 Ennemy::Ennemy()
 {
 
-	_spotRange = 20000;
 	_type = 2;
 	_doAttack = true;
 	_type = 5;
@@ -73,6 +72,11 @@ Ennemy::Ennemy()
 
 	nextDirection = toGoPos;
 }*/
+
+double Ennemy::euclideDist(sf::Vector2f vecA, sf::Vector2f vecB)
+{
+	return pow((vecA.x - vecA.y) - (vecB.x - vecB.y),2); // sqrt trop gourmand je crois
+}
 
 int Ennemy::onCollision()
 {

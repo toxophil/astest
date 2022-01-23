@@ -19,6 +19,7 @@ Menu::Menu() {
 
 	sf::VideoMode leScreen = sf::VideoMode::getDesktopMode();
 	_laVue = sf::View(sf::Vector2f(0, 0), sf::Vector2f(leScreen.width, leScreen.height));
+	Vector2f centerPos = _laVue.getCenter();
 
 	uint64_t buttonW = leScreen.width/6;
 	uint64_t buttonH = leScreen.height/11;
@@ -36,7 +37,25 @@ Menu::Menu() {
 	_lesBoutons.push_back(Button("L'histoire", x, y, buttonW, buttonH, fontMenu));
 	y += offsetY;
 	_lesBoutons.push_back(Button("Quitter", x, y, buttonW, buttonH, fontMenu));
+	
 
+	y = -(int64_t)buttonH / 2;
+	uint64_t buttonH2 = leScreen.height / 15;
+	offsetY = buttonH2 + 5;
+	//cout << "X: " << x << endl;
+	_lesBoutonsClasse.push_back(Button("Elf Femme", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Elf Homme", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Chevalier", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Lezard Femme", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Lezard Homme", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Magicien Femme", x, y, buttonW, buttonH2, fontMenu));
+	y += offsetY;
+	_lesBoutonsClasse.push_back(Button("Magicien Homme", x, y, buttonW, buttonH2, fontMenu));
 
 	_backgroundAnim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Background_Wild);
 	_backgroundAnim.setSpeed(120);
@@ -57,14 +76,46 @@ Menu::Menu() {
 	_logoSprite.setScale(0.5, 0.5);
 	_logoSprite.setOrigin(sizeLogo.x/2, sizeLogo.y/2);
 
-	Vector2f centerPos = _laVue.getCenter();
-	_logoSprite.setPosition(centerPos.x, centerPos.y + GameMaster::getInstance().getScreenH()/1.6 - sizeLogo.x);
+	_logoSprite.setPosition(centerPos.x, centerPos.y + GameMaster::getInstance().getScreenH()/1.6 - sizeLogo.y);
+
+
+
+	// LES Sprites DU MENU
+	_imgCommentJouer.loadFromFile("Ressources/img/menu/commentjouer.jpg");
+	_imgHistoire.loadFromFile("Ressources/img/menu/histoire.jpg");
+
+
+	_commentJouer.setTexture(_imgCommentJouer);
+	_histoire.setTexture(_imgHistoire);
+	cout << "Size Screen: " << leScreen.width << " sizeX:" << _imgCommentJouer.getSize().x << endl;
+	_commentJouer.setPosition(centerPos.x - _imgCommentJouer.getSize().x / 2, centerPos.y - (int)_imgCommentJouer.getSize().y/2);
+	_histoire.setPosition(centerPos.x - _imgHistoire.getSize().x / 2, centerPos.y - (int)_imgHistoire.getSize().y/2);
+
+	_selecPerso.setString("Veuillez choisir un personnage");
+	_selecPerso.setFont(fontMenu);
+	_selecPerso.setCharacterSize(45);
+	_selecPerso.setFillColor(sf::Color::Black);
+	_selecPerso.setPosition(x, buttonH / 2 - 10);
+
 
 
 	_animTime.restart();
 }
 void Menu::logicMenu(sf::RenderWindow& window, const sf::Event& event) {
 	window.setView(_laVue);
+	
+	bool mouseLeftClicked = false;
+	bool escapePressed = false;
+	if (event.type == sf::Event::MouseButtonReleased)
+	{
+		if (event.mouseButton.button == sf::Mouse::Left) {
+			mouseLeftClicked = true;
+		}
+	} else if (event.type == sf::Event::KeyReleased) {
+		if (event.key.code == sf::Keyboard::Escape) {
+			escapePressed = true;
+		}	
+	}
 
 	if (_animTime.getElapsedTime().asMilliseconds() >= _backgroundAnim.getSpeed()) {
 		_backgroundSprite.setTexture(_backgroundAnim.getNextFrame());
@@ -75,11 +126,47 @@ void Menu::logicMenu(sf::RenderWindow& window, const sf::Event& event) {
 
 		_animTime.restart();
 	}
-	
+
 	window.draw(_backgroundSprite);
 	window.draw(_logoSprite);
 
-	for (uint8_t i = 0; i < 4; i++) {
-		_lesBoutons[i].draw(window);
+	if (escapePressed) { // Retourne au menu principale
+		menuState = 0;
+	}
+
+	switch (menuState) {
+	case 0: // Menu Principale
+		for (uint8_t i = 0; i < 4; i++) {
+			_lesBoutons[i].draw(window);
+			//cout << "Mhhhh !! " << mouseLeftClicked << "  et " << _lesBoutons[i].isHovered(window) << endl;
+			if (mouseLeftClicked && _lesBoutons[i].isHovered(window)) {
+				menuState = i + 1;
+				//cout << "Clicked !!" << endl;
+			}
+		}
+		break;
+	case 1: // Jouer
+		for (uint8_t i = 0; i < _lesBoutonsClasse.size(); i++) {
+			_lesBoutonsClasse[i].draw(window);
+			//cout << "Mhhhh !! " << mouseLeftClicked << "  et " << _lesBoutons[i].isHovered(window) << endl;
+			if (mouseLeftClicked && _lesBoutonsClasse[i].isHovered(window)) {
+				menuState = 0; // Reset le state du menu, comme ça il reviendra sur le menu principale une fois mort !
+				GameMaster::getInstance().startGame(i + 1);
+				//cout << "Clicked !!" << endl;
+			}
+		}
+		break;
+	case 2: // Comment jouer
+		window.draw(_commentJouer);	 
+		break;
+	case 3: // L'histoire
+		window.draw(_histoire);
+		break;
+	case 4: // Quitter 
+		window.close();
+		break;
+	case 5: // Selec perso
+		window.draw(_selecPerso);
+		break;
 	}
 }

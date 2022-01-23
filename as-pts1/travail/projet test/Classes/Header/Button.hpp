@@ -15,9 +15,9 @@ private:
 	uint64_t _h;
 	sf::RectangleShape _rectangle;
 
-	bool isHovered(sf::RenderWindow&);
 public:
 	Button(string, int64_t, int64_t, uint64_t, uint64_t, sf::Font&);
+	bool isHovered(sf::RenderWindow&);
 	void draw(sf::RenderWindow&);
 };
 

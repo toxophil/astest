@@ -26,7 +26,9 @@ public:
 	void setEquippedWeapon2(Weapon* newWeapon);
 	void setHealth(double health);
 	double getHealth();
-	void HittableCharacter::changeHealth(double modificateur);
+	void changeHealth(double modificateur);
+	virtual void addDamage(double hp);
+
 	//mise a jour des proprietes de l'objet apres collisions
 	//bool updateOnTouche(DrawableObject* obj);
 

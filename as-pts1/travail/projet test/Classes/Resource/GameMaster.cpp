@@ -52,11 +52,14 @@ const Map& GameMaster::getMap() const
 }
 const sf::Vector2f GameMaster::getPlayerPos() const
 {
-	return _leJoueur->getSprite().getPosition() + _leJoueur->getSprite().getOrigin();
+	return _leJoueur->getSprite().getPosition() + _leJoueur->getSprite().getOrigin() + sf::Vector2f(_leJoueur->getSprite().getOrigin().x,0);
 }
 void GameMaster::setPlayerPos(int x, int y)
 {
 	_leJoueur->setPos(x, y);
+}
+void GameMaster::addDamageToPlayer(double dmg) {
+	_leJoueur->addDamage(dmg);
 }
 
 //retourne la liste des �l�ments d�pla�ables
@@ -119,7 +122,16 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 	}
 	return destroyed;
 }
+void GameMaster::startGame(uint8_t classeJoueur) {
+	_openMainMenu = false;
 
+}
+void GameMaster::nextGame() {
+	_openMainMenu = false;
+}
+void GameMaster::endGame() {
+	_openMainMenu = true;
+}
 void GameMaster::runGame()
 {
 
@@ -155,6 +167,7 @@ void GameMaster::runGame()
 	Player player(classeDragonF);
 	Sword sword(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Anime_Sword));
 	player.setEquippedWeapon2(&sword);
+	player.setHealth(5);
 	addMoveableObject(player);
 
 	//create a skeleton
@@ -165,7 +178,6 @@ void GameMaster::runGame()
 	//ennemy.setEquippedWeapon1(&arcCool);
 	//clock pour connaitre les delta entre chaque frame
 	Clock clk;
-	bool openMainMenu = false;
 	Menu leMenuP;
 
 	_leMusicManager.playMusic(_leMusicManager.getMusic(MusicManager::MusicNames::Main), false);
@@ -173,7 +185,7 @@ void GameMaster::runGame()
 	sf::Clock _musicCd;
 	_musicCd.restart();
 
-	Hud leHud(5);
+	Hud leHud(player.getHealth());
 	leHud.updateMoney(1500);
 	bool done = false;
 
@@ -192,7 +204,7 @@ void GameMaster::runGame()
 
 		//gestionnaire d'�v�nements
 		sf::Event event;
-		if (openMainMenu) {
+		if (_openMainMenu) {
 			while (window.pollEvent(event))
 			{
 
@@ -261,7 +273,7 @@ void GameMaster::runGame()
 			}
 			player.getEquippedWeapon1()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
 
-			leHud.draw(window,3);
+			leHud.draw(window, player.getHealth()*2);
 			laCam.focus(window);
 
 

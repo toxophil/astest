@@ -10,7 +10,7 @@ private:
 	bool _doAttack;
 	float _attackSpeedModifier;
 	sf::Clock _timeSinceLastAttack;
-
+	int _attackCD = 200;
 
 
 protected:

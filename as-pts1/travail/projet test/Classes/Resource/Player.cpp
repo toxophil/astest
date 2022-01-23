@@ -135,6 +135,16 @@ sf::Vector2f Player::getPos() const {
 	return true;
 }*/
 
+void Player::addDamage(double dmg)
+{
+	if (dmg > _health) {
+		_health = 0;
+		GameMaster::getInstance().endGame(); // Perdus !
+	}
+	else {
+		_health -= dmg;
+	}
+}
 void Player::setPos(int x, int y) {
 	_sprite.setPosition(x, y);
 }
