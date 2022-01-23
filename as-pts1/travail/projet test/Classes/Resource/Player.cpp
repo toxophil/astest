@@ -10,6 +10,16 @@
 Player::Player() {
 	_type = 1;
 	_estEnnemi = 0;
+	_sprite.setPosition(120, 120);
+	nextDirection = sf::Vector2f(0, 0);
+	speed = 50;
+	_degat = 0.01;
+	_timeSinceLastAttack.restart();
+	_inventory = &Inventory();
+
+	_animTime.restart();
+	setHealth(1);
+	anim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 }
 Player::Player(Classe laClasse)
 {
@@ -116,6 +126,20 @@ Inventory* Player::getInventory() {
 
 sf::Vector2f Player::getPos() const {
 	return _sprite.getPosition() + _sprite.getOrigin();
+}
+void Player::setClasse(Classe laClasse) {
+	speed = laClasse.getDefaultSpeed();
+	_timeSinceLastAttack.restart();
+	_inventory = &Inventory();
+
+	_animTime.restart();
+	_laClasse = laClasse;
+	setHealth(laClasse.getDefaultLife());
+	setEquippedWeapon1(laClasse.getDefaultWeapon());
+	anim = GameMaster::getInstance().getTextureLoader().getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
+}
+Classe& Player::getClasse() {
+	return _laClasse;
 }
 /*bool Player::updateOnTouche() {
 	_nbVie = _nbVie - _degat; //on enleve des pvs si collisions avec ennemies

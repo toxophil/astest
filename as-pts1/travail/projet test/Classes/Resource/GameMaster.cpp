@@ -5,7 +5,6 @@
 #include <type_traits>
 #include "../Header/Generator.hpp"
 #include "../Header/Menu.hpp"
-#include "../Header/Hud.hpp"
 
 #include "../Header/Bow.hpp"
 #include "../Header/Sword.hpp"
@@ -122,9 +121,37 @@ bool GameMaster::destroyMoveableObject(uint32_t id)
 	}
 	return destroyed;
 }
-void GameMaster::startGame(uint8_t classeJoueur) {
-	_openMainMenu = false;
 
+void GameMaster::startGame(uint8_t classeJoueur) {
+	switch (classeJoueur) {
+	case 1:
+		_leJoueur->setClasse(_elfF);
+		break;
+	case 2:
+		_leJoueur->setClasse(_elfM);
+		break;
+	case 3:
+		_leJoueur->setClasse(_knight);
+		break;
+	case 4:
+		_leJoueur->setClasse(_lizardF);
+		break;
+	case 5:
+		_leJoueur->setClasse(_lizardM);
+		break;
+	case 6:
+		_leJoueur->setClasse(_wizzardF);
+		break;
+	default:
+		_leJoueur->setClasse(_wizzarM);
+		break;
+	}
+	//_leHud = Hud(_leJoueur->getClasse().getDefaultLife());
+	_leHud->resetHud(_leJoueur->getClasse().getDefaultLife());
+	_leJoueur->setHealth(_leJoueur->getClasse().getDefaultLife());
+	_leJoueur->setEquippedWeapon1(_leJoueur->getClasse().getDefaultWeapon());
+	_leJoueur->setEquippedWeapon2(_leJoueur->getClasse().getDefaultWeapon());
+	_openMainMenu = false;
 }
 void GameMaster::nextGame() {
 	_openMainMenu = false;
@@ -159,12 +186,25 @@ void GameMaster::runGame()
 	//create a player
 
 	//Classe classeDragonF(&thiefBow,_textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking),5,200);
-	Classe classeDragonF(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 5, 130);
+	// Creation des classes
+	_lizardF = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Walking), 7, 100);
+	_lizardM = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_M_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_M_Walking), 7, 100);
+	
+	_wizzardF = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Wizzard_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Wizzard_F_Walking), 4, 85);
+	_wizzarM = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Wizzard_M_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Wizzard_M_Walking), 4, 85);
+
+	_elfF = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Elf_F_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Elf_F_Walking), 3, 95);
+	_elfM = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Elf_M_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Elf_M_Walking), 3, 95);
+
+	_knight = Classe(&arcCool, _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Idle), _textureLoader.getAnimation(TextureLoader::AnimationNames::Knight_Walking), 6, 105);
 
 	Ennemy en();
 	Animation a = _textureLoader.getAnimation(TextureLoader::AnimationNames::Lizard_F_Idle);
 
-	Player player(classeDragonF);
+
+	Player player(_lizardF);
+	Hud hud(5);
+
 	Sword sword(GameMaster::getInstance().getTextureLoader().getTexture(TextureLoader::TextureNames::Anime_Sword));
 	player.setEquippedWeapon2(&sword);
 	player.setHealth(5);
@@ -172,7 +212,7 @@ void GameMaster::runGame()
 
 	//create a skeleton
 	BossDemon ennemy;
-
+	
 	//equip his bow
 	//player.setEquippedWeapon1(&arcCool);		//L'arc est déja équippé, et ça fait buguer des bails
 	//ennemy.setEquippedWeapon1(&arcCool);
@@ -185,12 +225,11 @@ void GameMaster::runGame()
 	sf::Clock _musicCd;
 	_musicCd.restart();
 
-	Hud leHud(player.getHealth());
-	leHud.updateMoney(1500);
 	bool done = false;
 
 	// SET LE PLAYER, IMPORTANT POUR LE GET POUR LE PATHFINDING!!!!!!!!!!!!!!!!!!
 	_leJoueur = &player;
+	_leHud = &hud;
 	while (window.isOpen())
 	{
 		/*if (!window.hasFocus()) {
@@ -232,6 +271,12 @@ void GameMaster::runGame()
 
 			}
 
+			if (event.type == sf::Event::KeyReleased) {
+				if (event.key.code == sf::Keyboard::Escape) {
+					_openMainMenu = true;
+					continue;
+				}
+			}
 			if (event.type == sf::Event::MouseWheelScrolled)
 			{
 				if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
@@ -273,7 +318,7 @@ void GameMaster::runGame()
 			}
 			player.getEquippedWeapon1()->drawEquiped(window, player.getSprite().getPosition(), player.getSprite().getGlobalBounds()); 
 
-			leHud.draw(window, player.getHealth()*2);
+			_leHud->draw(window, player.getHealth()*2);
 			laCam.focus(window);
 
 

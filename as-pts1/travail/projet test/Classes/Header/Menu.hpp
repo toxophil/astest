@@ -14,6 +14,7 @@ private:
 
 	Animation _backgroundAnim;
 	sf::Clock _animTime;
+	sf::Clock _lastClick;
 
 	sf::Texture _imgCommentJouer;
 	sf::Texture _imgHistoire;
@@ -28,9 +29,10 @@ private:
 
 	sf::Text _selecPerso;
 	uint8_t menuState = 0;
+	uint8_t _lastKeyPressed = 0;
 public:
 	Menu();
-	void logicMenu(sf::RenderWindow&, const sf::Event& event);
+	void logicMenu(sf::RenderWindow& window, sf::Event& event);
 };
 
 

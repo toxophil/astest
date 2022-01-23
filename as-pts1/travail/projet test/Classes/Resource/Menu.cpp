@@ -101,20 +101,34 @@ Menu::Menu() {
 
 	_animTime.restart();
 }
-void Menu::logicMenu(sf::RenderWindow& window, const sf::Event& event) {
+
+
+
+void Menu::logicMenu(sf::RenderWindow& window, sf::Event& event) {
 	window.setView(_laVue);
-	
+	cout << _lastClick.getElapsedTime().asMilliseconds() << endl;
 	bool mouseLeftClicked = false;
 	bool escapePressed = false;
-	if (event.type == sf::Event::MouseButtonReleased)
-	{
-		if (event.mouseButton.button == sf::Mouse::Left) {
-			mouseLeftClicked = true;
+	if (_lastClick.getElapsedTime().asMilliseconds() > 100) {
+		if (event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left)
+		{
+			if (_lastKeyPressed != 1) {
+				cout << "Yup" << endl;
+				_lastKeyPressed = 1;
+				mouseLeftClicked = true;
+				_lastClick.restart();
+			}
 		}
-	} else if (event.type == sf::Event::KeyReleased) {
-		if (event.key.code == sf::Keyboard::Escape) {
-			escapePressed = true;
-		}	
+		else if (event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Escape) {
+			if (_lastKeyPressed != 2) {
+				_lastKeyPressed = 2;
+				escapePressed = true;
+				_lastClick.restart();
+			}
+		}
+		else {
+			_lastKeyPressed = 0;
+		}
 	}
 
 	if (_animTime.getElapsedTime().asMilliseconds() >= _backgroundAnim.getSpeed()) {
@@ -132,27 +146,25 @@ void Menu::logicMenu(sf::RenderWindow& window, const sf::Event& event) {
 
 	if (escapePressed) { // Retourne au menu principale
 		menuState = 0;
+		_lastClick.restart();
 	}
 
 	switch (menuState) {
 	case 0: // Menu Principale
 		for (uint8_t i = 0; i < 4; i++) {
 			_lesBoutons[i].draw(window);
-			//cout << "Mhhhh !! " << mouseLeftClicked << "  et " << _lesBoutons[i].isHovered(window) << endl;
 			if (mouseLeftClicked && _lesBoutons[i].isHovered(window)) {
 				menuState = i + 1;
-				//cout << "Clicked !!" << endl;
+				_lastClick.restart();
 			}
 		}
 		break;
 	case 1: // Jouer
 		for (uint8_t i = 0; i < _lesBoutonsClasse.size(); i++) {
 			_lesBoutonsClasse[i].draw(window);
-			//cout << "Mhhhh !! " << mouseLeftClicked << "  et " << _lesBoutons[i].isHovered(window) << endl;
 			if (mouseLeftClicked && _lesBoutonsClasse[i].isHovered(window)) {
 				menuState = 0; // Reset le state du menu, comme ça il reviendra sur le menu principale une fois mort !
 				GameMaster::getInstance().startGame(i + 1);
-				//cout << "Clicked !!" << endl;
 			}
 		}
 		break;

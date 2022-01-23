@@ -26,8 +26,10 @@ private:
 	sf::View _laVue;
 public:
 	Hud(std::uint16_t);
+
 	void addHeart();
 	void updateMoney(uint32_t);
+	void resetHud(uint16_t);
 	void draw(sf::RenderWindow&, int);
 };
 

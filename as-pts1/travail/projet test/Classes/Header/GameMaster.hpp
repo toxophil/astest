@@ -13,6 +13,7 @@
 #include "MusicManager.hpp"
 #include "SoundLoader.hpp"
 
+#include "../Header/Hud.hpp"
 class Player;
 
 using namespace std;
@@ -24,7 +25,17 @@ private:
 	SoundLoader _leSoundLoader;
 
 	Map _map;
+
+	Classe _lizardM;
+	Classe _lizardF;
+	Classe _wizzarM;
+	Classe _wizzardF;
+	Classe _elfM;
+	Classe _elfF;
+	Classe _knight;
+
 	Player* _leJoueur;
+	Hud* _leHud;
 
 	std::list<MoveableObject*> _moveableObjectList;
 	std::list<std::list<MoveableObject*>::iterator> _toDestroy;
